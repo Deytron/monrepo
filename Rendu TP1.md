@@ -40,12 +40,18 @@ NetBIOS sur Tcpip. . . . . . . . . . . : Activé</p>
 A Ynov, l’intérêt d’une gateway est de pouvoir accéder à Internet même en étant dans l’intranet Ynov.</li>
 </ul>
 <h2 id="modification-des-informations">2. Modification des informations</h2>
+<h3 id="a.-changer-dadresse-ip">A. Changer d’adresse IP</h3>
 <p>Pour changer d’adresse IPv4 sur Windows :</p>
 <ul>
 <li>Allez dans <code>Paramètres &gt; Réseau et Internet &gt; WiFi</code></li>
 <li>A droite, cliquez sur <code>Modifiez les options d'adaptateurs</code></li>
 <li>Vous arrivez dans le centre réseau et partage. Clic droit sur le matériel réseau duquel on veut changer l’IP &gt; <code>Propriétés</code><br>
 <img src="https://i.imgur.com/d40knqi.png" alt="enter image description here"></li>
-<li>Cliquez sur `Protocole Internet IPv4</li>
+<li>Cliquez sur <code>Protocole Internet IPv4</code>, puis sur <code>Propriétés</code></li>
+<li>Changer l’adresse, puis OK.</li>
 </ul>
+<p>Adresse IP Initiale : <code>10.33.0.186</code> changée en <code>10.33.0.190</code><br>
+Et ba ng c’est la merde :<br>
+<img src="https://i.imgur.com/SY4isZ4.png" alt="enter image description here">La raison de pourquoi j’ai perdu le réseau et pourquoi j’ai Windows qui est venu me sauver, c’est parce que l’adresse que j’ai choisie parmi celles disponibles (en .190) est déjà attribuée par le DHCP Ynov à un autre appareil sur le réseau. Et il ne peut pas y avoir deux adresses IP pareilles sur un réseau.</p>
+<h3 id="b.-nmap">B. Nmap</h3>
 
