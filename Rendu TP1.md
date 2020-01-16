@@ -4,7 +4,7 @@
 ---
 
 <h1 id="tp-1---romain-ranaivoson"><strong>TP 1</strong> - Romain Ranaivoson</h1>
-<h2 id="affichage-dinformations-sur-la-pile-tcpip-locale">1. Affichage d’informations sur la pile TCP/IP locale</h2>
+<h2 id="i.-affichage-dinformations-sur-la-pile-tcpip-locale">I. Affichage d’informations sur la pile TCP/IP locale</h2>
 <p>Pour trouver les informations réseaux en CLI, taper <code>ipconfig /all</code></p>
 <p>Carte réseau sans fil Wi-Fi :</p>
 <p>Suffixe DNS propre à la connexion. . . : <a href="http://auvence.co">auvence.co</a><br>
@@ -39,7 +39,7 @@ NetBIOS sur Tcpip. . . . . . . . . . . : Activé</p>
 <li>Une gateway (passerelle en français) est une sorte de “portail” entre deux réseaux. Ce portail permet de faire passer le trafic Internet entre les deux réseaux.  Il peut aussi traduire dans un autre protocole les données reçues d’un réseau à l’autre.<br>
 A Ynov, l’intérêt d’une gateway est de pouvoir accéder à Internet même en étant dans l’intranet Ynov.</li>
 </ul>
-<h2 id="modification-des-informations">2. Modification des informations</h2>
+<h2 id="ii.-modification-des-informations">II. Modification des informations</h2>
 <h3 id="a.-changer-dadresse-ip">A. Changer d’adresse IP</h3>
 <p>Pour changer d’adresse IPv4 sur Windows :</p>
 <ul>
@@ -57,4 +57,11 @@ Et bang c’est la merde :<br>
 <p>Sur Windows, une erreur m’empêche de progresser, car nmap cherche une carte réseau inexistante.<br>
 <img src="https://i.imgur.com/firV5t6.png" alt="enter image description here"><br>
 Donc tant pis, j’aurais essayé</p>
+<h1 id="iii.-manipulations-dautres-outilsprotocoles-côté-client">III. Manipulations d’autres outils/protocoles côté client</h1>
+<ul>
+<li>Adresse IP du DHCP : 10.33.3.254 (dernière IP dispo sur la plage d’IP)</li>
+<li>Pour trouver la durée du bail DHCP, faire <code>ipconfig /all</code>, et chercher les lignes “Bails courant/ Bails expirants”<br>
+<img src="https://i.imgur.com/0M6gDre.png" alt="enter image description here"></li>
+<li>Pour demander une nouvelle adresse IP au DHCP sur Windows, il faut utiliser <code>ipconfig /renew</code></li>
+</ul>
 
