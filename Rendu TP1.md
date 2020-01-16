@@ -58,6 +58,7 @@ Et bang c’est la merde :<br>
 <img src="https://i.imgur.com/firV5t6.png" alt="enter image description here"><br>
 Donc tant pis, j’aurais essayé</p>
 <h1 id="iii.-manipulations-dautres-outilsprotocoles-côté-client">III. Manipulations d’autres outils/protocoles côté client</h1>
+<h3 id="dhcp">1. DHCP</h3>
 <ul>
 <li>Adresse IP du DHCP : 10.33.3.254 (dernière IP dispo sur la plage d’IP)</li>
 <li>Pour trouver la durée du bail DHCP, faire <code>ipconfig /all</code>, et chercher les lignes “Bails courant/ Bails expirants”<br>
