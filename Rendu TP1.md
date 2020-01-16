@@ -54,4 +54,7 @@ A Ynov, l’intérêt d’une gateway est de pouvoir accéder à Internet même 
 Et ba ng c’est la merde :<br>
 <img src="https://i.imgur.com/SY4isZ4.png" alt="enter image description here">La raison de pourquoi j’ai perdu le réseau et pourquoi j’ai Windows qui est venu me sauver, c’est parce que l’adresse que j’ai choisie parmi celles disponibles (en .190) est déjà attribuée par le DHCP Ynov à un autre appareil sur le réseau. Et il ne peut pas y avoir deux adresses IP pareilles sur un réseau.</p>
 <h3 id="b.-nmap">B. Nmap</h3>
+<p>Sur Windows, une erreur m’empêche de progresser, car nmap cherche une carte réseau inexistante.<br>
+<img src="https://i.imgur.com/firV5t6.png" alt="enter image description here"><br>
+Donc tant pis, j’aurais essayé</p>
 
