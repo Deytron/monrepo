@@ -57,6 +57,11 @@ Et bang c’est la merde :<br>
 <p>Sur Windows, une erreur m’empêche de progresser, car nmap cherche une carte réseau inexistante.<br>
 <img src="https://i.imgur.com/firV5t6.png" alt="enter image description here"><br>
 Donc tant pis, j’aurais essayé</p>
+<h1 id="ii.-exploration-locale-en-duo">II. Exploration locale en duo</h1>
+<h3 id="modification-dadresse-ip">3. Modification d’adresse IP</h3>
+<p>IP de la carte réseau 1 : 192.168.0.1<br>
+IP de la carte réseau 2 : 192.168.0.2</p>
+<h3 id="utilisation-dun-des-deux-comme-gateway">4. Utilisation d’un des deux comme gateway</h3>
 <h1 id="iii.-manipulations-dautres-outilsprotocoles-côté-client">III. Manipulations d’autres outils/protocoles côté client</h1>
 <h3 id="dhcp">1. DHCP</h3>
 <ul>
