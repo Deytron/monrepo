@@ -59,9 +59,15 @@ Et bang c’est la merde :<br>
 Donc tant pis, j’aurais essayé</p>
 <h1 id="ii.-exploration-locale-en-duo">II. Exploration locale en duo</h1>
 <h3 id="modification-dadresse-ip">3. Modification d’adresse IP</h3>
-<p>IP de la carte réseau 1 : 192.168.0.1<br>
-IP de la carte réseau 2 : 192.168.0.2</p>
+<p>Les adresses choisies auront été 192.168.1.1 et 192.168.1.2.</p>
+<p><img src="https://i.imgur.com/bFFynq7.png" alt=""></p>
+<p>Les deux machines se ping bien<br>
+<img src="https://i.imgur.com/aLJlr7e.jpg" alt=""></p>
 <h3 id="utilisation-dun-des-deux-comme-gateway">4. Utilisation d’un des deux comme gateway</h3>
+<p>Impossible de partager la connexion du PC avec Wifi au PC sans Wifi. Sous Windows, à chaque fois que j’active le partage, le réseau Wifi ne fonction plus (réseau non identifié). Dès que le partage est désactivé, Internet fonctionne.</p>
+<h3 id="petit-chat-privé">5.Petit chat privé</h3>
+<p>Après paramétrage, tout fonctionne dans les deux sens<br>
+<img src="https://i.imgur.com/BxRYKZl.png" alt=""></p>
 <h1 id="iii.-manipulations-dautres-outilsprotocoles-côté-client">III. Manipulations d’autres outils/protocoles côté client</h1>
 <h3 id="dhcp">1. DHCP</h3>
 <ul>
