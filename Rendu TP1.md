@@ -64,10 +64,34 @@ Donc tant pis, j’aurais essayé</p>
 <p>Les deux machines se ping bien<br>
 <img src="https://i.imgur.com/aLJlr7e.jpg" alt=""></p>
 <h3 id="utilisation-dun-des-deux-comme-gateway">4. Utilisation d’un des deux comme gateway</h3>
-<p>Impossible de partager la connexion du PC avec Wifi au PC sans Wifi. Sous Windows, à chaque fois que j’active le partage, le réseau Wifi ne fonction plus (réseau non identifié). Dès que le partage est désactivé, Internet fonctionne.</p>
+<p>Impossible de partager la connexion du PC avec Wifi au PC sans Wifi. Sous Windows, à chaque fois que j’active le partage, le réseau Wifi ne fonctionne plus (réseau non identifié). Dès que le partage est désactivé, Internet fonctionne.</p>
 <h3 id="petit-chat-privé">5.Petit chat privé</h3>
 <p>Après paramétrage, tout fonctionne dans les deux sens<br>
 <img src="https://i.imgur.com/BxRYKZl.png" alt=""></p>
+<h3 id="wireshark">6. Wireshark</h3>
+<p>Résultats ping dans Wireshark :<br>
+<img src="https://i.imgur.com/3Rc3Mcu.png" alt=""></p>
+<p>Résultats netcat dans Wireshark avec quelques messages envoyés :<br>
+<img src="https://i.imgur.com/qvgdneN.png" alt=""></p>
+<h3 id="firewall">7. Firewall</h3>
+<h4 id="pour-autoriser-les-ping">Pour autoriser les ping</h4>
+<p>On part dans les paramètres du pare-feu Windows pour ajouter une règle de connexion entrante.<br>
+Dans les options on sélectionne : Personnalisée &gt; Tous les programmes<br>
+Type de protocole : ICMPv4 (Requêtes d’écho)<br>
+Sélectionner les adresses IP autorisées (toutes ou aucunes)<br>
+Sélectionner les domaines<br>
+Mettre un nom et une description<br>
+Boum les pings rentrent<br>
+Répéter sur le second ordinateur si l’on veut que les ping fonctionnent dans les deux sens</p>
+<h4 id="pour-autoriser-netcat">Pour autoriser netcat</h4>
+<p>Même chose, on ajoute une règle de trafic entrant dans le firewall<br>
+Dans les options on sélectionne : Port &gt; Tous les programmes<br>
+TCP ou UDP (peu importe)<br>
+Ports locaux spécifiques : on en choisit un (ici 1337)<br>
+Autoriser la connexion<br>
+Choisir les domaines<br>
+Bang netcat fonctionne si le port sélectionné dans le cmd est le port autorisé dans le firewall<br>
+<img src="https://i.imgur.com/c5HJcbe.png" alt=""></p>
 <h1 id="iii.-manipulations-dautres-outilsprotocoles-côté-client">III. Manipulations d’autres outils/protocoles côté client</h1>
 <h3 id="dhcp">1. DHCP</h3>
 <ul>
