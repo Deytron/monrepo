@@ -100,4 +100,25 @@ Bang netcat fonctionne si le port sélectionné dans le cmd est le port autoris�
 <img src="https://i.imgur.com/0M6gDre.png" alt="enter image description here"></li>
 <li>Pour demander une nouvelle adresse IP au DHCP sur Windows, il faut utiliser <code>ipconfig /renew</code></li>
 </ul>
+<h3 id="dns">2. DNS</h3>
+<p>Pour trouver le DNS utilisé par notre ordinateur, on utilise <code>ipconfig /all</code> et on regarde à la ligne de la carte réseau sans fil <code>Serveur DNS</code> :</p>
+<p>Serveurs DNS. . .  . . . . . . . . . . : 192.168.1.254<br>
+1.1.1.1<br>
+On effectue un <code>nslookup</code> pour <a href="http://google.com">google.com</a> et <a href="http://ynov.com">ynov.com</a>, ce qui nous renverra l’adresse correspondante :<br>
+<a href="http://google.com">google.com</a><br>
+Serveur :   bbox.lan<br>
+Address:  192.168.1.254</p>
+<p>Réponse ne faisant pas autorité :<br>
+Nom :    <a href="http://google.com">google.com</a><br>
+Addresses:  2a00:1450:4007:80a::200e<br>
+216.58.204.110</p>
+<p>Réponse ne faisant pas autorité :<br>
+Nom :    <a href="http://ynov.com">ynov.com</a><br>
+Address:  217.70.184.38</p>
+<p>On utilise <code>nslookup</code> de manière inversée cette fois en rentrant l’adresse IP plutôt que le nom de domaine :</p>
+<p>Nom :    <a href="http://host-78-74-21-21.homerun.telia.com">host-78-74-21-21.homerun.telia.com</a><br>
+Address:  78.74.21.21</p>
+<p>Nom :    <a href="http://apoitiers-654-1-167-88.w92-146.abo.wanadoo.fr">apoitiers-654-1-167-88.w92-146.abo.wanadoo.fr</a><br>
+Address:  92.146.54.88<br>
+Le DNS renvoie bien quelque chose, mais ces adresses random sont inaccessibles.</p>
 
