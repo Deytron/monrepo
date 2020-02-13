@@ -60,12 +60,58 @@
 </code></pre>
 <p>Pour changer l’IP, on se rend dans <code>cd /etc/sysconfig/network-scripts</code><br>
 Pour changer l’IP de la carte réseau hôte, on va modifier via vim le fichier <code>ifcfg-enp0s8</code> et changer l’adresse à la ligne <code>IPADDR="10.2.1.4"</code>. On va la changer en <code>IPADDR="10.2.1.5"</code>.</p>
-<p>On fait un  <code>service network restart</code> pour redémarrer le service réseau et boum</p>
+<p>On fait un  <code>service network restart</code> pour redémarrer le service réseau et boum l’IP est changée</p>
 <pre class=" language-bash"><code class="prism  language-bash">3: enp0s8: <span class="token operator">&lt;</span>BROADCAST,MULTICAST,UP,LOWER_UP<span class="token operator">&gt;</span> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
     link/ether 08:00:27:86:f1:fb brd ff:ff:ff:ff:ff:ff
     inet 10.2.1.5/24 brd 10.2.1.255 scope global noprefixroute enp0s8
        valid_lft forever preferred_lft forever
     inet6 fe80::c87c:9447:9db2:38f9/64 scope <span class="token function">link</span> noprefixroute
        valid_lft forever preferred_lft forever
+</code></pre>
+<p>On test un ping</p>
+<pre class=" language-powershell"><code class="prism  language-powershell"><span class="token function">PS</span> C:\Windows\system32&gt; ping 10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>1<span class="token punctuation">.</span>5
+
+Envoi d’une requête <span class="token string">'Ping'</span>  10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>1<span class="token punctuation">.</span>5 avec 32 octets de données :
+Réponse de 10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>1<span class="token punctuation">.</span>5 : octets=32 temps&lt;1ms TTL=64
+Réponse de 10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>1<span class="token punctuation">.</span>5 : octets=32 temps=1 ms TTL=64
+Réponse de 10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>1<span class="token punctuation">.</span>5 : octets=32 temps&lt;1ms TTL=64
+Réponse de 10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>1<span class="token punctuation">.</span>5 : octets=32 temps&lt;1ms TTL=64
+
+Statistiques Ping pour 10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>1<span class="token punctuation">.</span>5:
+   Paquets : envoyés = 4<span class="token punctuation">,</span> reçus = 4<span class="token punctuation">,</span> perdus = 0 <span class="token punctuation">(</span>perte 0<span class="token operator">%</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+Durée approximative des boucles en millisecondes :
+   Minimum = 0ms<span class="token punctuation">,</span> Maximum = 1ms<span class="token punctuation">,</span> Moyenne = 0ms
+</code></pre>
+<h3 id="appréhension-de-quelques-commandes">5. Appréhension de quelques commandes</h3>
+<p>On lance un petit scan</p>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment">#  nmap -A 10.2.1.5</span>
+
+Starting Nmap 6.40 <span class="token punctuation">(</span> http://nmap.org <span class="token punctuation">)</span> at 2020-02-13 15:40 CET
+Nmap scan report <span class="token keyword">for</span> 10.2.1.5
+Host is up <span class="token punctuation">(</span>0.00015s latency<span class="token punctuation">)</span>.
+Not shown: 999 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp <span class="token function">open</span>  <span class="token function">ssh</span>     OpenSSH 7.4 <span class="token punctuation">(</span>protocol 2.0<span class="token punctuation">)</span>
+<span class="token operator">|</span> ssh-hostkey: 2048 d6:21:5e:21:1e:ac:14:bd:0f:b7:2e:0a:1e:c8:8c:a9 <span class="token punctuation">(</span>RSA<span class="token punctuation">)</span>
+<span class="token operator">|</span>_256 8b:a3:1d:26:60:10:ab:e1:6e:9b:2e:bb:67:e7:66:43 <span class="token punctuation">(</span>ECDSA<span class="token punctuation">)</span>
+Device type: general purpose
+Running: Linux 3.X
+OS CPE: cpe:/o:linux:linux_kernel:3
+OS details: Linux 3.7 - 3.9
+Network Distance: 0 hops
+
+OS and Service detection performed. Please report any incorrect results at http://nmap.org/submit/ <span class="token keyword">.</span>
+Nmap done: 1 IP address <span class="token punctuation">(</span>1 host up<span class="token punctuation">)</span> scanned <span class="token keyword">in</span> 2.97 seconds
+</code></pre>
+<p>On scanne les ports TCP/UDP en écoute</p>
+<pre class=" language-powershell"><code class="prism  language-powershell"><span class="token namespace">[root@localhost ~]</span><span class="token comment"># ss -l -t -u</span>
+Netid  State      Recv<span class="token operator">-</span>Q Send<span class="token operator">-</span>Q                             Local Address:Port                                              Peer Address:Port
+udp    UNCONN     0      0                                              <span class="token operator">*</span>:bootpc                                                       <span class="token operator">*</span>:<span class="token operator">*</span>
+udp    UNCONN     0      0                                      127<span class="token punctuation">.</span>0<span class="token punctuation">.</span>0<span class="token punctuation">.</span>1:323                                                          <span class="token operator">*</span>:<span class="token operator">*</span>
+udp    UNCONN     0      0                                          <span class="token punctuation">[</span>::1<span class="token punctuation">]</span>:323                                                       <span class="token punctuation">[</span>::<span class="token punctuation">]</span>:<span class="token operator">*</span>
+tcp    LISTEN     0      100                                    127<span class="token punctuation">.</span>0<span class="token punctuation">.</span>0<span class="token punctuation">.</span>1:smtp                                                         <span class="token operator">*</span>:<span class="token operator">*</span>
+tcp    LISTEN     0      128                                            <span class="token operator">*</span>:ssh                                                          <span class="token operator">*</span>:<span class="token operator">*</span>
+tcp    LISTEN     0      100                                        <span class="token punctuation">[</span>::1<span class="token punctuation">]</span>:smtp                                                      <span class="token punctuation">[</span>::<span class="token punctuation">]</span>:<span class="token operator">*</span>
+tcp    LISTEN     0      128                                         <span class="token punctuation">[</span>::<span class="token punctuation">]</span>:ssh                                                       <span class="token punctuation">[</span>::<span class="token punctuation">]</span>:<span class="token operator">*</span>
 </code></pre>
 
