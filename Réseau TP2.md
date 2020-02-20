@@ -131,5 +131,33 @@ LISTEN     0      128                                            <span class="to
 <p>On peut voir la ligne <code>ssh</code> présente.<br>
 Pour modifier le port du service SSH, il faut se rendre dans <code>/etc/ssh</code> et modifier le fichier <code>sshd_config</code></p>
 <p>A la ligne <code># Port 22</code>, on enlève le # et on met le port souhaité, (moi j’ai mis 2222) on sauvegarde, on redémarre le service SSH via <code>systemctl</code> et on observe que ça marche pas yes. La firewall bloque le nouveau port du SSH, CentOS a un firewall de base. Du coup on va ouvrir le port correspondant du firewall.</p>
-<p>Pour se faire, on va tout simplement taper la commande <code>sudo firewall-cmd --add-port=2222/tcp --permanent</code> pour ajouter le port 2222 aux ports autorisés par le firewall.</p>
+<p>Pour se faire, on va tout simplement taper la commande <code>sudo firewall-cmd --add-port=2222/tcp --permanent</code> pour ajouter le port 2222 aux ports autorisés par le firewall. Puis on recharge le tout avec la commande <code>sudo firewall-cmd --reload</code>.<br>
+Boum, le port est ouvert</p>
+<pre class=" language-powershell"><code class="prism  language-powershell"><span class="token namespace">[root@localhost ~]</span><span class="token comment"># sudo firewall-cmd --list-all</span>
+public <span class="token punctuation">(</span>active<span class="token punctuation">)</span>
+  target: default
+  icmp<span class="token operator">-</span>block<span class="token operator">-</span>inversion: no
+  interfaces: enp0s3 enp0s8
+  sources:
+  services: dhcpv6<span class="token operator">-</span>client ssh
+  ports: 2222<span class="token operator">/</span>tcp
+  protocols:
+  masquerade: no
+  forward<span class="token operator">-</span>ports:
+  source<span class="token operator">-</span>ports:
+  icmp<span class="token operator">-</span>blocks:
+  rich rules:
+</code></pre>
+<h3 id="b.-netcat">B. Netcat</h3>
+<p>On fait ce qui est demandé de faire et on lance 2 powershell sur le PC.<br>
+On connecte l’un des powershell à la VM avec <code>nc -L -p 1025</code> et sur la VM, on exécute la commande <code>nc 192.168.0.20 1025</code> pour qu’ils puissent communiquer.<br>
+Sur le second powershell, on utilise netstat pour voir les connections entrantes</p>
+<pre class=" language-powershell"><code class="prism  language-powershell"><span class="token function">PS</span> C:\Windows\System32\WindowsPowerShell\v1<span class="token punctuation">.</span>0&gt; netstat
+
+Connexions actives
+
+  Proto  Adresse locale         Adresse distante       État
+  TCP    10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>1<span class="token punctuation">.</span>1:19022         10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>1<span class="token punctuation">.</span>5:ssh           ESTABLISHED
+  <span class="token punctuation">[</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">]</span>
+</code></pre>
 
