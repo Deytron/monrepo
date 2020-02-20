@@ -130,5 +130,6 @@ LISTEN     0      128                                            <span class="to
 </code></pre>
 <p>On peut voir la ligne <code>ssh</code> présente.<br>
 Pour modifier le port du service SSH, il faut se rendre dans <code>/etc/ssh</code> et modifier le fichier <code>sshd_config</code></p>
-<p>A la ligne <code># Port 22</code>, on enlève le # et on met le port souhaité, on sauvegarde, on redémarre le service SSH via <code>systemctl</code> et on observe que ça marche pas yes. Mais c’est normal.</p>
+<p>A la ligne <code># Port 22</code>, on enlève le # et on met le port souhaité, (moi j’ai mis 2222) on sauvegarde, on redémarre le service SSH via <code>systemctl</code> et on observe que ça marche pas yes. La firewall bloque le nouveau port du SSH, CentOS a un firewall de base. Du coup on va ouvrir le port correspondant du firewall.</p>
+<p>Pour se faire, on va tout simplement taper la commande <code>sudo firewall-cmd --add-port=2222/tcp --permanent</code> pour ajouter le port 2222 aux ports autorisés par le firewall.</p>
 
