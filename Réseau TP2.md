@@ -31,7 +31,7 @@
 </tr>
 <tr>
 <td>enp0s8</td>
-<td>10.2.1.2</td>
+<td>10.2.1.4</td>
 <td>08:00:27:86:f1:fb</td>
 <td>Carte réseau privé hôte</td>
 </tr>
@@ -159,5 +159,23 @@ Connexions actives
   Proto  Adresse locale         Adresse distante       État
   TCP    10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>1<span class="token punctuation">.</span>1:19022         10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>1<span class="token punctuation">.</span>5:ssh           ESTABLISHED
   <span class="token punctuation">[</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">]</span>
+</code></pre>
+<h2 id="iii.-routage-statique">III. Routage statique</h2>
+<p>On a modifié nos réseaux Host-Only dans les paramètres VirtualBox et changé les IP dans nos VM.<br>
+Ping de PC1 à PC2 :</p>
+<pre class=" language-powershell"><code class="prism  language-powershell">ping 10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>12<span class="token punctuation">.</span>2
+
+Envoi d’une requête <span class="token string">'Ping'</span>  10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>12<span class="token punctuation">.</span>2 avec 32 octets de données :
+Réponse de 10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>12<span class="token punctuation">.</span>2 : octets=32 temps=2 ms TTL=128
+Réponse de 10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>12<span class="token punctuation">.</span>2 : octets=32 temps=1 ms TTL=128
+Réponse de 10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>12<span class="token punctuation">.</span>2 : octets=32 temps=1 ms TTL=128
+Réponse de 10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>12<span class="token punctuation">.</span>2 : octets=32 temps=1 ms TTL=128
+</code></pre>
+<p>Ping de PC2 à PC1 :</p>
+<pre class=" language-powershell"><code class="prism  language-powershell"><span class="token function">PS</span> C:\Users\mat33&gt; ping 10<span class="token punctuation">.</span>02<span class="token punctuation">.</span>12<span class="token punctuation">.</span>1                                                                                                                                                                                                              Envoi d’une requête <span class="token string">'Ping'</span>  10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>12<span class="token punctuation">.</span>1 avec 32 octets de données :
+Réponse de 10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>12<span class="token punctuation">.</span>1 : octets=32 temps=1 ms TTL=128
+Réponse de 10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>12<span class="token punctuation">.</span>1 : octets=32 temps=1 ms TTL=128
+Réponse de 10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>12<span class="token punctuation">.</span>1 : octets=32 temps=1 ms TTL=128
+Réponse de 10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>12<span class="token punctuation">.</span>1 : octets=32 temps=1 ms TTL=128       
 </code></pre>
 
