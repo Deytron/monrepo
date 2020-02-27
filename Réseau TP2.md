@@ -195,4 +195,6 @@ Routage de PC1 à PC2 :</p>
 <pre class=" language-powershell"><code class="prism  language-powershell"><span class="token function">PS</span> C:\WINDOWS\system32&gt; route add 10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>12<span class="token punctuation">.</span>1<span class="token operator">/</span> mask 255<span class="token punctuation">.</span>255<span class="token punctuation">.</span>255<span class="token punctuation">.</span>0  10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>1<span class="token punctuation">.</span>1 
  OK<span class="token operator">!</span>
 </code></pre>
+<p>On doit maintenant ping les VM, on ajotue donc des rotues à CentOS:<br>
+<code>sudo route add 10.2.2.1/24 via 10.2.12.2 dev enp0s8</code></p>
 
