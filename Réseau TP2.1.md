@@ -187,8 +187,8 @@ PING 10.2.12.1 (10.2.12.1) 56(84) bytes of data.
 ^C64 bytes from 10.2.12.1: icmp_seq=3 ttl=127 time=1.67 ms
 </code></pre>
 
-Avec le PC1 sous Linux, j'ai utilisé la commande `sudo sysctl -w net.ipv4.conf.all.forwarding=1` pour activer le routage. Le PC2 
+Avec le PC1 sous Linux, j'ai utilisé la commande `sudo sysctl -w net.ipv4.conf.all.forwarding=1` pour activer le routage. Le PC2 étant sous Windows, nous avons mis la clé `IPEnableRouting` sur 1
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NjM3MDA3NCwtMTI4MzA5Nzk2OF19
+eyJoaXN0b3J5IjpbMTU2MzY0MDI2MiwtMTI4MzA5Nzk2OF19
 -->
