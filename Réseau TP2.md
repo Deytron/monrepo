@@ -5,6 +5,7 @@
 
 <h1 id="tp-2---machine-virtuelle-réseau-serveurs-routage-simple">TP 2 - Machine virtuelle, réseau, serveurs, routage simple</h1>
 <h3 id="configuration-réseau-dune-machine-centos">4. Configuration réseau d’une machine CentOS</h3>
+<h4 id="tp-fait-avec-mattéo-christophe">TP Fait avec Mattéo Christophe</h4>
 <p>Liste des cartes réseau</p>
 
 <table>
@@ -172,10 +173,18 @@ Réponse de 10<span class="token punctuation">.</span>2<span class="token punctu
 Réponse de 10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>12<span class="token punctuation">.</span>2 : octets=32 temps=1 ms TTL=128
 </code></pre>
 <p>Ping de PC2 à PC1 :</p>
-<pre class=" language-powershell"><code class="prism  language-powershell"><span class="token function">PS</span> C:\Users\mat33&gt; ping 10<span class="token punctuation">.</span>02<span class="token punctuation">.</span>12<span class="token punctuation">.</span>1                                                                                                                                                                                                              Envoi d’une requête <span class="token string">'Ping'</span>  10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>12<span class="token punctuation">.</span>1 avec 32 octets de données :
+<pre class=" language-powershell"><code class="prism  language-powershell"><span class="token function">PS</span> C:\Users\mat33&gt; ping 10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>12<span class="token punctuation">.</span>1                                                                                                                                                                                                              Envoi d’une requête <span class="token string">'Ping'</span>  10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>12<span class="token punctuation">.</span>1 avec 32 octets de données :
 Réponse de 10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>12<span class="token punctuation">.</span>1 : octets=32 temps=1 ms TTL=128
 Réponse de 10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>12<span class="token punctuation">.</span>1 : octets=32 temps=1 ms TTL=128
 Réponse de 10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>12<span class="token punctuation">.</span>1 : octets=32 temps=1 ms TTL=128
 Réponse de 10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>12<span class="token punctuation">.</span>1 : octets=32 temps=1 ms TTL=128       
 </code></pre>
+<p>Ping de VM1 à PC1:</p>
+<pre><code>[root@localhost ~]# ping 10.2.12.1
+PING 10.2.12.1 (10.2.12.1) 56(84) bytes of data.
+64 bytes from 10.2.12.1: icmp_seq=1 ttl=127 time=0.879 ms
+64 bytes from 10.2.12.1: icmp_seq=2 ttl=127 time=1.69 ms
+^C64 bytes from 10.2.12.1: icmp_seq=3 ttl=127 time=1.67 ms
+</code></pre>
+<p>Ping de VM2 à PC2:</p>
 
