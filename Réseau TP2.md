@@ -186,9 +186,13 @@ PING 10.2.12.1 (10.2.12.1) 56(84) bytes of data.
 64 bytes from 10.2.12.1: icmp_seq=2 ttl=127 time=1.69 ms
 ^C64 bytes from 10.2.12.1: icmp_seq=3 ttl=127 time=1.67 ms
 </code></pre>
+<p>Avec les deux PC sous Windows, on a fait la manip dans le registre pour activer le routage et activé le service, qui était désactivé de base (on l’a mis en manuel)<br>
+Routage de PC1 à PC2 :</p>
+<pre class=" language-powershell"><code class="prism  language-powershell"><span class="token function">PS</span> C:\Windows\system32&gt; route add 10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>2<span class="token punctuation">.</span>2<span class="token operator">/</span>24 mask 255<span class="token punctuation">.</span>255<span class="token punctuation">.</span>255<span class="token punctuation">.</span>0 10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>12<span class="token punctuation">.</span>2
+ OK<span class="token operator">!</span>
+</code></pre>
+<p>Routage de PC2 à PC1:</p>
+<pre class=" language-powershell"><code class="prism  language-powershell"><span class="token function">PS</span> C:\WINDOWS\system32&gt; route add 10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>12<span class="token punctuation">.</span>1<span class="token operator">/</span> mask 255<span class="token punctuation">.</span>255<span class="token punctuation">.</span>255<span class="token punctuation">.</span>0  10<span class="token punctuation">.</span>2<span class="token punctuation">.</span>1<span class="token punctuation">.</span>1 
+ OK<span class="token operator">!</span>
+</code></pre>
 
-Avec le PC1 sous Linux, j'ai utilisé la commande `sudo sysctl -w net.ipv4.conf.all.forwarding=1` pour activer le routage. Le PC2 étant sous Windows, nous avons mis la clé `IPEnableRouting` sur 1
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MzY0MDI2MiwtMTI4MzA5Nzk2OF19
--->
