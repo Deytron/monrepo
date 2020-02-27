@@ -188,3 +188,6 @@ PING 10.2.12.1 (10.2.12.1) 56(84) bytes of data.
 </code></pre>
 <p>Ping de VM2 à PC2:</p>
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEyODMwOTc5NjhdfQ==
+-->
