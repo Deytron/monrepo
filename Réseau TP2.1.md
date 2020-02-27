@@ -186,8 +186,9 @@ PING 10.2.12.1 (10.2.12.1) 56(84) bytes of data.
 64 bytes from 10.2.12.1: icmp_seq=2 ttl=127 time=1.69 ms
 ^C64 bytes from 10.2.12.1: icmp_seq=3 ttl=127 time=1.67 ms
 </code></pre>
-<p>Ping de VM2 à PC2:</p>
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODMwOTc5NjhdfQ==
+eyJoaXN0b3J5IjpbMjAzMzY2NjgwMiwtMTI4MzA5Nzk2OF19
 -->
