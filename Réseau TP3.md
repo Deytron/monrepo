@@ -86,9 +86,15 @@ LISTEN 0 128 [::]:7777 [::]:*
 ````
 Router `ss -ltn` :
 ````bash
-
+[lemalgache@router ~]$ ss -ltn  
+State Recv-Q Send-Q Local Address:Port Peer Address:Port  
+LISTEN 0 100 127.0.0.1:25 *:*  
+LISTEN 0 128 *:7777 *:*  
+LISTEN 0 100 [::1]:25 [::]:*  
+LISTEN 0 128 [::]:7777 [::]:*
+````
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0MzU2NTIwMSwxMjI2NTQ2MDYyLC04MT
-IzNTcwMzEsMjQ3MjM0MDAsLTE0MzE3Mjk0MjUsLTE2MzA2NTYy
-N119
+eyJoaXN0b3J5IjpbMTg5NDkzMzEwLDEyMjY1NDYwNjIsLTgxMj
+M1NzAzMSwyNDcyMzQwMCwtMTQzMTcyOTQyNSwtMTYzMDY1NjI3
+XX0=
 -->
