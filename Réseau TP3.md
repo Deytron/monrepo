@@ -93,10 +93,16 @@ LISTEN 0 128 *:7777 *:*
 LISTEN 0 100 [::1]:25 [::]:*  
 LISTEN 0 128 [::]:7777 [::]:*
 ````
+**Pare-feu activé et configuré**
 
-````b
+Client 1 `firewalld-cmd` :
+````bash
+[lemalgache@client1 ~]$ sudo firewall-cmd --list-ports  
+[sudo] Mot de passe de lemalgache :  
+7777/tcp
+````
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzE3MTI0MjQsMTg5NDkzMzEwLDEyMj
+eyJoaXN0b3J5IjpbLTE0NjA3ODkzOTksMTg5NDkzMzEwLDEyMj
 Y1NDYwNjIsLTgxMjM1NzAzMSwyNDcyMzQwMCwtMTQzMTcyOTQy
 NSwtMTYzMDY1NjI3XX0=
 -->
