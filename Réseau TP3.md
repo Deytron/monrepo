@@ -20,7 +20,7 @@ valid_lft forever preferred_lft forever
 inet6 fe80::a00:27ff:fef7:2585/64 scope link noprefixroute  
 valid_lft forever preferred_lft forever
 ````
-Server1 `ip a` :
+Server 1 `ip a` :
 ````bash
 [lemalgache@server1 ~]$ ip a  
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000  
@@ -62,7 +62,22 @@ valid_lft forever preferred_lft forever
 inet6 fe80::a00:27ff:fe2b:4456/64 scope link noprefixroute  
 valid_lft forever preferred_lft forever
 ````
+
+**Serveur SSH fonctionnel qui écoute sur le port `7777/tcp`**
+
+Client 1 `ss -ltn` :
+````bash
+[lemalgache@client1 ~]$ ss -ltn  
+State Recv-Q Send-Q Local Address:Port Peer Address:Port  
+LISTEN 0 100 127.0.0.1:25 *:*  
+LISTEN 0 128 *:7777 *:*  
+LISTEN 0 100 [::1]:25 [::]:*  
+LISTEN 0 128 [::]:7777 [::]:*
+````
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyNjU0NjA2MiwtODEyMzU3MDMxLDI0Nz
-IzNDAwLC0xNDMxNzI5NDI1LC0xNjMwNjU2MjddfQ==
+eyJoaXN0b3J5IjpbLTE3MTcwNjc5MjIsMTIyNjU0NjA2MiwtOD
+EyMzU3MDMxLDI0NzIzNDAwLC0xNDMxNzI5NDI1LC0xNjMwNjU2
+MjddfQ==
 -->
