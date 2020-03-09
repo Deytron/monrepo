@@ -1,7 +1,24 @@
 # TP 3 - Routage, ARP, Spéléologie réseau
 #### **Prouvez que chacun des points de la préparation de l'environnement ci-dessus ont été respectés** :
+**Carte NAT désactivée** :
+Client 1 `ip a`
+````bash
+[lemalgache@client1 ~]$ ip a  
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000  
+link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00  
+inet 127.0.0.1/8 scope host lo  
+valid_lft forever preferred_lft forever  
+inet6 ::1/128 scope host  
+valid_lft forever preferred_lft forever  
+2: enp0s8: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000  
+link/ether 08:00:27:f7:25:85 brd ff:ff:ff:ff:ff:ff  
+inet 10.3.1.11/24 brd 10.3.1.255 scope global noprefixroute enp0s8  
+valid_lft forever preferred_lft forever  
+inet6 fe80::a00:27ff:fef7:2585/64 scope link noprefixroute  
+valid_lft forever preferred_lft forever
+````
+Server 1 `ip a`
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODU3MzY3NjUsLTE5NzEwNjExMDRdfQ
-==
+eyJoaXN0b3J5IjpbLTE2MzA2NTYyN119
 -->
