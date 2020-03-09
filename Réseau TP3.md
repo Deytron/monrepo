@@ -101,8 +101,20 @@ Client 1 `firewalld-cmd` :
 [sudo] Mot de passe de lemalgache :  
 7777/tcp
 ````
+Server 1 `firewalld-cmd` :
+````bash
+[lemalgache@server1 ~]$ sudo firewall-cmd --list-ports  
+[sudo] Mot de passe de lemalgache :  
+7777/tcp
+````
+Router `firewalld-cmd` :
+````bash
+[lemalgache@router ~]$ sudo firewall-cmd --list-ports  
+[sudo] Mot de passe de lemalgache :  
+7777/tcp
+````
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjA3ODkzOTksMTg5NDkzMzEwLDEyMj
-Y1NDYwNjIsLTgxMjM1NzAzMSwyNDcyMzQwMCwtMTQzMTcyOTQy
-NSwtMTYzMDY1NjI3XX0=
+eyJoaXN0b3J5IjpbMTY0NzQyNTA3OSwxODk0OTMzMTAsMTIyNj
+U0NjA2MiwtODEyMzU3MDMxLDI0NzIzNDAwLC0xNDMxNzI5NDI1
+LC0xNjMwNjU2MjddfQ==
 -->
