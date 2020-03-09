@@ -198,3 +198,6 @@ Routage de PC1 à PC2 :</p>
 <p>On doit maintenant ping les VM, on ajotue donc des rotues à CentOS:<br>
 <code>sudo route add 10.2.2.1/24 via 10.2.12.2 dev enp0s8</code></p>
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjY1NDM4NDEyXX0=
+-->
