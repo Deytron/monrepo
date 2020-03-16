@@ -545,10 +545,13 @@ Commercial support is available at
 <p><em>Thank you for using nginx.</em></p>  
 </body>  
 </html>
-```
-Et bim ça marche
+````
+Et bim ça marche, même dans un navigateur web
+![](https://i.imgur.com/s9V3LQ9.png)
+
+Fin du TP j'ai dead ca chakal
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4ODczMTI4Myw2OTk3OTI4NTEsLTk2Mj
+eyJoaXN0b3J5IjpbLTE0NzI1MTgxMiw2OTk3OTI4NTEsLTk2Mj
 EwNDk3NiwxODk0NjYyNzc1LDE0OTYwNTA2NTgsLTE3Mzk2NDYy
 MzUsLTE5NTg1ODEzODYsLTEzMDg0ODIyODgsMTA1ODYxNTM2Ny
 wtODA0NjUwMjc2LC0yMTQwODI1ODk0LDExNjEzOTU0NTcsMTQ0
