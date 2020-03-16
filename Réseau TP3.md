@@ -507,13 +507,18 @@ On observe que le tcpdump utilise le protocole TCP pour faire transiter les donn
 ## [](#1-arp-cache-poisoning)1. ARP cache poisoning
 On va utiliser un petit package pour faire de l'ARP Poisoning qui est arping.
 J'ai créé une nouvelle VM que j'ai appelée client2, et je l'ai paramétrée pour utiliser l'IP 10.3.1.12.
-arping est installé de base avec CentOS
+Avant tout, on check la table ARP de base du client1 :
+````bash
+[lemalgache@client1 ~]$ ip n  
+10.3.1.1 dev enp0s8 lladdr 0a:00:27:00:00:00 DELAY
+````
+arping est installé de base avec CentOS. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTg1ODEzODYsLTEzMDg0ODIyODgsMT
-A1ODYxNTM2NywtODA0NjUwMjc2LC0yMTQwODI1ODk0LDExNjEz
-OTU0NTcsMTQ0NDAzNDc4NSw5OTg4OTA4NjAsMTYwMzAwODExLC
-0xOTQxMTI2OTAxLDM5NjUzODQzMSwxNTM4NjIyMTEwLDEyOTA5
-Mzc0NCw0Njc1NjU1NzAsMTE4MTU3NjU5MSwxNjQxOTk4OTMxLD
-c4Mjc2ODY0LC0yMDAzNDIyMzA5LC03NTExNzY3NzEsLTEwNDU4
-NzUzMzZdfQ==
+eyJoaXN0b3J5IjpbLTE3Mzk2NDYyMzUsLTE5NTg1ODEzODYsLT
+EzMDg0ODIyODgsMTA1ODYxNTM2NywtODA0NjUwMjc2LC0yMTQw
+ODI1ODk0LDExNjEzOTU0NTcsMTQ0NDAzNDc4NSw5OTg4OTA4Nj
+AsMTYwMzAwODExLC0xOTQxMTI2OTAxLDM5NjUzODQzMSwxNTM4
+NjIyMTEwLDEyOTA5Mzc0NCw0Njc1NjU1NzAsMTE4MTU3NjU5MS
+wxNjQxOTk4OTMxLDc4Mjc2ODY0LC0yMDAzNDIyMzA5LC03NTEx
+NzY3NzFdfQ==
 -->
