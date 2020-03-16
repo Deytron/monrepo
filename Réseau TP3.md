@@ -334,13 +334,14 @@ On va faire un schéma simple.
 Donc déjà le schéma il ressemble à ça :
 
 ![](https://i.imgur.com/F9h7lP3.png)
-Quand le client1 envoie un ping au server1, il passe d'abord par le routeur.
+Quand le client1 envoie un ping au server1, il passe d'abord par le routeur, et il demande "Wsh frérot bien je dois envoyer un ping à 10.3.2.11 c'est qui' et le router répond "tkt pas frérot 10.3.2.11 c'est {adresse MAC}" et du coup il peut envoyer son ping. Même chose du server au client.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwOTkwMzMwNiwxNTM4NjIyMTEwLDEyOT
-A5Mzc0NCw0Njc1NjU1NzAsMTE4MTU3NjU5MSwxNjQxOTk4OTMx
-LDc4Mjc2ODY0LC0yMDAzNDIyMzA5LC03NTExNzY3NzEsLTEwND
-U4NzUzMzYsLTU0MTc4NTk2OCwxOTY3MDEwMjE4LDg5MDIyODQ3
-NSwyMDgwMDQ5MjcsMTM5NjI1Nzc1NiwxODgxNTM2ODEyLC0xMj
-EzMTI2NTUzLC0xODE5MDg0ODk2LDk1MTIyOTgzMiwtMjEyODMy
-NzQ2MF19
+eyJoaXN0b3J5IjpbLTEyMTIyMDcyNzksMTUzODYyMjExMCwxMj
+kwOTM3NDQsNDY3NTY1NTcwLDExODE1NzY1OTEsMTY0MTk5ODkz
+MSw3ODI3Njg2NCwtMjAwMzQyMjMwOSwtNzUxMTc2NzcxLC0xMD
+Q1ODc1MzM2LC01NDE3ODU5NjgsMTk2NzAxMDIxOCw4OTAyMjg0
+NzUsMjA4MDA0OTI3LDEzOTYyNTc3NTYsMTg4MTUzNjgxMiwtMT
+IxMzEyNjU1MywtMTgxOTA4NDg5Niw5NTEyMjk4MzIsLTIxMjgz
+Mjc0NjBdfQ==
 -->
