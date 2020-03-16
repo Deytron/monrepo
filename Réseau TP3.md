@@ -305,13 +305,18 @@ La table ARP de client1 est vide :
 10.3.1.1 dev enp0s8 lladdr 0a:00:27:00:00:00 DELAY
 ```
 On envoie un ping de client1 à server1 et on observer le changement dans la table ARP :
-
+````bash
+[lemalgache@client1 ~]$ ip n  
+10.3.1.254 dev enp0s8 lladdr 08:00:27:29:f4:02 REACHABLE  
+10.3.1.1 dev enp0s8 lladdr 0a:00:27:00:00:00 REACHABLE
+````
+L'adresse de server
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4MDA0OTI3LDEzOTYyNTc3NTYsMTg4MT
-UzNjgxMiwtMTIxMzEyNjU1MywtMTgxOTA4NDg5Niw5NTEyMjk4
-MzIsLTIxMjgzMjc0NjAsLTE4MzczNDQwMTUsMTIwNzU1ODEyNi
-w0MzEyNTY2ODAsLTY5NjgzNzA1Niw1Mjc5MzA3NzksLTE0OTIx
-MDIwODUsMTM1MTMxMjk2LDQwMDU2MjE5MiwxMzY1OTk3NTMwLC
-0xMzA3OTQwMzQ1LDIxMzExMDM1NCwzNjYxNTQ0MDUsMTY0NzQy
-NTA3OV19
+eyJoaXN0b3J5IjpbLTU1ODY3MzAyNSwyMDgwMDQ5MjcsMTM5Nj
+I1Nzc1NiwxODgxNTM2ODEyLC0xMjEzMTI2NTUzLC0xODE5MDg0
+ODk2LDk1MTIyOTgzMiwtMjEyODMyNzQ2MCwtMTgzNzM0NDAxNS
+wxMjA3NTU4MTI2LDQzMTI1NjY4MCwtNjk2ODM3MDU2LDUyNzkz
+MDc3OSwtMTQ5MjEwMjA4NSwxMzUxMzEyOTYsNDAwNTYyMTkyLD
+EzNjU5OTc1MzAsLTEzMDc5NDAzNDUsMjEzMTEwMzU0LDM2NjE1
+NDQwNV19
 -->
