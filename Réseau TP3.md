@@ -113,9 +113,13 @@ Router `firewalld-cmd` :
 [sudo] Mot de passe de lemalgache :  
 7777/tcp
 ````
-
+Nom configuré
+````bash
+[lemalgache@client1 ~]$ hostname  
+client1.net1.tp3
+````
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY2MTU0NDA1LDE2NDc0MjUwNzksMTg5ND
-kzMzEwLDEyMjY1NDYwNjIsLTgxMjM1NzAzMSwyNDcyMzQwMCwt
-MTQzMTcyOTQyNSwtMTYzMDY1NjI3XX0=
+eyJoaXN0b3J5IjpbMjEzMTEwMzU0LDM2NjE1NDQwNSwxNjQ3ND
+I1MDc5LDE4OTQ5MzMxMCwxMjI2NTQ2MDYyLC04MTIzNTcwMzEs
+MjQ3MjM0MDAsLTE0MzE3Mjk0MjUsLTE2MzA2NTYyN119
 -->
