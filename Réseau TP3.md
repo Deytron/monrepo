@@ -234,12 +234,13 @@ PING client1 (10.3.1.11) 56(84) bytes of data.
 2 packets transmitted, 2 received, 0% packet loss, time 1002ms  
 rtt min/avg/max/mdev = 2.326/2.405/2.485/0.093 ms
 ````
+Vérification via `traceroute` sur le router :
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjg4NDk2NzUsNTI3OTMwNzc5LC0xND
-kyMTAyMDg1LDEzNTEzMTI5Niw0MDA1NjIxOTIsMTM2NTk5NzUz
-MCwtMTMwNzk0MDM0NSwyMTMxMTAzNTQsMzY2MTU0NDA1LDE2ND
-c0MjUwNzksMTg5NDkzMzEwLDEyMjY1NDYwNjIsLTgxMjM1NzAz
-MSwyNDcyMzQwMCwtMTQzMTcyOTQyNSwtMTYzMDY1NjI3XX0=
+eyJoaXN0b3J5IjpbMjE0MDQxNjA2NCw1Mjc5MzA3NzksLTE0OT
+IxMDIwODUsMTM1MTMxMjk2LDQwMDU2MjE5MiwxMzY1OTk3NTMw
+LC0xMzA3OTQwMzQ1LDIxMzExMDM1NCwzNjYxNTQ0MDUsMTY0Nz
+QyNTA3OSwxODk0OTMzMTAsMTIyNjU0NjA2MiwtODEyMzU3MDMx
+LDI0NzIzNDAwLC0xNDMxNzI5NDI1LC0xNjMwNjU2MjddfQ==
 -->
