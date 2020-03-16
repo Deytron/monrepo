@@ -129,9 +129,11 @@ Router `hostname` :
 ````bash
 [lemalgache@router ~]$ hostname  
 router.tp3
-`
+````
+**Fichiers `/etc/hosts` de toutes les machines configurés**
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTYxOTAzMzcsMjEzMTEwMzU0LDM2Nj
+eyJoaXN0b3J5IjpbLTEzMDc5NDAzNDUsMjEzMTEwMzU0LDM2Nj
 E1NDQwNSwxNjQ3NDI1MDc5LDE4OTQ5MzMxMCwxMjI2NTQ2MDYy
 LC04MTIzNTcwMzEsMjQ3MjM0MDAsLTE0MzE3Mjk0MjUsLTE2Mz
 A2NTYyN119
