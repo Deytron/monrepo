@@ -242,11 +242,12 @@ traceroute to client1 (10.3.1.11), 30 hops max, 60 byte packets
 [lemalgache@router ~]$ traceroute server1  
 traceroute to server1 (10.3.2.11), 30 hops max, 60 byte packets  
 1 server1 (10.3.2.11) 1.304 ms !X 1.172 ms !X 1.084 ms !X
+````
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTU2NTk4ODYsNTI3OTMwNzc5LC0xND
-kyMTAyMDg1LDEzNTEzMTI5Niw0MDA1NjIxOTIsMTM2NTk5NzUz
-MCwtMTMwNzk0MDM0NSwyMTMxMTAzNTQsMzY2MTU0NDA1LDE2ND
-c0MjUwNzksMTg5NDkzMzEwLDEyMjY1NDYwNjIsLTgxMjM1NzAz
-MSwyNDcyMzQwMCwtMTQzMTcyOTQyNSwtMTYzMDY1NjI3XX0=
+eyJoaXN0b3J5IjpbLTY5NjgzNzA1Niw1Mjc5MzA3NzksLTE0OT
+IxMDIwODUsMTM1MTMxMjk2LDQwMDU2MjE5MiwxMzY1OTk3NTMw
+LC0xMzA3OTQwMzQ1LDIxMzExMDM1NCwzNjYxNTQ0MDUsMTY0Nz
+QyNTA3OSwxODk0OTMzMTAsMTIyNjU0NjA2MiwtODEyMzU3MDMx
+LDI0NzIzNDAwLC0xNDMxNzI5NDI1LC0xNjMwNjU2MjddfQ==
 -->
