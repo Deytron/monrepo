@@ -360,9 +360,32 @@ J'ai ensuite configuré le serveur DNS en ajoutant `1.1.1.1` au fichier `/etc/re
 < Location: https://gitlab.com/  
 <  
 * Connection #0 to host gitlab.com left intact
-* ``|
+````
+````bash
+[lemalgache@client1 ~]$ dig gitlab.com  
+  
+; <<>> DiG 9.11.4-P2-RedHat-9.11.4-9.P2.el7 <<>> gitlab.com  
+;; global options: +cmd  
+;; Got answer:  
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 36476  
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1  
+  
+;; OPT PSEUDOSECTION:  
+; EDNS: version: 0, flags:; udp: 1452  
+;; QUESTION SECTION:  
+;gitlab.com. IN A  
+  
+;; ANSWER SECTION:  
+gitlab.com. 139 IN A 35.231.145.151  
+  
+;; Query time: 18 msec  
+;; SERVER: 1.1.1.1#53(1.1.1.1)  
+;; WHEN: lun. mars 16 16:42:00 CET 2020  
+;; MSG SIZE rcvd: 55
+````
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NjM2NzAwNiwtMTk0MTEyNjkwMSwzOT
+eyJoaXN0b3J5IjpbMjA5NzUwNTM1MiwtMTk0MTEyNjkwMSwzOT
 Y1Mzg0MzEsMTUzODYyMjExMCwxMjkwOTM3NDQsNDY3NTY1NTcw
 LDExODE1NzY1OTEsMTY0MTk5ODkzMSw3ODI3Njg2NCwtMjAwMz
 QyMjMwOSwtNzUxMTc2NzcxLC0xMDQ1ODc1MzM2LC01NDE3ODU5
