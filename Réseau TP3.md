@@ -465,13 +465,28 @@ Terminé !
 C'est bon elle est là ta locomotive t'es content
 ![](https://i.imgur.com/lUvQWAO.png)
 ## III. Plus de `tcpdump`
+On ouvre le port 9999/tcp sur le firewall et on vérifie que netcat fonctionne :
+````bash
+[lemalgache@client1 ~]$ nc server1 9999  
+wsh le sang on est la  
+la tema  
+bb  
+bebou
+````
+````bash
+[lemalgache@server1 ~]$ nc -l 10.3.2.11 9999  
+wsh le sang on est la  
+la tema  
+bb  
+bebou
+````
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMzAwODExLC0xOTQxMTI2OTAxLDM5Nj
-UzODQzMSwxNTM4NjIyMTEwLDEyOTA5Mzc0NCw0Njc1NjU1NzAs
-MTE4MTU3NjU5MSwxNjQxOTk4OTMxLDc4Mjc2ODY0LC0yMDAzND
-IyMzA5LC03NTExNzY3NzEsLTEwNDU4NzUzMzYsLTU0MTc4NTk2
-OCwxOTY3MDEwMjE4LDg5MDIyODQ3NSwyMDgwMDQ5MjcsMTM5Nj
-I1Nzc1NiwxODgxNTM2ODEyLC0xMjEzMTI2NTUzLC0xODE5MDg0
-ODk2XX0=
+eyJoaXN0b3J5IjpbOTk4ODkwODYwLDE2MDMwMDgxMSwtMTk0MT
+EyNjkwMSwzOTY1Mzg0MzEsMTUzODYyMjExMCwxMjkwOTM3NDQs
+NDY3NTY1NTcwLDExODE1NzY1OTEsMTY0MTk5ODkzMSw3ODI3Nj
+g2NCwtMjAwMzQyMjMwOSwtNzUxMTc2NzcxLC0xMDQ1ODc1MzM2
+LC01NDE3ODU5NjgsMTk2NzAxMDIxOCw4OTAyMjg0NzUsMjA4MD
+A0OTI3LDEzOTYyNTc3NTYsMTg4MTUzNjgxMiwtMTIxMzEyNjU1
+M119
 -->
