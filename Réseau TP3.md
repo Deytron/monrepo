@@ -242,7 +242,7 @@ traceroute to server1 (10.3.2.11), 30 hops max, 60 byte packets
 2 router (10.3.1.254) 0.975 ms !X 0.839 ms !X 0.713 ms !X
 ````
 ## 3. Comprendre le routage
-Pour mettre en évidence le routage, j'ai fait un tcpdump du client vers le serveur. Pour se faire, j'ai utilisé la commande 
+Pour mettre en évidence le routage, j'ai fait un `tcpdump` du client vers le serveur. Pour se faire, j'ai utilisé la commande `sudo tcpdump -i enp0s8 -w capture1.pcap` et `capture2.pcap`
 ````yaml
 ----
 # Packet 84 from /home/lemalgache/Documents/capture1.pcap
@@ -256,7 +256,7 @@ Pour mettre en évidence le routage, j'ai fait un tcpdump du client vers le serv
 
 ````
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzAxNzUwNDEsMTIwNzU1ODEyNiw0Mz
+eyJoaXN0b3J5IjpbLTE1MDEyNTQyMzcsMTIwNzU1ODEyNiw0Mz
 EyNTY2ODAsLTY5NjgzNzA1Niw1Mjc5MzA3NzksLTE0OTIxMDIw
 ODUsMTM1MTMxMjk2LDQwMDU2MjE5MiwxMzY1OTk3NTMwLC0xMz
 A3OTQwMzQ1LDIxMzExMDM1NCwzNjYxNTQ0MDUsMTY0NzQyNTA3
