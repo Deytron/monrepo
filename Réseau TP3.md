@@ -321,10 +321,12 @@ On clean les tables de toutes les machines. Je fais ensuite un ping de client1 √
 ````
 Les adresses sont revenues dans la liste de table du server.
 ### `tcpdump` 1
+Apr√®s avoir fait un dump du client1, on obtient ceci (ouais j'ai fait un screen) :
+![](https://i.imgur.com/mWEyHeN.png)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzQ4NDAyMTIsLTc1MTE3Njc3MSwtMT
+eyJoaXN0b3J5IjpbLTIwMDM0MjIzMDksLTc1MTE3Njc3MSwtMT
 A0NTg3NTMzNiwtNTQxNzg1OTY4LDE5NjcwMTAyMTgsODkwMjI4
 NDc1LDIwODAwNDkyNywxMzk2MjU3NzU2LDE4ODE1MzY4MTIsLT
 EyMTMxMjY1NTMsLTE4MTkwODQ4OTYsOTUxMjI5ODMyLC0yMTI4
