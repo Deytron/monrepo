@@ -514,15 +514,16 @@ Avant tout, on check la table ARP de base du client1 :
 ````
 arping est installé de base avec CentOS. On effectue la commande `sudo arping -c 1 -I enp0s8 10.3.1.11` à partir de client2, ce qui va ajouter l'adresse du client2 à la liste de tables ARP du client1, mais genre tout le temps.
 On check avec Wireshark :
-
-https://images-ext-1.discordapp.net/external/xd54m7JqXpbwOrD9d7Y9MrQbMoLrHn4QZQnaHgqQS7k/https/i.imgur.com/w4mNnDD.png
+![](https://images-ext-1.discordapp.net/external/xd54m7JqXpbwOrD9d7Y9MrQbMoLrHn4QZQnaHgqQS7k/https/i.imgur.com/w4mNnDD.png)
+On voit un "duplicate use of 10.3.1.12".
+## 2. Serveur Web
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg4Mjk3NjA5LDE4OTQ2NjI3NzUsMTQ5Nj
-A1MDY1OCwtMTczOTY0NjIzNSwtMTk1ODU4MTM4NiwtMTMwODQ4
-MjI4OCwxMDU4NjE1MzY3LC04MDQ2NTAyNzYsLTIxNDA4MjU4OT
-QsMTE2MTM5NTQ1NywxNDQ0MDM0Nzg1LDk5ODg5MDg2MCwxNjAz
-MDA4MTEsLTE5NDExMjY5MDEsMzk2NTM4NDMxLDE1Mzg2MjIxMT
-AsMTI5MDkzNzQ0LDQ2NzU2NTU3MCwxMTgxNTc2NTkxLDE2NDE5
-OTg5MzFdfQ==
+eyJoaXN0b3J5IjpbLTk2MjEwNDk3NiwxODk0NjYyNzc1LDE0OT
+YwNTA2NTgsLTE3Mzk2NDYyMzUsLTE5NTg1ODEzODYsLTEzMDg0
+ODIyODgsMTA1ODYxNTM2NywtODA0NjUwMjc2LC0yMTQwODI1OD
+k0LDExNjEzOTU0NTcsMTQ0NDAzNDc4NSw5OTg4OTA4NjAsMTYw
+MzAwODExLC0xOTQxMTI2OTAxLDM5NjUzODQzMSwxNTM4NjIyMT
+EwLDEyOTA5Mzc0NCw0Njc1NjU1NzAsMTE4MTU3NjU5MSwxNjQx
+OTk4OTMxXX0=
 -->
