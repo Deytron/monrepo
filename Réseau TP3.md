@@ -485,9 +485,11 @@ Le 3-way handshake correspond au SYN SYN-ACK ACK. Il est mis en évidence dans W
 ![](https://i.imgur.com/reIAN0Y.png)
 (y a l'ARP au milieu)
 
-On fait la même chose en UDP. Pour se faire
+**UDP** :
+On fait la même chose en UDP. Pour se faire, on fait la même chose mais on ajoute le port 9999/udp et on rajoute `-u` au nc.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMTY1ODc2Myw5OTg4OTA4NjAsMTYwMz
+eyJoaXN0b3J5IjpbMTQ0NDAzNDc4NSw5OTg4OTA4NjAsMTYwMz
 AwODExLC0xOTQxMTI2OTAxLDM5NjUzODQzMSwxNTM4NjIyMTEw
 LDEyOTA5Mzc0NCw0Njc1NjU1NzAsMTE4MTU3NjU5MSwxNjQxOT
 k4OTMxLDc4Mjc2ODY0LC0yMDAzNDIyMzA5LC03NTExNzY3NzEs
