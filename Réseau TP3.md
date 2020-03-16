@@ -244,7 +244,8 @@ traceroute to server1 (10.3.2.11), 30 hops max, 60 byte packets
 ## 3. Comprendre le routage
 Pour mettre en évidence le routage, j'ai fait un `tcpdump` sur le serveur. Pour se faire, j'ai utilisé la commande `sudo tcpdump -i enp0s8/enp0s9 -w capture1/2.pcap`. J'ai laissé tourné, ouvert un autre onglet terminal et fait un `ping client1/server1`. 
 Puis j'ai arrêté la capture et envoyé le fichier de ma VM à ma machine locale avec 
-``sudo scp -r -P 7777 lemalgache@10.3.1.254:/home/lemalgache/capture1/2.pcap /home/lemalgache/Documents``.
+``sudo scp -r -P 7777 lemalgache@10.3.1.254:/home/lemalgache/capture1/2.pcap /home/lemalgache/Documen
+ts``.
 
 
 | Machine | MAC Source        | MAC Destination   | IP Source | IP Destination |
@@ -252,13 +253,14 @@ Puis j'ai arrêté la capture et envoyé le fichier de ma VM à ma machine local
 | net1    | 0a:00:27:00:00:00 | 08:00:27:29:f4:02 | 10.3.1.1  | 10.3.1.254     |
 | net2    | 08:00:27:8f:9f:14 | 08:00:27:2b:44:56 | 10.3.2.11 | 10.3.1.254     |
 
-
+## II. ARP
+### 1. Tables ARP
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyODY3NTE4MywtMjEyODMyNzQ2MCwtMT
-gzNzM0NDAxNSwxMjA3NTU4MTI2LDQzMTI1NjY4MCwtNjk2ODM3
-MDU2LDUyNzkzMDc3OSwtMTQ5MjEwMjA4NSwxMzUxMzEyOTYsND
-AwNTYyMTkyLDEzNjU5OTc1MzAsLTEzMDc5NDAzNDUsMjEzMTEw
-MzU0LDM2NjE1NDQwNSwxNjQ3NDI1MDc5LDE4OTQ5MzMxMCwxMj
-I2NTQ2MDYyLC04MTIzNTcwMzEsMjQ3MjM0MDAsLTE0MzE3Mjk0
-MjVdfQ==
+eyJoaXN0b3J5IjpbOTUxMjI5ODMyLC0yMTI4MzI3NDYwLC0xOD
+M3MzQ0MDE1LDEyMDc1NTgxMjYsNDMxMjU2NjgwLC02OTY4Mzcw
+NTYsNTI3OTMwNzc5LC0xNDkyMTAyMDg1LDEzNTEzMTI5Niw0MD
+A1NjIxOTIsMTM2NTk5NzUzMCwtMTMwNzk0MDM0NSwyMTMxMTAz
+NTQsMzY2MTU0NDA1LDE2NDc0MjUwNzksMTg5NDkzMzEwLDEyMj
+Y1NDYwNjIsLTgxMjM1NzAzMSwyNDcyMzQwMCwtMTQzMTcyOTQy
+NV19
 -->
