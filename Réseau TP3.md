@@ -513,13 +513,16 @@ Avant tout, on check la table ARP de base du client1 :
 10.3.1.1 dev enp0s8 lladdr 0a:00:27:00:00:00 DELAY
 ````
 arping est installé de base avec CentOS. On effectue la commande `sudo arping -c 1 -I enp0s8 10.3.1.11` à partir de client2, ce qui va ajouter l'adresse du client2 à la liste de tables ARP du client1, mais genre tout le temps.
+On check avec Wireshark :
+
+https://images-ext-1.discordapp.net/external/xd54m7JqXpbwOrD9d7Y9MrQbMoLrHn4QZQnaHgqQS7k/https/i.imgur.com/w4mNnDD.png
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NDY2Mjc3NSwxNDk2MDUwNjU4LC0xNz
-M5NjQ2MjM1LC0xOTU4NTgxMzg2LC0xMzA4NDgyMjg4LDEwNTg2
-MTUzNjcsLTgwNDY1MDI3NiwtMjE0MDgyNTg5NCwxMTYxMzk1ND
-U3LDE0NDQwMzQ3ODUsOTk4ODkwODYwLDE2MDMwMDgxMSwtMTk0
-MTEyNjkwMSwzOTY1Mzg0MzEsMTUzODYyMjExMCwxMjkwOTM3ND
-QsNDY3NTY1NTcwLDExODE1NzY1OTEsMTY0MTk5ODkzMSw3ODI3
-Njg2NF19
+eyJoaXN0b3J5IjpbNDg4Mjk3NjA5LDE4OTQ2NjI3NzUsMTQ5Nj
+A1MDY1OCwtMTczOTY0NjIzNSwtMTk1ODU4MTM4NiwtMTMwODQ4
+MjI4OCwxMDU4NjE1MzY3LC04MDQ2NTAyNzYsLTIxNDA4MjU4OT
+QsMTE2MTM5NTQ1NywxNDQ0MDM0Nzg1LDk5ODg5MDg2MCwxNjAz
+MDA4MTEsLTE5NDExMjY5MDEsMzk2NTM4NDMxLDE1Mzg2MjIxMT
+AsMTI5MDkzNzQ0LDQ2NzU2NTU3MCwxMTgxNTc2NTkxLDE2NDE5
+OTg5MzFdfQ==
 -->
