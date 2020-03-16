@@ -278,6 +278,7 @@ Router `ip n` :
 A chaque fois on a en premier l'IP concernée. Ensuite :
 dev = L'interface réseau utilisée (enp0s8/enp0s9)
 lladdr = Link Local Address. Indique l'adresse MAC concernée.
+STALE indique que l'a
 
 ### A. Table ARP 1
 On va commencer par vider la table ARP de client1 et router avec la commande `sudo ip -s -s n flush all`. On vérifie que tout a bien été flush et on est bon toi même tu sais :
@@ -295,10 +296,10 @@ La table ARP de client1 est vide :
 [lemalgache@client1 ~]$ ip n  
 10.3.1.1 dev enp0s8 lladdr 0a:00:27:00:00:00 DELAY
 ```
-On envoie un ping de client1 à server1 :
+On envoie un ping de client1 à server1 et on observer le changement dans la table ARP :
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1MzUxOTE0NCwxODgxNTM2ODEyLC0xMj
+eyJoaXN0b3J5IjpbMTkwNTk3MDAyNCwxODgxNTM2ODEyLC0xMj
 EzMTI2NTUzLC0xODE5MDg0ODk2LDk1MTIyOTgzMiwtMjEyODMy
 NzQ2MCwtMTgzNzM0NDAxNSwxMjA3NTU4MTI2LDQzMTI1NjY4MC
 wtNjk2ODM3MDU2LDUyNzkzMDc3OSwtMTQ5MjEwMjA4NSwxMzUx
