@@ -331,16 +331,16 @@ Après avoir flush toutes les tables ARP, je lance un tcpdump sur verser1 pour v
 Le client demande au router qui a l'adresse 10.3.2.11 (càd le server).
 ### [](#e-u-okay-bro-)E. u okay bro ?
 On va faire un schéma simple.
+Donc déjà le schéma il ressemble à ça :
 
-Donc au moment où je fais sur le client1 la commande `ping server1`, il se passe ça :
-
-
+![](https://i.imgur.com/F9h7lP3.png)
+Quand le client1 envoie un ping au server1, il passe d'abord par le routeur.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzODYyMjExMCwxMjkwOTM3NDQsNDY3NT
-Y1NTcwLDExODE1NzY1OTEsMTY0MTk5ODkzMSw3ODI3Njg2NCwt
-MjAwMzQyMjMwOSwtNzUxMTc2NzcxLC0xMDQ1ODc1MzM2LC01ND
-E3ODU5NjgsMTk2NzAxMDIxOCw4OTAyMjg0NzUsMjA4MDA0OTI3
-LDEzOTYyNTc3NTYsMTg4MTUzNjgxMiwtMTIxMzEyNjU1MywtMT
-gxOTA4NDg5Niw5NTEyMjk4MzIsLTIxMjgzMjc0NjAsLTE4Mzcz
-NDQwMTVdfQ==
+eyJoaXN0b3J5IjpbLTgwOTkwMzMwNiwxNTM4NjIyMTEwLDEyOT
+A5Mzc0NCw0Njc1NjU1NzAsMTE4MTU3NjU5MSwxNjQxOTk4OTMx
+LDc4Mjc2ODY0LC0yMDAzNDIyMzA5LC03NTExNzY3NzEsLTEwND
+U4NzUzMzYsLTU0MTc4NTk2OCwxOTY3MDEwMjE4LDg5MDIyODQ3
+NSwyMDgwMDQ5MjcsMTM5NjI1Nzc1NiwxODgxNTM2ODEyLC0xMj
+EzMTI2NTUzLC0xODE5MDg0ODk2LDk1MTIyOTgzMiwtMjEyODMy
+NzQ2MF19
 -->
