@@ -517,13 +517,42 @@ On check avec Wireshark :
 ![](https://images-ext-1.discordapp.net/external/xd54m7JqXpbwOrD9d7Y9MrQbMoLrHn4QZQnaHgqQS7k/https/i.imgur.com/w4mNnDD.png)
 On voit un "duplicate use of 10.3.1.12".
 ## 2. Serveur Web
-On install Nginx en ajoutant son repo dans la liste des repos yum.
+On install Nginx en ajoutant son repo dans la liste des repos yum. On ajoute le port 80 au firewall, on reload le firewall, on lance le service NGINX avec `sudo systemctl start nginx` et on teste si on peut s'y connecter via le port 80.
+````bash
+[lemalgache@client1 ~]$ curl 10.3.2.11:80  
+<!DOCTYPE html>  
+<html>  
+<head>  
+<title>Welcome to nginx!</title>  
+<style>  
+body {  
+width: 35em;  
+margin: 0 auto;  
+font-family: Tahoma, Verdana, Arial, sans-serif;  
+}  
+</style>  
+</head>  
+<body>  
+<h1>Welcome to nginx!</h1>  
+<p>If you see this page, the nginx web server is successfully installed and  
+working. Further configuration is required.</p>  
+  
+<p>For online documentation and support please refer to  
+<a href="http://nginx.org/">nginx.org</a>.<br/>  
+Commercial support is available at  
+<a href="http://nginx.com/">nginx.com</a>.</p>  
+  
+<p><em>Thank you for using nginx.</em></p>  
+</body>  
+</html>
+```
+Et bim ça marche
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk5NzkyODUxLC05NjIxMDQ5NzYsMTg5ND
-Y2Mjc3NSwxNDk2MDUwNjU4LC0xNzM5NjQ2MjM1LC0xOTU4NTgx
-Mzg2LC0xMzA4NDgyMjg4LDEwNTg2MTUzNjcsLTgwNDY1MDI3Ni
-wtMjE0MDgyNTg5NCwxMTYxMzk1NDU3LDE0NDQwMzQ3ODUsOTk4
-ODkwODYwLDE2MDMwMDgxMSwtMTk0MTEyNjkwMSwzOTY1Mzg0Mz
-EsMTUzODYyMjExMCwxMjkwOTM3NDQsNDY3NTY1NTcwLDExODE1
-NzY1OTFdfQ==
+eyJoaXN0b3J5IjpbMTQ4ODczMTI4Myw2OTk3OTI4NTEsLTk2Mj
+EwNDk3NiwxODk0NjYyNzc1LDE0OTYwNTA2NTgsLTE3Mzk2NDYy
+MzUsLTE5NTg1ODEzODYsLTEzMDg0ODIyODgsMTA1ODYxNTM2Ny
+wtODA0NjUwMjc2LC0yMTQwODI1ODk0LDExNjEzOTU0NTcsMTQ0
+NDAzNDc4NSw5OTg4OTA4NjAsMTYwMzAwODExLC0xOTQxMTI2OT
+AxLDM5NjUzODQzMSwxNTM4NjIyMTEwLDEyOTA5Mzc0NCw0Njc1
+NjU1NzBdfQ==
 -->
