@@ -336,13 +336,14 @@ Donc déjà le schéma il ressemble à ça :
 ![](https://i.imgur.com/F9h7lP3.png)
 Quand le client1 envoie un ping au server1, il passe d'abord par le routeur, et il demande "Wsh frérot bien je dois envoyer un ping à 10.3.2.11 c'est qui' et le router répond "tkt pas frérot 10.3.2.11 c'est {adresse MAC}" et du coup il peut envoyer son ping. Même chose du server au client.
 ## Entracte : Donner un accès internet aux VMs
+J'ai réactivé la carte NAT du router avec `sudo ifup enp0s3`, configuré le tout avec les commandes -   `firewall-cmd --add-masquerade --permanent` et `firewall-cmd --reload`. Ensuite j'ai ajouté une route par défaut pour client1 avec `sudo ip route add default via 10.3.1.254`
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk2NTM4NDMxLDE1Mzg2MjIxMTAsMTI5MD
-kzNzQ0LDQ2NzU2NTU3MCwxMTgxNTc2NTkxLDE2NDE5OTg5MzEs
-NzgyNzY4NjQsLTIwMDM0MjIzMDksLTc1MTE3Njc3MSwtMTA0NT
-g3NTMzNiwtNTQxNzg1OTY4LDE5NjcwMTAyMTgsODkwMjI4NDc1
-LDIwODAwNDkyNywxMzk2MjU3NzU2LDE4ODE1MzY4MTIsLTEyMT
-MxMjY1NTMsLTE4MTkwODQ4OTYsOTUxMjI5ODMyLC0yMTI4MzI3
-NDYwXX0=
+eyJoaXN0b3J5IjpbMTY0NTA3MDM3MCwzOTY1Mzg0MzEsMTUzOD
+YyMjExMCwxMjkwOTM3NDQsNDY3NTY1NTcwLDExODE1NzY1OTEs
+MTY0MTk5ODkzMSw3ODI3Njg2NCwtMjAwMzQyMjMwOSwtNzUxMT
+c2NzcxLC0xMDQ1ODc1MzM2LC01NDE3ODU5NjgsMTk2NzAxMDIx
+OCw4OTAyMjg0NzUsMjA4MDA0OTI3LDEzOTYyNTc3NTYsMTg4MT
+UzNjgxMiwtMTIxMzEyNjU1MywtMTgxOTA4NDg5Niw5NTEyMjk4
+MzJdfQ==
 -->
