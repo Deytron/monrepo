@@ -490,13 +490,24 @@ On fait la même chose en UDP. Pour se faire, on fait la même chose mais on ajo
 ![](https://i.imgur.com/aZFxxZ7.png)
 La différence est qu'il n'y a pas de *3-way handshake.*
 
-Maintenant on va faire un SSH-ception. Avec mon terminal, je meconnecte en SSH au lcien
+Maintenant on va faire un SSH-ception. Avec mon terminal, je me connecte en SSH au client1 qui lui va se connecter au server1 en SSH. Et on lance un tcpdump sur le router.
+````bash
+[lemalgache@client1 ~]$ ssh lemalgache@server1 -p 7777  
+The authenticity of host '[server1]:7777 ([10.3.2.11]:7777)' can't be established.  
+ECDSA key fingerprint is SHA256:kUI89GY/FlyHuPN5xDAvlwlOrSYZcY8zUiYRa0WPpQo.  
+ECDSA key fingerprint is MD5:42:e2:b9:77:ea:c8:be:78:d8:c8:2d:94:1b:29:45:6a.  
+Are you sure you want to continue connecting (yes/no)? yes  
+Warning: Permanently added '[server1]:7777,[10.3.2.11]:7777' (ECDSA) to the list of known hosts.  
+lemalgache@server1's password:  
+Last login: Mon Mar 16 13:09:12 2020 from 10.3.2.1
+````
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTk2NDE3MTUsMTQ0NDAzNDc4NSw5OT
-g4OTA4NjAsMTYwMzAwODExLC0xOTQxMTI2OTAxLDM5NjUzODQz
-MSwxNTM4NjIyMTEwLDEyOTA5Mzc0NCw0Njc1NjU1NzAsMTE4MT
-U3NjU5MSwxNjQxOTk4OTMxLDc4Mjc2ODY0LC0yMDAzNDIyMzA5
-LC03NTExNzY3NzEsLTEwNDU4NzUzMzYsLTU0MTc4NTk2OCwxOT
-Y3MDEwMjE4LDg5MDIyODQ3NSwyMDgwMDQ5MjcsMTM5NjI1Nzc1
-Nl19
+eyJoaXN0b3J5IjpbMTE2MTM5NTQ1NywxNDQ0MDM0Nzg1LDk5OD
+g5MDg2MCwxNjAzMDA4MTEsLTE5NDExMjY5MDEsMzk2NTM4NDMx
+LDE1Mzg2MjIxMTAsMTI5MDkzNzQ0LDQ2NzU2NTU3MCwxMTgxNT
+c2NTkxLDE2NDE5OTg5MzEsNzgyNzY4NjQsLTIwMDM0MjIzMDks
+LTc1MTE3Njc3MSwtMTA0NTg3NTMzNiwtNTQxNzg1OTY4LDE5Nj
+cwMTAyMTgsODkwMjI4NDc1LDIwODAwNDkyNywxMzk2MjU3NzU2
+XX0=
 -->
