@@ -344,14 +344,29 @@ default via 10.3.1.254 dev enp0s8
 10.3.1.0/24 dev enp0s8 proto kernel scope link src 10.3.1.11 metric 101  
 10.3.2.0/24 via 10.3.1.254 dev enp0s8 proto static metric 101
 ````
-
-
+J'ai ensuite configuré le serveur DNS en ajoutant `1.1.1.1` au fichier `/etc/resolv.conf`, et j'ai testé le fonctionnement avec deux commandes :
+````bash
+[lemalgache@client1 ~]$ curl gitlab.com --verbose  
+* About to connect() to gitlab.com port 80 (#0)  
+* Trying 35.231.145.151...  
+* Connected to gitlab.com (35.231.145.151) port 80 (#0)  
+> GET / HTTP/1.1  
+> User-Agent: curl/7.29.0  
+> Host: gitlab.com  
+> Accept: */*  
+>  
+< HTTP/1.1 301 Moved Permanently  
+< Content-length: 0  
+< Location: https://gitlab.com/  
+<  
+* Connection #0 to host gitlab.com left intact
+* ``|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDExMjY5MDEsMzk2NTM4NDMxLDE1Mz
-g2MjIxMTAsMTI5MDkzNzQ0LDQ2NzU2NTU3MCwxMTgxNTc2NTkx
-LDE2NDE5OTg5MzEsNzgyNzY4NjQsLTIwMDM0MjIzMDksLTc1MT
-E3Njc3MSwtMTA0NTg3NTMzNiwtNTQxNzg1OTY4LDE5NjcwMTAy
-MTgsODkwMjI4NDc1LDIwODAwNDkyNywxMzk2MjU3NzU2LDE4OD
-E1MzY4MTIsLTEyMTMxMjY1NTMsLTE4MTkwODQ4OTYsOTUxMjI5
-ODMyXX0=
+eyJoaXN0b3J5IjpbMTc5NjM2NzAwNiwtMTk0MTEyNjkwMSwzOT
+Y1Mzg0MzEsMTUzODYyMjExMCwxMjkwOTM3NDQsNDY3NTY1NTcw
+LDExODE1NzY1OTEsMTY0MTk5ODkzMSw3ODI3Njg2NCwtMjAwMz
+QyMjMwOSwtNzUxMTc2NzcxLC0xMDQ1ODc1MzM2LC01NDE3ODU5
+NjgsMTk2NzAxMDIxOCw4OTAyMjg0NzUsMjA4MDA0OTI3LDEzOT
+YyNTc3NTYsMTg4MTUzNjgxMiwtMTIxMzEyNjU1MywtMTgxOTA4
+NDg5Nl19
 -->
