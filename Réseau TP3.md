@@ -275,6 +275,7 @@ Router `ip n` :
 10.3.2.11 dev enp0s9 lladdr 08:00:27:8f:9f:14 STALE  
 10.3.2.1 dev enp0s9 lladdr 0a:00:27:00:00:01 STALE
 ````
+lladdr = 
 ### A. Table ARP 1
 On va commencer par vider la table ARP de client1 et router avec la commande `sudo ip -s -s n flush all`. On vérifie que tout a bien été flush et on est bon toi même tu sais :
 ````bash
@@ -286,13 +287,19 @@ On va commencer par vider la table ARP de client1 et router avec la commande `su
 *** Round 1, deleting 2 entries ***  
 *** Flush is complete after 1 round ***
 ````
+La table ARP de client1 est vide : 
+```bash
+[lemalgache@client1 ~]$ ip n  
+10.3.1.1 dev enp0s8 lladdr 0a:00:27:00:00:00 DELAY
+```
+On envoie un ping de client1 à server1 :
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjkxMjMzODcyLC0xODE5MDg0ODk2LDk1MT
-IyOTgzMiwtMjEyODMyNzQ2MCwtMTgzNzM0NDAxNSwxMjA3NTU4
-MTI2LDQzMTI1NjY4MCwtNjk2ODM3MDU2LDUyNzkzMDc3OSwtMT
-Q5MjEwMjA4NSwxMzUxMzEyOTYsNDAwNTYyMTkyLDEzNjU5OTc1
-MzAsLTEzMDc5NDAzNDUsMjEzMTEwMzU0LDM2NjE1NDQwNSwxNj
-Q3NDI1MDc5LDE4OTQ5MzMxMCwxMjI2NTQ2MDYyLC04MTIzNTcw
-MzFdfQ==
+eyJoaXN0b3J5IjpbLTgzOTc5MDk3MSwtMTgxOTA4NDg5Niw5NT
+EyMjk4MzIsLTIxMjgzMjc0NjAsLTE4MzczNDQwMTUsMTIwNzU1
+ODEyNiw0MzEyNTY2ODAsLTY5NjgzNzA1Niw1Mjc5MzA3NzksLT
+E0OTIxMDIwODUsMTM1MTMxMjk2LDQwMDU2MjE5MiwxMzY1OTk3
+NTMwLC0xMzA3OTQwMzQ1LDIxMzExMDM1NCwzNjYxNTQ0MDUsMT
+Y0NzQyNTA3OSwxODk0OTMzMTAsMTIyNjU0NjA2MiwtODEyMzU3
+MDMxXX0=
 -->
