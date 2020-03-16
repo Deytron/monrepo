@@ -242,12 +242,24 @@ traceroute to server1 (10.3.2.11), 30 hops max, 60 byte packets
 2 router (10.3.1.254) 0.975 ms !X 0.839 ms !X 0.713 ms !X
 ````
 ## 3. Comprendre le routage
+Pour mettre en évidence le routage, j'ai fait un tcpdump du client vers le serveur. Pour se faire, j'ai utilisé la commande 
+````yaml
+----
+# Packet 84 from /home/lemalgache/Documents/capture1.pcap
+- 85
+- 47.126366
+- 10.3.1.11
+- 10.3.2.11
+- ICMP
+- 98
+- Echo (ping) request  id=0x0a02, seq=4/1024, ttl=64 (reply in 86)
 
+````
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNzU1ODEyNiw0MzEyNTY2ODAsLTY5Nj
-gzNzA1Niw1Mjc5MzA3NzksLTE0OTIxMDIwODUsMTM1MTMxMjk2
-LDQwMDU2MjE5MiwxMzY1OTk3NTMwLC0xMzA3OTQwMzQ1LDIxMz
-ExMDM1NCwzNjYxNTQ0MDUsMTY0NzQyNTA3OSwxODk0OTMzMTAs
-MTIyNjU0NjA2MiwtODEyMzU3MDMxLDI0NzIzNDAwLC0xNDMxNz
-I5NDI1LC0xNjMwNjU2MjddfQ==
+eyJoaXN0b3J5IjpbLTEzNzAxNzUwNDEsMTIwNzU1ODEyNiw0Mz
+EyNTY2ODAsLTY5NjgzNzA1Niw1Mjc5MzA3NzksLTE0OTIxMDIw
+ODUsMTM1MTMxMjk2LDQwMDU2MjE5MiwxMzY1OTk3NTMwLC0xMz
+A3OTQwMzQ1LDIxMzExMDM1NCwzNjYxNTQ0MDUsMTY0NzQyNTA3
+OSwxODk0OTMzMTAsMTIyNjU0NjA2MiwtODEyMzU3MDMxLDI0Nz
+IzNDAwLC0xNDMxNzI5NDI1LC0xNjMwNjU2MjddfQ==
 -->
