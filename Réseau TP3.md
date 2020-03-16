@@ -176,9 +176,11 @@ PING router (10.3.2.254) 56(84) bytes of data.
 2 packets transmitted, 2 received, 0% packet loss, time 1001ms  
 rtt min/avg/max/mdev = 1.699/1.779/1.859/0.080 ms
 ````
+Router vers Server 1 :
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzU1NjQ1ODEsMTM2NTk5NzUzMCwtMT
-MwNzk0MDM0NSwyMTMxMTAzNTQsMzY2MTU0NDA1LDE2NDc0MjUw
-NzksMTg5NDkzMzEwLDEyMjY1NDYwNjIsLTgxMjM1NzAzMSwyND
-cyMzQwMCwtMTQzMTcyOTQyNSwtMTYzMDY1NjI3XX0=
+eyJoaXN0b3J5IjpbNDAwNTYyMTkyLDEzNjU5OTc1MzAsLTEzMD
+c5NDAzNDUsMjEzMTEwMzU0LDM2NjE1NDQwNSwxNjQ3NDI1MDc5
+LDE4OTQ5MzMxMCwxMjI2NTQ2MDYyLC04MTIzNTcwMzEsMjQ3Mj
+M0MDAsLTE0MzE3Mjk0MjUsLTE2MzA2NTYyN119
 -->
