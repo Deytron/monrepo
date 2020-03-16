@@ -319,13 +319,13 @@ On clean les tables de toutes les machines. Je fais ensuite un ping de client1 Ã
 10.3.2.1 dev enp0s8 lladdr 0a:00:27:00:00:01 DELAY  
 10.3.2.254 dev enp0s8 lladdr 08:00:27:2b:44:56 DELAY
 ````
-Le serveur a l'adresse 
+Les adresses sont revenues dans la liste de table du server.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0MTc4NTk2OCwxOTY3MDEwMjE4LDg5MD
-IyODQ3NSwyMDgwMDQ5MjcsMTM5NjI1Nzc1NiwxODgxNTM2ODEy
-LC0xMjEzMTI2NTUzLC0xODE5MDg0ODk2LDk1MTIyOTgzMiwtMj
-EyODMyNzQ2MCwtMTgzNzM0NDAxNSwxMjA3NTU4MTI2LDQzMTI1
-NjY4MCwtNjk2ODM3MDU2LDUyNzkzMDc3OSwtMTQ5MjEwMjA4NS
-wxMzUxMzEyOTYsNDAwNTYyMTkyLDEzNjU5OTc1MzAsLTEzMDc5
-NDAzNDVdfQ==
+eyJoaXN0b3J5IjpbLTEwNDU4NzUzMzYsLTU0MTc4NTk2OCwxOT
+Y3MDEwMjE4LDg5MDIyODQ3NSwyMDgwMDQ5MjcsMTM5NjI1Nzc1
+NiwxODgxNTM2ODEyLC0xMjEzMTI2NTUzLC0xODE5MDg0ODk2LD
+k1MTIyOTgzMiwtMjEyODMyNzQ2MCwtMTgzNzM0NDAxNSwxMjA3
+NTU4MTI2LDQzMTI1NjY4MCwtNjk2ODM3MDU2LDUyNzkzMDc3OS
+wtMTQ5MjEwMjA4NSwxMzUxMzEyOTYsNDAwNTYyMTkyLDEzNjU5
+OTc1MzBdfQ==
 -->
