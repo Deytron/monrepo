@@ -481,9 +481,11 @@ bb
 bebou
 ````
 ### B. Analyse de trames
-Le 3-way handshake correspond au SYN SYN-ACK ACK
+Le 3-way handshake correspond au SYN SYN-ACK ACK. Il est mis en évidence dans Wireshark :
+![](https://i.imgur.com/reIAN0Y.png)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NTQzMjU1Miw5OTg4OTA4NjAsMTYwMz
+eyJoaXN0b3J5IjpbLTkwMjM5ODk5MSw5OTg4OTA4NjAsMTYwMz
 AwODExLC0xOTQxMTI2OTAxLDM5NjUzODQzMSwxNTM4NjIyMTEw
 LDEyOTA5Mzc0NCw0Njc1NjU1NzAsMTE4MTU3NjU5MSwxNjQxOT
 k4OTMxLDc4Mjc2ODY0LC0yMDAzNDIyMzA5LC03NTExNzY3NzEs
