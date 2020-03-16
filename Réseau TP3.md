@@ -285,7 +285,7 @@ STALE indique que la correspondance entre l'adresse MAC et IP est bien établie,
 
 REACHABLE indique que la correspondance entre l'adresse MAC et IP est bien établie et l'adresse et joignable.
 
-DELAY indique qu'un paquet a été envoyé à l'adresse et une confirmation de correpsondaces d'adresse est en atte
+DELAY indique qu'un paquet a été envoyé à l'adresse et une confirmation de correspondances d'adresse est en attente.
 
 
 ### A. Table ARP 1
@@ -307,7 +307,7 @@ La table ARP de client1 est vide :
 On envoie un ping de client1 à server1 et on observer le changement dans la table ARP :
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk2NDgwMzI4LDEzOTYyNTc3NTYsMTg4MT
+eyJoaXN0b3J5IjpbMjA4MDA0OTI3LDEzOTYyNTc3NTYsMTg4MT
 UzNjgxMiwtMTIxMzEyNjU1MywtMTgxOTA4NDg5Niw5NTEyMjk4
 MzIsLTIxMjgzMjc0NjAsLTE4MzczNDQwMTUsMTIwNzU1ODEyNi
 w0MzEyNTY2ODAsLTY5NjgzNzA1Niw1Mjc5MzA3NzksLTE0OTIx
