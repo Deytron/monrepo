@@ -314,8 +314,14 @@ L'adresse de server1 a bien été ajoutée à la table ARP de client1 et est REA
 
 ### B. Table ARP 2
 On clean les tables de toutes les machines. Je fais ensuite un ping de client1 à server1 et j'observer la table ARP de server 1 :
+````bash
+[lemalgache@server1 ~]$ ip n  
+10.3.2.1 dev enp0s8 lladdr 0a:00:27:00:00:01 DELAY  
+10.3.2.254 dev enp0s8 lladdr 08:00:27:2b:44:56 DELAY
+````
+Le serveur a l'adresse 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyNjI3NzE5NywxOTY3MDEwMjE4LDg5MD
+eyJoaXN0b3J5IjpbLTU0MTc4NTk2OCwxOTY3MDEwMjE4LDg5MD
 IyODQ3NSwyMDgwMDQ5MjcsMTM5NjI1Nzc1NiwxODgxNTM2ODEy
 LC0xMjEzMTI2NTUzLC0xODE5MDg0ODk2LDk1MTIyOTgzMiwtMj
 EyODMyNzQ2MCwtMTgzNzM0NDAxNSwxMjA3NTU4MTI2LDQzMTI1
