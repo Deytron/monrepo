@@ -324,9 +324,9 @@ Les adresses sont revenues dans la liste de table du server.
 Après avoir fait un dump du client1, on obtient ceci (ouais j'ai fait un screen) :
 ![](https://i.imgur.com/peFx21V.png)
 Aux deux premières lignes jaunes, le client1 (10.3.1.11) demande qui a l'adresse 10.3.1.254 (qui est le serveur). Le serveur répond avec son adresse MAC.
-Aux deux dernière
+Aux deux dernières lignes, 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4NTIyMDE2NCw3ODI3Njg2NCwtMjAwMz
+eyJoaXN0b3J5IjpbLTE0NDg1MTg5NSw3ODI3Njg2NCwtMjAwMz
 QyMjMwOSwtNzUxMTc2NzcxLC0xMDQ1ODc1MzM2LC01NDE3ODU5
 NjgsMTk2NzAxMDIxOCw4OTAyMjg0NzUsMjA4MDA0OTI3LDEzOT
 YyNTc3NTYsMTg4MTUzNjgxMiwtMTIxMzEyNjU1MywtMTgxOTA4
