@@ -242,21 +242,15 @@ traceroute to server1 (10.3.2.11), 30 hops max, 60 byte packets
 2 router (10.3.1.254) 0.975 ms !X 0.839 ms !X 0.713 ms !X
 ````
 ## 3. Comprendre le routage
-Pour mettre en évidence le routage, j'ai fait un `tcpdump` sur le seveu. Pour se faire, j'ai utilisé la commande `sudo tcpdump -i enp0s8 -w capture1.pcap` et `capture2.pcap`. J'ai laissé tourné, ouvert un autre onglet terminal et fait un `ping server1`. 
+Pour mettre en évidence le routage, j'ai fait un `tcpdump` sur le serveur. Pour se faire, j'ai utilisé la commande `sudo tcpdump -i client1/server1 -w capture1/2.pcap`. J'ai laissé tourné, ouvert un autre onglet terminal et fait un `ping client1/server1`. 
 Puis j'ai arrêté la capture et envoyé le fichier de ma VM à ma machine locale avec 
 ``sudo scp -r -P 7777 lemalgache@10.3.1.11:/home/lemalgache/capture1.pcap /home/lemalgache/Documents``.
-
-On va inspecter une trame qui part de client1 à server1 :
-| Machine | MAC Source        | MAC Destination   | IP Source | IP Destination |
-|---------|-------------------|-------------------|-----------|----------------|
-| net1    | 08:00:27:f7:25:85 | 08:00:27:8f:9f:14 | 10.3.1.11 | 10.3.2.11      |
-| net2    | 08:00:27:8f:9f:14 | 08:00:27:f7:25:85 | 10.3.2.11 | 10.3.1.11      |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE1Nzg4LC0xODM3MzQ0MDE1LDEyMDc1NT
-gxMjYsNDMxMjU2NjgwLC02OTY4MzcwNTYsNTI3OTMwNzc5LC0x
-NDkyMTAyMDg1LDEzNTEzMTI5Niw0MDA1NjIxOTIsMTM2NTk5Nz
-UzMCwtMTMwNzk0MDM0NSwyMTMxMTAzNTQsMzY2MTU0NDA1LDE2
-NDc0MjUwNzksMTg5NDkzMzEwLDEyMjY1NDYwNjIsLTgxMjM1Nz
-AzMSwyNDcyMzQwMCwtMTQzMTcyOTQyNSwtMTYzMDY1NjI3XX0=
-
+eyJoaXN0b3J5IjpbLTQ4MDgwODA3OSwtMTgzNzM0NDAxNSwxMj
+A3NTU4MTI2LDQzMTI1NjY4MCwtNjk2ODM3MDU2LDUyNzkzMDc3
+OSwtMTQ5MjEwMjA4NSwxMzUxMzEyOTYsNDAwNTYyMTkyLDEzNj
+U5OTc1MzAsLTEzMDc5NDAzNDUsMjEzMTEwMzU0LDM2NjE1NDQw
+NSwxNjQ3NDI1MDc5LDE4OTQ5MzMxMCwxMjI2NTQ2MDYyLC04MT
+IzNTcwMzEsMjQ3MjM0MDAsLTE0MzE3Mjk0MjUsLTE2MzA2NTYy
+N119
 -->
