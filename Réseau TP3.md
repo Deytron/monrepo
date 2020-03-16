@@ -313,13 +313,13 @@ On envoie un ping de client1 à server1 et on observer le changement dans la tab
 L'adresse de server1 a bien été ajoutée à la table ARP de client1 et est REACHABLE.
 
 ### B. Table ARP 2
-
+On clean les tables de toutes les machines. Je fais ensuite un 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5OTYzNjMwMSwyMDgwMDQ5MjcsMTM5Nj
-I1Nzc1NiwxODgxNTM2ODEyLC0xMjEzMTI2NTUzLC0xODE5MDg0
-ODk2LDk1MTIyOTgzMiwtMjEyODMyNzQ2MCwtMTgzNzM0NDAxNS
-wxMjA3NTU4MTI2LDQzMTI1NjY4MCwtNjk2ODM3MDU2LDUyNzkz
-MDc3OSwtMTQ5MjEwMjA4NSwxMzUxMzEyOTYsNDAwNTYyMTkyLD
-EzNjU5OTc1MzAsLTEzMDc5NDAzNDUsMjEzMTEwMzU0LDM2NjE1
-NDQwNV19
+eyJoaXN0b3J5IjpbODkwMjI4NDc1LDIwODAwNDkyNywxMzk2Mj
+U3NzU2LDE4ODE1MzY4MTIsLTEyMTMxMjY1NTMsLTE4MTkwODQ4
+OTYsOTUxMjI5ODMyLC0yMTI4MzI3NDYwLC0xODM3MzQ0MDE1LD
+EyMDc1NTgxMjYsNDMxMjU2NjgwLC02OTY4MzcwNTYsNTI3OTMw
+Nzc5LC0xNDkyMTAyMDg1LDEzNTEzMTI5Niw0MDA1NjIxOTIsMT
+M2NTk5NzUzMCwtMTMwNzk0MDM0NSwyMTMxMTAzNTQsMzY2MTU0
+NDA1XX0=
 -->
