@@ -142,8 +142,10 @@ Fichier hosts sur chaque machine :
 10.3.1.254 router router.tp3
 ````
 **Réseaux et adressage des machines**
+Client 1 :
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMTg0MzA5MiwtMTMwNzk0MDM0NSwyMT
+eyJoaXN0b3J5IjpbMTM2NTk5NzUzMCwtMTMwNzk0MDM0NSwyMT
 MxMTAzNTQsMzY2MTU0NDA1LDE2NDc0MjUwNzksMTg5NDkzMzEw
 LDEyMjY1NDYwNjIsLTgxMjM1NzAzMSwyNDcyMzQwMCwtMTQzMT
 cyOTQyNSwtMTYzMDY1NjI3XX0=
