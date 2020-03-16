@@ -197,9 +197,19 @@ J'ai mis en place le routage pour que le client puisse pinger le server et inver
 ````bash
 sudo ip route add 10.3.2.0/24 via 10.3.1.254
 ````
-Aussi, j'effectue sur le router la commande `sudo sysctl -w net.ipv4.conf.all.forwarding=1` pour au
+Aussi, j'effectue sur le router la commande `sudo sysctl -w net.ipv4.conf.all.forwarding=1` pour autoriser la machine à router des paquets.
+
+On vérifie maintenant que le routage fonctionne.
+`ip r s` sur client1 :
+````bash
+[lemalgache@client1 ~]$ ip r s  
+10.3.1.0/24 dev enp0s8 proto kernel scope link src 10.3.1.11 metric 101  
+10.3.2.0/24 via 10.3.1.254 dev enp0s8 proto static metric 101
+````
+`ip r s` sur server1 :
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1MzIzOTE5NywtMTQ5MjEwMjA4NSwxMz
+eyJoaXN0b3J5IjpbMTI3MzE2NzEzNSwtMTQ5MjEwMjA4NSwxMz
 UxMzEyOTYsNDAwNTYyMTkyLDEzNjU5OTc1MzAsLTEzMDc5NDAz
 NDUsMjEzMTEwMzU0LDM2NjE1NDQwNSwxNjQ3NDI1MDc5LDE4OT
 Q5MzMxMCwxMjI2NTQ2MDYyLC04MTIzNTcwMzEsMjQ3MjM0MDAs
