@@ -212,12 +212,34 @@ On vérifie maintenant que le routage fonctionne.
 10.3.1.0/24 via 10.3.2.254 dev enp0s8  
 10.3.2.0/24 dev enp0s8 proto kernel scope link src 10.3.2.11 metric 101
 ````
+Ping de client1 à server1 :
+````bash
+[lemalgache@client1 ~]$ ping server1  
+PING server1 (10.3.2.11) 56(84) bytes of data.  
+64 bytes from server1 (10.3.2.11): icmp_seq=1 ttl=63 time=2.95 ms  
+64 bytes from server1 (10.3.2.11): icmp_seq=2 ttl=63 time=2.69 ms  
+^C  
+--- server1 ping statistics ---  
+2 packets transmitted, 2 received, 0% packet loss, time 1027ms  
+rtt min/avg/max/mdev = 2.698/2.828/2.959/0.140 ms
+````
+Ping de server1 à client1 :
+````bash
+[lemalgache@server1 ~]$ ping client1  
+PING client1 (10.3.1.11) 56(84) bytes of data.  
+64 bytes from client1 (10.3.1.11): icmp_seq=1 ttl=63 time=2.32 ms  
+64 bytes from client1 (10.3.1.11): icmp_seq=2 ttl=63 time=2.48 ms  
+^C  
+--- client1 ping statistics ---  
+2 packets transmitted, 2 received, 0% packet loss, time 1002ms  
+rtt min/avg/max/mdev = 2.326/2.405/2.485/0.093 ms
+````
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI3OTMwNzc5LC0xNDkyMTAyMDg1LDEzNT
-EzMTI5Niw0MDA1NjIxOTIsMTM2NTk5NzUzMCwtMTMwNzk0MDM0
-NSwyMTMxMTAzNTQsMzY2MTU0NDA1LDE2NDc0MjUwNzksMTg5ND
-kzMzEwLDEyMjY1NDYwNjIsLTgxMjM1NzAzMSwyNDcyMzQwMCwt
-MTQzMTcyOTQyNSwtMTYzMDY1NjI3XX0=
+eyJoaXN0b3J5IjpbLTIwMjg4NDk2NzUsNTI3OTMwNzc5LC0xND
+kyMTAyMDg1LDEzNTEzMTI5Niw0MDA1NjIxOTIsMTM2NTk5NzUz
+MCwtMTMwNzk0MDM0NSwyMTMxMTAzNTQsMzY2MTU0NDA1LDE2ND
+c0MjUwNzksMTg5NDkzMzEwLDEyMjY1NDYwNjIsLTgxMjM1NzAz
+MSwyNDcyMzQwMCwtMTQzMTcyOTQyNSwtMTYzMDY1NjI3XX0=
 -->
