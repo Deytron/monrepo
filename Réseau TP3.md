@@ -323,13 +323,14 @@ Les adresses sont revenues dans la liste de table du server.
 ### `tcpdump` 1
 Après avoir fait un dump du client1, on obtient ceci (ouais j'ai fait un screen) :
 ![](https://i.imgur.com/peFx21V.png)
-Aux deux premières lignes jaunes, le client1 (10.3.1.11) demande q
+Aux deux premières lignes jaunes, le client1 (10.3.1.11) demande qui a l'adresse 10.3.1.254 (qui est le serveur). Le serveur répond avec son adresse MAC.
+Aux deux dernière
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODE5NDUzMTMsNzgyNzY4NjQsLTIwMD
-M0MjIzMDksLTc1MTE3Njc3MSwtMTA0NTg3NTMzNiwtNTQxNzg1
-OTY4LDE5NjcwMTAyMTgsODkwMjI4NDc1LDIwODAwNDkyNywxMz
-k2MjU3NzU2LDE4ODE1MzY4MTIsLTEyMTMxMjY1NTMsLTE4MTkw
-ODQ4OTYsOTUxMjI5ODMyLC0yMTI4MzI3NDYwLC0xODM3MzQ0MD
-E1LDEyMDc1NTgxMjYsNDMxMjU2NjgwLC02OTY4MzcwNTYsNTI3
-OTMwNzc5XX0=
+eyJoaXN0b3J5IjpbLTc4NTIyMDE2NCw3ODI3Njg2NCwtMjAwMz
+QyMjMwOSwtNzUxMTc2NzcxLC0xMDQ1ODc1MzM2LC01NDE3ODU5
+NjgsMTk2NzAxMDIxOCw4OTAyMjg0NzUsMjA4MDA0OTI3LDEzOT
+YyNTc3NTYsMTg4MTUzNjgxMiwtMTIxMzEyNjU1MywtMTgxOTA4
+NDg5Niw5NTEyMjk4MzIsLTIxMjgzMjc0NjAsLTE4MzczNDQwMT
+UsMTIwNzU1ODEyNiw0MzEyNTY2ODAsLTY5NjgzNzA1Niw1Mjc5
+MzA3NzldfQ==
 -->
