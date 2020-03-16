@@ -517,13 +517,13 @@ On check avec Wireshark :
 ![](https://images-ext-1.discordapp.net/external/xd54m7JqXpbwOrD9d7Y9MrQbMoLrHn4QZQnaHgqQS7k/https/i.imgur.com/w4mNnDD.png)
 On voit un "duplicate use of 10.3.1.12".
 ## 2. Serveur Web
-
+On install Nginx en ajoutant son repo dans la liste des repos yum.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MjEwNDk3NiwxODk0NjYyNzc1LDE0OT
-YwNTA2NTgsLTE3Mzk2NDYyMzUsLTE5NTg1ODEzODYsLTEzMDg0
-ODIyODgsMTA1ODYxNTM2NywtODA0NjUwMjc2LC0yMTQwODI1OD
-k0LDExNjEzOTU0NTcsMTQ0NDAzNDc4NSw5OTg4OTA4NjAsMTYw
-MzAwODExLC0xOTQxMTI2OTAxLDM5NjUzODQzMSwxNTM4NjIyMT
-EwLDEyOTA5Mzc0NCw0Njc1NjU1NzAsMTE4MTU3NjU5MSwxNjQx
-OTk4OTMxXX0=
+eyJoaXN0b3J5IjpbNjk5NzkyODUxLC05NjIxMDQ5NzYsMTg5ND
+Y2Mjc3NSwxNDk2MDUwNjU4LC0xNzM5NjQ2MjM1LC0xOTU4NTgx
+Mzg2LC0xMzA4NDgyMjg4LDEwNTg2MTUzNjcsLTgwNDY1MDI3Ni
+wtMjE0MDgyNTg5NCwxMTYxMzk1NDU3LDE0NDQwMzQ3ODUsOTk4
+ODkwODYwLDE2MDMwMDgxMSwtMTk0MTEyNjkwMSwzOTY1Mzg0Mz
+EsMTUzODYyMjExMCwxMjkwOTM3NDQsNDY3NTY1NTcwLDExODE1
+NzY1OTFdfQ==
 -->
