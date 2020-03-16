@@ -177,10 +177,19 @@ PING router (10.3.2.254) 56(84) bytes of data.
 rtt min/avg/max/mdev = 1.699/1.779/1.859/0.080 ms
 ````
 Router vers Server 1 :
-
+````bash
+[lemalgache@router ~]$ ping server1  
+PING server1 (10.3.2.11) 56(84) bytes of data.  
+64 bytes from server1 (10.3.2.11): icmp_seq=1 ttl=64 time=1.10 ms  
+^C  
+--- server1 ping statistics ---  
+1 packets transmitted, 1 received, 0% packet loss, time 0ms  
+rtt min/avg/max/mdev = 1.108/1.108/1.108/0.000 ms
+````
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDAwNTYyMTkyLDEzNjU5OTc1MzAsLTEzMD
-c5NDAzNDUsMjEzMTEwMzU0LDM2NjE1NDQwNSwxNjQ3NDI1MDc5
-LDE4OTQ5MzMxMCwxMjI2NTQ2MDYyLC04MTIzNTcwMzEsMjQ3Mj
-M0MDAsLTE0MzE3Mjk0MjUsLTE2MzA2NTYyN119
+eyJoaXN0b3J5IjpbMTM1MTMxMjk2LDQwMDU2MjE5MiwxMzY1OT
+k3NTMwLC0xMzA3OTQwMzQ1LDIxMzExMDM1NCwzNjYxNTQ0MDUs
+MTY0NzQyNTA3OSwxODk0OTMzMTAsMTIyNjU0NjA2MiwtODEyMz
+U3MDMxLDI0NzIzNDAwLC0xNDMxNzI5NDI1LC0xNjMwNjU2Mjdd
+fQ==
 -->
