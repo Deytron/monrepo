@@ -506,13 +506,14 @@ On observe que le tcpdump utilise le protocole TCP pour faire transiter les donn
 
 ## [](#1-arp-cache-poisoning)1. ARP cache poisoning
 On va utiliser un petit package pour faire de l'ARP Poisoning qui est arping.
-J'ai créé une nouvelle VM que j'ai appelée 
+J'ai créé une nouvelle VM que j'ai appelée client2, et je l'ai paramétrée pour utiliser l'IP 10.3.1.12.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1ODYxNTM2NywtODA0NjUwMjc2LC0yMT
-QwODI1ODk0LDExNjEzOTU0NTcsMTQ0NDAzNDc4NSw5OTg4OTA4
-NjAsMTYwMzAwODExLC0xOTQxMTI2OTAxLDM5NjUzODQzMSwxNT
-M4NjIyMTEwLDEyOTA5Mzc0NCw0Njc1NjU1NzAsMTE4MTU3NjU5
-MSwxNjQxOTk4OTMxLDc4Mjc2ODY0LC0yMDAzNDIyMzA5LC03NT
-ExNzY3NzEsLTEwNDU4NzUzMzYsLTU0MTc4NTk2OCwxOTY3MDEw
-MjE4XX0=
+eyJoaXN0b3J5IjpbLTEzMDg0ODIyODgsMTA1ODYxNTM2NywtOD
+A0NjUwMjc2LC0yMTQwODI1ODk0LDExNjEzOTU0NTcsMTQ0NDAz
+NDc4NSw5OTg4OTA4NjAsMTYwMzAwODExLC0xOTQxMTI2OTAxLD
+M5NjUzODQzMSwxNTM4NjIyMTEwLDEyOTA5Mzc0NCw0Njc1NjU1
+NzAsMTE4MTU3NjU5MSwxNjQxOTk4OTMxLDc4Mjc2ODY0LC0yMD
+AzNDIyMzA5LC03NTExNzY3NzEsLTEwNDU4NzUzMzYsLTU0MTc4
+NTk2OF19
 -->
