@@ -122,10 +122,17 @@ client1.net1.tp3
 ````
 Server 1 `hostname` :
 ````bash
-
+[lemalgache@server1 ~]$ hostname  
+server1.net2.tp3
+````
+Router `hostname` :
+````bash
+[lemalgache@router ~]$ hostname  
+router.tp3
+`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NTMxOTI0NiwyMTMxMTAzNTQsMzY2MT
-U0NDA1LDE2NDc0MjUwNzksMTg5NDkzMzEwLDEyMjY1NDYwNjIs
-LTgxMjM1NzAzMSwyNDcyMzQwMCwtMTQzMTcyOTQyNSwtMTYzMD
-Y1NjI3XX0=
+eyJoaXN0b3J5IjpbLTIwMTYxOTAzMzcsMjEzMTEwMzU0LDM2Nj
+E1NDQwNSwxNjQ3NDI1MDc5LDE4OTQ5MzMxMCwxMjI2NTQ2MDYy
+LC04MTIzNTcwMzEsMjQ3MjM0MDAsLTE0MzE3Mjk0MjUsLTE2Mz
+A2NTYyN119
 -->
