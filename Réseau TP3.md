@@ -383,9 +383,42 @@ gitlab.com. 139 IN A 35.231.145.151
 ;; WHEN: lun. mars 16 16:42:00 CET 2020  
 ;; MSG SIZE rcvd: 55
 ````
-On teste 
+On fait un ping à 8.8.8.8 pour tester le WAN de client1 :
+````bash
+[lemalgache@client1 ~]$ ping 8.8.8.8  
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.  
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=61 time=17.4 ms  
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=61 time=18.1 ms  
+^C  
+--- 8.8.8.8 ping statistics ---  
+2 packets transmitted, 2 received, 0% packet loss, time 1159ms  
+rtt min/avg/max/mdev = 17.460/17.810/18.160/0.350 ms
+````
+On teste le dig :
+````bash
+[lemalgache@client1 ~]$ dig pornhub.com  
+  
+; <<>> DiG 9.11.4-P2-RedHat-9.11.4-9.P2.el7 <<>> pornhub.com  
+;; global options: +cmd  
+;; Got answer:  
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 41732  
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1  
+  
+;; OPT PSEUDOSECTION:  
+; EDNS: version: 0, flags:; udp: 1452  
+;; QUESTION SECTION:  
+;pornhub.com. IN A  
+  
+;; ANSWER SECTION:  
+pornhub.com. 3227 IN A 66.254.114.41  
+  
+;; Query time: 16 msec  
+;; SERVER: 1.1.1.1#53(1.1.1.1)  
+;; WHEN: lun. mars 16 16:44:51 CET 2020  
+;; MSG SIZE rcvd: 56
+````
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxNjQ0MTA1OCwtMTk0MTEyNjkwMSwzOT
+eyJoaXN0b3J5IjpbMTU0NjM4NTQxNywtMTk0MTEyNjkwMSwzOT
 Y1Mzg0MzEsMTUzODYyMjExMCwxMjkwOTM3NDQsNDY3NTY1NTcw
 LDExODE1NzY1OTEsMTY0MTk5ODkzMSw3ODI3Njg2NCwtMjAwMz
 QyMjMwOSwtNzUxMTc2NzcxLC0xMDQ1ODc1MzM2LC01NDE3ODU5
