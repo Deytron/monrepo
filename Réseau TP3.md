@@ -276,9 +276,16 @@ Router `ip n` :
 10.3.2.1 dev enp0s9 lladdr 0a:00:27:00:00:01 STALE
 ````
 A chaque fois on a en premier l'IP concernée. Ensuite :
+
 dev = L'interface réseau utilisée (enp0s8/enp0s9)
+
 lladdr = Link Local Address. Indique l'adresse MAC concernée.
+
 STALE indique que la correspondance entre l'adresse MAC et IP est bien établie, mais que l'hôte n'est pas joignable pour le moment. 
+
+REACHABLE indique que la correspondance entre l'adresse MAC et IP est bien établie et l'adresse et joignable.
+
+DELAY indique qu'un paquet a été envoyé à l'adresse et une confirmation de correpsondaces d'adresse est en atte
 
 
 ### A. Table ARP 1
@@ -300,11 +307,11 @@ La table ARP de client1 est vide :
 On envoie un ping de client1 à server1 et on observer le changement dans la table ARP :
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NjI1Nzc1NiwxODgxNTM2ODEyLC0xMj
-EzMTI2NTUzLC0xODE5MDg0ODk2LDk1MTIyOTgzMiwtMjEyODMy
-NzQ2MCwtMTgzNzM0NDAxNSwxMjA3NTU4MTI2LDQzMTI1NjY4MC
-wtNjk2ODM3MDU2LDUyNzkzMDc3OSwtMTQ5MjEwMjA4NSwxMzUx
-MzEyOTYsNDAwNTYyMTkyLDEzNjU5OTc1MzAsLTEzMDc5NDAzND
-UsMjEzMTEwMzU0LDM2NjE1NDQwNSwxNjQ3NDI1MDc5LDE4OTQ5
-MzMxMF19
+eyJoaXN0b3J5IjpbMjk2NDgwMzI4LDEzOTYyNTc3NTYsMTg4MT
+UzNjgxMiwtMTIxMzEyNjU1MywtMTgxOTA4NDg5Niw5NTEyMjk4
+MzIsLTIxMjgzMjc0NjAsLTE4MzczNDQwMTUsMTIwNzU1ODEyNi
+w0MzEyNTY2ODAsLTY5NjgzNzA1Niw1Mjc5MzA3NzksLTE0OTIx
+MDIwODUsMTM1MTMxMjk2LDQwMDU2MjE5MiwxMzY1OTk3NTMwLC
+0xMzA3OTQwMzQ1LDIxMzExMDM1NCwzNjYxNTQ0MDUsMTY0NzQy
+NTA3OV19
 -->
