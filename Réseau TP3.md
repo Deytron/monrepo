@@ -278,6 +278,7 @@ Router `ip n` :
 A chaque fois on a en premier l'IP concernée. Ensuite :
 dev = L'interface réseau utilisée (enp0s8/enp0s9)
 lladdr = Link Layer Address.  
+
 ### A. Table ARP 1
 On va commencer par vider la table ARP de client1 et router avec la commande `sudo ip -s -s n flush all`. On vérifie que tout a bien été flush et on est bon toi même tu sais :
 ````bash
@@ -297,11 +298,11 @@ La table ARP de client1 est vide :
 On envoie un ping de client1 à server1 :
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODAxMzMzMTQsLTEyMTMxMjY1NTMsLT
-E4MTkwODQ4OTYsOTUxMjI5ODMyLC0yMTI4MzI3NDYwLC0xODM3
-MzQ0MDE1LDEyMDc1NTgxMjYsNDMxMjU2NjgwLC02OTY4MzcwNT
-YsNTI3OTMwNzc5LC0xNDkyMTAyMDg1LDEzNTEzMTI5Niw0MDA1
-NjIxOTIsMTM2NTk5NzUzMCwtMTMwNzk0MDM0NSwyMTMxMTAzNT
-QsMzY2MTU0NDA1LDE2NDc0MjUwNzksMTg5NDkzMzEwLDEyMjY1
-NDYwNjJdfQ==
+eyJoaXN0b3J5IjpbMTg4MTUzNjgxMiwtMTIxMzEyNjU1MywtMT
+gxOTA4NDg5Niw5NTEyMjk4MzIsLTIxMjgzMjc0NjAsLTE4Mzcz
+NDQwMTUsMTIwNzU1ODEyNiw0MzEyNTY2ODAsLTY5NjgzNzA1Ni
+w1Mjc5MzA3NzksLTE0OTIxMDIwODUsMTM1MTMxMjk2LDQwMDU2
+MjE5MiwxMzY1OTk3NTMwLC0xMzA3OTQwMzQ1LDIxMzExMDM1NC
+wzNjYxNTQ0MDUsMTY0NzQyNTA3OSwxODk0OTMzMTAsMTIyNjU0
+NjA2Ml19
 -->
