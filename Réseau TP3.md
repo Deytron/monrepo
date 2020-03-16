@@ -487,13 +487,16 @@ Le 3-way handshake correspond au SYN SYN-ACK ACK. Il est mis en évidence dans W
 
 **UDP** :
 On fait la même chose en UDP. Pour se faire, on fait la même chose mais on ajoute le port 9999/udp et on rajoute `-u` au nc.
+![](https://i.imgur.com/aZFxxZ7.png)
+La différence est qu'il n'y a pas de *3-way handshake.*
 
+Maintenant on va faire un SSH-ception. Avec mon terminal, je meconnecte en SSH au lcien
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NDAzNDc4NSw5OTg4OTA4NjAsMTYwMz
-AwODExLC0xOTQxMTI2OTAxLDM5NjUzODQzMSwxNTM4NjIyMTEw
-LDEyOTA5Mzc0NCw0Njc1NjU1NzAsMTE4MTU3NjU5MSwxNjQxOT
-k4OTMxLDc4Mjc2ODY0LC0yMDAzNDIyMzA5LC03NTExNzY3NzEs
-LTEwNDU4NzUzMzYsLTU0MTc4NTk2OCwxOTY3MDEwMjE4LDg5MD
-IyODQ3NSwyMDgwMDQ5MjcsMTM5NjI1Nzc1NiwxODgxNTM2ODEy
-XX0=
+eyJoaXN0b3J5IjpbLTEzMTk2NDE3MTUsMTQ0NDAzNDc4NSw5OT
+g4OTA4NjAsMTYwMzAwODExLC0xOTQxMTI2OTAxLDM5NjUzODQz
+MSwxNTM4NjIyMTEwLDEyOTA5Mzc0NCw0Njc1NjU1NzAsMTE4MT
+U3NjU5MSwxNjQxOTk4OTMxLDc4Mjc2ODY0LC0yMDAzNDIyMzA5
+LC03NTExNzY3NzEsLTEwNDU4NzUzMzYsLTU0MTc4NTk2OCwxOT
+Y3MDEwMjE4LDg5MDIyODQ3NSwyMDgwMDQ5MjcsMTM5NjI1Nzc1
+Nl19
 -->
