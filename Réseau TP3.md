@@ -207,11 +207,17 @@ On vérifie maintenant que le routage fonctionne.
 10.3.2.0/24 via 10.3.1.254 dev enp0s8 proto static metric 101
 ````
 `ip r s` sur server1 :
+````bash
+[lemalgache@server1 ~]$ ip r s  
+10.3.1.0/24 via 10.3.2.254 dev enp0s8  
+10.3.2.0/24 dev enp0s8 proto kernel scope link src 10.3.2.11 metric 101
+````
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3MzE2NzEzNSwtMTQ5MjEwMjA4NSwxMz
-UxMzEyOTYsNDAwNTYyMTkyLDEzNjU5OTc1MzAsLTEzMDc5NDAz
-NDUsMjEzMTEwMzU0LDM2NjE1NDQwNSwxNjQ3NDI1MDc5LDE4OT
-Q5MzMxMCwxMjI2NTQ2MDYyLC04MTIzNTcwMzEsMjQ3MjM0MDAs
-LTE0MzE3Mjk0MjUsLTE2MzA2NTYyN119
+eyJoaXN0b3J5IjpbNTI3OTMwNzc5LC0xNDkyMTAyMDg1LDEzNT
+EzMTI5Niw0MDA1NjIxOTIsMTM2NTk5NzUzMCwtMTMwNzk0MDM0
+NSwyMTMxMTAzNTQsMzY2MTU0NDA1LDE2NDc0MjUwNzksMTg5ND
+kzMzEwLDEyMjY1NDYwNjIsLTgxMjM1NzAzMSwyNDcyMzQwMCwt
+MTQzMTcyOTQyNSwtMTYzMDY1NjI3XX0=
 -->
