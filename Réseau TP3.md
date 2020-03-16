@@ -251,7 +251,7 @@ ts``.
 | Machine | MAC Source        | MAC Destination   | IP Source | IP Destination |
 |---------|-------------------|-------------------|-----------|----------------|
 | net1 (rentre dans `router`)   | 0a:00:27:00:00:00 | 08:00:27:29:f4:02 | 10.3.1.1  | 10.3.1.254     |
-| net2 (part de `router`)    | 08:00:27:8f:9f:14 | 08:00:27:2b:44:56 | 10.3.2.11 | 10.3.1.254     |
+| net2 (part de `router`)    | 08:00:27:8f:9f:14 | 08:00:27:2b:44:56 | 10.3.1.254 | 10.3.2.11     |
 
 ## II. ARP
 ### 1. Tables ARP
@@ -313,13 +313,13 @@ On envoie un ping de client1 à server1 et on observer le changement dans la tab
 L'adresse de server1 a bien été ajoutée à la table ARP de client1 et est REACHABLE.
 
 ### B. Table ARP 2
-On clean les tables de toutes les machines. Je fais ensuite un 
+On clean les tables de toutes les machines. Je fais ensuite un ping de client1
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjM4NDU5OTEsODkwMjI4NDc1LDIwOD
-AwNDkyNywxMzk2MjU3NzU2LDE4ODE1MzY4MTIsLTEyMTMxMjY1
-NTMsLTE4MTkwODQ4OTYsOTUxMjI5ODMyLC0yMTI4MzI3NDYwLC
-0xODM3MzQ0MDE1LDEyMDc1NTgxMjYsNDMxMjU2NjgwLC02OTY4
-MzcwNTYsNTI3OTMwNzc5LC0xNDkyMTAyMDg1LDEzNTEzMTI5Ni
-w0MDA1NjIxOTIsMTM2NTk5NzUzMCwtMTMwNzk0MDM0NSwyMTMx
-MTAzNTRdfQ==
+eyJoaXN0b3J5IjpbMTk2NzAxMDIxOCw4OTAyMjg0NzUsMjA4MD
+A0OTI3LDEzOTYyNTc3NTYsMTg4MTUzNjgxMiwtMTIxMzEyNjU1
+MywtMTgxOTA4NDg5Niw5NTEyMjk4MzIsLTIxMjgzMjc0NjAsLT
+E4MzczNDQwMTUsMTIwNzU1ODEyNiw0MzEyNTY2ODAsLTY5Njgz
+NzA1Niw1Mjc5MzA3NzksLTE0OTIxMDIwODUsMTM1MTMxMjk2LD
+QwMDU2MjE5MiwxMzY1OTk3NTMwLC0xMzA3OTQwMzQ1LDIxMzEx
+MDM1NF19
 -->
