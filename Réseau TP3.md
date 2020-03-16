@@ -330,13 +330,13 @@ Après avoir flush toutes les tables ARP, je lance un tcpdump sur verser1 pour v
 ![](https://i.imgur.com/hthrE2v.png)
 Le client demande au router qui a l'adresse 10.3.2.11 (càd le server).
 ### [](#e-u-okay-bro-)E. u okay bro ?
-
+On va f
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY3NTY1NTcwLDExODE1NzY1OTEsMTY0MT
-k5ODkzMSw3ODI3Njg2NCwtMjAwMzQyMjMwOSwtNzUxMTc2Nzcx
-LC0xMDQ1ODc1MzM2LC01NDE3ODU5NjgsMTk2NzAxMDIxOCw4OT
-AyMjg0NzUsMjA4MDA0OTI3LDEzOTYyNTc3NTYsMTg4MTUzNjgx
-MiwtMTIxMzEyNjU1MywtMTgxOTA4NDg5Niw5NTEyMjk4MzIsLT
-IxMjgzMjc0NjAsLTE4MzczNDQwMTUsMTIwNzU1ODEyNiw0MzEy
-NTY2ODBdfQ==
+eyJoaXN0b3J5IjpbLTE1NDMzNTg5NDQsNDY3NTY1NTcwLDExOD
+E1NzY1OTEsMTY0MTk5ODkzMSw3ODI3Njg2NCwtMjAwMzQyMjMw
+OSwtNzUxMTc2NzcxLC0xMDQ1ODc1MzM2LC01NDE3ODU5NjgsMT
+k2NzAxMDIxOCw4OTAyMjg0NzUsMjA4MDA0OTI3LDEzOTYyNTc3
+NTYsMTg4MTUzNjgxMiwtMTIxMzEyNjU1MywtMTgxOTA4NDg5Ni
+w5NTEyMjk4MzIsLTIxMjgzMjc0NjAsLTE4MzczNDQwMTUsMTIw
+NzU1ODEyNl19
 -->
