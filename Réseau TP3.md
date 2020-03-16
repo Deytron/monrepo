@@ -277,7 +277,7 @@ Router `ip n` :
 ````
 A chaque fois on a en premier l'IP concernée. Ensuite :
 dev = L'interface réseau utilisée (enp0s8/enp0s9)
-lladdr = Link Layer Address.  
+lladdr = Link Local Address. Indique l'adresse MAC concernée.
 
 ### A. Table ARP 1
 On va commencer par vider la table ARP de client1 et router avec la commande `sudo ip -s -s n flush all`. On vérifie que tout a bien été flush et on est bon toi même tu sais :
@@ -298,11 +298,11 @@ La table ARP de client1 est vide :
 On envoie un ping de client1 à server1 :
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4MTUzNjgxMiwtMTIxMzEyNjU1MywtMT
-gxOTA4NDg5Niw5NTEyMjk4MzIsLTIxMjgzMjc0NjAsLTE4Mzcz
-NDQwMTUsMTIwNzU1ODEyNiw0MzEyNTY2ODAsLTY5NjgzNzA1Ni
-w1Mjc5MzA3NzksLTE0OTIxMDIwODUsMTM1MTMxMjk2LDQwMDU2
-MjE5MiwxMzY1OTk3NTMwLC0xMzA3OTQwMzQ1LDIxMzExMDM1NC
-wzNjYxNTQ0MDUsMTY0NzQyNTA3OSwxODk0OTMzMTAsMTIyNjU0
-NjA2Ml19
+eyJoaXN0b3J5IjpbLTI1MzUxOTE0NCwxODgxNTM2ODEyLC0xMj
+EzMTI2NTUzLC0xODE5MDg0ODk2LDk1MTIyOTgzMiwtMjEyODMy
+NzQ2MCwtMTgzNzM0NDAxNSwxMjA3NTU4MTI2LDQzMTI1NjY4MC
+wtNjk2ODM3MDU2LDUyNzkzMDc3OSwtMTQ5MjEwMjA4NSwxMzUx
+MzEyOTYsNDAwNTYyMTkyLDEzNjU5OTc1MzAsLTEzMDc5NDAzND
+UsMjEzMTEwMzU0LDM2NjE1NDQwNSwxNjQ3NDI1MDc5LDE4OTQ5
+MzMxMF19
 -->
