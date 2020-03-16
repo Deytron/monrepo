@@ -251,7 +251,7 @@ ts``.
 | Machine | MAC Source        | MAC Destination   | IP Source | IP Destination |
 |---------|-------------------|-------------------|-----------|----------------|
 | net1 (rentre dans `router`)   | 0a:00:27:00:00:00 | 08:00:27:29:f4:02 | 10.3.1.1  | 10.3.1.254     |
-| net2 (part de `router`)    | 08:00:27:8f:9f:14 | 08:00:27:2b:44:56 | 10.3.1.254 | 10.3.2.11     |
+| net2 (part de `router`)    | 08:00:27:8f:9f:14 | 08:00:27:2b:44:56 | 10.3.2.254 | 10.3.2.11     |
 
 ## II. ARP
 ### 1. Tables ARP
@@ -324,11 +324,11 @@ Les adresses sont revenues dans la liste de table du server.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwNzIxNDUwNywtNzUxMTc2NzcxLC0xMD
-Q1ODc1MzM2LC01NDE3ODU5NjgsMTk2NzAxMDIxOCw4OTAyMjg0
-NzUsMjA4MDA0OTI3LDEzOTYyNTc3NTYsMTg4MTUzNjgxMiwtMT
-IxMzEyNjU1MywtMTgxOTA4NDg5Niw5NTEyMjk4MzIsLTIxMjgz
-Mjc0NjAsLTE4MzczNDQwMTUsMTIwNzU1ODEyNiw0MzEyNTY2OD
-AsLTY5NjgzNzA1Niw1Mjc5MzA3NzksLTE0OTIxMDIwODUsMTM1
-MTMxMjk2XX0=
+eyJoaXN0b3J5IjpbLTExNzQ4NDAyMTIsLTc1MTE3Njc3MSwtMT
+A0NTg3NTMzNiwtNTQxNzg1OTY4LDE5NjcwMTAyMTgsODkwMjI4
+NDc1LDIwODAwNDkyNywxMzk2MjU3NzU2LDE4ODE1MzY4MTIsLT
+EyMTMxMjY1NTMsLTE4MTkwODQ4OTYsOTUxMjI5ODMyLC0yMTI4
+MzI3NDYwLC0xODM3MzQ0MDE1LDEyMDc1NTgxMjYsNDMxMjU2Nj
+gwLC02OTY4MzcwNTYsNTI3OTMwNzc5LC0xNDkyMTAyMDg1LDEz
+NTEzMTI5Nl19
 -->
