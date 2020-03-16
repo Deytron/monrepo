@@ -186,9 +186,10 @@ PING server1 (10.3.2.11) 56(84) bytes of data.
 1 packets transmitted, 1 received, 0% packet loss, time 0ms  
 rtt min/avg/max/mdev = 1.108/1.108/1.108/0.000 ms
 ````
-##
+## I. Mise en place du routage
+J'ai mis en place le routage pour que le client puisse pinger le server et inversement. Pour ça, j'ai créé un fichier `route-enp0s8` dans /etc/sysconfig/network-scripts dans le client et le serveur
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyNDk0MzE4LDEzNTEzMTI5Niw0MDA1Nj
+eyJoaXN0b3J5IjpbNTMxMTkzMTc1LDEzNTEzMTI5Niw0MDA1Nj
 IxOTIsMTM2NTk5NzUzMCwtMTMwNzk0MDM0NSwyMTMxMTAzNTQs
 MzY2MTU0NDA1LDE2NDc0MjUwNzksMTg5NDkzMzEwLDEyMjY1ND
 YwNjIsLTgxMjM1NzAzMSwyNDcyMzQwMCwtMTQzMTcyOTQyNSwt
