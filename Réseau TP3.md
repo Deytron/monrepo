@@ -250,8 +250,8 @@ ts``.
 
 | Machine | MAC Source        | MAC Destination   | IP Source | IP Destination |
 |---------|-------------------|-------------------|-----------|----------------|
-| net1    | 0a:00:27:00:00:00 | 08:00:27:29:f4:02 | 10.3.1.1  | 10.3.1.254     |
-| net2    | 08:00:27:8f:9f:14 | 08:00:27:2b:44:56 | 10.3.2.11 | 10.3.1.254     |
+| net1 (rentre dans `router`)   | 0a:00:27:00:00:00 | 08:00:27:29:f4:02 | 10.3.1.1  | 10.3.1.254     |
+| net2 (part de `router    | 08:00:27:8f:9f:14 | 08:00:27:2b:44:56 | 10.3.2.11 | 10.3.1.254     |
 
 ## II. ARP
 ### 1. Tables ARP
@@ -315,11 +315,11 @@ L'adresse de server1 a bien été ajoutée à la table ARP de client1 et est REA
 ### B. Table ARP 2
 On clean les tables de toutes les machines. Je fais ensuite un 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkwMjI4NDc1LDIwODAwNDkyNywxMzk2Mj
-U3NzU2LDE4ODE1MzY4MTIsLTEyMTMxMjY1NTMsLTE4MTkwODQ4
-OTYsOTUxMjI5ODMyLC0yMTI4MzI3NDYwLC0xODM3MzQ0MDE1LD
-EyMDc1NTgxMjYsNDMxMjU2NjgwLC02OTY4MzcwNTYsNTI3OTMw
-Nzc5LC0xNDkyMTAyMDg1LDEzNTEzMTI5Niw0MDA1NjIxOTIsMT
-M2NTk5NzUzMCwtMTMwNzk0MDM0NSwyMTMxMTAzNTQsMzY2MTU0
-NDA1XX0=
+eyJoaXN0b3J5IjpbLTgzOTc3NDI3MCw4OTAyMjg0NzUsMjA4MD
+A0OTI3LDEzOTYyNTc3NTYsMTg4MTUzNjgxMiwtMTIxMzEyNjU1
+MywtMTgxOTA4NDg5Niw5NTEyMjk4MzIsLTIxMjgzMjc0NjAsLT
+E4MzczNDQwMTUsMTIwNzU1ODEyNiw0MzEyNTY2ODAsLTY5Njgz
+NzA1Niw1Mjc5MzA3NzksLTE0OTIxMDIwODUsMTM1MTMxMjk2LD
+QwMDU2MjE5MiwxMzY1OTk3NTMwLC0xMzA3OTQwMzQ1LDIxMzEx
+MDM1NF19
 -->
