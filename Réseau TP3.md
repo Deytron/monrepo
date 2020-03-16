@@ -142,11 +142,22 @@ Fichier hosts sur chaque machine :
 10.3.1.254 router router.tp3
 ````
 **Réseaux et adressage des machines**
-Client 1 :
+
+Client 1 vers router :
+````bash
+[lemalgache@client1 ~]$ ping router  
+PING router (10.3.1.254) 56(84) bytes of data.  
+64 bytes from router (10.3.1.254): icmp_seq=1 ttl=64 time=1.15 ms  
+64 bytes from router (10.3.1.254): icmp_seq=2 ttl=64 time=1.15 ms  
+^C  
+--- router ping statistics ---  
+2 packets transmitted, 2 received, 0% packet loss, time 1001ms  
+rtt min/avg/max/mdev = 1.152/1.154/1.156/0.002 ms
+````
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NTk5NzUzMCwtMTMwNzk0MDM0NSwyMT
-MxMTAzNTQsMzY2MTU0NDA1LDE2NDc0MjUwNzksMTg5NDkzMzEw
-LDEyMjY1NDYwNjIsLTgxMjM1NzAzMSwyNDcyMzQwMCwtMTQzMT
-cyOTQyNSwtMTYzMDY1NjI3XX0=
+eyJoaXN0b3J5IjpbNzgyMDExMjYxLDEzNjU5OTc1MzAsLTEzMD
+c5NDAzNDUsMjEzMTEwMzU0LDM2NjE1NDQwNSwxNjQ3NDI1MDc5
+LDE4OTQ5MzMxMCwxMjI2NTQ2MDYyLC04MTIzNTcwMzEsMjQ3Mj
+M0MDAsLTE0MzE3Mjk0MjUsLTE2MzA2NTYyN119
 -->
