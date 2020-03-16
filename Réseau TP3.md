@@ -417,12 +417,57 @@ pornhub.com. 3227 IN A 66.254.114.41
 ;; WHEN: lun. mars 16 16:44:51 CET 2020  
 ;; MSG SIZE rcvd: 56
 ````
+Installer un package via yum fonctionne tout aussi bien :
+````bash
+[lemalgache@client1 ~]$ sudo yum install -y epel-release  
+[sudo] Mot de passe de lemalgache :  
+Modules complémentaires chargés : fastestmirror  
+Loading mirror speeds from cached hostfile  
+* base: centos.mirrors.proxad.net  
+* extras: miroir.univ-lorraine.fr  
+* updates: centos.mirrors.proxad.net  
+base | 3.6 kB 00:00:00  
+extras | 2.9 kB 00:00:00  
+updates | 2.9 kB 00:00:00  
+Résolution des dépendances  
+--> Lancement de la transaction de test  
+---> Le paquet epel-release.noarch 0:7-11 sera installé  
+--> Résolution des dépendances terminée  
+  
+Dépendances résolues  
+  
+=======================================================================================================================  
+Package Architecture Version Dépôt Taille  
+=======================================================================================================================  
+Installation :  
+epel-release noarch 7-11 extras 15 k  
+  
+Résumé de la transaction  
+=======================================================================================================================  
+Installation 1 Paquet  
+  
+Taille totale des téléchargements : 15 k  
+Taille d'installation : 24 k  
+Downloading packages:  
+epel-release-7-11.noarch.rpm | 15 kB 00:00:00  
+Running transaction check  
+Running transaction test  
+Transaction test succeeded  
+Running transaction  
+Installation : epel-release-7-11.noarch 1/1  
+Vérification : epel-release-7-11.noarch 1/1  
+  
+Installé :  
+epel-release.noarch 0:7-11  
+  
+Terminé !
+````
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0NjM4NTQxNywtMTk0MTEyNjkwMSwzOT
-Y1Mzg0MzEsMTUzODYyMjExMCwxMjkwOTM3NDQsNDY3NTY1NTcw
-LDExODE1NzY1OTEsMTY0MTk5ODkzMSw3ODI3Njg2NCwtMjAwMz
-QyMjMwOSwtNzUxMTc2NzcxLC0xMDQ1ODc1MzM2LC01NDE3ODU5
-NjgsMTk2NzAxMDIxOCw4OTAyMjg0NzUsMjA4MDA0OTI3LDEzOT
-YyNTc3NTYsMTg4MTUzNjgxMiwtMTIxMzEyNjU1MywtMTgxOTA4
-NDg5Nl19
+eyJoaXN0b3J5IjpbLTE3Mzg5MzE0OTUsLTE5NDExMjY5MDEsMz
+k2NTM4NDMxLDE1Mzg2MjIxMTAsMTI5MDkzNzQ0LDQ2NzU2NTU3
+MCwxMTgxNTc2NTkxLDE2NDE5OTg5MzEsNzgyNzY4NjQsLTIwMD
+M0MjIzMDksLTc1MTE3Njc3MSwtMTA0NTg3NTMzNiwtNTQxNzg1
+OTY4LDE5NjcwMTAyMTgsODkwMjI4NDc1LDIwODAwNDkyNywxMz
+k2MjU3NzU2LDE4ODE1MzY4MTIsLTEyMTMxMjY1NTMsLTE4MTkw
+ODQ4OTZdfQ==
 -->
