@@ -512,13 +512,13 @@ Avant tout, on check la table ARP de base du client1 :
 [lemalgache@client1 ~]$ ip n  
 10.3.1.1 dev enp0s8 lladdr 0a:00:27:00:00:00 DELAY
 ````
-arping est installé de base avec CentOS. 
+arping est installé de base avec CentOS. On effectue la commande `sudo arping -c 1 -I enp0s8 10.3.1.11` à partir de client2, ce qui va ajouter notre
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mzk2NDYyMzUsLTE5NTg1ODEzODYsLT
-EzMDg0ODIyODgsMTA1ODYxNTM2NywtODA0NjUwMjc2LC0yMTQw
-ODI1ODk0LDExNjEzOTU0NTcsMTQ0NDAzNDc4NSw5OTg4OTA4Nj
-AsMTYwMzAwODExLC0xOTQxMTI2OTAxLDM5NjUzODQzMSwxNTM4
-NjIyMTEwLDEyOTA5Mzc0NCw0Njc1NjU1NzAsMTE4MTU3NjU5MS
-wxNjQxOTk4OTMxLDc4Mjc2ODY0LC0yMDAzNDIyMzA5LC03NTEx
-NzY3NzFdfQ==
+eyJoaXN0b3J5IjpbMTQ5NjA1MDY1OCwtMTczOTY0NjIzNSwtMT
+k1ODU4MTM4NiwtMTMwODQ4MjI4OCwxMDU4NjE1MzY3LC04MDQ2
+NTAyNzYsLTIxNDA4MjU4OTQsMTE2MTM5NTQ1NywxNDQ0MDM0Nz
+g1LDk5ODg5MDg2MCwxNjAzMDA4MTEsLTE5NDExMjY5MDEsMzk2
+NTM4NDMxLDE1Mzg2MjIxMTAsMTI5MDkzNzQ0LDQ2NzU2NTU3MC
+wxMTgxNTc2NTkxLDE2NDE5OTg5MzEsNzgyNzY4NjQsLTIwMDM0
+MjIzMDldfQ==
 -->
