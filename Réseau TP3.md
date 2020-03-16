@@ -335,13 +335,14 @@ Donc déjà le schéma il ressemble à ça :
 
 ![](https://i.imgur.com/F9h7lP3.png)
 Quand le client1 envoie un ping au server1, il passe d'abord par le routeur, et il demande "Wsh frérot bien je dois envoyer un ping à 10.3.2.11 c'est qui' et le router répond "tkt pas frérot 10.3.2.11 c'est {adresse MAC}" et du coup il peut envoyer son ping. Même chose du server au client.
+## Entracte : Donner un accès internet aux VMs
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTIyMDcyNzksMTUzODYyMjExMCwxMj
-kwOTM3NDQsNDY3NTY1NTcwLDExODE1NzY1OTEsMTY0MTk5ODkz
-MSw3ODI3Njg2NCwtMjAwMzQyMjMwOSwtNzUxMTc2NzcxLC0xMD
-Q1ODc1MzM2LC01NDE3ODU5NjgsMTk2NzAxMDIxOCw4OTAyMjg0
-NzUsMjA4MDA0OTI3LDEzOTYyNTc3NTYsMTg4MTUzNjgxMiwtMT
-IxMzEyNjU1MywtMTgxOTA4NDg5Niw5NTEyMjk4MzIsLTIxMjgz
-Mjc0NjBdfQ==
+eyJoaXN0b3J5IjpbMzk2NTM4NDMxLDE1Mzg2MjIxMTAsMTI5MD
+kzNzQ0LDQ2NzU2NTU3MCwxMTgxNTc2NTkxLDE2NDE5OTg5MzEs
+NzgyNzY4NjQsLTIwMDM0MjIzMDksLTc1MTE3Njc3MSwtMTA0NT
+g3NTMzNiwtNTQxNzg1OTY4LDE5NjcwMTAyMTgsODkwMjI4NDc1
+LDIwODAwNDkyNywxMzk2MjU3NzU2LDE4ODE1MzY4MTIsLTEyMT
+MxMjY1NTMsLTE4MTkwODQ4OTYsOTUxMjI5ODMyLC0yMTI4MzI3
+NDYwXX0=
 -->
