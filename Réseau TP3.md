@@ -242,7 +242,7 @@ traceroute to server1 (10.3.2.11), 30 hops max, 60 byte packets
 2 router (10.3.1.254) 0.975 ms !X 0.839 ms !X 0.713 ms !X
 ````
 ## 3. Comprendre le routage
-Pour mettre en évidence le routage, j'ai fait un `tcpdump` sur le serveur. Pour se faire, j'ai utilisé la commande `sudo tcpdump -i enp0s8/enp0s9 -w capture1/2.pcap`. J'ai laissé tourné, ouvert un autre onglet terminal et fait un `ping client1/server1`. 
+Pour mettre en évidence le routage, j'ai fait un `tcpdump` sur le router. Pour se faire, j'ai utilisé la commande `sudo tcpdump -i enp0s8/enp0s9 -w capture1/2.pcap`. J'ai laissé tourné, ouvert un autre onglet terminal et fait un `ping client1/server1`. 
 Puis j'ai arrêté la capture et envoyé le fichier de ma VM à ma machine locale avec 
 ``sudo scp -r -P 7777 lemalgache@10.3.1.254:/home/lemalgache/capture1/2.pcap /home/lemalgache/Documen
 ts``.
@@ -297,11 +297,11 @@ La table ARP de client1 est vide :
 On envoie un ping de client1 à server1 :
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTMxMjY1NTMsLTE4MTkwODQ4OTYsOT
-UxMjI5ODMyLC0yMTI4MzI3NDYwLC0xODM3MzQ0MDE1LDEyMDc1
-NTgxMjYsNDMxMjU2NjgwLC02OTY4MzcwNTYsNTI3OTMwNzc5LC
-0xNDkyMTAyMDg1LDEzNTEzMTI5Niw0MDA1NjIxOTIsMTM2NTk5
-NzUzMCwtMTMwNzk0MDM0NSwyMTMxMTAzNTQsMzY2MTU0NDA1LD
-E2NDc0MjUwNzksMTg5NDkzMzEwLDEyMjY1NDYwNjIsLTgxMjM1
-NzAzMV19
+eyJoaXN0b3J5IjpbLTE2ODAxMzMzMTQsLTEyMTMxMjY1NTMsLT
+E4MTkwODQ4OTYsOTUxMjI5ODMyLC0yMTI4MzI3NDYwLC0xODM3
+MzQ0MDE1LDEyMDc1NTgxMjYsNDMxMjU2NjgwLC02OTY4MzcwNT
+YsNTI3OTMwNzc5LC0xNDkyMTAyMDg1LDEzNTEzMTI5Niw0MDA1
+NjIxOTIsMTM2NTk5NzUzMCwtMTMwNzk0MDM0NSwyMTMxMTAzNT
+QsMzY2MTU0NDA1LDE2NDc0MjUwNzksMTg5NDkzMzEwLDEyMjY1
+NDYwNjJdfQ==
 -->
