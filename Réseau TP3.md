@@ -261,14 +261,27 @@ Client 1 `ip n` :
 10.3.1.254 dev enp0s8 lladdr 08:00:27:29:f4:02 STALE  
 10.3.1.1 dev enp0s8 lladdr 0a:00:27:00:00:00 REACHABLE
 ````
-Server 1`ip n` :
+Server 1 `ip n` :
+````bash
+[lemalgache@server1 ~]$ ip n  
+10.3.2.1 dev enp0s8 lladdr 0a:00:27:00:00:01 DELAY  
+10.3.2.254 dev enp0s8 lladdr 08:00:27:2b:44:56 STALE
+````
+Router `ip n` :
+````bash
+[lemalgache@router ~]$ ip n  
+10.3.1.11 dev enp0s8 lladdr 08:00:27:f7:25:85 STALE  
+10.3.1.1 dev enp0s8 lladdr 0a:00:27:00:00:00 DELAY  
+10.3.2.11 dev enp0s9 lladdr 08:00:27:8f:9f:14 STALE  
+10.3.2.1 dev enp0s9 lladdr 0a:00:27:00:00:01 STALE
+````
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NjE1NzE0MCw5NTEyMjk4MzIsLTIxMj
-gzMjc0NjAsLTE4MzczNDQwMTUsMTIwNzU1ODEyNiw0MzEyNTY2
-ODAsLTY5NjgzNzA1Niw1Mjc5MzA3NzksLTE0OTIxMDIwODUsMT
-M1MTMxMjk2LDQwMDU2MjE5MiwxMzY1OTk3NTMwLC0xMzA3OTQw
-MzQ1LDIxMzExMDM1NCwzNjYxNTQ0MDUsMTY0NzQyNTA3OSwxOD
-k0OTMzMTAsMTIyNjU0NjA2MiwtODEyMzU3MDMxLDI0NzIzNDAw
-XX0=
+eyJoaXN0b3J5IjpbLTE4MTkwODQ4OTYsOTUxMjI5ODMyLC0yMT
+I4MzI3NDYwLC0xODM3MzQ0MDE1LDEyMDc1NTgxMjYsNDMxMjU2
+NjgwLC02OTY4MzcwNTYsNTI3OTMwNzc5LC0xNDkyMTAyMDg1LD
+EzNTEzMTI5Niw0MDA1NjIxOTIsMTM2NTk5NzUzMCwtMTMwNzk0
+MDM0NSwyMTMxMTAzNTQsMzY2MTU0NDA1LDE2NDc0MjUwNzksMT
+g5NDkzMzEwLDEyMjY1NDYwNjIsLTgxMjM1NzAzMSwyNDcyMzQw
+MF19
 -->
