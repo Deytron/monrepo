@@ -236,18 +236,17 @@ rtt min/avg/max/mdev = 2.326/2.405/2.485/0.093 ms
 ````
 Vérification via `traceroute` sur le router :
 ````bash
-[lemalgache@router ~]$ traceroute client1  
-traceroute to client1 (10.3.1.11), 30 hops max, 60 byte packets  
-1 client1 (10.3.1.11) 1.152 ms !X 1.017 ms !X 0.923 ms !X  
-[lemalgache@router ~]$ traceroute server1  
+[lemalgache@client1 ~]$ traceroute server1  
 traceroute to server1 (10.3.2.11), 30 hops max, 60 byte packets  
-1 server1 (10.3.2.11) 1.304 ms !X 1.172 ms !X 1.084 ms !X
+1 router (10.3.1.254) 1.447 ms 1.281 ms 1.116 ms  
+2 router (10.3.1.254) 0.975 ms !X 0.839 ms !X 0.713 ms !X
 ````
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5NjgzNzA1Niw1Mjc5MzA3NzksLTE0OT
-IxMDIwODUsMTM1MTMxMjk2LDQwMDU2MjE5MiwxMzY1OTk3NTMw
-LC0xMzA3OTQwMzQ1LDIxMzExMDM1NCwzNjYxNTQ0MDUsMTY0Nz
-QyNTA3OSwxODk0OTMzMTAsMTIyNjU0NjA2MiwtODEyMzU3MDMx
-LDI0NzIzNDAwLC0xNDMxNzI5NDI1LC0xNjMwNjU2MjddfQ==
+eyJoaXN0b3J5IjpbNDMxMjU2NjgwLC02OTY4MzcwNTYsNTI3OT
+MwNzc5LC0xNDkyMTAyMDg1LDEzNTEzMTI5Niw0MDA1NjIxOTIs
+MTM2NTk5NzUzMCwtMTMwNzk0MDM0NSwyMTMxMTAzNTQsMzY2MT
+U0NDA1LDE2NDc0MjUwNzksMTg5NDkzMzEwLDEyMjY1NDYwNjIs
+LTgxMjM1NzAzMSwyNDcyMzQwMCwtMTQzMTcyOTQyNSwtMTYzMD
+Y1NjI3XX0=
 -->
