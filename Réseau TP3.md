@@ -312,8 +312,10 @@ On envoie un ping de client1 à server1 et on observer le changement dans la tab
 ````
 L'adresse de server1 a bien été ajoutée à la table ARP de client1 et est REACHABLE.
 
+### B. Table ARP 2
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4NTg5NTYxNSwyMDgwMDQ5MjcsMTM5Nj
+eyJoaXN0b3J5IjpbLTU5OTYzNjMwMSwyMDgwMDQ5MjcsMTM5Nj
 I1Nzc1NiwxODgxNTM2ODEyLC0xMjEzMTI2NTUzLC0xODE5MDg0
 ODk2LDk1MTIyOTgzMiwtMjEyODMyNzQ2MCwtMTgzNzM0NDAxNS
 wxMjA3NTU4MTI2LDQzMTI1NjY4MCwtNjk2ODM3MDU2LDUyNzkz
