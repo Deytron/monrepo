@@ -132,9 +132,19 @@ router.tp3
 ````
 **Fichiers `/etc/hosts` de toutes les machines configurés**
 
+Fichier hosts de tous les clients :
+````bash
+[lemalgache@client1 ~]$ cat /etc/hosts  
+127.0.0.1 localhost localhost.localdomain localhost4 localhost4.localdomain4  
+::1 localhost localhost.localdomain localhost6 localhost6.localdomain6  
+10.3.1.11 client1 client1.net1.tp3  
+10.3.2.11 server1 server1.net2.tp3  
+10.3.1.254 router router.tp3
+````
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDc5NDAzNDUsMjEzMTEwMzU0LDM2Nj
-E1NDQwNSwxNjQ3NDI1MDc5LDE4OTQ5MzMxMCwxMjI2NTQ2MDYy
-LC04MTIzNTcwMzEsMjQ3MjM0MDAsLTE0MzE3Mjk0MjUsLTE2Mz
-A2NTYyN119
+eyJoaXN0b3J5IjpbLTEyNzQ0NTk3NDcsLTEzMDc5NDAzNDUsMj
+EzMTEwMzU0LDM2NjE1NDQwNSwxNjQ3NDI1MDc5LDE4OTQ5MzMx
+MCwxMjI2NTQ2MDYyLC04MTIzNTcwMzEsMjQ3MjM0MDAsLTE0Mz
+E3Mjk0MjUsLTE2MzA2NTYyN119
 -->
