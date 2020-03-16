@@ -322,15 +322,15 @@ On clean les tables de toutes les machines. Je fais ensuite un ping de client1 �
 Les adresses sont revenues dans la liste de table du server.
 ### `tcpdump` 1
 Après avoir fait un dump du client1, on obtient ceci (ouais j'ai fait un screen) :
-![](https://i.imgur.com/mWEyHeN.png)
 
+En s'intéressant à la deuxième ligne, on peut voir que le client1 demande à routeu
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDM0MjIzMDksLTc1MTE3Njc3MSwtMT
-A0NTg3NTMzNiwtNTQxNzg1OTY4LDE5NjcwMTAyMTgsODkwMjI4
-NDc1LDIwODAwNDkyNywxMzk2MjU3NzU2LDE4ODE1MzY4MTIsLT
-EyMTMxMjY1NTMsLTE4MTkwODQ4OTYsOTUxMjI5ODMyLC0yMTI4
-MzI3NDYwLC0xODM3MzQ0MDE1LDEyMDc1NTgxMjYsNDMxMjU2Nj
-gwLC02OTY4MzcwNTYsNTI3OTMwNzc5LC0xNDkyMTAyMDg1LDEz
-NTEzMTI5Nl19
+eyJoaXN0b3J5IjpbNzgyNzY4NjQsLTIwMDM0MjIzMDksLTc1MT
+E3Njc3MSwtMTA0NTg3NTMzNiwtNTQxNzg1OTY4LDE5NjcwMTAy
+MTgsODkwMjI4NDc1LDIwODAwNDkyNywxMzk2MjU3NzU2LDE4OD
+E1MzY4MTIsLTEyMTMxMjY1NTMsLTE4MTkwODQ4OTYsOTUxMjI5
+ODMyLC0yMTI4MzI3NDYwLC0xODM3MzQ0MDE1LDEyMDc1NTgxMj
+YsNDMxMjU2NjgwLC02OTY4MzcwNTYsNTI3OTMwNzc5LC0xNDky
+MTAyMDg1XX0=
 -->
