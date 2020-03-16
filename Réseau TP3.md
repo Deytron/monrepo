@@ -197,10 +197,11 @@ J'ai mis en place le routage pour que le client puisse pinger le server et inver
 ````bash
 sudo ip route add 10.3.2.0/24 via 10.3.1.254
 ````
+Aussi, j'effectue sur le router la commande `sudo sysctl -w net.ipv4.conf.all.forwarding=1`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDA4NjIwMiwxMzUxMzEyOTYsNDAwNT
-YyMTkyLDEzNjU5OTc1MzAsLTEzMDc5NDAzNDUsMjEzMTEwMzU0
-LDM2NjE1NDQwNSwxNjQ3NDI1MDc5LDE4OTQ5MzMxMCwxMjI2NT
-Q2MDYyLC04MTIzNTcwMzEsMjQ3MjM0MDAsLTE0MzE3Mjk0MjUs
-LTE2MzA2NTYyN119
+eyJoaXN0b3J5IjpbLTE0OTIxMDIwODUsMTM1MTMxMjk2LDQwMD
+U2MjE5MiwxMzY1OTk3NTMwLC0xMzA3OTQwMzQ1LDIxMzExMDM1
+NCwzNjYxNTQ0MDUsMTY0NzQyNTA3OSwxODk0OTMzMTAsMTIyNj
+U0NjA2MiwtODEyMzU3MDMxLDI0NzIzNDAwLC0xNDMxNzI5NDI1
+LC0xNjMwNjU2MjddfQ==
 -->
