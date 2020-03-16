@@ -326,10 +326,13 @@ Après avoir fait un dump du client1, on obtient ceci (ouais j'ai fait un screen
 Aux deux premières lignes jaunes, le client1 (10.3.1.11) demande qui a l'adresse 10.3.1.254 (qui est le router). Le router répond avec son adresse MAC.
 Aux deux dernières lignes, c'est l'inverse. Le router demande qui a l'adresse 10.3.1.11, le client répond avec sa MAC.
 ### `tcpdump` 2
-Après avoir flush toutes les tables ARP, je lance un tpcdump sur verser1 pour voir toues les trames de client1.
+Après avoir flush toutes les tables ARP, je lance un tcpdump sur verser1 pour voir toues les trames de client1.
 ![](https://i.imgur.com/hthrE2v.png)
+Le client demande au router qui a l'adresse 10.3.2.11 (càd le server).
+### [](#e-u-okay-bro-)E. u okay bro ?
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ2NDQ1MDU1LDExODE1NzY1OTEsMTY0MT
+eyJoaXN0b3J5IjpbNDY3NTY1NTcwLDExODE1NzY1OTEsMTY0MT
 k5ODkzMSw3ODI3Njg2NCwtMjAwMzQyMjMwOSwtNzUxMTc2Nzcx
 LC0xMDQ1ODc1MzM2LC01NDE3ODU5NjgsMTk2NzAxMDIxOCw4OT
 AyMjg0NzUsMjA4MDA0OTI3LDEzOTYyNTc3NTYsMTg4MTUzNjgx
