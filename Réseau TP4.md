@@ -57,4 +57,10 @@ MAC <span class="token keyword">:</span> 00:50:79:66:68:00
 84 bytes from 10.4.1.11 icmp_seq<span class="token operator">=</span>1 ttl<span class="token operator">=</span>63 time<span class="token operator">=</span>21.573 ms  
 84 bytes from 10.4.1.11 icmp_seq<span class="token operator">=</span>2 ttl<span class="token operator">=</span>63 time<span class="token operator">=</span>21.855 ms
 </code></pre>
+<p>On vérifie que les paquets passent bien par le routeur avec un <code>trace</code> :</p>
+<pre class=" language-bash"><code class="prism  language-bash">guest1<span class="token operator">&gt;</span> trace 10.4.1.11  
+trace to 10.4.1.11, 8 hops max, press Ctrl+C to stop  
+1 10.4.2.254 9.476 ms 12.243 ms 10.711 ms  
+2 *10.4.1.11 27.277 ms <span class="token punctuation">(</span>ICMP type:3, code:10, Host administratively prohibited<span class="token punctuation">)</span>
+</code></pre>
 
