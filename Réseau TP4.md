@@ -63,4 +63,7 @@ trace to 10.4.1.11, 8 hops max, press Ctrl+C to stop
 1 10.4.2.254 9.476 ms 12.243 ms 10.711 ms  
 2 *10.4.1.11 27.277 ms <span class="token punctuation">(</span>ICMP type:3, code:10, Host administratively prohibited<span class="token punctuation">)</span>
 </code></pre>
+<h2 id="iii.-topologie-3--adding-nodes-and-nat">III. Topologie 3 : adding nodes and NAT</h2>
+<p>On fait la topologie oklm</p>
+<p><img src="https://i.imgur.com/XnsUtVB.png" alt=""></p>
 
