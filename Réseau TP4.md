@@ -10,7 +10,7 @@
 <p>Ici le setup de base. Tout va bien, la VM CentOS est à gauche, le VPC à droite, le routeur Cisco en haut.<br>
 Il faut qu’on paramètre les IP des PC selon le tableau d’adressage. J’ai donc modifié le fichier <code>ifcfg-enp0s9</code> de ma VM CentOS 7, et utilisé la commande <code>ip 10.4.2.11</code> dans la console du VPC.<br>
 J’ai aussi pensé à changer le hostname d’admin1.</p>
-<p>J’ai ensuite paramétré le routeur Cisco. J’ai utilisé dans l’ordre <code>conf t</code>, <code>interface fastEthernet 0/0</code>(Pour le VPC), <code>ip address 10.4.2.254 255.255.255.0</code>, puis <code>no shut</code> pour l’activer. Même chose avec <code>fastEthernet 1/0</code>(Pour l’admin1) et <code>ip address 10.4.1.254 255.255.255.0</code> et <code>no shut</code>.</p>
+<p>J’ai ensuite paramétré le routeur Cisco. J’ai utilisé dans l’ordre <code>conf t</code>, <code>interface fastEthernet 0/0</code>(Pour le VPCS), <code>ip address 10.4.2.254 255.255.255.0</code>, puis <code>no shut</code> pour l’activer. Même chose avec <code>fastEthernet 1/0</code>(Pour l’admin1) et <code>ip address 10.4.1.254 255.255.255.0</code> et <code>no shut</code>.</p>
 <p>On teste, les ping fonctionnent , le routeur peut rejoindre les deux machines :</p>
 <pre class=" language-bash"><code class="prism  language-bash">R1<span class="token comment">#ping 10.4.2.11  </span>
   
@@ -47,4 +47,14 @@ MAC <span class="token keyword">:</span> 00:50:79:66:68:00
 <p><code>admin1</code> :<br>
 <img src="https://i.imgur.com/iZpRAaj.png" alt=""></p>
 <p>On est bon sisi.</p>
+<h3 id="c.-routage">C. Routage</h3>
+<p>On ajoute une route pour pouvoir pinger le réseau guests. Comme d’hab, on crée un fichier <code>route-enp0s8</code> où on y inscrit ceci :<br>
+<code>10.4.2.0/24 via 10.4.2.254 dev enp0s8</code></p>
+<p>Après un ifdown/ifup, on teste de ping <code>guest1</code> :<br>
+<img src="https://i.imgur.com/kWTsoco.png" alt=""></p>
+<p>Pour le VPCS, on rajoute une passerelle par défaut en l’ajoutant à la commande d’ajout d’IP. Soit <code>ip 10.4.1.11 /24 10.4.1.254</code>. Et on teste le ping :</p>
+<pre class=" language-bash"><code class="prism  language-bash">guest1<span class="token operator">&gt;</span> <span class="token function">ping</span> 10.4.1.11  
+84 bytes from 10.4.1.11 icmp_seq<span class="token operator">=</span>1 ttl<span class="token operator">=</span>63 time<span class="token operator">=</span>21.573 ms  
+84 bytes from 10.4.1.11 icmp_seq<span class="token operator">=</span>2 ttl<span class="token operator">=</span>63 time<span class="token operator">=</span>21.855 ms
+</code></pre>
 
