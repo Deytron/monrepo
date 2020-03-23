@@ -85,4 +85,10 @@ Ping de <code>guest3</code> vers <code>guest2</code> :</p>
 84 bytes from 10.4.1.11 icmp_seq<span class="token operator">=</span>3 ttl<span class="token operator">=</span>63 time<span class="token operator">=</span>17.701 ms  
 84 bytes from 10.4.1.11 icmp_seq<span class="token operator">=</span>4 ttl<span class="token operator">=</span>63 time<span class="token operator">=</span>17.568 ms
 </code></pre>
+<p>Les guests peuvent pinger le réseau Admins :</p>
+<pre class=" language-bash"><code class="prism  language-bash">guest2<span class="token operator">&gt;</span> <span class="token function">ping</span> 10.4.1.254  
+84 bytes from 10.4.1.254 icmp_seq<span class="token operator">=</span>1 ttl<span class="token operator">=</span>255 time<span class="token operator">=</span>2.876 ms  
+84 bytes from 10.4.1.254 icmp_seq<span class="token operator">=</span>2 ttl<span class="token operator">=</span>255 time<span class="token operator">=</span>10.023 ms  
+84 bytes from 10.4.1.254 icmp_seq<span class="token operator">=</span>3 ttl<span class="token operator">=</span>255 time<span class="token operator">=</span>8.366 ms
+</code></pre>
 
