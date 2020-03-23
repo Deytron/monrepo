@@ -92,5 +92,8 @@ Ping de <code>guest3</code> vers <code>guest2</code> :</p>
 84 bytes from 10.4.1.254 icmp_seq<span class="token operator">=</span>3 ttl<span class="token operator">=</span>255 time<span class="token operator">=</span>8.366 ms
 </code></pre>
 <h3 id="c.-accès-wan"><a href="#c-acc%C3%A8s-wan"></a>C. Accès WAN</h3>
-<p>On file un accès WAN au routeur en réglant une interface sur la NAT (ici 2/0) et, au lieu de définir une IP avec <code>ip address XXX</code>, on fait <code>ip address dhcp</code>. C’est dans le tuto. Mais c’est pas encore fini</p>
+<p>On file un accès WAN au routeur en réglant une interface sur la NAT (ici 2/0) et, au lieu de définir une IP avec <code>ip address XXX</code>, on fait <code>ip address dhcp</code>. C’est dans le tuto. Mais c’est pas encore fini.<br>
+Il faut configurer la NAT sur le routeur. Pour ça, encore dans le tuto, on définit d’abord les interfaces internes et externes. Les interfaces externes, ce sont celles qui sont connectées à la NAT (soit uniquement 2/0), les autres c’est les LAN (soit 0/0 et 1/0).<br>
+On utilise <code>ip nat outside</code> pour marquer comme externe notre interface 2/0<br>
+On fait <code>ip nat inside</code> pour nos interfaces Admins et guests, 1/0 et 0/0</p>
 
