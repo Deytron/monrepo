@@ -95,5 +95,36 @@ Ping de <code>guest3</code> vers <code>guest2</code> :</p>
 <p>On file un accès WAN au routeur en réglant une interface sur la NAT (ici 2/0) et, au lieu de définir une IP avec <code>ip address XXX</code>, on fait <code>ip address dhcp</code>. C’est dans le tuto. Mais c’est pas encore fini.<br>
 Il faut configurer la NAT sur le routeur. Pour ça, encore dans le tuto, on définit d’abord les interfaces internes et externes. Les interfaces externes, ce sont celles qui sont connectées à la NAT (soit uniquement 2/0), les autres c’est les LAN (soit 0/0 et 1/0).<br>
 On utilise <code>ip nat outside</code> pour marquer comme externe notre interface 2/0<br>
-On fait <code>ip nat inside</code> pour nos interfaces Admins et guests, 1/0 et 0/0</p>
+On fait <code>ip nat inside</code> pour nos interfaces Admins et guests, 1/0 et 0/0.</p>
+<p>Après, on autorise le traffic sur l’interface 2/0 avec <code>access-list 1 permit any</code> et on active la NAT avec <code>ip nat inside source list 1 interface fastEthernet 0/0 overload</code>. Et bim. On a bien une IP donnée via DHCP.</p>
+<pre class=" language-bash"><code class="prism  language-bash">R1<span class="token comment">#show ip int br  </span>
+Interface IP-Address OK? Method Status Protocol  
+FastEthernet0/0 10.4.2.254 YES NVRAM up up  
+FastEthernet1/0 10.4.1.254 YES NVRAM up up  
+FastEthernet2/0 192.168.122.103 YES DHCP up up  
+FastEthernet3/0 unassigned YES NVRAM administratively down down  
+NVI0 unassigned NO unset up up
+</code></pre>
+<p>On va maintenant configurer le DNS de nos machines. Simple, trop simple. Pour les guests, on fait <code>ip dns 1.1.1.1</code>. Pour la machine <code>admin1</code>, on modifie le fichier dans <code>/etc/resolv.conf</code> et on y met <code>nameserver 1.1.1.1</code><br>
+(Bon en vrai ça y est déjà de base).<br>
+Pour le routeur, le DNS devrait déjà être activé de base. Au cas où, j’ai quand même fait un <code>ip domain-lookup</code> pour l’activer.</p>
+<p>On teste, et boum le routeur a un accès internet :</p>
+<pre class=" language-bash"><code class="prism  language-bash">R1<span class="token comment">#ping pornhub.com  </span>
+  
+Translating <span class="token string">"pornhub.com"</span><span class="token punctuation">..</span>.domain server <span class="token punctuation">(</span>192.168.122.1<span class="token punctuation">)</span> <span class="token punctuation">[</span>OK<span class="token punctuation">]</span>  
+  
+Type escape sequence to abort.  
+Sending 5, 100-byte ICMP Echos to 66.254.114.41, <span class="token function">timeout</span> is 2 seconds:  
+<span class="token operator">!</span><span class="token operator">!</span><span class="token operator">!</span><span class="token operator">!</span><span class="token operator">!</span>  
+Success rate is 100 percent <span class="token punctuation">(</span>5/5<span class="token punctuation">)</span>, round-trip min/avg/max <span class="token operator">=</span> 16/31/40 ms
+</code></pre>
+<p>Ok, le routeur va sur internet, mais pas nos PC en local. Il manque un protocole qu’on doit activer.<br>
+Toujours dans le tuto, on va activer l’OSPF et faire en sorte que notre serveur réponde en tant que 1.1.1.1 (puisque le DNS qu’on a mis sur nos machine). Pour ça, on fait les commandes <code>router ospf 1</code> pour activer l’OSPF, puis <code>router-id 1.1.1.1</code>, et enfin <code>network 10.4.2.0 0.0.0.255 area 0</code> pour donner l’accès à nos machines sur le réseau Guests. On fait <code>network 10.4.1.0 0.0.0.255 area 0</code> pour la machine sur le réseau Admins.</p>
+<p>On teste une machine guest :</p>
+<pre class=" language-bash"><code class="prism  language-bash">guest1<span class="token operator">&gt;</span> <span class="token function">ping</span> eelslap.com  
+eelslap.com resolved to 64.13.192.209  
+84 bytes from 64.13.192.209 icmp_seq<span class="token operator">=</span>1 ttl<span class="token operator">=</span>59 time<span class="token operator">=</span>171.068 ms  
+84 bytes from 64.13.192.209 icmp_seq<span class="token operator">=</span>2 ttl<span class="token operator">=</span>59 time<span class="token operator">=</span>170.250 ms  
+84 bytes from 64.13.192.209 icmp_seq<span class="token operator">=</span>3 ttl<span class="token operator">=</span>59 time<span class="token operator">=</span>172.764 ms
+</code></pre>
 
