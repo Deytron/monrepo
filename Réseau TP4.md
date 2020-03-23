@@ -91,4 +91,6 @@ Ping de <code>guest3</code> vers <code>guest2</code> :</p>
 84 bytes from 10.4.1.254 icmp_seq<span class="token operator">=</span>2 ttl<span class="token operator">=</span>255 time<span class="token operator">=</span>10.023 ms  
 84 bytes from 10.4.1.254 icmp_seq<span class="token operator">=</span>3 ttl<span class="token operator">=</span>255 time<span class="token operator">=</span>8.366 ms
 </code></pre>
+<h3 id="c.-accès-wan"><a href="#c-acc%C3%A8s-wan"></a>C. Accès WAN</h3>
+<p>On file un accès WAN au routeur en réglant une interface sur la NAT (ici 2/0) et, au lieu de définir une IP avec <code>ip address XXX</code>, on fait <code>ip address dhcp</code>. C’est dans le tuto. Mais c’est pas encore fini</p>
 
