@@ -64,6 +64,25 @@ trace to 10.4.1.11, 8 hops max, press Ctrl+C to stop
 2 *10.4.1.11 27.277 ms <span class="token punctuation">(</span>ICMP type:3, code:10, Host administratively prohibited<span class="token punctuation">)</span>
 </code></pre>
 <h2 id="iii.-topologie-3--adding-nodes-and-nat">III. Topologie 3 : adding nodes and NAT</h2>
+<h3 id="mise-en-place-1">2. Mise en place</h3>
+<h3 id="a.-topologie-gns3-1">A. Topologie GNS3</h3>
 <p>On fait la topologie oklm</p>
-<p><img src="https://i.imgur.com/XnsUtVB.png" alt=""></p>
+<p><img src="https://i.imgur.com/XnsUtVB.png" alt=""><br>
+On refait tout le paramétrage, mais sur chaque machine.<br>
+Pour les guest 1,2 et 3, on met l’IP et le gateway avec <code>10.4.2.(11,12,13) /24 10.4.2.254</code> et boum, c’est fait, les machines peuvent communiquer entre elles (le switch se charge de ça).<br>
+Pour l’admin1, on garde tout pareil ça change pas, et pour le routeur, on remet les interfaces 0/0 et 1/0. Une fois ceci fait, toutes les machines peuvent se ping entre elles (la NAT n’étant pas encore configurée, pas d’accès internet)<br>
+Ping de <code>guest3</code> vers <code>guest2</code> :</p>
+<pre class=" language-bash"><code class="prism  language-bash">guest3<span class="token operator">&gt;</span> <span class="token function">ping</span> 10.4.2.12  
+84 bytes from 10.4.2.12 icmp_seq<span class="token operator">=</span>1 ttl<span class="token operator">=</span>64 time<span class="token operator">=</span>0.656 ms  
+84 bytes from 10.4.2.12 icmp_seq<span class="token operator">=</span>2 ttl<span class="token operator">=</span>64 time<span class="token operator">=</span>0.436 ms  
+84 bytes from 10.4.2.12 icmp_seq<span class="token operator">=</span>3 ttl<span class="token operator">=</span>64 time<span class="token operator">=</span>0.845 ms  
+84 bytes from 10.4.2.12 icmp_seq<span class="token operator">=</span>4 ttl<span class="token operator">=</span>64 time<span class="token operator">=</span>1.532 ms
+</code></pre>
+<p>Ping de guest2 vers <code>admin1</code>:</p>
+<pre class=" language-bash"><code class="prism  language-bash">guest2<span class="token operator">&gt;</span> <span class="token function">ping</span> 10.4.1.11  
+84 bytes from 10.4.1.11 icmp_seq<span class="token operator">=</span>1 ttl<span class="token operator">=</span>63 time<span class="token operator">=</span>19.685 ms  
+84 bytes from 10.4.1.11 icmp_seq<span class="token operator">=</span>2 ttl<span class="token operator">=</span>63 time<span class="token operator">=</span>19.026 ms  
+84 bytes from 10.4.1.11 icmp_seq<span class="token operator">=</span>3 ttl<span class="token operator">=</span>63 time<span class="token operator">=</span>17.701 ms  
+84 bytes from 10.4.1.11 icmp_seq<span class="token operator">=</span>4 ttl<span class="token operator">=</span>63 time<span class="token operator">=</span>17.568 ms
+</code></pre>
 
