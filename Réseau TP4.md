@@ -121,7 +121,7 @@ Il faut configurer la NAT sur le routeur. Pour ça, encore dans le tuto, on déf
 On utilise `ip nat outside` pour marquer comme externe notre interface 2/0  
 On fait `ip nat inside` pour nos interfaces Admins et guests, 1/0 et 0/0.
 
-Après, on autorise le traffic sur l’interface 2/0 avec `access-list 1 permit any` et on active la NAT avec `ip nat inside source list 1 interface fastEthernet 0/0 overload`. Et bim. On a bien une IP donnée via DHCP.
+Après, on autorise le traffic sur l’interface 2/0 avec `access-list 1 permit any` et on active la NAT avec `ip nat inside source list 1 interface fastEthernet 2/0 overload`. Et bim. On a bien une IP donnée via DHCP.
 
     R1#show ip int br  
     Interface IP-Address OK? Method Status Protocol  
@@ -163,10 +163,11 @@ Ca marche tranquille. On teste maintenant avec notre machine CentOS Admin1 :
 ![](https://i.imgur.com/YaNxSaH.png)
 Tout roule. Le DNS fonctionne partout.
 
-❕Il y a un léger bug avec GNS3 où l'accès Internet ne fonctionne plus après un redémarrage de toute la topologie. Pour régler le problème, il faut entrer dans les paramètres du routeur ``clear ip nat translation *``, puis refaire la commande pour activer la NAT, à savoir 
+❕Il y a un léger bug avec GNS3 où l'accès Internet ne fonctionne plus après un redémarrage de toute la topologie. Pour régler le problème, il faut entrer dans les paramètres du routeur ``clear ip nat translation *``, puis refaire la commande pour activer la NAT, à savoir ``ip nat inside source list 1 interface fastEthernet 2/0 overload``.
 ## IV. Topologie 4 : home-made DHCP
 On rajoute une p'tite VM dhcp1 :
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3MjYwNDI4MCwtMTExNjQ4NjE1OV19
+eyJoaXN0b3J5IjpbLTEzNzQzMDUzODksLTExMTY0ODYxNTldfQ
+==
 -->
