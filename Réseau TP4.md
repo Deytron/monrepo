@@ -131,8 +131,9 @@ pornhub.com resolved to 66.254.114.41
 84 bytes from 66.254.114.41 icmp_seq=3 ttl=59 time=40.101 ms  
 84 bytes from 66.254.114.41 icmp_seq=4 ttl=59 time=41.542 ms
 ```
+
 Ca marche tranquille. On teste maintenant avec notre machine CentOS Admin1 :
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTcyNDc2MTJdfQ==
+eyJoaXN0b3J5IjpbMTMxOTcyNDQ2Nl19
 -->
