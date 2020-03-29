@@ -163,9 +163,8 @@ Ca marche tranquille. On teste maintenant avec notre machine CentOS Admin1 :
 ![](https://i.imgur.com/YaNxSaH.png)
 Tout roule. Le DNS fonctionne partout.
 ## IV. Topologie 4 : home-made DHCP
-On rajoute un p'ti PC dhcp1 : 
-![](https://i.imgur.com/BKJYbFs.png)
+On rajoute une p'tite VM dhcp1 :
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI0OTUyMjM3XX0=
+eyJoaXN0b3J5IjpbLTExMTY0ODYxNTldfQ==
 -->
