@@ -168,8 +168,8 @@ Tout roule. Le DNS fonctionne partout.
 On rajoute une p'tite VM dhcp1 :
 ![](https://i.imgur.com/GcqPex3.png)
 On la configure comme d'hab, on met le hostname ``dhcp1`` et l'IP du tableau, à savoir ``10.4.2.253``. Il est temps de passer à l'action.
-Changement total de plan puisqu'on va passer tous les PC guests en IP DHCP. Pour ça, on utilise la commande ``conf t``,``ip address dhcp``,``no shut``
+Changement total de plan puisqu'on va passer tous les PC guests en IP DHCP. Pour ça, on utilise la commande ``conf t``,``ip address dhcp``,``no shut``.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzNzg1NjEwMywyNDY5ODkzODQsLTEzNz
-QzMDUzODksLTExMTY0ODYxNTldfQ==
+eyJoaXN0b3J5IjpbODA0OTIyOTc1LDI0Njk4OTM4NCwtMTM3ND
+MwNTM4OSwtMTExNjQ4NjE1OV19
 -->
