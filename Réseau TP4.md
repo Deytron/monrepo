@@ -171,7 +171,7 @@ On la configure comme d'hab, on met le hostname ``dhcp1`` et l'IP du tableau, à
 
 Changement total de plan puisqu'on va passer tous les PC guests en IP DHCP. Mais avant ça, il nous faut ledit DHCP. Pour ça, on suit le tuto et on installe le paquet DHCP avec ``sudo yum install dhcp -y``. Une fois fait, on va venir copier/coller-- ah bah non, on va venir recopier à la main le script de Léo. Ouais  c'est bien bo d'avoir un script déjà fait, mais on rappelle qu'on a pas d'accès SSH aux VM, que le copier/coller VM/machine fonctionne pas (??) et que j'ai la flemme de faire un SCP ou quoi que ce soit d'autre, donc tant pis. Go dans ``/etc/dhcp`` et faire le fichier ``dhcpd.conf``
 
-
+Une fois fait, on démarre le service avec ``sudo systemctl start dhcpd``
 
 
 
@@ -182,6 +182,6 @@ Changement total de plan puisqu'on va passer tous les PC guests en IP DHCP. Mais
 
 Pour ça, on utilise la commande ``ip dhcp``.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTQxMjIwMDcsMjQ2OTg5Mzg0LC0xMz
+eyJoaXN0b3J5IjpbLTE4MDk2OTcwOTAsMjQ2OTg5Mzg0LC0xMz
 c0MzA1Mzg5LC0xMTE2NDg2MTU5XX0=
 -->
