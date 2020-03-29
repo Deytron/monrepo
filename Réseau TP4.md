@@ -169,13 +169,15 @@ On rajoute une p'tite VM dhcp1 :
 ![](https://i.imgur.com/GcqPex3.png)
 On la configure comme d'hab, on met le hostname ``dhcp1`` et l'IP du tableau, à savoir ``10.4.2.253``. Il est temps de passer à l'action.
 
-Changement total de plan puisqu'on va passer tous les PC guests en IP DHCP. Mais avant ça, il nous faut ledit DHCP. Pour ça, on suit le tuto et on installe le paquet DHCP avec ``sudo yum install dhcp -y``. Une fois fait
+Changement total de plan puisqu'on va passer tous les PC guests en IP DHCP. Mais avant ça, il nous faut ledit DHCP. Pour ça, on suit le tuto et on installe le paquet DHCP avec ``sudo yum install dhcp -y``. Une fois fait, on va venir copier/coller-- ah bah non, on va venir recopier à la main le script de Léo. Ouais  c'est bien bo d'avoir un script déjà fait, mais on rappelle qu'on a pas d'accès SSH aux VM et que j'ai la flemme de faire un SCP ou quoi que ce soit d'autre, donc tant pis.
+
+
 
 
 
 
 Pour ça, on utilise la commande ``ip dhcp``.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0NjkyMTAzMCwyNDY5ODkzODQsLTEzNz
+eyJoaXN0b3J5IjpbMTQ3NDA2NTg1NywyNDY5ODkzODQsLTEzNz
 QzMDUzODksLTExMTY0ODYxNTldfQ==
 -->
