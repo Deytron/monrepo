@@ -178,8 +178,10 @@ Changement total de plan puisqu'on va passer tous les PC guests en IP DHCP. Mais
 
 
 
+
+
 Pour ça, on utilise la commande ``ip dhcp``.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNTk2Njk4OSwyNDY5ODkzODQsLTEzNz
-QzMDUzODksLTExMTY0ODYxNTldfQ==
+eyJoaXN0b3J5IjpbLTE1MTQxMjIwMDcsMjQ2OTg5Mzg0LC0xMz
+c0MzA1Mzg5LC0xMTE2NDg2MTU5XX0=
 -->
