@@ -121,13 +121,17 @@ Success rate is 100 percent <span class="token punctuation">(</span>5/5<span cla
 <p>Ok, le routeur va sur internet, mais pas nos PC en local. Il manque un protocole qu’on doit activer.<br>
 Toujours dans le tuto, on va activer l’OSPF et faire en sorte que notre serveur réponde en tant que 1.1.1.1 (puisque le DNS qu’on a mis sur nos machine). Pour ça, on fait les commandes <code>router ospf 1</code> pour activer l’OSPF, puis <code>router-id 1.1.1.1</code>, et enfin <code>network 10.4.2.0 0.0.0.255 area 0</code> pour donner l’accès à nos machines sur le réseau Guests. On fait <code>network 10.4.1.0 0.0.0.255 area 0</code> pour la machine sur le réseau Admins.</p>
 <p>On teste une machine guest :</p>
-<pre class=" language-bash"><code class="prism  language-bash">guest1<span class="token operator">&gt;</span> <span class="token function">ping</span> eelslap.com  
-eelslap.com resolved to 64.13.192.209  
-84 bytes from 64.13.192.209 icmp_seq<span class="token operator">=</span>1 ttl<span class="token operator">=</span>59 time<span class="token operator">=</span>171.068 ms  
-84 bytes from 64.13.192.209 icmp_seq<span class="token operator">=</span>2 ttl<span class="token operator">=</span>59 time<span class="token operator">=</span>170.250 ms  
-84 bytes from 64.13.192.209 icmp_seq<span class="token operator">=</span>3 ttl<span class="token operator">=</span>59 time<span class="token operator">=</span>172.764 ms
-</code></pre>
+<pre class=" language-bash">
 
+```bash
+guest1> ping pornhub.com  
+pornhub.com resolved to 66.254.114.41  
+84 bytes from 66.254.114.41 icmp_seq=1 ttl=59 time=40.394 ms  
+84 bytes from 66.254.114.41 icmp_seq=2 ttl=59 time=58.896 ms  
+84 bytes from 66.254.114.41 icmp_seq=3 ttl=59 time=40.101 ms  
+84 bytes from 66.254.114.41 icmp_seq=4 ttl=59 time=41.542 ms
+```
+Ca 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwMTMyMzczMl19
+eyJoaXN0b3J5IjpbODk0NzU3NDEyXX0=
 -->
