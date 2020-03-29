@@ -166,8 +166,9 @@ Tout roule. Le DNS fonctionne partout.
 ❕Il y a un léger bug avec GNS3 où l'accès Internet ne fonctionne plus après un redémarrage de toute la topologie. Pour régler le problème, il faut entrer dans les paramètres du routeur ``clear ip nat translation *``, puis refaire la commande pour activer la NAT, à savoir ``interface fastEthernet {NUM}`` ,``ip nat inside`` puis ``ip nat inside source list 1 interface fastEthernet 2/0 overload``.
 ## IV. Topologie 4 : home-made DHCP
 On rajoute une p'tite VM dhcp1 :
-
+![](https://i.imgur.com/GcqPex3.png)
+On la configure comme d'hab, on met le hostname ``dhcp1`` et l'IP du tableau, à savoir ``10.4.2.253``. Il est temps de passer à l'action.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQ2OTg5Mzg0LC0xMzc0MzA1Mzg5LC0xMT
-E2NDg2MTU5XX0=
+eyJoaXN0b3J5IjpbLTg4NjgwNTEyMywyNDY5ODkzODQsLTEzNz
+QzMDUzODksLTExMTY0ODYxNTldfQ==
 -->
