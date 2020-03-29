@@ -160,6 +160,8 @@ pornhub.com resolved to 66.254.114.41
 ```
 
 Ca marche tranquille. On teste maintenant avec notre machine CentOS Admin1 :
+![](https://i.imgur.com/YaNxSaH.png)
+Tout roule.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4ODEwMzU2N119
+eyJoaXN0b3J5IjpbLTEzMzc4MTMyNzldfQ==
 -->
