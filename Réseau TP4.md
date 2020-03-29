@@ -150,11 +150,16 @@ Ok, le routeur va sur internet, mais pas nos PC en local. Il manque un protocole
 Toujours dans le tuto, on va activer l’OSPF et faire en sorte que notre serveur réponde en tant que 1.1.1.1 (puisque le DNS qu’on a mis sur nos machine). Pour ça, on fait les commandes `router ospf 1` pour activer l’OSPF, puis `router-id 1.1.1.1`, et enfin `network 10.4.2.0 0.0.0.255 area 0` pour donner l’accès à nos machines sur le réseau Guests. On fait `network 10.4.1.0 0.0.0.255 area 0` pour la machine sur le réseau Admins.
 
 On teste une machine guest :
-
-<pre class=" language-bash">
+```bash
+guest1> ping pornhub.com
+pornhub.com resolved to 66.254.114.41
+84 bytes from 66.254.114.41 icmp_seq=1 ttl=59 time=40.394 ms
+84 bytes from 66.254.114.41 icmp_seq=2 ttl=59 time=58.896 ms
+84 bytes from 66.254.114.41 icmp_seq=3 ttl=59 time=40.101 ms
+84 bytes from 66.254.114.41 icmp_seq=4 ttl=59 time=41.542 ms
+```
 
 Ca marche tranquille. On teste maintenant avec notre machine CentOS Admin1 :
-</pre>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMDE5NTk0MF19
+eyJoaXN0b3J5IjpbMjA4ODEwMzU2N119
 -->
