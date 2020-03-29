@@ -161,7 +161,9 @@ pornhub.com resolved to 66.254.114.41
 
 Ca marche tranquille. On teste maintenant avec notre machine CentOS Admin1 :
 ![](https://i.imgur.com/YaNxSaH.png)
-Tout roule.
+Tout roule. Le DNS fonctionne partout.
+## IV. Topologie 4 : home-made DHCP
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzc4MTMyNzldfQ==
+eyJoaXN0b3J5IjpbMTE3MjU2OTk0MF19
 -->
