@@ -173,18 +173,14 @@ Changement total de plan puisqu'on va passer tous les PC guests en IP DHCP. Mais
 
 Une fois fait, on démarre le service avec ``sudo systemctl start dhcpd``. Si le fichier de config est bien configuré, tout fonctionne.
 
-On check qu'on a bien le port 67 en écoute :
+On check qu'on a bien le port 67 présent :
 ![](https://i.imgur.com/IWlaqYK.png)
-
-
-
-
-
-
-
-
-Pour ça, on utilise la commande ``ip dhcp``.
+On give des adresses IP à nos guests avec  ``ip dhcp`` :
+```bash
+guest1> ip dhcp  
+DDORA IP 10.4.2.100/24 GW 10.4.2.254
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA4Mjk1MjczLDE5ODA5MzU1NzgsMjQ2OT
+eyJoaXN0b3J5IjpbNzQ5MzE4MDQxLDE5ODA5MzU1NzgsMjQ2OT
 g5Mzg0LC0xMzc0MzA1Mzg5LC0xMTE2NDg2MTU5XX0=
 -->
