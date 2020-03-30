@@ -188,7 +188,12 @@ DDORA IP 10.4.2.101/24 GW 10.4.2.254
 guest3> ip dhcp  
 DDORA IP 10.4.2.102/24 GW 10.4.2.254
 ```
+
+On peut vérifier qu'on a bien le DORA avec Wireshark :
+![](https://i.imgur.com/irloQ1f.png)
+Et bim.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzNzU5MDU4MywxOTgwOTM1NTc4LDI0Nj
-k4OTM4NCwtMTM3NDMwNTM4OSwtMTExNjQ4NjE1OV19
+eyJoaXN0b3J5IjpbLTMzMjI0MDEzNSwxMjM3NTkwNTgzLDE5OD
+A5MzU1NzgsMjQ2OTg5Mzg0LC0xMzc0MzA1Mzg5LC0xMTE2NDg2
+MTU5XX0=
 -->
