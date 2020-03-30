@@ -180,7 +180,15 @@ On give des adresses IP à nos guests avec  ``ip dhcp`` :
 guest1> ip dhcp  
 DDORA IP 10.4.2.100/24 GW 10.4.2.254
 ```
+```bash
+guest2> ip dhcp  
+DDORA IP 10.4.2.101/24 GW 10.4.2.254
+```
+```bash
+guest3> ip dhcp  
+DDORA IP 10.4.2.102/24 GW 10.4.2.254
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ5MzE4MDQxLDE5ODA5MzU1NzgsMjQ2OT
-g5Mzg0LC0xMzc0MzA1Mzg5LC0xMTE2NDg2MTU5XX0=
+eyJoaXN0b3J5IjpbMTIzNzU5MDU4MywxOTgwOTM1NTc4LDI0Nj
+k4OTM4NCwtMTM3NDMwNTM4OSwtMTExNjQ4NjE1OV19
 -->
