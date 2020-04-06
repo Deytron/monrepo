@@ -71,7 +71,8 @@ PC1> ping 10.5.10.12
 PC3> ping 10.5.20.12
 84 bytes from 10.5.20.12 icmp_seq=1 ttl=64 time=1.242 ms
 ```
+Normalement si un guests  prend une 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5MTE1NjE0NiwtMTA5NzA0NDY1LC00MT
+eyJoaXN0b3J5IjpbLTQ5Njk1MjI3OSwtMTA5NzA0NDY1LC00MT
 MyODYxMDgsMTU1ODM3NzY4XX0=
 -->
