@@ -201,13 +201,17 @@ Bon on va reconfig le DHCP. On reprend la machine utilisée dans le TP4 et on ch
 ![](https://i.imgur.com/Lr6aeWm.png)
 On fait un p'ti `systemctl restart dhcpd` et c'est bon.
 Normalement le `guest3` est censé chopper une IP si je lui fait `ip dhcp` :
+```bash
+PC6> ip dhcp  
+DDORA IP 10.5.20.100/24 GW 10.5.20.254
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDEwNDY2NDAsLTE2MTg3MTYyOTYsLT
-E2NTA3MTU3OTIsMTIzMDQ2MjE2OSwxNzk2MzQwNzM1LDE4OTQ3
-MjMwODksLTY5NDExNzM5NSwtMjE1ODE4MTQyLDY4MjQ0Mzk2My
-wxMTU4ODU1Njc3LC0yMDgyMzc3NTA0LDEyNDMwMDg3NjksNzgx
-OTYxMzQ2LC01MDM1NTU2ODcsLTE0Mjg5NzAxMTgsNDc0NTM4Mz
-Y0LC01MTU0MTg1MiwtMTA5NzA0NDY1LC00MTMyODYxMDgsMTU1
-ODM3NzY4XX0=
+eyJoaXN0b3J5IjpbNzQwMDc2MjYzLC0xMjQxMDQ2NjQwLC0xNj
+E4NzE2Mjk2LC0xNjUwNzE1NzkyLDEyMzA0NjIxNjksMTc5NjM0
+MDczNSwxODk0NzIzMDg5LC02OTQxMTczOTUsLTIxNTgxODE0Mi
+w2ODI0NDM5NjMsMTE1ODg1NTY3NywtMjA4MjM3NzUwNCwxMjQz
+MDA4NzY5LDc4MTk2MTM0NiwtNTAzNTU1Njg3LC0xNDI4OTcwMT
+E4LDQ3NDUzODM2NCwtNTE1NDE4NTIsLTEwOTcwNDQ2NSwtNDEz
+Mjg2MTA4XX0=
 -->
