@@ -220,9 +220,9 @@ Le DHCP Snooping permet de ne pas se manger des IP venant d'un serveur DHCP non 
 
 Pour activer le DHCP Snooping sur un routeur Cisco, on fait `conf t`, `ip dhcp snooping`. Si on veut l'activer dans un VLAN particulier, on rajoute `ip dhcp snooping vlan 1 {vlan}`.
 
-Si on veut autoriser les requêtes DHCP sur une interface particulière, on peut utiliser `ip dhcp snooping trust` dans la conf de l'interface. On peut également limiter le nombre 
+Si on veut autoriser les requêtes DHCP sur une interface particulière, on peut utiliser `ip dhcp snooping trust` dans la conf de l'interface. On peut également limiter le nombre `ip dhcp snooping limit rate {nombre}`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzU3NjQ2MTYsMTE0MzAwNjE4NiwtOD
+eyJoaXN0b3J5IjpbLTE2ODU4OTY5MTMsMTE0MzAwNjE4NiwtOD
 Y2MTMzODQxLC0xMjQ4MDI4ODA5LC0xMjM1NjcxMzA3LC0xOTIx
 MjYzNjE4LDc0MDA3NjI2MywtMTI0MTA0NjY0MCwtMTYxODcxNj
 I5NiwtMTY1MDcxNTc5MiwxMjMwNDYyMTY5LDE3OTYzNDA3MzUs
