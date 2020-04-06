@@ -211,12 +211,15 @@ Une fois ceci fait, qui dit serveur web dit port HTTP, donc on va autoriser le p
 Deux trucs pour tester le fonctionnement : un petit curl sur le serveur lui-même nous renvoie ça :
 ![](https://i.imgur.com/NYjsGk0.png)
 puis un curl via par exemple le DHCP nous renvoie ça :
+![](https://i.imgur.com/PVtBmz9.png)
+Bon OK là c'est la sauce, les autres machines captent le serveur nginx mais ne renvoient rien.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2NjEzMzg0MSwtMTI0ODAyODgwOSwtMT
-IzNTY3MTMwNywtMTkyMTI2MzYxOCw3NDAwNzYyNjMsLTEyNDEw
-NDY2NDAsLTE2MTg3MTYyOTYsLTE2NTA3MTU3OTIsMTIzMDQ2Mj
-E2OSwxNzk2MzQwNzM1LDE4OTQ3MjMwODksLTY5NDExNzM5NSwt
-MjE1ODE4MTQyLDY4MjQ0Mzk2MywxMTU4ODU1Njc3LC0yMDgyMz
-c3NTA0LDEyNDMwMDg3NjksNzgxOTYxMzQ2LC01MDM1NTU2ODcs
-LTE0Mjg5NzAxMThdfQ==
+eyJoaXN0b3J5IjpbMTE0MzAwNjE4NiwtODY2MTMzODQxLC0xMj
+Q4MDI4ODA5LC0xMjM1NjcxMzA3LC0xOTIxMjYzNjE4LDc0MDA3
+NjI2MywtMTI0MTA0NjY0MCwtMTYxODcxNjI5NiwtMTY1MDcxNT
+c5MiwxMjMwNDYyMTY5LDE3OTYzNDA3MzUsMTg5NDcyMzA4OSwt
+Njk0MTE3Mzk1LC0yMTU4MTgxNDIsNjgyNDQzOTYzLDExNTg4NT
+U2NzcsLTIwODIzNzc1MDQsMTI0MzAwODc2OSw3ODE5NjEzNDYs
+LTUwMzU1NTY4N119
 -->
