@@ -160,10 +160,20 @@ PC2> ping 10.5.20.254
 Ca fonctionne t'as capté.
 
 ### 5. NAT
-On configure la NAT c'est parti
+On configure la NAT c'est parti procédure standard
+
+
+
+```bash
+PC1> ping 8.8.8.8  
+*10.5.10.254 icmp_seq=1 ttl=255 time=54.009 ms (ICMP type:3, code:1, Destination host unreachable)  
+*10.5.10.254 icmp_seq=2 ttl=255 time=3.532 ms (ICMP type:3, code:1, Destination host unreachable)  
+*10.5.10.254 icmp_seq=3 ttl=255 time=12.028 ms (ICMP type:3, code:1, Destination host unreachable)
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjgyNDQzOTYzLDExNTg4NTU2NzcsLTIwOD
-IzNzc1MDQsMTI0MzAwODc2OSw3ODE5NjEzNDYsLTUwMzU1NTY4
-NywtMTQyODk3MDExOCw0NzQ1MzgzNjQsLTUxNTQxODUyLC0xMD
-k3MDQ0NjUsLTQxMzI4NjEwOCwxNTU4Mzc3NjhdfQ==
+eyJoaXN0b3J5IjpbNDkyMDEwODA5LDY4MjQ0Mzk2MywxMTU4OD
+U1Njc3LC0yMDgyMzc3NTA0LDEyNDMwMDg3NjksNzgxOTYxMzQ2
+LC01MDM1NTU2ODcsLTE0Mjg5NzAxMTgsNDc0NTM4MzY0LC01MT
+U0MTg1MiwtMTA5NzA0NDY1LC00MTMyODYxMDgsMTU1ODM3NzY4
+XX0=
 -->
