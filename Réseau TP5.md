@@ -110,7 +110,7 @@ PC4> ping 10.5.20.13
 ```
 Tout pinge.
 
-Maintenant on met les VLAN partout sur les 3 switch (c'est les mêmes commandes on va assumer 
+Maintenant on met les VLAN partout sur les 3 switch (c'est les mêmes commandes on va assumer que je les ai refait tk)
 ```bash
 PC6> ping 10.5.10.11  
 ^Chost (10.5.10.11) not reachable  
@@ -125,7 +125,7 @@ PC6> ping 10.5.20.13
 No gateway found
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2NTgwMDg3NiwtMTQyODk3MDExOCw0Nz
+eyJoaXN0b3J5IjpbLTI0ODIyMzcxNSwtMTQyODk3MDExOCw0Nz
 Q1MzgzNjQsLTUxNTQxODUyLC0xMDk3MDQ0NjUsLTQxMzI4NjEw
 OCwxNTU4Mzc3NjhdfQ==
 -->
