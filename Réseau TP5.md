@@ -212,16 +212,18 @@ Deux trucs pour tester le fonctionnement : un petit curl sur le serveur lui-mêm
 ![](https://i.imgur.com/NYjsGk0.png)
 puis un curl via par exemple le DHCP nous renvoie ça :
 ![](https://i.imgur.com/PVtBmz9.png)
-Bon OK là c'est la sauce, les autres machines captent le serveur nginx mais ne renvoient rien.
+Bon OK là c'est la sauce, les autres machines captent le serveur nginx mais ne renvoient rien. 
 
 ### DHCP snooping
-Bon bah ça c'est très simple. Pour activer le DHCP Snooping sur un routeur Cisco, on fait `conf t`, `ip dhcp snooping`
+Bon bah ça c'est très simple. 
+Le DHCP Snooping permet de ne pas se manger des IP venant d'un serveur DHCP non autorisé. Il filtre les requêtes "DHCP OFFER"
+Pour activer le DHCP Snooping sur un routeur Cisco, on fait `conf t`, `ip dhcp snooping`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjUyNDMxMDcsMTE0MzAwNjE4NiwtOD
-Y2MTMzODQxLC0xMjQ4MDI4ODA5LC0xMjM1NjcxMzA3LC0xOTIx
-MjYzNjE4LDc0MDA3NjI2MywtMTI0MTA0NjY0MCwtMTYxODcxNj
-I5NiwtMTY1MDcxNTc5MiwxMjMwNDYyMTY5LDE3OTYzNDA3MzUs
-MTg5NDcyMzA4OSwtNjk0MTE3Mzk1LC0yMTU4MTgxNDIsNjgyND
-QzOTYzLDExNTg4NTU2NzcsLTIwODIzNzc1MDQsMTI0MzAwODc2
-OSw3ODE5NjEzNDZdfQ==
+eyJoaXN0b3J5IjpbMTQxNDQ5NjIwNSwxMTQzMDA2MTg2LC04Nj
+YxMzM4NDEsLTEyNDgwMjg4MDksLTEyMzU2NzEzMDcsLTE5MjEy
+NjM2MTgsNzQwMDc2MjYzLC0xMjQxMDQ2NjQwLC0xNjE4NzE2Mj
+k2LC0xNjUwNzE1NzkyLDEyMzA0NjIxNjksMTc5NjM0MDczNSwx
+ODk0NzIzMDg5LC02OTQxMTczOTUsLTIxNTgxODE0Miw2ODI0ND
+M5NjMsMTE1ODg1NTY3NywtMjA4MjM3NzUwNCwxMjQzMDA4NzY5
+LDc4MTk2MTM0Nl19
 -->
