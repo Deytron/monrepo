@@ -32,7 +32,7 @@ gns3vm(config-vlan)#name guests
 ```
 Maintenant faut setup les VLAN sur les interfaces des PC admins et guest (chez moi 0/1 et 0/2) et le trunk sur le port inter-switch (chez moi 0/0)
 
-Ici sur le switch IOU1
+Ici sur le switch IOU1 :
 ```bash
 gns3vm(config)#interface Ethernet 0/1
 gns3vm(config-if)#switchport mode access
@@ -48,6 +48,6 @@ gns3vm(config-if)#switchport trunk encapsulation dot1q
 gns3vm(config-if)#switchport mode trunk 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczMjI2MjYzNSwtNDEzMjg2MTA4LDE1NT
+eyJoaXN0b3J5IjpbLTEwOTcwNDQ2NSwtNDEzMjg2MTA4LDE1NT
 gzNzc2OF19
 -->
