@@ -87,7 +87,10 @@ host (10.5.10.13) not reachable
 On fait la topo on est là :
 ![](https://i.imgur.com/vmJ9YlA.png)
 
+On configure toutes les IP des machines `admins` et `guests` :
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc0NTM4MzY0LC01MTU0MTg1MiwtMTA5Nz
-A0NDY1LC00MTMyODYxMDgsMTU1ODM3NzY4XX0=
+eyJoaXN0b3J5IjpbLTExNDg2MDE2NjgsNDc0NTM4MzY0LC01MT
+U0MTg1MiwtMTA5NzA0NDY1LC00MTMyODYxMDgsMTU1ODM3NzY4
+XX0=
 -->
