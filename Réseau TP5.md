@@ -16,6 +16,14 @@ PC3> ping 10.5.20.12
 84 bytes from 10.5.20.12 icmp_seq=2 ttl=64 time=1.325 ms
 ```
 
+
+```bash
+gns3vm#conf t  
+Enter configuration commands, one per line. End with CNTL/Z.  
+gns3vm(config)#vlan 10  
+gns3vm(config-vlan)#name admins  
+gns3vm(config-vlan)#exit
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1ODM3NzY4XX0=
+eyJoaXN0b3J5IjpbNTM3MTI2MTEyLDE1NTgzNzc2OF19
 -->
