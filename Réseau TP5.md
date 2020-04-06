@@ -82,7 +82,10 @@ PC1 : 10.5.10.13 255.255.255.0
 PC1> ping 10.5.10.13
 host (10.5.10.13) not reachable
 ```
+## II. Topologie 2 - VLAN, sous-interface, NAT
+### 1. Mise en place de la topologie
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNDkyNzIxMywtMTA5NzA0NDY1LC00MT
-MyODYxMDgsMTU1ODM3NzY4XX0=
+eyJoaXN0b3J5IjpbLTUxNTQxODUyLC0xMDk3MDQ0NjUsLTQxMz
+I4NjEwOCwxNTU4Mzc3NjhdfQ==
 -->
