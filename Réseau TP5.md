@@ -30,8 +30,8 @@ Enter configuration commands, one per line. End with CNTL/Z.
 gns3vm(config)#vlan 20  
 gns3vm(config-vlan)#name guests
 ```
-Maintenant faut setup les VLAN
+Maintenant faut setup les VLAN sur les interfaces des PC admins et guest (chez moi 0/1 et 0/2)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUxNzQwMDE1LC00MTMyODYxMDgsMTU1OD
-M3NzY4XX0=
+eyJoaXN0b3J5IjpbLTM0NDE2MTcwMywtNDEzMjg2MTA4LDE1NT
+gzNzc2OF19
 -->
