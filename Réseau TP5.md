@@ -194,13 +194,16 @@ PC1> ping 10.5.30.11
 84 bytes from 10.5.30.11 icmp_seq=1 ttl=63 time=21.563 ms  
 84 bytes from 10.5.30.11 icmp_seq=2 ttl=63 time=16.160 ms
 ```
-DHCP veers `Web` :
+DHCP vers `Web` :
+![](https://i.imgur.com/aIGCKLg.png)
+Là c'est juste deux exemples.
+Bon on va reconfig le DHCP. On reprend la machine utilisée dans le TP4 et on change le subnet et les range des IP :
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNjg4MzM4OSwxMjMwNDYyMTY5LDE3OT
-YzNDA3MzUsMTg5NDcyMzA4OSwtNjk0MTE3Mzk1LC0yMTU4MTgx
-NDIsNjgyNDQzOTYzLDExNTg4NTU2NzcsLTIwODIzNzc1MDQsMT
-I0MzAwODc2OSw3ODE5NjEzNDYsLTUwMzU1NTY4NywtMTQyODk3
-MDExOCw0NzQ1MzgzNjQsLTUxNTQxODUyLC0xMDk3MDQ0NjUsLT
-QxMzI4NjEwOCwxNTU4Mzc3NjhdfQ==
+eyJoaXN0b3J5IjpbLTE2NTA3MTU3OTIsMTIzMDQ2MjE2OSwxNz
+k2MzQwNzM1LDE4OTQ3MjMwODksLTY5NDExNzM5NSwtMjE1ODE4
+MTQyLDY4MjQ0Mzk2MywxMTU4ODU1Njc3LC0yMDgyMzc3NTA0LD
+EyNDMwMDg3NjksNzgxOTYxMzQ2LC01MDM1NTU2ODcsLTE0Mjg5
+NzAxMTgsNDc0NTM4MzY0LC01MTU0MTg1MiwtMTA5NzA0NDY1LC
+00MTMyODYxMDgsMTU1ODM3NzY4XX0=
 -->
