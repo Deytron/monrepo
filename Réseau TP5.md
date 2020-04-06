@@ -30,7 +30,7 @@ Enter configuration commands, one per line. End with CNTL/Z.
 gns3vm(config)#vlan 20  
 gns3vm(config-vlan)#name guests
 ```
-Maintenant faut setup les VLAN sur les interfaces des PC admins et guest (chez moi 0/1 et 0/2)
+Maintenant faut setup les VLAN sur les interfaces des PC admins et guest (chez moi 0/1 et 0/2) et le trunk sur le port inter-switch (chez moi 0/0)
 
 ```bash
 gns3vm(config)#interface Ethernet 0/1
@@ -44,6 +44,6 @@ gns3vm(config-if)#exit
 gns3vm(config)#interface Ethernet 0/0
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MjMyNDkyOSwtNDEzMjg2MTA4LDE1NT
+eyJoaXN0b3J5IjpbLTg2MjMyMjc1MywtNDEzMjg2MTA4LDE1NT
 gzNzc2OF19
 -->
