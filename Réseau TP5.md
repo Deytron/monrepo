@@ -16,6 +16,7 @@ PC3> ping 10.5.20.12
 84 bytes from 10.5.20.12 icmp_seq=2 ttl=64 time=1.325 ms
 ```
 
+### 3. Setup VLANs
 
 ```bash
 gns3vm#conf t  
@@ -25,5 +26,5 @@ gns3vm(config-vlan)#name admins
 gns3vm(config-vlan)#exit
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM3MTI2MTEyLDE1NTgzNzc2OF19
+eyJoaXN0b3J5IjpbMTQ3NzM0NTQxNywxNTU4Mzc3NjhdfQ==
 -->
