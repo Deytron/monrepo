@@ -200,12 +200,12 @@ Là c'est juste deux exemples.
 Bon on va reconfig le DHCP. On reprend la machine utilisée dans le TP4 et on change le subnet et les range des IP :
 ![](https://i.imgur.com/Lr6aeWm.png)
 On fait un p'ti `systemctl restart dhcpd` et c'est bon.
-
+Normalement le `
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI4OTQ2MTMsLTE2NTA3MTU3OTIsMTIzMD
-Q2MjE2OSwxNzk2MzQwNzM1LDE4OTQ3MjMwODksLTY5NDExNzM5
-NSwtMjE1ODE4MTQyLDY4MjQ0Mzk2MywxMTU4ODU1Njc3LC0yMD
-gyMzc3NTA0LDEyNDMwMDg3NjksNzgxOTYxMzQ2LC01MDM1NTU2
-ODcsLTE0Mjg5NzAxMTgsNDc0NTM4MzY0LC01MTU0MTg1MiwtMT
-A5NzA0NDY1LC00MTMyODYxMDgsMTU1ODM3NzY4XX0=
+eyJoaXN0b3J5IjpbLTMyNjgyNDQwLC0xNjUwNzE1NzkyLDEyMz
+A0NjIxNjksMTc5NjM0MDczNSwxODk0NzIzMDg5LC02OTQxMTcz
+OTUsLTIxNTgxODE0Miw2ODI0NDM5NjMsMTE1ODg1NTY3NywtMj
+A4MjM3NzUwNCwxMjQzMDA4NzY5LDc4MTk2MTM0NiwtNTAzNTU1
+Njg3LC0xNDI4OTcwMTE4LDQ3NDUzODM2NCwtNTE1NDE4NTIsLT
+EwOTcwNDQ2NSwtNDEzMjg2MTA4LDE1NTgzNzc2OF19
 -->
