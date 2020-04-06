@@ -215,9 +215,9 @@ puis un curl via par exemple le DHCP nous renvoie ça :
 Bon OK là c'est la sauce, les autres machines captent le serveur nginx mais ne renvoient rien.
 
 ### DHCP snooping
-Bon bah ça c'est très simple. Pour activer le DHCP Snooping, 
+Bon bah ça c'est très simple. Pour activer le DHCP Snooping sur un routeur Cisco, on fait `conf t`, `ip dhcp snooping`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjIyNzc0ODMsMTE0MzAwNjE4NiwtOD
+eyJoaXN0b3J5IjpbLTE0MjUyNDMxMDcsMTE0MzAwNjE4NiwtOD
 Y2MTMzODQxLC0xMjQ4MDI4ODA5LC0xMjM1NjcxMzA3LC0xOTIx
 MjYzNjE4LDc0MDA3NjI2MywtMTI0MTA0NjY0MCwtMTYxODcxNj
 I5NiwtMTY1MDcxNTc5MiwxMjMwNDYyMTY5LDE3OTYzNDA3MzUs
