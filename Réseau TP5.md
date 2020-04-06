@@ -208,9 +208,11 @@ DDORA IP 10.5.20.100/24 GW 10.5.20.254
 ### 4. Serveur Web
 On télécharge le paquet `epel-release` avec `sudo yum install epel-release` et `nginx`.
 Une fois ceci fait, qui dit serveur web dit port HTTP, donc on va autoriser le port 80 sur la machine via la commande `sudo firewall-cmd --add-port=80/tcp --permanent`. Enfin, on tape un petit `systemctl start nginx` et boum le serveur est lancé. Mais est-ce que ça marche ? Bah on va test.
-Deux trucs po
+Deux trucs pour tester le fonctionnement : un petit curl sur le serveur lui-même nous renvoie ça :
+![](https://i.imgur.com/NYjsGk0.png)
+puis un curl via par exemple le PC1 nous renvoie ça :
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMzM5MTU2NSwtMTIzNTY3MTMwNywtMT
+eyJoaXN0b3J5IjpbLTU2NTU0MDAyOCwtMTIzNTY3MTMwNywtMT
 kyMTI2MzYxOCw3NDAwNzYyNjMsLTEyNDEwNDY2NDAsLTE2MTg3
 MTYyOTYsLTE2NTA3MTU3OTIsMTIzMDQ2MjE2OSwxNzk2MzQwNz
 M1LDE4OTQ3MjMwODksLTY5NDExNzM5NSwtMjE1ODE4MTQyLDY4
