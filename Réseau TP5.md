@@ -97,16 +97,20 @@ PC1> ping 10.5.10.12
 PC3> ping 10.5.10.13
 84 bytes from 10.5.10.13 icmp_seq=1 ttl=64 time=1.030 ms
 84 bytes from 10.5.10.13 icmp_seq=2 ttl=64 time=1.134 ms
-84 bytes from 10.5.10.13 icmp_seq=3 ttl=64 time=1.655 ms
 ```
 ```bash
 PC2> ping 10.5.20.12
 84 bytes from 10.5.20.12 icmp_seq=1 ttl=64 time=1.302 ms
 84 bytes from 10.5.20.12 icmp_seq=2 ttl=64 time=1.172 ms
-
 ```
+```bash
+PC4> ping 10.5.20.13
+84 bytes from 10.5.20.13 icmp_seq=1 ttl=64 time=1.047 ms
+84 bytes from 10.5.20.13 icmp_seq=2 ttl=64 time=2.621 ms
+```
+Tout pinge.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgwNjI4MTY5LDQ3NDUzODM2NCwtNTE1ND
-E4NTIsLTEwOTcwNDQ2NSwtNDEzMjg2MTA4LDE1NTgzNzc2OF19
-
+eyJoaXN0b3J5IjpbLTE0Mjg5NzAxMTgsNDc0NTM4MzY0LC01MT
+U0MTg1MiwtMTA5NzA0NDY1LC00MTMyODYxMDgsMTU1ODM3NzY4
+XX0=
 -->
