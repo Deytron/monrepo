@@ -146,10 +146,17 @@ gns3vm(config-if)#switchport mode trunk
 gns3vm(config-if)#switchport trunk encapsulation dot1q
 gns3vm(config-if)#switchport trunk allowed vlan 10,20
 ```
+On ping les passerelles des deux réseaux respectifs :
+```bash
+PC1> ping 10.5.10.254
+84 bytes from 10.5.10.254 icmp_seq=1 ttl=255 time=9.928 ms
+84 bytes from 10.5.10.254 icmp_seq=2 ttl=255 time=11.603 ms
+```
+```bash
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NzI4MjUyNCwxMTU4ODU1Njc3LC0yMD
-gyMzc3NTA0LDEyNDMwMDg3NjksNzgxOTYxMzQ2LC01MDM1NTU2
-ODcsLTE0Mjg5NzAxMTgsNDc0NTM4MzY0LC01MTU0MTg1MiwtMT
-A5NzA0NDY1LC00MTMyODYxMDgsMTU1ODM3NzY4XX0=
+eyJoaXN0b3J5IjpbNzE5ODYyMDYxLDExNTg4NTU2NzcsLTIwOD
+IzNzc1MDQsMTI0MzAwODc2OSw3ODE5NjEzNDYsLTUwMzU1NTY4
+NywtMTQyODk3MDExOCw0NzQ1MzgzNjQsLTUxNTQxODUyLC0xMD
+k3MDQ0NjUsLTQxMzI4NjEwOCwxNTU4Mzc3NjhdfQ==
 -->
