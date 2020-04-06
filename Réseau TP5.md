@@ -71,8 +71,8 @@ PC1> ping 10.5.10.12
 PC3> ping 10.5.20.12
 84 bytes from 10.5.20.12 icmp_seq=1 ttl=64 time=1.242 ms
 ```
-Normalement si un guests  prend une IP
+Normalement si un guests  prend une IP dans le réseau en `admins`, par exemple `10.5.10.13`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDAyNzMzMTQsLTEwOTcwNDQ2NSwtNDEzMj
-g2MTA4LDE1NTgzNzc2OF19
+eyJoaXN0b3J5IjpbLTYyNTYwMTE1NSwtMTA5NzA0NDY1LC00MT
+MyODYxMDgsMTU1ODM3NzY4XX0=
 -->
