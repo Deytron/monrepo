@@ -214,12 +214,14 @@ puis un curl via par exemple le DHCP nous renvoie ça :
 ![](https://i.imgur.com/PVtBmz9.png)
 Bon OK là c'est la sauce, les autres machines captent le serveur nginx mais ne renvoient rien.
 
+### DHCP snooping
+Bon bah ça c'est très simple. Pour activer le DHCP Snooping, 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0MzAwNjE4NiwtODY2MTMzODQxLC0xMj
-Q4MDI4ODA5LC0xMjM1NjcxMzA3LC0xOTIxMjYzNjE4LDc0MDA3
-NjI2MywtMTI0MTA0NjY0MCwtMTYxODcxNjI5NiwtMTY1MDcxNT
-c5MiwxMjMwNDYyMTY5LDE3OTYzNDA3MzUsMTg5NDcyMzA4OSwt
-Njk0MTE3Mzk1LC0yMTU4MTgxNDIsNjgyNDQzOTYzLDExNTg4NT
-U2NzcsLTIwODIzNzc1MDQsMTI0MzAwODc2OSw3ODE5NjEzNDYs
-LTUwMzU1NTY4N119
+eyJoaXN0b3J5IjpbLTE5MjIyNzc0ODMsMTE0MzAwNjE4NiwtOD
+Y2MTMzODQxLC0xMjQ4MDI4ODA5LC0xMjM1NjcxMzA3LC0xOTIx
+MjYzNjE4LDc0MDA3NjI2MywtMTI0MTA0NjY0MCwtMTYxODcxNj
+I5NiwtMTY1MDcxNTc5MiwxMjMwNDYyMTY5LDE3OTYzNDA3MzUs
+MTg5NDcyMzA4OSwtNjk0MTE3Mzk1LC0yMTU4MTgxNDIsNjgyND
+QzOTYzLDExNTg4NTU2NzcsLTIwODIzNzc1MDQsMTI0MzAwODc2
+OSw3ODE5NjEzNDZdfQ==
 -->
