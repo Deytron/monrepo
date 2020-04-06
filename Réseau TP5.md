@@ -223,13 +223,13 @@ Pour activer le DHCP Snooping sur un routeur Cisco, on fait `conf t`, `ip dhcp s
 Si on veut autoriser les requêtes DHCP sur une interface particulière, on peut utiliser `ip dhcp snooping trust` dans la conf de l'interface. On peut également limiter le nombre `ip dhcp snooping limit rate {nombre}`.
 
 ### IP Source Guard
-L'IP Source Guard et le DHCP Snooping sont étroitement liés. Les deux visent à renforcer la sécurité du réseau.
+L'IP Source Guard et le DHCP Snooping sont étroitement liés. Les deux visent à renforcer la sécurité du réseau. L'IP Source Guard est basé sur le DHCP snooping binding database et les IP source binding configurés.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyNTk5OTcwMiwtODA2MzUxODUzLDExND
-MwMDYxODYsLTg2NjEzMzg0MSwtMTI0ODAyODgwOSwtMTIzNTY3
-MTMwNywtMTkyMTI2MzYxOCw3NDAwNzYyNjMsLTEyNDEwNDY2ND
-AsLTE2MTg3MTYyOTYsLTE2NTA3MTU3OTIsMTIzMDQ2MjE2OSwx
-Nzk2MzQwNzM1LDE4OTQ3MjMwODksLTY5NDExNzM5NSwtMjE1OD
-E4MTQyLDY4MjQ0Mzk2MywxMTU4ODU1Njc3LC0yMDgyMzc3NTA0
-LDEyNDMwMDg3NjldfQ==
+eyJoaXN0b3J5IjpbLTE4ODI1MTY0OTUsLTgwNjM1MTg1MywxMT
+QzMDA2MTg2LC04NjYxMzM4NDEsLTEyNDgwMjg4MDksLTEyMzU2
+NzEzMDcsLTE5MjEyNjM2MTgsNzQwMDc2MjYzLC0xMjQxMDQ2Nj
+QwLC0xNjE4NzE2Mjk2LC0xNjUwNzE1NzkyLDEyMzA0NjIxNjks
+MTc5NjM0MDczNSwxODk0NzIzMDg5LC02OTQxMTczOTUsLTIxNT
+gxODE0Miw2ODI0NDM5NjMsMTE1ODg1NTY3NywtMjA4MjM3NzUw
+NCwxMjQzMDA4NzY5XX0=
 -->
