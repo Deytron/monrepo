@@ -84,8 +84,10 @@ host (10.5.10.13) not reachable
 ```
 ## II. Topologie 2 - VLAN, sous-interface, NAT
 ### 1. Mise en place de la topologie
+On fait la topo on est là :
+![](https://i.imgur.com/vmJ9YlA.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxNTQxODUyLC0xMDk3MDQ0NjUsLTQxMz
-I4NjEwOCwxNTU4Mzc3NjhdfQ==
+eyJoaXN0b3J5IjpbNDc0NTM4MzY0LC01MTU0MTg1MiwtMTA5Nz
+A0NDY1LC00MTMyODYxMDgsMTU1ODM3NzY4XX0=
 -->
