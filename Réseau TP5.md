@@ -109,8 +109,23 @@ PC4> ping 10.5.20.13
 84 bytes from 10.5.20.13 icmp_seq=2 ttl=64 time=2.621 ms
 ```
 Tout pinge.
+
+Maintenant 
+```bash
+PC6> ping 10.5.10.11  
+^Chost (10.5.10.11) not reachable  
+  
+PC6> ping 10.5.10.12  
+host (10.5.10.12) not reachable  
+  
+PC6> ping 10.5.20.12  
+No gateway found  
+  
+PC6> ping 10.5.20.13  
+No gateway found
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Mjg5NzAxMTgsNDc0NTM4MzY0LC01MT
-U0MTg1MiwtMTA5NzA0NDY1LC00MTMyODYxMDgsMTU1ODM3NzY4
-XX0=
+eyJoaXN0b3J5IjpbMTMzODE1MTcxNywtMTQyODk3MDExOCw0Nz
+Q1MzgzNjQsLTUxNTQxODUyLC0xMDk3MDQ0NjUsLTQxMzI4NjEw
+OCwxNTU4Mzc3NjhdfQ==
 -->
