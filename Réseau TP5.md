@@ -162,9 +162,11 @@ Ca fonctionne t'as capté.
 ### 5. NAT
 On configure la NAT c'est parti procédure standard
 ```bash
-R1(config)#interface fastEthernet 0/0
+R1(config)#interface fastEthernet 0/0.10
 R1(config-if)#ip nat inside
 R1(config-if)#exit
+R1(config)#interface fastEthernet 0/0.20
+R1(config-if)#ip nat inside
 R1(config)#interface fastEthernet 0/1
 R1(config-if)#ip nat outside
 R1(config-if)#exit
@@ -185,9 +187,9 @@ PC2> ping 8.8.8.8
 *10.5.20.254 icmp_seq=2 ttl=255 time=8.458 ms (ICMP type:3, code:1, Destination host unreachable)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5NDExNzM5NSwtMjE1ODE4MTQyLDY4Mj
-Q0Mzk2MywxMTU4ODU1Njc3LC0yMDgyMzc3NTA0LDEyNDMwMDg3
-NjksNzgxOTYxMzQ2LC01MDM1NTU2ODcsLTE0Mjg5NzAxMTgsND
-c0NTM4MzY0LC01MTU0MTg1MiwtMTA5NzA0NDY1LC00MTMyODYx
-MDgsMTU1ODM3NzY4XX0=
+eyJoaXN0b3J5IjpbMTg5NDcyMzA4OSwtNjk0MTE3Mzk1LC0yMT
+U4MTgxNDIsNjgyNDQzOTYzLDExNTg4NTU2NzcsLTIwODIzNzc1
+MDQsMTI0MzAwODc2OSw3ODE5NjEzNDYsLTUwMzU1NTY4NywtMT
+QyODk3MDExOCw0NzQ1MzgzNjQsLTUxNTQxODUyLC0xMDk3MDQ0
+NjUsLTQxMzI4NjEwOCwxNTU4Mzc3NjhdfQ==
 -->
