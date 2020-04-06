@@ -47,7 +47,22 @@ gns3vm(config-if)#switchport mode access
 gns3vm(config-if)#switchport trunk encapsulation dot1q 
 gns3vm(config-if)#switchport mode trunk 
 ```
+```bash
+gns3vm(config)#interface Ethernet 0/1
+gns3vm(config-if)#switchport mode access
+gns3vm(config-if)#switchport access vlan 20
+gns3vm(config-if)#exit
+gns3vm(config)#interface Ethernet 0/2
+gns3vm(config-if)#switchport mode access 
+gns3vm(config-if)#switchport access vlan 20
+gns3vm(config-if)#exit
+gns3vm(config)#interface Ethernet 0/0
+gns3vm(config-if)#switchport mode access
+gns3vm(config-if)#switchport trunk encapsulation dot1q 
+gns3vm(config-if)#switchport mode trunk 
+```
+On va test si ça marche en pingant
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTcwNDQ2NSwtNDEzMjg2MTA4LDE1NT
-gzNzc2OF19
+eyJoaXN0b3J5IjpbLTIxNDM5NjY2MjksLTEwOTcwNDQ2NSwtND
+EzMjg2MTA4LDE1NTgzNzc2OF19
 -->
