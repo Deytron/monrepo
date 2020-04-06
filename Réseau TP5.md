@@ -227,14 +227,15 @@ L'IP Source Guard et le DHCP Snooping sont étroitement liés. Les deux visent �
 On procède comme suit pour l'activer :
 `conf t`, `ip source binding {MAC} vlan {vlan} {IP} interface {int}`
 Pour appliquer l'IP Source Guard, on utilise la commande `ip verify source` dans la config de l'interface. Et c'est bon.
+### VLAN Access Map
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2OTIxMjMyNywtODA2MzUxODUzLDExND
-MwMDYxODYsLTg2NjEzMzg0MSwtMTI0ODAyODgwOSwtMTIzNTY3
-MTMwNywtMTkyMTI2MzYxOCw3NDAwNzYyNjMsLTEyNDEwNDY2ND
-AsLTE2MTg3MTYyOTYsLTE2NTA3MTU3OTIsMTIzMDQ2MjE2OSwx
-Nzk2MzQwNzM1LDE4OTQ3MjMwODksLTY5NDExNzM5NSwtMjE1OD
-E4MTQyLDY4MjQ0Mzk2MywxMTU4ODU1Njc3LC0yMDgyMzc3NTA0
-LDEyNDMwMDg3NjldfQ==
+eyJoaXN0b3J5IjpbLTE1OTAyNDgxMjMsLTgwNjM1MTg1MywxMT
+QzMDA2MTg2LC04NjYxMzM4NDEsLTEyNDgwMjg4MDksLTEyMzU2
+NzEzMDcsLTE5MjEyNjM2MTgsNzQwMDc2MjYzLC0xMjQxMDQ2Nj
+QwLC0xNjE4NzE2Mjk2LC0xNjUwNzE1NzkyLDEyMzA0NjIxNjks
+MTc5NjM0MDczNSwxODk0NzIzMDg5LC02OTQxMTczOTUsLTIxNT
+gxODE0Miw2ODI0NDM5NjMsMTE1ODg1NTY3NywtMjA4MjM3NzUw
+NCwxMjQzMDA4NzY5XX0=
 -->
