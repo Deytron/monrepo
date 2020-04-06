@@ -179,10 +179,15 @@ PC1> ping 8.8.8.8
 *10.5.10.254 icmp_seq=2 ttl=255 time=3.532 ms (ICMP type:3, code:1, Destination host unreachable)  
 *10.5.10.254 icmp_seq=3 ttl=255 time=12.028 ms (ICMP type:3, code:1, Destination host unreachable)
 ```
+```bash
+PC2> ping 8.8.8.8  
+*10.5.20.254 icmp_seq=1 ttl=255 time=9.092 ms (ICMP type:3, code:1, Destination host unreachable)  
+*10.5.20.254 icmp_seq=2 ttl=255 time=8.458 ms (ICMP type:3, code:1, Destination host unreachable)
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNTgxODE0Miw2ODI0NDM5NjMsMTE1OD
-g1NTY3NywtMjA4MjM3NzUwNCwxMjQzMDA4NzY5LDc4MTk2MTM0
-NiwtNTAzNTU1Njg3LC0xNDI4OTcwMTE4LDQ3NDUzODM2NCwtNT
-E1NDE4NTIsLTEwOTcwNDQ2NSwtNDEzMjg2MTA4LDE1NTgzNzc2
-OF19
+eyJoaXN0b3J5IjpbLTY5NDExNzM5NSwtMjE1ODE4MTQyLDY4Mj
+Q0Mzk2MywxMTU4ODU1Njc3LC0yMDgyMzc3NTA0LDEyNDMwMDg3
+NjksNzgxOTYxMzQ2LC01MDM1NTU2ODcsLTE0Mjg5NzAxMTgsND
+c0NTM4MzY0LC01MTU0MTg1MiwtMTA5NzA0NDY1LC00MTMyODYx
+MDgsMTU1ODM3NzY4XX0=
 -->
