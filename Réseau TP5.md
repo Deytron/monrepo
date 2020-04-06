@@ -161,8 +161,17 @@ Ca fonctionne t'as capté.
 
 ### 5. NAT
 On configure la NAT c'est parti procédure standard
-
-
+```bash
+R1(config)#interface fastEthernet 0/0
+R1(config-if)#ip nat inside
+R1(config-if)#exit
+R1(config)#interface fastEthernet 0/1
+R1(config-if)#ip nat outside
+R1(config-if)#exit
+R1(config)#access-list 1 permit any
+R1(config)#ip nat inside source list 1 interface fastEthernet 0/1 overload
+```
+On teste un ping vers google, et boum
 
 ```bash
 PC1> ping 8.8.8.8  
@@ -171,9 +180,9 @@ PC1> ping 8.8.8.8
 *10.5.10.254 icmp_seq=3 ttl=255 time=12.028 ms (ICMP type:3, code:1, Destination host unreachable)
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDkyMDEwODA5LDY4MjQ0Mzk2MywxMTU4OD
-U1Njc3LC0yMDgyMzc3NTA0LDEyNDMwMDg3NjksNzgxOTYxMzQ2
-LC01MDM1NTU2ODcsLTE0Mjg5NzAxMTgsNDc0NTM4MzY0LC01MT
-U0MTg1MiwtMTA5NzA0NDY1LC00MTMyODYxMDgsMTU1ODM3NzY4
-XX0=
+eyJoaXN0b3J5IjpbLTIxNTgxODE0Miw2ODI0NDM5NjMsMTE1OD
+g1NTY3NywtMjA4MjM3NzUwNCwxMjQzMDA4NzY5LDc4MTk2MTM0
+NiwtNTAzNTU1Njg3LC0xNDI4OTcwMTE4LDQ3NDUzODM2NCwtNT
+E1NDE4NTIsLTEwOTcwNDQ2NSwtNDEzMjg2MTA4LDE1NTgzNzc2
+OF19
 -->
