@@ -210,13 +210,13 @@ On télécharge le paquet `epel-release` avec `sudo yum install epel-release` et
 Une fois ceci fait, qui dit serveur web dit port HTTP, donc on va autoriser le port 80 sur la machine via la commande `sudo firewall-cmd --add-port=80/tcp --permanent`. Enfin, on tape un petit `systemctl start nginx` et boum le serveur est lancé. Mais est-ce que ça marche ? Bah on va test.
 Deux trucs pour tester le fonctionnement : un petit curl sur le serveur lui-même nous renvoie ça :
 ![](https://i.imgur.com/NYjsGk0.png)
-puis un curl via par exemple le PC1 nous renvoie ça :
+puis un curl via par exemple le DHCP nous renvoie ça :
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2NTU0MDAyOCwtMTIzNTY3MTMwNywtMT
-kyMTI2MzYxOCw3NDAwNzYyNjMsLTEyNDEwNDY2NDAsLTE2MTg3
-MTYyOTYsLTE2NTA3MTU3OTIsMTIzMDQ2MjE2OSwxNzk2MzQwNz
-M1LDE4OTQ3MjMwODksLTY5NDExNzM5NSwtMjE1ODE4MTQyLDY4
-MjQ0Mzk2MywxMTU4ODU1Njc3LC0yMDgyMzc3NTA0LDEyNDMwMD
-g3NjksNzgxOTYxMzQ2LC01MDM1NTU2ODcsLTE0Mjg5NzAxMTgs
-NDc0NTM4MzY0XX0=
+eyJoaXN0b3J5IjpbLTEyNDgwMjg4MDksLTEyMzU2NzEzMDcsLT
+E5MjEyNjM2MTgsNzQwMDc2MjYzLC0xMjQxMDQ2NjQwLC0xNjE4
+NzE2Mjk2LC0xNjUwNzE1NzkyLDEyMzA0NjIxNjksMTc5NjM0MD
+czNSwxODk0NzIzMDg5LC02OTQxMTczOTUsLTIxNTgxODE0Miw2
+ODI0NDM5NjMsMTE1ODg1NTY3NywtMjA4MjM3NzUwNCwxMjQzMD
+A4NzY5LDc4MTk2MTM0NiwtNTAzNTU1Njg3LC0xNDI4OTcwMTE4
+LDQ3NDUzODM2NF19
 -->
