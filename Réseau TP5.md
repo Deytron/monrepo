@@ -17,14 +17,20 @@ PC3> ping 10.5.20.12
 ```
 
 ### 3. Setup VLANs
-
+On setup les 2 vlan sur les routeurs `IOU L2`:
 ```bash
 gns3vm#conf t  
 Enter configuration commands, one per line. End with CNTL/Z.  
 gns3vm(config)#vlan 10  
 gns3vm(config-vlan)#name admins  
-gns3vm(config-vlan)#exit
 ```
+```bash
+gns3vm#conf t  
+Enter configuration commands, one per line. End with CNTL/Z.  
+gns3vm(config)#vlan 20  
+gns3vm(config-vlan)#name guests
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3NzM0NTQxNywxNTU4Mzc3NjhdfQ==
+eyJoaXN0b3J5IjpbLTQxMzI4NjEwOCwxNTU4Mzc3NjhdfQ==
 -->
