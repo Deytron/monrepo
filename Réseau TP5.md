@@ -88,9 +88,25 @@ On fait la topo on est là :
 ![](https://i.imgur.com/vmJ9YlA.png)
 
 On configure toutes les IP des machines `admins` et `guests` :
+```bash
+PC1> ping 10.5.10.12
+84 bytes from 10.5.10.12 icmp_seq=1 ttl=64 time=1.334 ms
+84 bytes from 10.5.10.12 icmp_seq=2 ttl=64 time=0.999 ms
+```
+```bash
+PC3> ping 10.5.10.13
+84 bytes from 10.5.10.13 icmp_seq=1 ttl=64 time=1.030 ms
+84 bytes from 10.5.10.13 icmp_seq=2 ttl=64 time=1.134 ms
+84 bytes from 10.5.10.13 icmp_seq=3 ttl=64 time=1.655 ms
+```
+```bash
+PC2> ping 10.5.20.12
+84 bytes from 10.5.20.12 icmp_seq=1 ttl=64 time=1.302 ms
+84 bytes from 10.5.20.12 icmp_seq=2 ttl=64 time=1.172 ms
 
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDg2MDE2NjgsNDc0NTM4MzY0LC01MT
-U0MTg1MiwtMTA5NzA0NDY1LC00MTMyODYxMDgsMTU1ODM3NzY4
-XX0=
+eyJoaXN0b3J5IjpbMzgwNjI4MTY5LDQ3NDUzODM2NCwtNTE1ND
+E4NTIsLTEwOTcwNDQ2NSwtNDEzMjg2MTA4LDE1NTgzNzc2OF19
+
 -->
