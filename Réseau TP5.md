@@ -132,11 +132,16 @@ R1(config)#interface fastEthernet 0/0.10
 R1(config-subif)#encapsulation dot1Q 10
 R1(config-subif)#ip address 10.5.10.254 255.255.255.0
 R1(config-subif)#exit
+R1(config)#interface fastEthernet 0/0
 R1(config)#no shut
+R1(config-subif)#exit
+R1(config)#interface fastEthernet 0/0.20
+R1(config-subif)#encapsulation dot1Q 20
+R1(config-subif)#ip address 10.5.10.254 255.255.255.0
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3OTE2MjQxNiw3ODE5NjEzNDYsLTUwMz
+eyJoaXN0b3J5IjpbMTI0MzAwODc2OSw3ODE5NjEzNDYsLTUwMz
 U1NTY4NywtMTQyODk3MDExOCw0NzQ1MzgzNjQsLTUxNTQxODUy
 LC0xMDk3MDQ0NjUsLTQxMzI4NjEwOCwxNTU4Mzc3NjhdfQ==
 -->
