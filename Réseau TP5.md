@@ -62,8 +62,16 @@ gns3vm(config-if)#switchport trunk encapsulation dot1q
 gns3vm(config-if)#switchport mode trunk 
 ```
 On va test si ça marche en pingant les machines dans `admins` et `guests` :
-
+```bash
+PC1> ping 10.5.10.12  
+84 bytes from 10.5.10.12 icmp_seq=1 ttl=64 time=1.016 ms  
+84 bytes from 10.5.10.12 icmp_seq=2 ttl=64 time=1.214 ms
+```
+```bash
+PC3> ping 10.5.20.12
+84 bytes from 10.5.20.12 icmp_seq=1 ttl=64 time=1.242 ms
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDc4ODU0MjksLTEwOTcwNDQ2NSwtND
-EzMjg2MTA4LDE1NTgzNzc2OF19
+eyJoaXN0b3J5IjpbMTY5MTE1NjE0NiwtMTA5NzA0NDY1LC00MT
+MyODYxMDgsMTU1ODM3NzY4XX0=
 -->
