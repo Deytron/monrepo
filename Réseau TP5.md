@@ -141,10 +141,15 @@ R1(config-subif)#ip address 10.5.20.254 255.255.255.0
 ```
 Sur le switch du mileu `IOU2` :
 ```bash
+gns3vm(config)#interface Ethernet 1/0
+gns3vm(config-if)#switchport mode trunk 
+gns3vm(config-if)#switchport trunk encapsulation dot1q
+gns3vm(config-if)#switchport trunk allowed vlan 10,20
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1ODg1NTY3NywtMjA4MjM3NzUwNCwxMj
-QzMDA4NzY5LDc4MTk2MTM0NiwtNTAzNTU1Njg3LC0xNDI4OTcw
-MTE4LDQ3NDUzODM2NCwtNTE1NDE4NTIsLTEwOTcwNDQ2NSwtND
-EzMjg2MTA4LDE1NTgzNzc2OF19
+eyJoaXN0b3J5IjpbMjA5NzI4MjUyNCwxMTU4ODU1Njc3LC0yMD
+gyMzc3NTA0LDEyNDMwMDg3NjksNzgxOTYxMzQ2LC01MDM1NTU2
+ODcsLTE0Mjg5NzAxMTgsNDc0NTM4MzY0LC01MTU0MTg1MiwtMT
+A5NzA0NDY1LC00MTMyODYxMDgsMTU1ODM3NzY4XX0=
 -->
