@@ -31,7 +31,19 @@ gns3vm(config)#vlan 20
 gns3vm(config-vlan)#name guests
 ```
 Maintenant faut setup les VLAN sur les interfaces des PC admins et guest (chez moi 0/1 et 0/2)
+
+```bash
+gns3vm(config)#interface Ethernet 0/1
+gns3vm(config-if)#switchport mode access
+gns3vm(config-if)#switchport access vlan 10
+gns3vm(config-if)#exit
+gns3vm(config)#interface Ethernet 0/2
+gns3vm(config-if)#switchport mode access 
+gns3vm(config-if)#switchport access vlan 10
+gns3vm(config-if)#exit
+gns3vm(config)#interface Ethernet 0/0
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NDE2MTcwMywtNDEzMjg2MTA4LDE1NT
+eyJoaXN0b3J5IjpbLTY3MjMyNDkyOSwtNDEzMjg2MTA4LDE1NT
 gzNzc2OF19
 -->
