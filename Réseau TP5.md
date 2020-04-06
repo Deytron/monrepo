@@ -126,8 +126,9 @@ No gateway found
 PC6> ping 10.5.20.13  
 No gateway found
 ```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3ODM2Mzk0NywtMTQyODk3MDExOCw0Nz
+eyJoaXN0b3J5IjpbLTUwMzU1NTY4NywtMTQyODk3MDExOCw0Nz
 Q1MzgzNjQsLTUxNTQxODUyLC0xMDk3MDQ0NjUsLTQxMzI4NjEw
 OCwxNTU4Mzc3NjhdfQ==
 -->
