@@ -78,8 +78,11 @@ PC3> ip 10.5.10.13
 Checking for duplicate address...  
 PC1 : 10.5.10.13 255.255.255.0
 ```
-
+```bash
+PC1> ping 10.5.10.13
+host (10.5.10.13) not reachable
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyMDI4Mjk1NiwtMTA5NzA0NDY1LC00MT
+eyJoaXN0b3J5IjpbLTQxNDkyNzIxMywtMTA5NzA0NDY1LC00MT
 MyODYxMDgsMTU1ODM3NzY4XX0=
 -->
