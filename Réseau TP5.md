@@ -139,10 +139,12 @@ R1(config)#interface fastEthernet 0/0.20
 R1(config-subif)#encapsulation dot1Q 20
 R1(config-subif)#ip address 10.5.20.254 255.255.255.0
 ```
+Sur le switch du mileu `IOU2` :
+```bash
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODIzNzc1MDQsMTI0MzAwODc2OSw3OD
-E5NjEzNDYsLTUwMzU1NTY4NywtMTQyODk3MDExOCw0NzQ1Mzgz
-NjQsLTUxNTQxODUyLC0xMDk3MDQ0NjUsLTQxMzI4NjEwOCwxNT
-U4Mzc3NjhdfQ==
+eyJoaXN0b3J5IjpbMTE1ODg1NTY3NywtMjA4MjM3NzUwNCwxMj
+QzMDA4NzY5LDc4MTk2MTM0NiwtNTAzNTU1Njg3LC0xNDI4OTcw
+MTE4LDQ3NDUzODM2NCwtNTE1NDE4NTIsLTEwOTcwNDQ2NSwtND
+EzMjg2MTA4LDE1NTgzNzc2OF19
 -->
