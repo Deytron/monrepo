@@ -198,12 +198,14 @@ DHCP vers `Web` :
 ![](https://i.imgur.com/aIGCKLg.png)
 Là c'est juste deux exemples.
 Bon on va reconfig le DHCP. On reprend la machine utilisée dans le TP4 et on change le subnet et les range des IP :
+![](https://i.imgur.com/Lr6aeWm.png)
+On fait un p'ti `systemctl restart 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTA3MTU3OTIsMTIzMDQ2MjE2OSwxNz
-k2MzQwNzM1LDE4OTQ3MjMwODksLTY5NDExNzM5NSwtMjE1ODE4
-MTQyLDY4MjQ0Mzk2MywxMTU4ODU1Njc3LC0yMDgyMzc3NTA0LD
-EyNDMwMDg3NjksNzgxOTYxMzQ2LC01MDM1NTU2ODcsLTE0Mjg5
-NzAxMTgsNDc0NTM4MzY0LC01MTU0MTg1MiwtMTA5NzA0NDY1LC
-00MTMyODYxMDgsMTU1ODM3NzY4XX0=
+eyJoaXN0b3J5IjpbLTE4MjYyMDgyMjYsLTE2NTA3MTU3OTIsMT
+IzMDQ2MjE2OSwxNzk2MzQwNzM1LDE4OTQ3MjMwODksLTY5NDEx
+NzM5NSwtMjE1ODE4MTQyLDY4MjQ0Mzk2MywxMTU4ODU1Njc3LC
+0yMDgyMzc3NTA0LDEyNDMwMDg3NjksNzgxOTYxMzQ2LC01MDM1
+NTU2ODcsLTE0Mjg5NzAxMTgsNDc0NTM4MzY0LC01MTU0MTg1Mi
+wtMTA5NzA0NDY1LC00MTMyODYxMDgsMTU1ODM3NzY4XX0=
 -->
