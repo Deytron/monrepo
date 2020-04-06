@@ -61,8 +61,9 @@ gns3vm(config-if)#switchport mode access
 gns3vm(config-if)#switchport trunk encapsulation dot1q 
 gns3vm(config-if)#switchport mode trunk 
 ```
-On va test si ça marche en pingant
+On va test si ça marche en pingant les machines dans `admins` et `guests` :
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDM5NjY2MjksLTEwOTcwNDQ2NSwtND
+eyJoaXN0b3J5IjpbLTE0MDc4ODU0MjksLTEwOTcwNDQ2NSwtND
 EzMjg2MTA4LDE1NTgzNzc2OF19
 -->
