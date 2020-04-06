@@ -126,9 +126,16 @@ No gateway found
 PC6> ping 10.5.20.13  
 No gateway found
 ```
-
+Bon maintenant on config le routeur. Il faut ajouter les 2 adresses IP en sous-réseau, donc simple, on suit le tuto :
+```bash
+R1(config)#interface fastEthernet 0/0.10
+R1(config-subif)#encapsulation dot1Q 10
+R1(config-subif)#ip address 10.5.10.254 255.255.255.0
+R1(config-subif)#exit
+R1(config)#no shut
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMzU1NTY4NywtMTQyODk3MDExOCw0Nz
-Q1MzgzNjQsLTUxNTQxODUyLC0xMDk3MDQ0NjUsLTQxMzI4NjEw
-OCwxNTU4Mzc3NjhdfQ==
+eyJoaXN0b3J5IjpbNzgxOTYxMzQ2LC01MDM1NTU2ODcsLTE0Mj
+g5NzAxMTgsNDc0NTM4MzY0LC01MTU0MTg1MiwtMTA5NzA0NDY1
+LC00MTMyODYxMDgsMTU1ODM3NzY4XX0=
 -->
