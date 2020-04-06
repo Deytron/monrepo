@@ -216,10 +216,13 @@ Bon OK là c'est la sauce, les autres machines captent le serveur nginx mais ne 
 
 ### DHCP snooping
 Bon bah ça c'est très simple. 
-Le DHCP Snooping permet de ne pas se manger des IP venant d'un serveur DHCP non autorisé. Il filtre les requêtes "DHCP OFFER"
-Pour activer le DHCP Snooping sur un routeur Cisco, on fait `conf t`, `ip dhcp snooping`
+Le DHCP Snooping permet de ne pas se manger des IP venant d'un serveur DHCP non autorisé. Il filtre les requêtes "DHCP OFFER".
+
+Pour activer le DHCP Snooping sur un routeur Cisco, on fait `conf t`, `ip dhcp snooping`. Si on veut l'activer dans un VLAN particulier, on rajoute `ip dhcp snooping vlan 1 {vlan}`.
+
+Si on veut autoriser les requêtes 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNDQ5NjIwNSwxMTQzMDA2MTg2LC04Nj
+eyJoaXN0b3J5IjpbMTI4MzIxNzI5NCwxMTQzMDA2MTg2LC04Nj
 YxMzM4NDEsLTEyNDgwMjg4MDksLTEyMzU2NzEzMDcsLTE5MjEy
 NjM2MTgsNzQwMDc2MjYzLC0xMjQxMDQ2NjQwLC0xNjE4NzE2Mj
 k2LC0xNjUwNzE1NzkyLDEyMzA0NjIxNjksMTc5NjM0MDczNSwx
