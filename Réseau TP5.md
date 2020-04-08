@@ -213,7 +213,7 @@ Deux trucs pour tester le fonctionnement : un petit curl sur le serveur lui-mêm
 Un `curl` via la machine DNS donne le même résultat.
 ### DHCP snooping
 Bon bah ça c'est très simple. 
-Le DHCP Snooping permet de ne pas se manger des IP venant d'un serveur DHCP non autorisé. Il filtre les requêtes "DHCP OFFER".
+Le DHCP Snooping permet de ne pas se manger des IP venant d'un serveur DHCP non autorisé. Il filtre les requêtes "DHCP OFFER" pour éviter qu'un serveur DHCP n'ayant absolument rien à faire là réussisse à donner des IP aux PC du réseau et tout faire passer par lui. Ca évite les types d'attaque comme les MITM en faisant en sorte de ne faire confiance qu'à un seul serveur DHCP dans la bindi.
 
 Pour activer le DHCP Snooping sur un Switch Cisco, on fait `conf t`, `ip dhcp snooping`. Si on veut l'activer dans un VLAN particulier, on rajoute `ip dhcp snooping vlan 1 {vlan}`.
 
@@ -228,11 +228,11 @@ Pour appliquer l'IP Source Guard, on utilise la commande `ip verify source` dans
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwMTYyODEyMCwtODE4NDI0MDIwLC0xNT
-kwMjQ4MTIzLC04MDYzNTE4NTMsMTE0MzAwNjE4NiwtODY2MTMz
-ODQxLC0xMjQ4MDI4ODA5LC0xMjM1NjcxMzA3LC0xOTIxMjYzNj
-E4LDc0MDA3NjI2MywtMTI0MTA0NjY0MCwtMTYxODcxNjI5Niwt
-MTY1MDcxNTc5MiwxMjMwNDYyMTY5LDE3OTYzNDA3MzUsMTg5ND
-cyMzA4OSwtNjk0MTE3Mzk1LC0yMTU4MTgxNDIsNjgyNDQzOTYz
-LDExNTg4NTU2NzddfQ==
+eyJoaXN0b3J5IjpbLTE1NTg0OTg3NjksLTgxODQyNDAyMCwtMT
+U5MDI0ODEyMywtODA2MzUxODUzLDExNDMwMDYxODYsLTg2NjEz
+Mzg0MSwtMTI0ODAyODgwOSwtMTIzNTY3MTMwNywtMTkyMTI2Mz
+YxOCw3NDAwNzYyNjMsLTEyNDEwNDY2NDAsLTE2MTg3MTYyOTYs
+LTE2NTA3MTU3OTIsMTIzMDQ2MjE2OSwxNzk2MzQwNzM1LDE4OT
+Q3MjMwODksLTY5NDExNzM5NSwtMjE1ODE4MTQyLDY4MjQ0Mzk2
+MywxMTU4ODU1Njc3XX0=
 -->
