@@ -213,7 +213,8 @@ Deux trucs pour tester le fonctionnement : un petit curl sur le serveur lui-mêm
 Un `curl` via la machine DNS donne le même résultat.
 
 ### 5. Serveur DNS
-
+Il est temps de créer notre propre serveur DNS. D'abord, on installe ce qu'il faut avec `sudo yum install bind bind-utils`.
+Maintenant faut le configurer.
 ### DHCP snooping
 Bon bah ça c'est très simple. 
 Le DHCP Snooping permet de ne pas se manger des IP venant d'un serveur DHCP non autorisé. Il filtre les requêtes "DHCP OFFER" pour éviter qu'un serveur DHCP n'ayant absolument rien à faire là réussisse à donner des IP aux PC du réseau et tout faire passer par lui. Ca évite les types d'attaque comme les MITM en faisant en sorte de ne faire confiance qu'à un seul serveur DHCP dans la binding database.
@@ -231,11 +232,11 @@ Pour appliquer l'IP Source Guard, on utilise la commande `ip verify source` dans
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTg0NTYzMDMsLTgxODQyNDAyMCwtMT
-U5MDI0ODEyMywtODA2MzUxODUzLDExNDMwMDYxODYsLTg2NjEz
-Mzg0MSwtMTI0ODAyODgwOSwtMTIzNTY3MTMwNywtMTkyMTI2Mz
-YxOCw3NDAwNzYyNjMsLTEyNDEwNDY2NDAsLTE2MTg3MTYyOTYs
-LTE2NTA3MTU3OTIsMTIzMDQ2MjE2OSwxNzk2MzQwNzM1LDE4OT
-Q3MjMwODksLTY5NDExNzM5NSwtMjE1ODE4MTQyLDY4MjQ0Mzk2
-MywxMTU4ODU1Njc3XX0=
+eyJoaXN0b3J5IjpbLTc3MTEyOTczNiwtMTU5ODQ1NjMwMywtOD
+E4NDI0MDIwLC0xNTkwMjQ4MTIzLC04MDYzNTE4NTMsMTE0MzAw
+NjE4NiwtODY2MTMzODQxLC0xMjQ4MDI4ODA5LC0xMjM1NjcxMz
+A3LC0xOTIxMjYzNjE4LDc0MDA3NjI2MywtMTI0MTA0NjY0MCwt
+MTYxODcxNjI5NiwtMTY1MDcxNTc5MiwxMjMwNDYyMTY5LDE3OT
+YzNDA3MzUsMTg5NDcyMzA4OSwtNjk0MTE3Mzk1LC0yMTU4MTgx
+NDIsNjgyNDQzOTYzXX0=
 -->
