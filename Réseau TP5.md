@@ -210,7 +210,7 @@ On télécharge le paquet `epel-release` avec `sudo yum install epel-release` et
 Une fois ceci fait, qui dit serveur web dit port HTTP, donc on va autoriser le port 80 sur la machine via la commande `sudo firewall-cmd --add-port=80/tcp --permanent` et `sudo firewall-cmd --reload`. Enfin, on tape un petit `systemctl start nginx` et boum le serveur est lancé. Mais est-ce que ça marche ? Bah on va test.
 Deux trucs pour tester le fonctionnement : un petit curl sur le serveur lui-même nous renvoie ça :
 ![](https://i.imgur.com/NYjsGk0.png)
-puis un curl via par exemple le DHCP nous renvoie ça :
+puis un curl via par exemple le DNS nous renvoie ça :
 ![](https://i.imgur.com/PVtBmz9.png)
 Bon OK là c'est la sauce, les autres machines captent le serveur nginx mais ne renvoient rien. 
 
@@ -231,11 +231,11 @@ Pour appliquer l'IP Source Guard, on utilise la commande `ip verify source` dans
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTAyNDgxMjMsLTgwNjM1MTg1MywxMT
-QzMDA2MTg2LC04NjYxMzM4NDEsLTEyNDgwMjg4MDksLTEyMzU2
-NzEzMDcsLTE5MjEyNjM2MTgsNzQwMDc2MjYzLC0xMjQxMDQ2Nj
-QwLC0xNjE4NzE2Mjk2LC0xNjUwNzE1NzkyLDEyMzA0NjIxNjks
-MTc5NjM0MDczNSwxODk0NzIzMDg5LC02OTQxMTczOTUsLTIxNT
-gxODE0Miw2ODI0NDM5NjMsMTE1ODg1NTY3NywtMjA4MjM3NzUw
-NCwxMjQzMDA4NzY5XX0=
+eyJoaXN0b3J5IjpbODAyMjAyODM5LC0xNTkwMjQ4MTIzLC04MD
+YzNTE4NTMsMTE0MzAwNjE4NiwtODY2MTMzODQxLC0xMjQ4MDI4
+ODA5LC0xMjM1NjcxMzA3LC0xOTIxMjYzNjE4LDc0MDA3NjI2My
+wtMTI0MTA0NjY0MCwtMTYxODcxNjI5NiwtMTY1MDcxNTc5Miwx
+MjMwNDYyMTY5LDE3OTYzNDA3MzUsMTg5NDcyMzA4OSwtNjk0MT
+E3Mzk1LC0yMTU4MTgxNDIsNjgyNDQzOTYzLDExNTg4NTU2Nzcs
+LTIwODIzNzc1MDRdfQ==
 -->
