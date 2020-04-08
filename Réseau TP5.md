@@ -210,10 +210,7 @@ On télécharge le paquet `epel-release` avec `sudo yum install epel-release` et
 Une fois ceci fait, qui dit serveur web dit port HTTP, donc on va autoriser le port 80 sur la machine via la commande `sudo firewall-cmd --add-port=80/tcp --permanent` et `sudo firewall-cmd --reload`. Enfin, on tape un petit `systemctl start nginx` et boum le serveur est lancé. Mais est-ce que ça marche ? Bah on va test.
 Deux trucs pour tester le fonctionnement : un petit curl sur le serveur lui-même nous renvoie ça :
 ![](https://i.imgur.com/NYjsGk0.png)
-puis un curl via par exemple le DNS nous renvoie ça :
-![](https://i.imgur.com/PVtBmz9.png)
-Bon OK là c'est la sauce, les autres machines captent le serveur nginx mais ne renvoient rien. 
-
+Un `curl` via la machine DNS donne le même résultat.
 ### DHCP snooping
 Bon bah ça c'est très simple. 
 Le DHCP Snooping permet de ne pas se manger des IP venant d'un serveur DHCP non autorisé. Il filtre les requêtes "DHCP OFFER".
@@ -231,11 +228,11 @@ Pour appliquer l'IP Source Guard, on utilise la commande `ip verify source` dans
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAyMjAyODM5LC0xNTkwMjQ4MTIzLC04MD
-YzNTE4NTMsMTE0MzAwNjE4NiwtODY2MTMzODQxLC0xMjQ4MDI4
-ODA5LC0xMjM1NjcxMzA3LC0xOTIxMjYzNjE4LDc0MDA3NjI2My
-wtMTI0MTA0NjY0MCwtMTYxODcxNjI5NiwtMTY1MDcxNTc5Miwx
-MjMwNDYyMTY5LDE3OTYzNDA3MzUsMTg5NDcyMzA4OSwtNjk0MT
-E3Mzk1LC0yMTU4MTgxNDIsNjgyNDQzOTYzLDExNTg4NTU2Nzcs
-LTIwODIzNzc1MDRdfQ==
+eyJoaXN0b3J5IjpbLTgxODQyNDAyMCwtMTU5MDI0ODEyMywtOD
+A2MzUxODUzLDExNDMwMDYxODYsLTg2NjEzMzg0MSwtMTI0ODAy
+ODgwOSwtMTIzNTY3MTMwNywtMTkyMTI2MzYxOCw3NDAwNzYyNj
+MsLTEyNDEwNDY2NDAsLTE2MTg3MTYyOTYsLTE2NTA3MTU3OTIs
+MTIzMDQ2MjE2OSwxNzk2MzQwNzM1LDE4OTQ3MjMwODksLTY5ND
+ExNzM5NSwtMjE1ODE4MTQyLDY4MjQ0Mzk2MywxMTU4ODU1Njc3
+LC0yMDgyMzc3NTA0XX0=
 -->
