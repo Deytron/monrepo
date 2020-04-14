@@ -71,8 +71,9 @@ Voilà j'ai pas mis toutes les infos mais on a tout. J'ai un intel Core i7 8565U
 - Core c'est leur gamme de proco grand public 
 - i3/5/7/9 c'est leur gamme de puissance on va dire
 - 8, le premier chiffre, c'est la génération de proco
-- 
+- 565, les chiffres après, pour faire simple, plus c'est grand plus c'est puissant. On rappelle qu'Intel a vraiment du mal à nommer ses processeurs, c'est pas très clair.
+- U, la lettre à la fin, indique l'utilisation destinée du processeur. Par exemple, le K signifie qu'un 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzODYwMDgwNiwxMjk4Nzk1MTE4LC0xNz
-YzMDQ4NTMzLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbNTk4MTA3NTk0LDEyOTg3OTUxMTgsLTE3Nj
+MwNDg1MzMsLTIwODg3NDY2MTJdfQ==
 -->
