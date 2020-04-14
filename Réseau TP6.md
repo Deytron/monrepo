@@ -83,10 +83,14 @@ HDA Intel PCH at 0xb4318000 irq 148
 
 - Pour le trackpad, j'ai utilisé `cat /proc/bus/input/devices | grep Touchpad` et voilà.
 ```bash
-- 
+cat /proc/bus/input/devices | grep Touchpad  
+N: Name="GDX1505:00 27C6:01F1 Touchpad"
+```
+Là le modèle c'est un GDX1505.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMDA3NDg1LC05MzYxOTMzOCwxMzAxMz
-gzODA5LC05MTU0MDIzMTksLTE2OTY5MjE1MzMsMTI5ODc5NTEx
-OCwtMTc2MzA0ODUzMywtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbLTEzNTQ0ODYyODYsLTkzNjE5MzM4LDEzMD
+EzODM4MDksLTkxNTQwMjMxOSwtMTY5NjkyMTUzMywxMjk4Nzk1
+MTE4LC0xNzYzMDQ4NTMzLC0yMDg4NzQ2NjEyXX0=
 -->
