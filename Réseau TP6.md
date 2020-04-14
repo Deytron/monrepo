@@ -129,10 +129,11 @@ valid_lft forever preferred_lft forever
 inet6 fe80::800:27ff:fe00:0/64 scope link  
 valid_lft forever preferred_lft forever
 ```
-- lo : C'est la loopback
+- lo : C'est la loopback, présente sur tout PC et utilisée à des fins de tests.
+- wlo1 : C'est ma carte wifi, **W**ire**L**ess 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ4NjkzMDI5LC03MTA5MTA0ODUsLTEzNT
-Q0ODYyODYsLTkzNjE5MzM4LDEzMDEzODM4MDksLTkxNTQwMjMx
-OSwtMTY5NjkyMTUzMywxMjk4Nzk1MTE4LC0xNzYzMDQ4NTMzLC
-0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbMTkzMTI1MDk5MywtNzEwOTEwNDg1LC0xMz
+U0NDg2Mjg2LC05MzYxOTMzOCwxMzAxMzgzODA5LC05MTU0MDIz
+MTksLTE2OTY5MjE1MzMsMTI5ODc5NTExOCwtMTc2MzA0ODUzMy
+wtMjA4ODc0NjYxMl19
 -->
