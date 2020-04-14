@@ -73,7 +73,8 @@ Voilà j'ai pas mis toutes les infos mais on a tout. J'ai un intel Core i7 8565U
 - 8, le premier chiffre, c'est la génération de proco
 - 565, les chiffres après, pour faire simple, plus c'est grand plus c'est puissant. On rappelle qu'Intel a vraiment du mal à nommer ses processeurs, c'est pas très clair.
 - U, la lettre à la fin, indique l'utilisation destinée du processeur. Par exemple, le K signifie que le proco est overclockable. U veut dire que le proco est designé pour les ordis portables et a donc un TDP réduit.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTY5MjE1MzMsMTI5ODc5NTExOCwtMT
-c2MzA0ODUzMywtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbLTkxNTQwMjMxOSwtMTY5NjkyMTUzMywxMj
+k4Nzk1MTE4LC0xNzYzMDQ4NTMzLC0yMDg4NzQ2NjEyXX0=
 -->
