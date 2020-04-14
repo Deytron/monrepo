@@ -131,10 +131,12 @@ valid_lft forever preferred_lft forever
 ```
 - lo : C'est la loopback, présente sur tout PC et utilisée à des fins de tests.
 - wlo1 : C'est ma carte wifi, *wlo* parce que **W**ire**L**ess.
-- vboxnet0
+- vboxnet0 : Ma carte réseau privé hôte liée à VirtualBox.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODU1MjcyMDgsLTcxMDkxMDQ4NSwtMT
-M1NDQ4NjI4NiwtOTM2MTkzMzgsMTMwMTM4MzgwOSwtOTE1NDAy
-MzE5LC0xNjk2OTIxNTMzLDEyOTg3OTUxMTgsLTE3NjMwNDg1Mz
-MsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbNTA0ODc5MjgyLC03MTA5MTA0ODUsLTEzNT
+Q0ODYyODYsLTkzNjE5MzM4LDEzMDEzODM4MDksLTkxNTQwMjMx
+OSwtMTY5NjkyMTUzMywxMjk4Nzk1MTE4LC0xNzYzMDQ4NTMzLC
+0yMDg4NzQ2NjEyXX0=
 -->
