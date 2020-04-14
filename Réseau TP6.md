@@ -108,10 +108,30 @@ Périphérique  Début  Fin  Secteurs  Taille  Type
 /dev/nvme0n1p7 1547696128 1953525134 405829007 193,5G Système de fichiers Linux
 ```
 ### Network
-On repart sur du classique, pour voir nos cartes réseaux on fait `ip a` :
-
+On repart sur du classique, pour voir nos cartes réseaux on fait `ip a`
+```bash
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000  
+link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00  
+inet 127.0.0.1/8 scope host lo  
+valid_lft forever preferred_lft forever  
+inet6 ::1/128 scope host  
+valid_lft forever preferred_lft forever  
+2: wlo1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000  
+link/ether d0:c6:37:81:8f:c6 brd ff:ff:ff:ff:ff:ff  
+inet 192.168.1.87/24 brd 192.168.1.255 scope global dynamic noprefixroute wlo1  
+valid_lft 71918sec preferred_lft 71918sec  
+inet6 fe80::5b36:ffa2:486f:a993/64 scope link noprefixroute  
+valid_lft forever preferred_lft forever  
+3: vboxnet0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000  
+link/ether 0a:00:27:00:00:00 brd ff:ff:ff:ff:ff:ff  
+inet 192.168.56.1/24 brd 192.168.56.255 scope global vboxnet0  
+valid_lft forever preferred_lft forever  
+inet6 fe80::800:27ff:fe00:0/64 scope link  
+valid_lft forever preferred_lft forever
+```
+- lo : C'est la loopback
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5OTU3MzEyLC03MTA5MTA0ODUsLTEzNT
+eyJoaXN0b3J5IjpbNjQ4NjkzMDI5LC03MTA5MTA0ODUsLTEzNT
 Q0ODYyODYsLTkzNjE5MzM4LDEzMDEzODM4MDksLTkxNTQwMjMx
 OSwtMTY5NjkyMTUzMywxMjk4Nzk1MTE4LC0xNzYzMDQ4NTMzLC
 0yMDg4NzQ2NjEyXX0=
