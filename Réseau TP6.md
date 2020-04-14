@@ -81,10 +81,12 @@ cat /proc/asound/cards
 HDA Intel PCH at 0xb4318000 irq 148
 ```
 
-- Pour le trackpad,
+- Pour le trackpad, j'ai utilisé `cat /proc/bus/input/devices | grep Touchpad` et voilà.
+```bash
+- 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNjE5MzM4LDEzMDEzODM4MDksLTkxNT
-QwMjMxOSwtMTY5NjkyMTUzMywxMjk4Nzk1MTE4LC0xNzYzMDQ4
-NTMzLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbMTUzMDA3NDg1LC05MzYxOTMzOCwxMzAxMz
+gzODA5LC05MTU0MDIzMTksLTE2OTY5MjE1MzMsMTI5ODc5NTEx
+OCwtMTc2MzA0ODUzMywtMjA4ODc0NjYxMl19
 -->
