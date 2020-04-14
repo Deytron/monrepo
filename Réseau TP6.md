@@ -108,9 +108,11 @@ Périphérique  Début  Fin  Secteurs  Taille  Type
 /dev/nvme0n1p7 1547696128 1953525134 405829007 193,5G Système de fichiers Linux
 ```
 ### Network
+On repart sur du classique, pour voir nos cartes réseaux on fait `ip a` :
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTMyODAwMDgsLTcxMDkxMDQ4NSwtMT
-M1NDQ4NjI4NiwtOTM2MTkzMzgsMTMwMTM4MzgwOSwtOTE1NDAy
-MzE5LC0xNjk2OTIxNTMzLDEyOTg3OTUxMTgsLTE3NjMwNDg1Mz
-MsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTI5OTU3MzEyLC03MTA5MTA0ODUsLTEzNT
+Q0ODYyODYsLTkzNjE5MzM4LDEzMDEzODM4MDksLTkxNTQwMjMx
+OSwtMTY5NjkyMTUzMywxMjk4Nzk1MTE4LC0xNzYzMDQ4NTMzLC
+0yMDg4NzQ2NjEyXX0=
 -->
