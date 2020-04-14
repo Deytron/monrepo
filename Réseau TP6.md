@@ -44,8 +44,8 @@ Model
 02:00.0 3D controller: NVIDIA Corporation GP107M [GeForce GTX 1050 Mobile] (rev a1)  
 03:00.0 Non-Volatile memory controller: Micron/Crucial Technology P1 NVMe PCIe SSD (rev 03)
 ```
-Par contre y en a elles sont 
+Par contre y en a elles sont incomplètes ou manquantes. Donc on va approfondir.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjY0ODUwMzAsMTI5ODc5NTExOCwtMT
-c2MzA0ODUzMywtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbMTQwNTk4NTEzOSwxMjk4Nzk1MTE4LC0xNz
+YzMDQ4NTMzLC0yMDg4NzQ2NjEyXX0=
 -->
