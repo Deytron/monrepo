@@ -66,8 +66,13 @@ Vitesse du processeur en MHz : 1000.001
 Vitesse maximale du processeur en MHz : 4600,0000  
 Vitesse minimale du processeur en MHz : 400,0000
 ```
-Voilà j'ai pas mis toutes les infos mais on a tout. J'ai un intel Core i7 8565U, on va décortiquer tout ça. Intel c'est la marque, Core c'est leur gamme de proco grand public, i3/5/7/9 c'est leur gamme de puissance on va dire,
+Voilà j'ai pas mis toutes les infos mais on a tout. J'ai un intel Core i7 8565U, on va décortiquer tout ça. 
+- Intel c'est la marque 
+- Core c'est leur gamme de proco grand public 
+- i3/5/7/9 c'est leur gamme de puissance on va dire
+- 8, le premier chiffre, c'est la génération de proco
+- 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzNDI5MDgxNiwxMjk4Nzk1MTE4LC0xNz
+eyJoaXN0b3J5IjpbLTQzODYwMDgwNiwxMjk4Nzk1MTE4LC0xNz
 YzMDQ4NTMzLC0yMDg4NzQ2NjEyXX0=
 -->
