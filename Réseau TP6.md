@@ -87,9 +87,13 @@ cat /proc/bus/input/devices | grep Touchpad
 N: Name="GDX1505:00 27C6:01F1 Touchpad"
 ```
 Là le modèle c'est un GDX1505.
+Pour 
+
+
+
 
 ```bash
-sudo fdisk -l  ✔   
+sudo fdisk -l
 Disque /dev/nvme0n1 : 931,53 GiB, 1000204886016 octets, 1953525168 secteurs  
 Modèle de disque : CT1000P1SSD8  
 Unités : secteur de 1 × 512 = 512 octets  
@@ -108,8 +112,8 @@ Périphérique  Début  Fin  Secteurs  Taille  Type
 /dev/nvme0n1p7 1547696128 1953525134 405829007 193,5G Système de fichiers Linux
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2MTE1OTA3MiwtMTM1NDQ4NjI4NiwtOT
-M2MTkzMzgsMTMwMTM4MzgwOSwtOTE1NDAyMzE5LC0xNjk2OTIx
-NTMzLDEyOTg3OTUxMTgsLTE3NjMwNDg1MzMsLTIwODg3NDY2MT
-JdfQ==
+eyJoaXN0b3J5IjpbLTE0NTE3NTQ4NDYsLTEzNTQ0ODYyODYsLT
+kzNjE5MzM4LDEzMDEzODM4MDksLTkxNTQwMjMxOSwtMTY5Njky
+MTUzMywxMjk4Nzk1MTE4LC0xNzYzMDQ4NTMzLC0yMDg4NzQ2Nj
+EyXX0=
 -->
