@@ -74,11 +74,17 @@ Voilà j'ai pas mis toutes les infos mais on a tout. J'ai un intel Core i7 8565U
 - 565, les chiffres après, pour faire simple, plus c'est grand plus c'est puissant. On rappelle qu'Intel a vraiment du mal à nommer ses processeurs, c'est pas très clair.
 - U, la lettre à la fin, indique l'utilisation destinée du processeur. Par exemple, le K signifie que le proco est overclockable. U veut dire que le proco est designé pour les ordis portables et a donc un TDP réduit.
 
-Pour les enceintes intégrées, on peut utiliser `aplay -L`, et y a beaucoup d'infos qui en ressortent. 
+Pour les enceintes intégrées, on peut utiliser `cat /proc/asound/cards` qui va nous afficher la carte son utilisée
+```bash
+cat /proc/asound/cards
+0 [PCH ]: HDA-Intel - HDA Intel PCH  
+HDA Intel PCH at 0xb4318000 irq 148
+```
+
 - Pour le trackpad,
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMTM4MzgwOSwtOTE1NDAyMzE5LC0xNj
-k2OTIxNTMzLDEyOTg3OTUxMTgsLTE3NjMwNDg1MzMsLTIwODg3
-NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTkzNjE5MzM4LDEzMDEzODM4MDksLTkxNT
+QwMjMxOSwtMTY5NjkyMTUzMywxMjk4Nzk1MTE4LC0xNzYzMDQ4
+NTMzLC0yMDg4NzQ2NjEyXX0=
 -->
