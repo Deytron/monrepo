@@ -7,14 +7,101 @@ On peut utiliser `uname -a` pour avoir les infos de base sur Linux.
 uname -a
 Linux Malgache-Zenbook 5.6.3-2-MANJARO #1 SMP PREEMPT Wed Apr 8 20:57:18 UTC 2020 x86_64 GNU/Linux
 ```
-On a pas la RAM par contre. Pour la voir dans le terminal, on peut utiliser `cat /proc/meminfo`
+On a pas la RAM par contre. Pour la voir dans le terminal, on peut utiliser `cat /proc/meminfo` 
 ```bash
 cat /proc/meminfo
 MemTotal: 8001432 kB  
 MemFree: 759864 kB  
 MemAvailable: 2676836 kB
 ```
-Comme ça on a les infos de la mémoire en temps réel. Pour avoir 
+Comme ça on a les infos de la mémoire en temps réel. Pour avoir les infos précises de la RAM, on fait `sudo dmidecode --type memory`
+```bash
+sudo dmidecode --type memory
+# dmidecode 3.2  
+Getting SMBIOS data from sysfs.  
+SMBIOS 3.2.1 present.  
+# SMBIOS implementations newer than version 3.2.0 are not  
+# fully supported by this version of dmidecode.  
+  
+Handle 0x0008, DMI type 16, 23 bytes  
+Physical Memory Array  
+Location: System Board Or Motherboard  
+Use: System Memory  
+Error Correction Type: None  
+Maximum Capacity: 32 GB  
+Error Information Handle: Not Provided  
+Number Of Devices: 2  
+  
+Handle 0x002B, DMI type 17, 84 bytes  
+Memory Device  
+Array Handle: 0x0008  
+Error Information Handle: Not Provided  
+Total Width: 64 bits  
+Data Width: 64 bits  
+Size: 4096 MB  
+Form Factor: SODIMM  
+Set: None  
+Locator: ChannelA-DIMM0  
+Bank Locator: BANK 0  
+Type: DDR4  
+Type Detail: Synchronous  
+Speed: 2400 MT/s  
+Manufacturer: Samsung  
+Serial Number: 00000000  
+Asset Tag: 9876543210  
+Part Number: M471A5244CB0-CRC  
+Rank: 1  
+Configured Memory Speed: 2400 MT/s  
+Minimum Voltage: 1.2 V  
+Maximum Voltage: 1.2 V  
+Configured Voltage: 1.2 V  
+Memory Technology: DRAM  
+Memory Operating Mode Capability: Volatile memory  
+Firmware Version: Not Specified  
+Module Manufacturer ID: Bank 1, Hex 0xCE  
+Module Product ID: Unknown  
+Memory Subsystem Controller Manufacturer ID: Unknown  
+Memory Subsystem Controller Product ID: Unknown  
+Non-Volatile Size: None  
+Volatile Size: 4 GB  
+Cache Size: None  
+Logical Size: None  
+  
+Handle 0x002C, DMI type 17, 84 bytes  
+Memory Device  
+Array Handle: 0x0008  
+Error Information Handle: Not Provided  
+Total Width: 64 bits  
+Data Width: 64 bits  
+Size: 4096 MB  
+Form Factor: SODIMM  
+Set: None  
+Locator: ChannelB-DIMM0  
+Bank Locator: BANK 2  
+Type: DDR4  
+Type Detail: Synchronous  
+Speed: 2400 MT/s  
+Manufacturer: Samsung  
+Serial Number: 00000000  
+Asset Tag: 9876543210  
+Part Number: M471A5244CB0-CRC  
+Rank: 1  
+Configured Memory Speed: 2400 MT/s  
+Minimum Voltage: 1.2 V  
+Maximum Voltage: 1.2 V  
+Configured Voltage: 1.2 V  
+Memory Technology: DRAM  
+Memory Operating Mode Capability: Volatile memory  
+Firmware Version: Not Specified  
+Module Manufacturer ID: Bank 1, Hex 0xCE  
+Module Product ID: Unknown  
+Memory Subsystem Controller Manufacturer ID: Unknown  
+Memory Subsystem Controller Product ID: Unknown  
+Non-Volatile Size: None  
+Volatile Size: 4 GB  
+Cache Size: None  
+Logical Size: None
+```
 ### Devices
 `lspci` nous permet d'obtenir tous les périphériques et cartes connectées à notre carte mère.
 ```bash
@@ -135,7 +222,7 @@ valid_lft forever preferred_lft forever
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMzQ1NjEyNSw1MDQ4NzkyODIsLTcxMD
+eyJoaXN0b3J5IjpbLTQwNDkwMzM4NCw1MDQ4NzkyODIsLTcxMD
 kxMDQ4NSwtMTM1NDQ4NjI4NiwtOTM2MTkzMzgsMTMwMTM4Mzgw
 OSwtOTE1NDAyMzE5LC0xNjk2OTIxNTMzLDEyOTg3OTUxMTgsLT
 E3NjMwNDg1MzMsLTIwODg3NDY2MTJdfQ==
