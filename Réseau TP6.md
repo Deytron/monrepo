@@ -15,8 +15,9 @@ MemFree: 759864 kB
 MemAvailable: 2676836 kB
 ```
 Comme ça on a les infos de la mémoire en temps réel.
+### Devices
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjE5Mzc0NTAsMTI5ODc5NTExOCwtMT
-c2MzA0ODUzMywtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbOTMzMTA4MTA4LDEyOTg3OTUxMTgsLTE3Nj
+MwNDg1MzMsLTIwODg3NDY2MTJdfQ==
 -->
