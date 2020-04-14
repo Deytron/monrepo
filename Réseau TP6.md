@@ -14,7 +14,7 @@ MemTotal: 8001432 kB
 MemFree: 759864 kB  
 MemAvailable: 2676836 kB
 ```
-Comme ça on a les infos de la mémoire en temps réel.
+Comme ça on a les infos de la mémoire en temps réel. Pour avoir 
 ### Devices
 `lspci` nous permet d'obtenir tous les périphériques et cartes connectées à notre carte mère.
 ```bash
@@ -46,7 +46,7 @@ Model
 ```
 Par contre y en a elles sont incomplètes ou manquantes. Donc on va approfondir, en utilisant `lscpu`
 ```bash
-lscpu  ✔   
+lscpu 
 Architecture : x86_64  
 Mode(s) opératoire(s) des processeurs : 32-bit, 64-bit  
 Boutisme : Little Endian  
@@ -135,8 +135,8 @@ valid_lft forever preferred_lft forever
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA0ODc5MjgyLC03MTA5MTA0ODUsLTEzNT
-Q0ODYyODYsLTkzNjE5MzM4LDEzMDEzODM4MDksLTkxNTQwMjMx
-OSwtMTY5NjkyMTUzMywxMjk4Nzk1MTE4LC0xNzYzMDQ4NTMzLC
-0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbMTIxMzQ1NjEyNSw1MDQ4NzkyODIsLTcxMD
+kxMDQ4NSwtMTM1NDQ4NjI4NiwtOTM2MTkzMzgsMTMwMTM4Mzgw
+OSwtOTE1NDAyMzE5LC0xNjk2OTIxNTMzLDEyOTg3OTUxMTgsLT
+E3NjMwNDg1MzMsLTIwODg3NDY2MTJdfQ==
 -->
