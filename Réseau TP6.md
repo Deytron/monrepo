@@ -7,8 +7,16 @@ On peut utiliser `uname -a` pour avoir les infos de base sur Linux.
 uname -a
 Linux Malgache-Zenbook 5.6.3-2-MANJARO #1 SMP PREEMPT Wed Apr 8 20:57:18 UTC 2020 x86_64 GNU/Linux
 ```
-On a pas la RAM par contre. Pour la voir dans le terminal, on peut utiliser 
+On a pas la RAM par contre. Pour la voir dans le terminal, on peut utiliser `cat /proc/meminfo`
+```bash
+cat /proc/meminfo
+MemTotal: 8001432 kB  
+MemFree: 759864 kB  
+MemAvailable: 2676836 kB
+```
+Comme ça on a les infos de la mémoire en temps réel.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5ODc5NTExOCwtMTc2MzA0ODUzMywtMj
-A4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbLTEzNjE5Mzc0NTAsMTI5ODc5NTExOCwtMT
+c2MzA0ODUzMywtMjA4ODc0NjYxMl19
 -->
