@@ -44,8 +44,30 @@ Model
 02:00.0 3D controller: NVIDIA Corporation GP107M [GeForce GTX 1050 Mobile] (rev a1)  
 03:00.0 Non-Volatile memory controller: Micron/Crucial Technology P1 NVMe PCIe SSD (rev 03)
 ```
-Par contre y en a elles sont incomplètes ou manquantes. Donc on va approfondir.
+Par contre y en a elles sont incomplètes ou manquantes. Donc on va approfondir, en utilisant `lscpu`
+```bash
+lscpu  ✔   
+Architecture : x86_64  
+Mode(s) opératoire(s) des processeurs : 32-bit, 64-bit  
+Boutisme : Little Endian  
+Tailles des adresses: 39 bits physical, 48 bits virtual  
+Processeur(s) : 8  
+Liste de processeur(s) en ligne : 0-7  
+Thread(s) par cœur : 2  
+Cœur(s) par socket : 4  
+Socket(s) : 1  
+Nœud(s) NUMA : 1  
+Identifiant constructeur : GenuineIntel  
+Famille de processeur : 6  
+Modèle : 142  
+Nom de modèle : Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz  
+Révision : 11  
+Vitesse du processeur en MHz : 1000.001  
+Vitesse maximale du processeur en MHz : 4600,0000  
+Vitesse minimale du processeur en MHz : 400,0000
+```
+Voilà j'ai pas mis toutes les infos mais on a tout.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwNTk4NTEzOSwxMjk4Nzk1MTE4LC0xNz
+eyJoaXN0b3J5IjpbLTM0NjA4MjcxOSwxMjk4Nzk1MTE4LC0xNz
 YzMDQ4NTMzLC0yMDg4NzQ2NjEyXX0=
 -->
