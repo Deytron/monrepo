@@ -74,11 +74,11 @@ Voilà j'ai pas mis toutes les infos mais on a tout. J'ai un intel Core i7 8565U
 - 565, les chiffres après, pour faire simple, plus c'est grand plus c'est puissant. On rappelle qu'Intel a vraiment du mal à nommer ses processeurs, c'est pas très clair.
 - U, la lettre à la fin, indique l'utilisation destinée du processeur. Par exemple, le K signifie que le proco est overclockable. U veut dire que le proco est designé pour les ordis portables et a donc un TDP réduit.
 
-Pour les enceintes intégrées, on peut utilis
+Pour les enceintes intégrées, on peut utiliser `aplay -L`, et y a beaucoup d'infos qui en ressortent. 
 - Pour le trackpad,
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDE1MzYwNTIsLTkxNTQwMjMxOSwtMT
-Y5NjkyMTUzMywxMjk4Nzk1MTE4LC0xNzYzMDQ4NTMzLC0yMDg4
-NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbMTMwMTM4MzgwOSwtOTE1NDAyMzE5LC0xNj
+k2OTIxNTMzLDEyOTg3OTUxMTgsLTE3NjMwNDg1MzMsLTIwODg3
+NDY2MTJdfQ==
 -->
