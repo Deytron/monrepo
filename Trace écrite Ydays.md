@@ -185,10 +185,279 @@ login
 end
 ```
 ```
-
-
+IOU2#sh run  
+Building configuration...  
+  
+Current configuration : 1526 bytes  
+!  
+! Last configuration change at 23:05:56 UTC Tue Apr 14 2020  
+!  
+version 15.2  
+service timestamps debug datetime msec  
+service timestamps log datetime msec  
+no service password-encryption  
+service compress-config  
+!  
+hostname gns3vm  
+!  
+boot-start-marker  
+boot-end-marker  
+!  
+!  
+logging discriminator EXCESS severity drops 6 msg-body drops EXCESSCOLL  
+logging buffered 50000  
+logging console discriminator EXCESS  
+!  
+no aaa new-model  
+!  
+!  
+!  
+!  
+!  
+no ip icmp rate-limit unreachable  
+!  
+!  
+!  
+no ip domain-lookup  
+ip cef  
+no ipv6 cef  
+!  
+!  
+!  
+spanning-tree mode rapid-pvst  
+spanning-tree extend system-id  
+!  
+vlan internal allocation policy ascending  
+!  
+ip tcp synwait-time 5  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+interface Ethernet0/0  
+switchport trunk encapsulation dot1q  
+switchport mode trunk  
+!  
+interface Ethernet0/1  
+!  
+interface Ethernet0/2  
+!  
+interface Ethernet0/3  
+!  
+interface Ethernet1/0  
+switchport access vlan 30  
+switchport mode access  
+!  
+interface Ethernet1/1  
+!  
+interface Ethernet1/2  
+!  
+interface Ethernet1/3  
+!  
+interface Ethernet2/0  
+switchport access vlan 40  
+switchport mode access  
+!  
+interface Ethernet2/1  
+!  
+interface Ethernet2/2  
+!  
+interface Ethernet2/3  
+!  
+interface Ethernet3/0  
+!  
+interface Ethernet3/1  
+!  
+interface Ethernet3/2  
+!  
+interface Ethernet3/3  
+!  
+interface Vlan1  
+no ip address  
+shutdown  
+!  
+ip forward-protocol nd  
+!  
+!  
+no ip http server  
+no ip http secure-server  
+!  
+!  
+!  
+!  
+!  
+control-plane  
+!  
+!  
+line con 0  
+exec-timeout 0 0  
+privilege level 15  
+logging synchronous  
+line aux 0  
+exec-timeout 0 0  
+privilege level 15  
+logging synchronous  
+line vty 0 4  
+login  
+!  
+!  
+end
+```
+Config 
+```
+R1#sh run  
+Building configuration...  
+  
+Current configuration : 1854 bytes  
+!  
+version 12.4  
+service timestamps debug datetime msec  
+service timestamps log datetime msec  
+no service password-encryption  
+!  
+hostname R1  
+!  
+boot-start-marker  
+boot-end-marker  
+!  
+!  
+no aaa new-model  
+!  
+resource policy  
+!  
+ip subnet-zero  
+no ip icmp rate-limit unreachable  
+ip cef  
+ip tcp synwait-time 5  
+!  
+!  
+no ip dhcp use vrf connected  
+!  
+!  
+no ip ips deny-action ips-interface  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+interface FastEthernet0/0  
+ip address dhcp  
+ip nat outside  
+ip virtual-reassembly  
+duplex half  
+!  
+interface FastEthernet1/0  
+ip address 192.168.150.1 255.255.255.252  
+ip nat inside  
+ip virtual-reassembly  
+duplex half  
+!  
+interface FastEthernet2/0  
+ip address 192.168.100.2 255.255.255.252  
+ip nat inside  
+ip virtual-reassembly  
+duplex half  
+!  
+interface FastEthernet3/0  
+ip address 192.168.120.253 255.255.255.0  
+duplex half  
+!  
+interface FastEthernet4/0  
+no ip address  
+shutdown  
+duplex half  
+!  
+interface FastEthernet5/0  
+no ip address  
+shutdown  
+duplex half  
+!  
+interface FastEthernet6/0  
+no ip address  
+shutdown  
+duplex half  
+!  
+router ospf 1  
+router-id 1.1.1.3  
+log-adjacency-changes  
+network 192.168.10.0 0.0.0.255 area 0  
+network 192.168.20.0 0.0.0.255 area 0  
+network 192.168.30.0 0.0.0.255 area 0  
+network 192.168.40.0 0.0.0.255 area 0  
+network 192.168.50.0 0.0.0.3 area 0  
+network 192.168.100.0 0.0.0.3 area 0  
+network 192.168.122.0 0.0.0.255 area 0  
+network 192.168.150.0 0.0.0.3 area 0  
+default-information originate  
+!  
+ip classless  
+no ip http server  
+no ip http secure-server  
+!  
+!  
+ip nat inside source list 1 interface FastEthernet0/0 overload  
+!  
+access-list 1 permit any  
+no cdp log mismatch duplex  
+!  
+!  
+!  
+!  
+control-plane  
+!  
+!  
+!  
+!  
+!  
+!  
+gatekeeper  
+shutdown  
+!  
+!  
+line con 0  
+exec-timeout 0 0  
+privilege level 15  
+logging synchronous  
+stopbits 1  
+line aux 0  
+exec-timeout 0 0  
+privilege level 15  
+logging synchronous  
+stopbits 1  
+line vty 0 4  
+login  
+!  
+!  
+end
+```
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTQzMjY2ODksMTk5ODE3NTAxMiwtMT
-Y0OTU2ODQ0NV19
+eyJoaXN0b3J5IjpbMTUyMTQxODYzMywxOTk4MTc1MDEyLC0xNj
+Q5NTY4NDQ1XX0=
 -->
