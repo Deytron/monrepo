@@ -610,9 +610,161 @@ login
 end
 ```
 ```
-
+R3#sh run  
+Building configuration...  
+  
+Current configuration : 2018 bytes  
+!  
+version 12.4  
+service timestamps debug datetime msec  
+service timestamps log datetime msec  
+no service password-encryption  
+!  
+hostname R3  
+!  
+boot-start-marker  
+boot-end-marker  
+!  
+!  
+no aaa new-model  
+!  
+resource policy  
+!  
+ip subnet-zero  
+no ip icmp rate-limit unreachable  
+ip cef  
+ip tcp synwait-time 5  
+!  
+!  
+no ip dhcp use vrf connected  
+!  
+ip dhcp pool Vlan30  
+network 192.168.30.0 255.255.255.0  
+default-router 192.168.30.254  
+dns-server 192.168.30.1  
+!  
+ip dhcp pool Vlan40  
+network 192.168.40.0 255.255.255.0  
+default-router 192.168.40.254  
+dns-server 192.168.40.1  
+!  
+!  
+ip name-server 8.8.8.8  
+no ip ips deny-action ips-interface  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+!  
+interface FastEthernet0/0  
+no ip address  
+duplex half  
+!  
+interface FastEthernet0/0.10  
+encapsulation dot1Q 30  
+ip address 192.168.30.254 255.255.255.0  
+no snmp trap link-status  
+!  
+interface FastEthernet0/0.20  
+encapsulation dot1Q 40  
+ip address 192.168.40.254 255.255.255.0  
+no snmp trap link-status  
+!  
+interface FastEthernet1/0  
+ip address 192.168.50.2 255.255.255.252  
+duplex half  
+!  
+interface FastEthernet2/0  
+no ip address  
+shutdown  
+duplex half  
+!  
+interface FastEthernet3/0  
+no ip address  
+shutdown  
+duplex half  
+!  
+interface FastEthernet4/0  
+no ip address  
+shutdown  
+duplex half  
+!  
+interface FastEthernet5/0  
+no ip address  
+shutdown  
+duplex half  
+!  
+interface FastEthernet6/0  
+no ip address  
+shutdown  
+duplex half  
+!  
+router ospf 1  
+router-id 1.1.1.2  
+log-adjacency-changes  
+network 192.168.10.0 0.0.0.255 area 0  
+network 192.168.20.0 0.0.0.255 area 0  
+network 192.168.30.0 0.0.0.255 area 0  
+network 192.168.40.0 0.0.0.255 area 0  
+network 192.168.50.0 0.0.0.3 area 0  
+network 0.0.0.0 255.255.255.255 area 0  
+!  
+ip classless  
+no ip http server  
+no ip http secure-server  
+!  
+!  
+!  
+no cdp log mismatch duplex  
+!  
+!  
+!  
+!  
+control-plane  
+!  
+!  
+!  
+!  
+!  
+!  
+gatekeeper  
+shutdown  
+!  
+!  
+line con 0  
+exec-timeout 0 0  
+privilege level 15  
+logging synchronous  
+stopbits 1  
+line aux 0  
+exec-timeout 0 0  
+privilege level 15  
+logging synchronous  
+stopbits 1  
+line vty 0 4  
+login  
+!  
+!  
+end
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM0MzgyNzUsMTk5ODE3NTAxMiwtMTY0OT
-U2ODQ0NV19
+eyJoaXN0b3J5IjpbMTgyMDgxMjc2OCw0MzQzODI3NSwxOTk4MT
+c1MDEyLC0xNjQ5NTY4NDQ1XX0=
 -->
