@@ -88,9 +88,28 @@ N: Name="GDX1505:00 27C6:01F1 Touchpad"
 ```
 Là le modèle c'est un GDX1505.
 
-
+```bash
+sudo fdisk -l  ✔   
+Disque /dev/nvme0n1 : 931,53 GiB, 1000204886016 octets, 1953525168 secteurs  
+Modèle de disque : CT1000P1SSD8  
+Unités : secteur de 1 × 512 = 512 octets  
+Taille de secteur (logique / physique) : 512 octets / 512 octets  
+taille d'E/S (minimale / optimale) : 512 octets / 512 octets  
+Type d'étiquette de disque : gpt  
+Identifiant de disque : 89B23785-8DB4-41ED-A14D-3AFA098DCAFD  
+  
+Périphérique  Début  Fin  Secteurs  Taille  Type  
+/dev/nvme0n1p1 2048 1085439 1083392 529M Environnement de récupération Windows  
+/dev/nvme0n1p2 1085440 1288191 202752 99M Système EFI  
+/dev/nvme0n1p3 1288192 1320959 32768 16M Réservé Microsoft  
+/dev/nvme0n1p4 1320960 1524758527 1523437568 726,4G Données de base Microsoft  
+/dev/nvme0n1p5 1524758528 1525168127 409600 200M Données de base Microsoft  
+/dev/nvme0n1p6 1525168128 1547696127 22528000 10,8G Partition d'échange Linux  
+/dev/nvme0n1p7 1547696128 1953525134 405829007 193,5G Système de fichiers Linux
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTQ0ODYyODYsLTkzNjE5MzM4LDEzMD
-EzODM4MDksLTkxNTQwMjMxOSwtMTY5NjkyMTUzMywxMjk4Nzk1
-MTE4LC0xNzYzMDQ4NTMzLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbMTQ2MTE1OTA3MiwtMTM1NDQ4NjI4NiwtOT
+M2MTkzMzgsMTMwMTM4MzgwOSwtOTE1NDAyMzE5LC0xNjk2OTIx
+NTMzLDEyOTg3OTUxMTgsLTE3NjMwNDg1MzMsLTIwODg3NDY2MT
+JdfQ==
 -->
