@@ -87,7 +87,7 @@ cat /proc/bus/input/devices | grep Touchpad
 N: Name="GDX1505:00 27C6:01F1 Touchpad"
 ```
 Là le modèle c'est un GDX1505.
-Pour 
+Pour voir les infos des disques durs et leur partition, on utilise `fdisk -l` 
 
 
 
@@ -112,7 +112,7 @@ Périphérique  Début  Fin  Secteurs  Taille  Type
 /dev/nvme0n1p7 1547696128 1953525134 405829007 193,5G Système de fichiers Linux
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTE3NTQ4NDYsLTEzNTQ0ODYyODYsLT
+eyJoaXN0b3J5IjpbLTEzNzE0MjY3MjIsLTEzNTQ0ODYyODYsLT
 kzNjE5MzM4LDEzMDEzODM4MDksLTkxNTQwMjMxOSwtMTY5Njky
 MTUzMywxMjk4Nzk1MTE4LC0xNzYzMDQ4NTMzLC0yMDg4NzQ2Nj
 EyXX0=
