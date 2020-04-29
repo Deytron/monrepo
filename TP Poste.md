@@ -275,7 +275,7 @@ Pour afficher les utilisateurs, on peut tout simplement faire `users`
 users
 lemalgache lemalgache lemalgache
 ```
-Après on a p
+Après on a pas tous les users. Donc on peut directement aller chercher dans le 
 ### Processus
 ## Scripting
 On est sur Linux, on fait des scripts en Bash. Simple et carré. 
@@ -400,7 +400,7 @@ fi
 ```
 Voilà voilà.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzMjkzOTU1NywtMTY0MjcwNDgsLTE3Mj
+eyJoaXN0b3J5IjpbLTk0NzgxNDM2OCwtMTY0MjcwNDgsLTE3Mj
 I1NDI2ODMsLTE2NzU2NTc5MTIsMTc4NTAyNTc4MiwxMDI3OTk3
 NDgsLTExMzQ3NDE2NjYsLTIwNjgyOTE0NTEsLTM0MDk2OTQ2MC
 wtMTE4MDQ3ODM0NCwtMjEyNDAwMzI2NF19
