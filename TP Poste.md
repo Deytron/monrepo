@@ -311,7 +311,8 @@ lemalga+ 1311 1.4 2.7 1828176 221796 ? Sl 17:44 0:44 /usr/bin/plasmashell
 lemalga+ 4576 0.0 0.0 6312 2276 pts/3 S+ 18:36 0:00 grep --color=auto --exclude-dir=.bzr --exclude-dir=CVS --exc  
 lude-dir=.git --exclude-dir=.hg --exclude-dir=.svn --exclude-dir=.idea --exclude-dir=.tox plasmashell
 ```
-Plasma, ou plutôt 
+Plasma, ou plutôt KDE Plasma, c'est l'interface graphique utilisée sur mon Linux, le nom du process c'est `plasmashell`. En gros, si le processus meurt, j'ai plus rien d'affiché et je peux que passer en mode console.
+
 ## Scripting
 On est sur Linux, on fait des scripts en Bash. Simple et carré. 
 Pourquoi Bash et pas SH ? Bah déjà parce que je connais bien Bash, et ensuite parce que c'est le langage interpréteur par défaut de la majorité des distributions Linux.
@@ -435,9 +436,9 @@ fi
 ```
 Voilà voilà.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQwMTg4NTM1LDc4MTgwOTc4NCwtODYyNj
-c0Nzc4LC0xMzY0OTQ4MzMyLC0xNjQyNzA0OCwtMTcyMjU0MjY4
-MywtMTY3NTY1NzkxMiwxNzg1MDI1NzgyLDEwMjc5OTc0OCwtMT
-EzNDc0MTY2NiwtMjA2ODI5MTQ1MSwtMzQwOTY5NDYwLC0xMTgw
-NDc4MzQ0LC0yMTI0MDAzMjY0XX0=
+eyJoaXN0b3J5IjpbNzg0ODQxNTkxLDg0MDE4ODUzNSw3ODE4MD
+k3ODQsLTg2MjY3NDc3OCwtMTM2NDk0ODMzMiwtMTY0MjcwNDgs
+LTE3MjI1NDI2ODMsLTE2NzU2NTc5MTIsMTc4NTAyNTc4MiwxMD
+I3OTk3NDgsLTExMzQ3NDE2NjYsLTIwNjgyOTE0NTEsLTM0MDk2
+OTQ2MCwtMTE4MDQ3ODM0NCwtMjEyNDAwMzI2NF19
 -->
