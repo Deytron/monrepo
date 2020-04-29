@@ -305,7 +305,13 @@ root 16 0.0 0.0 0 0 ? S 17:44 0:00 [cpuhp/0]
 Et y a genre plein d'autres lignes, mais je vais pas tout montrer là.
 
 Je vais chopper des processus important et les expliquer :
-
+```bash
+ps aux | grep plasmashell 
+lemalga+ 1311 1.4 2.7 1828176 221796 ? Sl 17:44 0:44 /usr/bin/plasmashell  
+lemalga+ 4576 0.0 0.0 6312 2276 pts/3 S+ 18:36 0:00 grep --color=auto --exclude-dir=.bzr --exclude-dir=CVS --exc  
+lude-dir=.git --exclude-dir=.hg --exclude-dir=.svn --exclude-dir=.idea --exclude-dir=.tox plasmashell
+```
+Plasma, ou plutôt 
 ## Scripting
 On est sur Linux, on fait des scripts en Bash. Simple et carré. 
 Pourquoi Bash et pas SH ? Bah déjà parce que je connais bien Bash, et ensuite parce que c'est le langage interpréteur par défaut de la majorité des distributions Linux.
@@ -429,9 +435,9 @@ fi
 ```
 Voilà voilà.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDk4MzI0MTcsNzgxODA5Nzg0LC04Nj
-I2NzQ3NzgsLTEzNjQ5NDgzMzIsLTE2NDI3MDQ4LC0xNzIyNTQy
-NjgzLC0xNjc1NjU3OTEyLDE3ODUwMjU3ODIsMTAyNzk5NzQ4LC
-0xMTM0NzQxNjY2LC0yMDY4MjkxNDUxLC0zNDA5Njk0NjAsLTEx
-ODA0NzgzNDQsLTIxMjQwMDMyNjRdfQ==
+eyJoaXN0b3J5IjpbODQwMTg4NTM1LDc4MTgwOTc4NCwtODYyNj
+c0Nzc4LC0xMzY0OTQ4MzMyLC0xNjQyNzA0OCwtMTcyMjU0MjY4
+MywtMTY3NTY1NzkxMiwxNzg1MDI1NzgyLDEwMjc5OTc0OCwtMT
+EzNDc0MTY2NiwtMjA2ODI5MTQ1MSwtMzQwOTY5NDYwLC0xMTgw
+NDc4MzQ0LC0yMTI0MDAzMjY0XX0=
 -->
