@@ -200,7 +200,7 @@ Sur mon système, y a plusieurs systèmes de fichiers.
 
 **LinuxSwap** : Partition swap spéciale Linux, sur Windows c'est remplacé par un fichier "pagefile.sys". Aussi appelée en français, fichier de pagination (haha)
 
-**NTFS** : Système de fichier créé par Microsoft. Nouveau standard utilisé partout (mais a quelques petits soucis avec Linux), il peut avoir en pratique une taille max par fichier de 16To. 
+**NTFS** : Système de fichier créé par Microsoft. Nouveau standard utilisé partout (mais a quelques petits soucis avec Linux), il peut avoir en pratique une taille max par fichier de 16To et une taille de volume max de 256To.
 
 ### Network
 On repart sur du classique, pour voir nos cartes réseaux on fait `ip a`
@@ -228,12 +228,11 @@ valid_lft forever preferred_lft forever
 - wlo1 : C'est ma carte wifi, *wlo* parce que **W**ire**L**ess.
 - vboxnet0 : Ma carte réseau privé hôte liée à VirtualBox.
 
-
-
+Ports en utilisation
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0OTYxMTMzNiw2MjI4Mzk0OTIsLTQwND
-kwMzM4NCw1MDQ4NzkyODIsLTcxMDkxMDQ4NSwtMTM1NDQ4NjI4
-NiwtOTM2MTkzMzgsMTMwMTM4MzgwOSwtOTE1NDAyMzE5LC0xNj
-k2OTIxNTMzLDEyOTg3OTUxMTgsLTE3NjMwNDg1MzMsLTIwODg3
-NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTE0MDA0MDQyMzgsNjIyODM5NDkyLC00MD
+Q5MDMzODQsNTA0ODc5MjgyLC03MTA5MTA0ODUsLTEzNTQ0ODYy
+ODYsLTkzNjE5MzM4LDEzMDEzODM4MDksLTkxNTQwMjMxOSwtMT
+Y5NjkyMTUzMywxMjk4Nzk1MTE4LC0xNzYzMDQ4NTMzLC0yMDg4
+NzQ2NjEyXX0=
 -->
