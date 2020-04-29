@@ -320,9 +320,10 @@ lemalga+ 1234 0.0 0.2 101656 21248 ? Ss 17:44 0:00 kdeinit5: Running...
 ```
 On oublie pas le process `init`, le POAT (Process Of All Time), qui est le premier truc qui s'enclenche au lancement de Linux et qui gère tous les autres process du système. Son PID sera toujours 1.
 ```bash
-ps aux | grep login 
-root 802 0.0 0.0 15372 7608 ? Ss 17:44 0:00 /usr/lib/systemd/systemd-logind
+ps aux | grep Network 
+root 795 0.0 0.2 404088 19808 ? Ssl 17:44 0:03 /usr/bin/NetworkManager
 ```
+Le NetworkManager est un ad
 ```bash
 ps aux | grep x11  ✔   
 root 1188 0.0 0.2 66876 22332 ? S 17:44 0:00 /usr/lib/sddm/sddm-helper --socket /tmp/sddm-authb0148e59-50  
@@ -454,7 +455,7 @@ fi
 ```
 Voilà voilà.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1OTUzMjQxOCwyMDc2OTU2MDMzLC0yMT
+eyJoaXN0b3J5IjpbLTMyMTM3MjU0NiwyMDc2OTU2MDMzLC0yMT
 IwNDMwMjUzLDg0MDE4ODUzNSw3ODE4MDk3ODQsLTg2MjY3NDc3
 OCwtMTM2NDk0ODMzMiwtMTY0MjcwNDgsLTE3MjI1NDI2ODMsLT
 E2NzU2NTc5MTIsMTc4NTAyNTc4MiwxMDI3OTk3NDgsLTExMzQ3
