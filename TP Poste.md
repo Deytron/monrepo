@@ -335,7 +335,7 @@ Le process X11/Xorg est un programme qui fournit un serveur X à Linux. Il perme
 ps aux | grep rtkit  ✔   
 rtkit 1429 0.0 0.0 152684 2872 ? SNsl 17:44 0:00 /usr/lib/rtkit-daemon
 ```
-Le daemon rtkit est... compliqué à expliquer. En gros, plutôt qu
+Le daemon rtkit est... compliqué à expliquer. En gros, au lieu d'avoir une application qui part demander au kernel des ressources et qui choppe les droits root au passage, l'application va demander à rtkit plutôt qu'au kernel. Rtkit gè
 
 ## Scripting
 On est sur Linux, on fait des scripts en Bash. Simple et carré. 
@@ -460,10 +460,10 @@ fi
 ```
 Voilà voilà.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2MTQ0ODc1OSwyMDc2OTU2MDMzLC0yMT
-IwNDMwMjUzLDg0MDE4ODUzNSw3ODE4MDk3ODQsLTg2MjY3NDc3
-OCwtMTM2NDk0ODMzMiwtMTY0MjcwNDgsLTE3MjI1NDI2ODMsLT
-E2NzU2NTc5MTIsMTc4NTAyNTc4MiwxMDI3OTk3NDgsLTExMzQ3
-NDE2NjYsLTIwNjgyOTE0NTEsLTM0MDk2OTQ2MCwtMTE4MDQ3OD
-M0NCwtMjEyNDAwMzI2NF19
+eyJoaXN0b3J5IjpbMjY3NTU4MzQwLDIwNzY5NTYwMzMsLTIxMj
+A0MzAyNTMsODQwMTg4NTM1LDc4MTgwOTc4NCwtODYyNjc0Nzc4
+LC0xMzY0OTQ4MzMyLC0xNjQyNzA0OCwtMTcyMjU0MjY4MywtMT
+Y3NTY1NzkxMiwxNzg1MDI1NzgyLDEwMjc5OTc0OCwtMTEzNDc0
+MTY2NiwtMjA2ODI5MTQ1MSwtMzQwOTY5NDYwLC0xMTgwNDc4Mz
+Q0LC0yMTI0MDAzMjY0XX0=
 -->
