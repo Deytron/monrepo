@@ -234,8 +234,9 @@ Ports en utilisation
 ### Processus
 ## Scripting
 On est sur Linux, on fait des scripts en Bash. Simple et carré. 
+Pourquoi Bash et pas SH ? 
 Sur Window on utiliserait Powershell.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTY4MDQ2OTQsLTExODA0NzgzNDQsLT
-IxMjQwMDMyNjRdfQ==
+eyJoaXN0b3J5IjpbLTQ2MzQ3MzQwOSwtMTE4MDQ3ODM0NCwtMj
+EyNDAwMzI2NF19
 -->
