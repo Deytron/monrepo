@@ -236,8 +236,10 @@ Ports en utilisation
 On est sur Linux, on fait des scripts en Bash. Simple et carré. 
 Pourquoi Bash et pas SH ? Bah déjà parce que je connais bien Bash, et ensuite parce que c'est le langage interpréteur par défaut de la majorité des distributions Linux.
 Sur Mac il existe AppleScript (?), ou JavaScript. Pas plus de détails là dessus puisque Mac peut aussi utiliser Bash.
-Sur Window on utiliserait Powershell. Oui les scripts Batch en .bat existent, mais même si ils sont fonctionnels, 
+Sur Window on utiliserait Powershell. Oui les scripts Batch en .bat existent, mais même si ils sont fonctionnels, il vaut mieux utiliser Powershell.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTA0NzA1MzUsLTExODA0NzgzNDQsLT
-IxMjQwMDMyNjRdfQ==
+eyJoaXN0b3J5IjpbLTM0MDk2OTQ2MCwtMTE4MDQ3ODM0NCwtMj
+EyNDAwMzI2NF19
 -->
