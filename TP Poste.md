@@ -282,7 +282,7 @@ root nobody dbus bin daemon mail ftp http systemd-journal-remote systemd-network
 ump uuidd dnsmasq rpc avahi colord cups flatpak geoclue git mpd nm-openconnect nm-openvpn ntp polkitd rtkit sddm tss usbmux lem  
 algache nvidia-persistenced deluge gluster dhcpcd mysqlr
 ```
-Normalement, le user qui a tous les droits s'appelle `wheel`  et on peut le voir dans le fichier sudoers.
+
 ### Processus
 
 ## Scripting
@@ -408,7 +408,7 @@ fi
 ```
 Voilà voilà.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwNzM5Njg2MywtMTM2NDk0ODMzMiwtMT
+eyJoaXN0b3J5IjpbLTg2MjY3NDc3OCwtMTM2NDk0ODMzMiwtMT
 Y0MjcwNDgsLTE3MjI1NDI2ODMsLTE2NzU2NTc5MTIsMTc4NTAy
 NTc4MiwxMDI3OTk3NDgsLTExMzQ3NDE2NjYsLTIwNjgyOTE0NT
 EsLTM0MDk2OTQ2MCwtMTE4MDQ3ODM0NCwtMjEyNDAwMzI2NF19
