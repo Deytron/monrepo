@@ -287,87 +287,45 @@ Vitesse d'upload : 5.74 Mbit/s
 Et voilà le script en question, tout plein d'échos :
 ```bash
 #!/bin/bash
-
 echo  '_____________________'
-
 echo  'DUMP INFOS SYSTEMES'
-
 echo  '_____________________'
-
 echo  ''
-
 echo  ''
-
-  
-
 echo -n "Système d'exploitation : "
-
 uname -a | awk 'NR==1{print $1,$13,$14}'
-
 echo  ''
-
 echo -n "Nom de l'ordinateur : "
-
 uname -a | awk 'NR==1{print $2}'
-
 echo  ''
-
 echo -n "Version : "
-
 uname -a | awk 'NR==1{print $3}'
-
 echo  ''
-
 echo -n "Adresse IP : "
-
 ip a | grep dynamic | awk '{print $2}'
-
 echo  ''
-
 echo -n "Ordi allumé le : "
-
 last | head -1 | awk '{print $5,$6,$7}'
-
 echo  ''
-
 echo -n "Besoin de mise à jour ?"
-
 echo  "Non"
-
 echo  ''
-
 echo  "RAM utilisée : $(free -m | grep Mem | awk 'NR==1{print $3}') Mo"
-
 echo  ''
-
 echo  "RAM utilisée : $(free -m | grep Mem | awk 'NR==1{print $4}') Mo"
-
 echo  ''
-
 echo  '__________________'
-
 echo  "STOCKAGE"
-
 echo  '__________________'
-
 echo  "Espace utilisé : $(df 2> /dev/null | tail -1 | awk 'NR==1{print $3}') Ko"
-
 echo  "Espace libre : $(df 2> /dev/null | tail -1 | awk 'NR==1{print $4}') Ko"
-
 echo  ''
-
 echo  "Utilisateurs sur le PC : "
-
 echo  $(cut -d: -f1 /etc/passwd)\r
-
 echo  ''
-
 echo  '__________________'
-
 echo  "Ping vers google"
-
 echo  '__________________'
-
 echo  "Temps de réponse moyen : $(ping -c 1 8.8.8.8 | grep avg | awk 'NR==1{print $4}' | cut -d '/' -f 2) ms"
 echo  ''
 echo  '__________________'
@@ -379,6 +337,6 @@ echo  "Vitesse d'upload : $(curl -s https://raw.githubusercontent.com/sivel/spee
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1MDQ4MTAxNSwtMjA2ODI5MTQ1MSwtMz
+eyJoaXN0b3J5IjpbMTM0OTMxODc4MSwtMjA2ODI5MTQ1MSwtMz
 QwOTY5NDYwLC0xMTgwNDc4MzQ0LC0yMTI0MDAzMjY0XX0=
 -->
