@@ -336,8 +336,9 @@ echo  "Vitesse de téléchargement : $(curl -s https://raw.githubusercontent.com
 echo  "Vitesse d'upload : $(curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python - | tail -1 | awk 'NR==1{print $2,$3}')"
 ```
 Après faut notre deuxième script pour verrouiller le PC après X secondes.
-
+Le script est très simple, 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzQ3NDE2NjYsLTIwNjgyOTE0NTEsLT
-M0MDk2OTQ2MCwtMTE4MDQ3ODM0NCwtMjEyNDAwMzI2NF19
+eyJoaXN0b3J5IjpbLTMyOTE5NTAwNywtMTEzNDc0MTY2NiwtMj
+A2ODI5MTQ1MSwtMzQwOTY5NDYwLC0xMTgwNDc4MzQ0LC0yMTI0
+MDAzMjY0XX0=
 -->
