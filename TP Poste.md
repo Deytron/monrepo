@@ -228,18 +228,44 @@ valid_lft forever preferred_lft forever
 - wlo1 : C'est ma carte wifi, *wlo* parce que **W**ire**L**ess.
 - vboxnet0 : Ma carte réseau privé hôte liée à VirtualBox.
 
-Pour voir les ports TCP et UDP en utilisation, on fait :
+Pour voir les ports TCP et UDP en utilisation et leur programme, on fait :
 ```bash
-ss -tu  ✔   
+ss -tup
 Netid State Recv-Q Send-Q Local Address:Port Peer Address:Port Process  
+udp ESTAB 0 0 192.168.1.87:57172 216.58.204.142:https users:(("chrome",pid=1629,fd=66))  
+udp ESTAB 0 0 192.168.1.87:49158 172.217.19.238:https users:(("chrome",pid=1629,fd=62))  
 udp ESTAB 0 0 192.168.1.87%wlo1:bootpc 192.168.1.254:bootps  
-udp ESTAB 0 0 192.168.1.87:39596 216.58.201.238:https  
-tcp ESTAB 0 0 192.168.1.87:40674 172.217.18.195:https  
-tcp ESTAB 0 0 192.168.1.87:41364 192.168.1.68:nvme-disc  
-tcp ESTAB 0 0 192.168.1.87:35626 140.82.118.5:https  
-tcp ESTAB 0 0 192.168.1.87:48920 74.125.133.188:hpvroom  
-tcp ESTAB 0 0 192.168.1.87:48208 192.168.1.61:nvme-disc  
-tcp ESTAB 0 0 192.168.1.87:54802 172.217.19.238:https
+udp ESTAB 0 0 192.168.1.87:58632 216.58.213.142:https users:(("chrome",pid=1629,fd=60))  
+udp ESTAB 0 0 192.168.1.87:34117 172.217.19.227:https users:(("chrome",pid=1629,fd=35))  
+udp ESTAB 0 0 192.168.1.87:38294 216.58.213.142:https users:(("chrome",pid=1629,fd=57))  
+udp ESTAB 0 0 192.168.1.87:50947 172.217.19.228:https users:(("chrome",pid=1629,fd=33))  
+udp ESTAB 0 0 192.168.1.87:38889 216.58.201.238:https users:(("chrome",pid=1629,fd=64))  
+tcp ESTAB 0 0 192.168.1.87:44706 104.18.71.113:https users:(("chrome",pid=1629,fd=56))  
+tcp ESTAB 0 0 192.168.1.87:54850 172.217.19.238:https users:(("chrome",pid=1629,fd=67))  
+tcp ESTAB 0 0 192.168.1.87:45554 104.22.11.214:https users:(("chrome",pid=1629,fd=65))  
+tcp ESTAB 0 0 192.168.1.87:35684 140.82.118.5:https users:(("chrome",pid=1629,fd=43))  
+tcp ESTAB 0 0 192.168.1.87:60008 104.31.69.212:https users:(("chrome",pid=1629,fd=54))  
+tcp ESTAB 0 0 192.168.1.87:37688 172.217.19.246:https users:(("chrome",pid=1629,fd=72))  
+tcp ESTAB 0 0 192.168.1.87:41364 192.168.1.68:nvme-disc users:(("chrome",pid=1629,fd=44))  
+tcp ESTAB 0 0 192.168.1.87:59424 13.225.31.111:https users:(("chrome",pid=1629,fd=39))  
+tcp ESTAB 0 0 192.168.1.87:48920 74.125.133.188:hpvroom users:(("chrome",pid=1629,fd=41))  
+tcp ESTAB 0 0 192.168.1.87:59678 13.225.31.90:https users:(("chrome",pid=1629,fd=58))  
+tcp ESTAB 0 0 192.168.1.87:52734 104.31.72.18:https users:(("chrome",pid=1629,fd=69))  
+tcp ESTAB 0 0 192.168.1.87:59334 104.18.70.113:https users:(("chrome",pid=1629,fd=59))  
+tcp ESTAB 0 0 192.168.1.87:48208 192.168.1.61:nvme-disc users:(("chrome",pid=1629,fd=47))  
+tcp ESTAB 0 0 192.168.1.87:35860 104.22.65.200:https users:(("chrome",pid=1629,fd=36))  
+tcp ESTAB 0 0 192.168.1.87:42422 151.101.122.217:https users:(("chrome",pid=1629,fd=50))  
+tcp ESTAB 0 0 192.168.1.87:34772 216.58.204.142:https users:(("chrome",pid=1629,fd=24))  
+tcp ESTAB 0 0 192.168.1.87:43052 37.187.145.101:https users:(("chrome",pid=1629,fd=38))  
+tcp ESTAB 0 0 192.168.1.87:45446 216.58.215.33:https users:(("chrome",pid=1629,fd=70))  
+tcp ESTAB 0 0 192.168.1.87:44746 35.241.14.4:https users:(("chrome",pid=1629,fd=28))  
+tcp ESTAB 0 0 192.168.1.87:53576 104.16.52.111:https users:(("chrome",pid=1629,fd=63))  
+tcp ESTAB 0 0 192.168.1.87:50756 13.225.39.80:https users:(("chrome",pid=1629,fd=53))  
+tcp ESTAB 0 0 192.168.1.87:35310 104.31.80.149:https users:(("chrome",pid=1629,fd=71))  
+tcp ESTAB 0 0 192.168.1.87:48406 151.101.122.109:https users:(("chrome",pid=1629,fd=40))  
+tcp ESTAB 0 0 192.168.1.87:50680 104.22.64.200:https users:(("chrome",pid=1629,fd=55))  
+tcp ESTAB 0 0 192.168.1.87:60062 151.101.122.208:https users:(("chrome",pid=1629,fd=61))  
+tcp ESTAB 0 0 192.168.1.87:59592 216.58.213.142:https users:(("chrome",pid=1629,fd=27))
 ```
 
 ### Users
@@ -367,8 +393,8 @@ fi
 ```
 Voilà voilà.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjI1NDI2ODMsLTE2NzU2NTc5MTIsMT
-c4NTAyNTc4MiwxMDI3OTk3NDgsLTExMzQ3NDE2NjYsLTIwNjgy
-OTE0NTEsLTM0MDk2OTQ2MCwtMTE4MDQ3ODM0NCwtMjEyNDAwMz
-I2NF19
+eyJoaXN0b3J5IjpbMTUwODQ5NzgzMiwtMTcyMjU0MjY4MywtMT
+Y3NTY1NzkxMiwxNzg1MDI1NzgyLDEwMjc5OTc0OCwtMTEzNDc0
+MTY2NiwtMjA2ODI5MTQ1MSwtMzQwOTY5NDYwLC0xMTgwNDc4Mz
+Q0LC0yMTI0MDAzMjY0XX0=
 -->
