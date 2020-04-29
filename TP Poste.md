@@ -311,7 +311,7 @@ lemalga+ 1311 1.4 2.7 1828176 221796 ? Sl 17:44 0:44 /usr/bin/plasmashell
 lemalga+ 4576 0.0 0.0 6312 2276 pts/3 S+ 18:36 0:00 grep --color=auto --exclude-dir=.bzr --exclude-dir=CVS --exc  
 lude-dir=.git --exclude-dir=.hg --exclude-dir=.svn --exclude-dir=.idea --exclude-dir=.tox plasmashell
 ```
-Plasma, ou plutôt KDE Plasma, c'est l'interface graphique utilisée sur mon Linux, le nom du process c'est `plasmashell`. En gros, si le processus meurt, j'ai plus rien d'affiché et je peux que passer en mode console.
+Plasma, ou plutôt KDE Plasma, c'est l'interface graphique utilisée sur mon Linux, le nom du process c'est `plasmashell`. En gros, si le processus meurt, j'ai plus mon environnement de bureau.
 ```bash
 ps aux | grep init
 root 1 0.0 0.1 172364 10508 ? Ss 17:44 0:00 /sbin/init  
@@ -330,7 +330,8 @@ root 1188 0.0 0.2 66876 22332 ? S 17:44 0:00 /usr/lib/sddm/sddm-helper --socket 
 0a-4339-b32d-0d7d6cd508d8 --id 1 --start /usr/bin/startplasma-x11 --user lemalgache  
 lemalga+ 1212 0.0 0.1 125832 12068 ? Sl 17:44 0:00 /usr/bin/startplasma-x11
 ```
-Le process X11/Xorg est un programme qui fournit un serveur X à Linux. Il permet de gérer tout ce qui est affiché à l'écran
+Le process X11/Xorg est un programme qui fournit un serveur X à Linux. Il permet de gérer tout ce qui est affiché à l'écran, il est utilisé notamment par les gestionnaires de fenêtres. Si le process meurt, c'est foutu écran noir, plus rien d'affiché.
+
 ## Scripting
 On est sur Linux, on fait des scripts en Bash. Simple et carré. 
 Pourquoi Bash et pas SH ? Bah déjà parce que je connais bien Bash, et ensuite parce que c'est le langage interpréteur par défaut de la majorité des distributions Linux.
@@ -454,7 +455,7 @@ fi
 ```
 Voilà voilà.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3MzYxNTc5NCwtMjEyMDQzMDI1Myw4ND
+eyJoaXN0b3J5IjpbMjA3Njk1NjAzMywtMjEyMDQzMDI1Myw4ND
 AxODg1MzUsNzgxODA5Nzg0LC04NjI2NzQ3NzgsLTEzNjQ5NDgz
 MzIsLTE2NDI3MDQ4LC0xNzIyNTQyNjgzLC0xNjc1NjU3OTEyLD
 E3ODUwMjU3ODIsMTAyNzk5NzQ4LC0xMTM0NzQxNjY2LC0yMDY4
