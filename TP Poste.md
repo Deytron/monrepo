@@ -324,7 +324,13 @@ ps aux | grep login
 root 802 0.0 0.0 15372 7608 ? Ss 17:44 0:00 /usr/lib/systemd/systemd-logind
 ```
 Sans le `logind` quelque part, bah on s'authentifie pas. Donc pas de session.
-
+```bash
+ps aux | grep x11  ✔   
+root 1188 0.0 0.2 66876 22332 ? S 17:44 0:00 /usr/lib/sddm/sddm-helper --socket /tmp/sddm-authb0148e59-50  
+0a-4339-b32d-0d7d6cd508d8 --id 1 --start /usr/bin/startplasma-x11 --user lemalgache  
+lemalga+ 1212 0.0 0.1 125832 12068 ? Sl 17:44 0:00 /usr/bin/startplasma-x11
+```
+Le process X11/Xorg est un programme qui fournit un serveur X à Linux. Il permet de gérer tout ce qui est affiché à l'écran
 ## Scripting
 On est sur Linux, on fait des scripts en Bash. Simple et carré. 
 Pourquoi Bash et pas SH ? Bah déjà parce que je connais bien Bash, et ensuite parce que c'est le langage interpréteur par défaut de la majorité des distributions Linux.
@@ -448,9 +454,10 @@ fi
 ```
 Voilà voilà.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjA0MzAyNTMsODQwMTg4NTM1LDc4MT
-gwOTc4NCwtODYyNjc0Nzc4LC0xMzY0OTQ4MzMyLC0xNjQyNzA0
-OCwtMTcyMjU0MjY4MywtMTY3NTY1NzkxMiwxNzg1MDI1NzgyLD
-EwMjc5OTc0OCwtMTEzNDc0MTY2NiwtMjA2ODI5MTQ1MSwtMzQw
-OTY5NDYwLC0xMTgwNDc4MzQ0LC0yMTI0MDAzMjY0XX0=
+eyJoaXN0b3J5IjpbMTI3MzYxNTc5NCwtMjEyMDQzMDI1Myw4ND
+AxODg1MzUsNzgxODA5Nzg0LC04NjI2NzQ3NzgsLTEzNjQ5NDgz
+MzIsLTE2NDI3MDQ4LC0xNzIyNTQyNjgzLC0xNjc1NjU3OTEyLD
+E3ODUwMjU3ODIsMTAyNzk5NzQ4LC0xMTM0NzQxNjY2LC0yMDY4
+MjkxNDUxLC0zNDA5Njk0NjAsLTExODA0NzgzNDQsLTIxMjQwMD
+MyNjRdfQ==
 -->
