@@ -336,9 +336,9 @@ echo  "Vitesse de téléchargement : $(curl -s https://raw.githubusercontent.com
 echo  "Vitesse d'upload : $(curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python - | tail -1 | awk 'NR==1{print $2,$3}')"
 ```
 Après faut notre deuxième script pour verrouiller le PC après X secondes.
-Le script est très simple, 
+Le script est très simple, quand on le lance il demande si on veut lock le PC ou l'éteindre, et si on veut l'éteindre, il demande en minutes dans combien de temps.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyOTE5NTAwNywtMTEzNDc0MTY2NiwtMj
-A2ODI5MTQ1MSwtMzQwOTY5NDYwLC0xMTgwNDc4MzQ0LC0yMTI0
-MDAzMjY0XX0=
+eyJoaXN0b3J5IjpbMTAyNzk5NzQ4LC0xMTM0NzQxNjY2LC0yMD
+Y4MjkxNDUxLC0zNDA5Njk0NjAsLTExODA0NzgzNDQsLTIxMjQw
+MDMyNjRdfQ==
 -->
