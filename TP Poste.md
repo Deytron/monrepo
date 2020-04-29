@@ -240,9 +240,53 @@ Sur Window on utiliserait Powershell. Oui les scripts Batch en .bat existent, ma
 
 Voici l'output de mon script :
 ```
+_____________________  
+DUMP INFOS SYSTEMES  
+_____________________  
+  
+  
+Système d'exploitation : Linux x86_64 GNU/Linux  
+  
+Nom de l'ordinateur : Malgache-Zenbook  
+  
+Version : 5.6.7-1-MANJARO  
+  
+Adresse IP : 192.168.1.87/24  
+  
+Ordi allumé le : Apr 29 14:35  
+  
+Besoin de mise à jour ?Non  
+  
+RAM utilisée : 2180 Mo  
+  
+RAM utilisée : 3003 Mo  
+  
+__________________  
+STOCKAGE  
+__________________  
+Espace utilisé : 573896932 Ko  
+Espace libre : 573896932 Ko  
+  
+Utilisateurs sur le PC :  
+root nobody dbus bin daemon mail ftp http systemd-journal-remote systemd-network systemd-resolve systemd-timesync systemd-cored  
+ump uuidd dnsmasq rpc avahi colord cups flatpak geoclue git mpd nm-openconnect nm-openvpn ntp polkitd rtkit sddm tss usbmux lem  
+algache nvidia-persistenced deluge gluster dhcpcd mysqlr  
+  
+__________________  
+Ping vers google  
+__________________  
+Temps de réponse moyen : 14.070 ms  
+  
+__________________  
+CONNEXION  
+__________________  
+  
+Vitesse de téléchargement : 14.43 Mbit/s  
+Vitesse d'upload : 5.74 Mbit/s
+```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDQ2ODAyMjksLTIwNjgyOTE0NTEsLT
-M0MDk2OTQ2MCwtMTE4MDQ3ODM0NCwtMjEyNDAwMzI2NF19
+eyJoaXN0b3J5IjpbLTY4NTk4MzcxNiwtMjA2ODI5MTQ1MSwtMz
+QwOTY5NDYwLC0xMTgwNDc4MzQ0LC0yMTI0MDAzMjY0XX0=
 -->
