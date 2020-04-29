@@ -323,7 +323,7 @@ On oublie pas le process `init`, le POAT (Process Of All Time), qui est le premi
 ps aux | grep Network 
 root 795 0.0 0.2 404088 19808 ? Ssl 17:44 0:03 /usr/bin/NetworkManager
 ```
-Le NetworkManager est un ad
+Le NetworkManager est un daemon qui gère tous les systèmes réseaux du PC. Sans lui, pas de connexion.
 ```bash
 ps aux | grep x11  ✔   
 root 1188 0.0 0.2 66876 22332 ? S 17:44 0:00 /usr/lib/sddm/sddm-helper --socket /tmp/sddm-authb0148e59-50  
@@ -331,6 +331,8 @@ root 1188 0.0 0.2 66876 22332 ? S 17:44 0:00 /usr/lib/sddm/sddm-helper --socket 
 lemalga+ 1212 0.0 0.1 125832 12068 ? Sl 17:44 0:00 /usr/bin/startplasma-x11
 ```
 Le process X11/Xorg est un programme qui fournit un serveur X à Linux. Il permet de gérer tout ce qui est affiché à l'écran, il est utilisé notamment par les gestionnaires de fenêtres. Si le process meurt, c'est foutu écran noir, plus rien d'affiché.
+```bash
+
 
 ## Scripting
 On est sur Linux, on fait des scripts en Bash. Simple et carré. 
@@ -455,10 +457,10 @@ fi
 ```
 Voilà voilà.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyMTM3MjU0NiwyMDc2OTU2MDMzLC0yMT
-IwNDMwMjUzLDg0MDE4ODUzNSw3ODE4MDk3ODQsLTg2MjY3NDc3
-OCwtMTM2NDk0ODMzMiwtMTY0MjcwNDgsLTE3MjI1NDI2ODMsLT
-E2NzU2NTc5MTIsMTc4NTAyNTc4MiwxMDI3OTk3NDgsLTExMzQ3
-NDE2NjYsLTIwNjgyOTE0NTEsLTM0MDk2OTQ2MCwtMTE4MDQ3OD
-M0NCwtMjEyNDAwMzI2NF19
+eyJoaXN0b3J5IjpbNDIxNjEzNzg3LDIwNzY5NTYwMzMsLTIxMj
+A0MzAyNTMsODQwMTg4NTM1LDc4MTgwOTc4NCwtODYyNjc0Nzc4
+LC0xMzY0OTQ4MzMyLC0xNjQyNzA0OCwtMTcyMjU0MjY4MywtMT
+Y3NTY1NzkxMiwxNzg1MDI1NzgyLDEwMjc5OTc0OCwtMTEzNDc0
+MTY2NiwtMjA2ODI5MTQ1MSwtMzQwOTY5NDYwLC0xMTgwNDc4Mz
+Q0LC0yMTI0MDAzMjY0XX0=
 -->
