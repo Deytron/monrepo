@@ -229,8 +229,13 @@ valid_lft forever preferred_lft forever
 - vboxnet0 : Ma carte réseau privé hôte liée à VirtualBox.
 
 Ports en utilisation
+
+### Users
+### Processus
+## Scripting
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDA0MDQyMzgsNjIyODM5NDkyLC00MD
+eyJoaXN0b3J5IjpbLTIxMjQwMDMyNjQsNjIyODM5NDkyLC00MD
 Q5MDMzODQsNTA0ODc5MjgyLC03MTA5MTA0ODUsLTEzNTQ0ODYy
 ODYsLTkzNjE5MzM4LDEzMDEzODM4MDksLTkxNTQwMjMxOSwtMT
 Y5NjkyMTUzMywxMjk4Nzk1MTE4LC0xNzYzMDQ4NTMzLC0yMDg4
