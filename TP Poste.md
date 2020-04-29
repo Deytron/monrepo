@@ -337,6 +337,19 @@ rtkit 1429 0.0 0.0 152684 2872 ? SNsl 17:44 0:00 /usr/lib/rtkit-daemon
 ```
 Le daemon rtkit est... compliqué à expliquer. En gros, au lieu d'avoir un programme qui part demander au kernel des ressources et qui choppe les droits root au passage, l'application va demander à rtkit plutôt qu'au kernel. Rtkit gère les permissions pour demander des ressources au kernel, et donne les droits à un programme de le faire. L'intérêt ici c'est que c'est bien plus sécurisé que de directement filer des droits root à un programme.
 
+Pour voir quel utilisateur a lancé un processus, on utilise `ps -u {UTILISATEUR}`.
+```bash
+ps -u lemalgache
+PID TTY TIME CMD  
+1201 ? 00:00:00 systemd  
+1202 ? 00:00:00 (sd-pam)  
+1212 ? 00:00:00 startplasma-x11  
+1220 ? 00:00:00 dbus-daemon  
+1233 ? 00:00:00 start_kdeinit  
+1234 ? 00:00:00 kdeinit5
+```
+lemalgache est mon utilisateur admin sur la machine.
+
 ## Scripting
 On est sur Linux, on fait des scripts en Bash. Simple et carré. 
 Pourquoi Bash et pas SH ? Bah déjà parce que je connais bien Bash, et ensuite parce que c'est le langage interpréteur par défaut de la majorité des distributions Linux.
@@ -460,10 +473,10 @@ fi
 ```
 Voilà voilà.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ0NzQzNjk3LDIwNzY5NTYwMzMsLTIxMj
-A0MzAyNTMsODQwMTg4NTM1LDc4MTgwOTc4NCwtODYyNjc0Nzc4
-LC0xMzY0OTQ4MzMyLC0xNjQyNzA0OCwtMTcyMjU0MjY4MywtMT
-Y3NTY1NzkxMiwxNzg1MDI1NzgyLDEwMjc5OTc0OCwtMTEzNDc0
-MTY2NiwtMjA2ODI5MTQ1MSwtMzQwOTY5NDYwLC0xMTgwNDc4Mz
-Q0LC0yMTI0MDAzMjY0XX0=
+eyJoaXN0b3J5IjpbMTg2MDQ0NTU2NCwyMDc2OTU2MDMzLC0yMT
+IwNDMwMjUzLDg0MDE4ODUzNSw3ODE4MDk3ODQsLTg2MjY3NDc3
+OCwtMTM2NDk0ODMzMiwtMTY0MjcwNDgsLTE3MjI1NDI2ODMsLT
+E2NzU2NTc5MTIsMTc4NTAyNTc4MiwxMDI3OTk3NDgsLTExMzQ3
+NDE2NjYsLTIwNjgyOTE0NTEsLTM0MDk2OTQ2MCwtMTE4MDQ3OD
+M0NCwtMjEyNDAwMzI2NF19
 -->
