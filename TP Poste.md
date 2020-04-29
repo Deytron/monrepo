@@ -283,7 +283,7 @@ ump uuidd dnsmasq rpc avahi colord cups flatpak geoclue git mpd nm-openconnect n
 algache nvidia-persistenced deluge gluster dhcpcd mysqlr
 ```
 ### Processus
-
+Pour voir tous les processus, `powertop` est parfait, précis et intégré de base dans beaucoup de distrib Linux. Mais ça reste un outil tiers.
 ## Scripting
 On est sur Linux, on fait des scripts en Bash. Simple et carré. 
 Pourquoi Bash et pas SH ? Bah déjà parce que je connais bien Bash, et ensuite parce que c'est le langage interpréteur par défaut de la majorité des distributions Linux.
@@ -407,9 +407,9 @@ fi
 ```
 Voilà voilà.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzgxODA5Nzg0LC04NjI2NzQ3NzgsLTEzNj
-Q5NDgzMzIsLTE2NDI3MDQ4LC0xNzIyNTQyNjgzLC0xNjc1NjU3
-OTEyLDE3ODUwMjU3ODIsMTAyNzk5NzQ4LC0xMTM0NzQxNjY2LC
-0yMDY4MjkxNDUxLC0zNDA5Njk0NjAsLTExODA0NzgzNDQsLTIx
-MjQwMDMyNjRdfQ==
+eyJoaXN0b3J5IjpbLTE3NDM3MDI4MzAsNzgxODA5Nzg0LC04Nj
+I2NzQ3NzgsLTEzNjQ5NDgzMzIsLTE2NDI3MDQ4LC0xNzIyNTQy
+NjgzLC0xNjc1NjU3OTEyLDE3ODUwMjU3ODIsMTAyNzk5NzQ4LC
+0xMTM0NzQxNjY2LC0yMDY4MjkxNDUxLC0zNDA5Njk0NjAsLTEx
+ODA0NzgzNDQsLTIxMjQwMDMyNjRdfQ==
 -->
