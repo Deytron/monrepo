@@ -194,7 +194,8 @@ Périphérique  Début  Fin  Secteurs  Taille  Type
 /dev/nvme0n1p6 1525168128 1547696127 22528000 10,8G Partition d'échange Linux  
 /dev/nvme0n1p7 1547696128 1953525134 405829007 193,5G Système de fichiers Linux
 ```
-
+Sur mon système, y a plusieurs systèmes de fichiers.
+FAT32 : Système de fichier créé par Microsoft.
 ### Network
 On repart sur du classique, pour voir nos cartes réseaux on fait `ip a`
 ```bash
@@ -224,8 +225,9 @@ valid_lft forever preferred_lft forever
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjIyODM5NDkyLC00MDQ5MDMzODQsNTA0OD
-c5MjgyLC03MTA5MTA0ODUsLTEzNTQ0ODYyODYsLTkzNjE5MzM4
-LDEzMDEzODM4MDksLTkxNTQwMjMxOSwtMTY5NjkyMTUzMywxMj
-k4Nzk1MTE4LC0xNzYzMDQ4NTMzLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTg4OTI1MTE3MSw2MjI4Mzk0OTIsLTQwND
+kwMzM4NCw1MDQ4NzkyODIsLTcxMDkxMDQ4NSwtMTM1NDQ4NjI4
+NiwtOTM2MTkzMzgsMTMwMTM4MzgwOSwtOTE1NDAyMzE5LC0xNj
+k2OTIxNTMzLDEyOTg3OTUxMTgsLTE3NjMwNDg1MzMsLTIwODg3
+NDY2MTJdfQ==
 -->
