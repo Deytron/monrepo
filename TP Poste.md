@@ -312,6 +312,13 @@ lemalga+ 4576 0.0 0.0 6312 2276 pts/3 S+ 18:36 0:00 grep --color=auto --exclude-
 lude-dir=.git --exclude-dir=.hg --exclude-dir=.svn --exclude-dir=.idea --exclude-dir=.tox plasmashell
 ```
 Plasma, ou plutôt KDE Plasma, c'est l'interface graphique utilisée sur mon Linux, le nom du process c'est `plasmashell`. En gros, si le processus meurt, j'ai plus rien d'affiché et je peux que passer en mode console.
+```bash
+ps aux | grep init
+root 1 0.0 0.1 172364 10508 ? Ss 17:44 0:00 /sbin/init  
+lemalga+ 1233 0.0 0.0 2228 88 ? S 17:44 0:00 /usr/lib/kf5/start_kdeinit --kded +kcminit_startup  
+lemalga+ 1234 0.0 0.2 101656 21248 ? Ss 17:44 0:00 kdeinit5: Running...
+```
+On oublie pas le process `init`, le POAT (Process Of All Time), qui est le premier truc qui s'enclenche au lancement de Linux et qui gère tous les autres process du système. Son PID sera toujours 1.
 
 ## Scripting
 On est sur Linux, on fait des scripts en Bash. Simple et carré. 
@@ -436,7 +443,7 @@ fi
 ```
 Voilà voilà.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg0ODQxNTkxLDg0MDE4ODUzNSw3ODE4MD
+eyJoaXN0b3J5IjpbNjgzODIwMTQxLDg0MDE4ODUzNSw3ODE4MD
 k3ODQsLTg2MjY3NDc3OCwtMTM2NDk0ODMzMiwtMTY0MjcwNDgs
 LTE3MjI1NDI2ODMsLTE2NzU2NTc5MTIsMTc4NTAyNTc4MiwxMD
 I3OTk3NDgsLTExMzQ3NDE2NjYsLTIwNjgyOTE0NTEsLTM0MDk2
