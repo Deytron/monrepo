@@ -323,7 +323,6 @@ On oublie pas le process `init`, le POAT (Process Of All Time), qui est le premi
 ps aux | grep login 
 root 802 0.0 0.0 15372 7608 ? Ss 17:44 0:00 /usr/lib/systemd/systemd-logind
 ```
-Sans le `logind` quelque part, bah on s'authentifie pas. Donc pas de session.
 ```bash
 ps aux | grep x11  ✔   
 root 1188 0.0 0.2 66876 22332 ? S 17:44 0:00 /usr/lib/sddm/sddm-helper --socket /tmp/sddm-authb0148e59-50  
@@ -455,10 +454,10 @@ fi
 ```
 Voilà voilà.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3Njk1NjAzMywtMjEyMDQzMDI1Myw4ND
-AxODg1MzUsNzgxODA5Nzg0LC04NjI2NzQ3NzgsLTEzNjQ5NDgz
-MzIsLTE2NDI3MDQ4LC0xNzIyNTQyNjgzLC0xNjc1NjU3OTEyLD
-E3ODUwMjU3ODIsMTAyNzk5NzQ4LC0xMTM0NzQxNjY2LC0yMDY4
-MjkxNDUxLC0zNDA5Njk0NjAsLTExODA0NzgzNDQsLTIxMjQwMD
-MyNjRdfQ==
+eyJoaXN0b3J5IjpbLTM1OTUzMjQxOCwyMDc2OTU2MDMzLC0yMT
+IwNDMwMjUzLDg0MDE4ODUzNSw3ODE4MDk3ODQsLTg2MjY3NDc3
+OCwtMTM2NDk0ODMzMiwtMTY0MjcwNDgsLTE3MjI1NDI2ODMsLT
+E2NzU2NTc5MTIsMTc4NTAyNTc4MiwxMDI3OTk3NDgsLTExMzQ3
+NDE2NjYsLTIwNjgyOTE0NTEsLTM0MDk2OTQ2MCwtMTE4MDQ3OD
+M0NCwtMjEyNDAwMzI2NF19
 -->
