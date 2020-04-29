@@ -270,7 +270,7 @@ tcp ESTAB 0 0 192.168.1.87:59592 216.58.213.142:https users:(("chrome",pid=1629,
 Les programmes sont affichés à droite. C'est le `-p` dans la commande qui affiche le nom du processus. Ici, Chrome utilise plusieurs process et plusieurs ports.
 
 ### Users
-
+Pour afficher 
 ### Processus
 ## Scripting
 On est sur Linux, on fait des scripts en Bash. Simple et carré. 
@@ -395,8 +395,8 @@ fi
 ```
 Voilà voilà.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTQzMTU0MDAsLTE3MjI1NDI2ODMsLT
-E2NzU2NTc5MTIsMTc4NTAyNTc4MiwxMDI3OTk3NDgsLTExMzQ3
-NDE2NjYsLTIwNjgyOTE0NTEsLTM0MDk2OTQ2MCwtMTE4MDQ3OD
-M0NCwtMjEyNDAwMzI2NF19
+eyJoaXN0b3J5IjpbMTExNjgwOTU5MCwtMTcyMjU0MjY4MywtMT
+Y3NTY1NzkxMiwxNzg1MDI1NzgyLDEwMjc5OTc0OCwtMTEzNDc0
+MTY2NiwtMjA2ODI5MTQ1MSwtMzQwOTY5NDYwLC0xMTgwNDc4Mz
+Q0LC0yMTI0MDAzMjY0XX0=
 -->
