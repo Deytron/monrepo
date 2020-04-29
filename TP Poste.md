@@ -271,6 +271,11 @@ Les programmes sont affichés à droite. C'est le `-p` dans la commande qui affi
 
 ### Users
 Pour afficher les utilisateurs, on peut tout simplement faire `users`
+```bash
+users
+lemalgache lemalgache lemalgache
+```
+Après on a p
 ### Processus
 ## Scripting
 On est sur Linux, on fait des scripts en Bash. Simple et carré. 
@@ -395,8 +400,8 @@ fi
 ```
 Voilà voilà.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc5NTU2MTY4LC0xNjQyNzA0OCwtMTcyMj
-U0MjY4MywtMTY3NTY1NzkxMiwxNzg1MDI1NzgyLDEwMjc5OTc0
-OCwtMTEzNDc0MTY2NiwtMjA2ODI5MTQ1MSwtMzQwOTY5NDYwLC
-0xMTgwNDc4MzQ0LC0yMTI0MDAzMjY0XX0=
+eyJoaXN0b3J5IjpbLTYzMjkzOTU1NywtMTY0MjcwNDgsLTE3Mj
+I1NDI2ODMsLTE2NzU2NTc5MTIsMTc4NTAyNTc4MiwxMDI3OTk3
+NDgsLTExMzQ3NDE2NjYsLTIwNjgyOTE0NTEsLTM0MDk2OTQ2MC
+wtMTE4MDQ3ODM0NCwtMjEyNDAwMzI2NF19
 -->
