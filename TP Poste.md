@@ -238,8 +238,11 @@ Pourquoi Bash et pas SH ? Bah déjà parce que je connais bien Bash, et ensuite 
 Sur Mac il existe AppleScript (?), ou JavaScript. Pas plus de détails là dessus puisque Mac peut aussi utiliser Bash.
 Sur Window on utiliserait Powershell. Oui les scripts Batch en .bat existent, mais même si ils sont fonctionnels, il vaut mieux utiliser Powershell.
 
+Voici l'output de mon script :
+```
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjgyOTE0NTEsLTM0MDk2OTQ2MCwtMT
-E4MDQ3ODM0NCwtMjEyNDAwMzI2NF19
+eyJoaXN0b3J5IjpbLTEyMDQ2ODAyMjksLTIwNjgyOTE0NTEsLT
+M0MDk2OTQ2MCwtMTE4MDQ3ODM0NCwtMjEyNDAwMzI2NF19
 -->
