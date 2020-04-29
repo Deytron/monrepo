@@ -265,7 +265,7 @@ __________________
 STOCKAGE  
 __________________  
 Espace utilisé : 573896932 Ko  
-Espace libre : 573896932 Ko  
+Espace libre : 187821816 Ko  
   
 Utilisateurs sur le PC :  
 root nobody dbus bin daemon mail ftp http systemd-journal-remote systemd-network systemd-resolve systemd-timesync systemd-cored  
@@ -287,6 +287,6 @@ Vitesse d'upload : 5.74 Mbit/s
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NTk4MzcxNiwtMjA2ODI5MTQ1MSwtMz
-QwOTY5NDYwLC0xMTgwNDc4MzQ0LC0yMTI0MDAzMjY0XX0=
+eyJoaXN0b3J5IjpbODQ3NjE2MTU4LC0yMDY4MjkxNDUxLC0zND
+A5Njk0NjAsLTExODA0NzgzNDQsLTIxMjQwMDMyNjRdfQ==
 -->
