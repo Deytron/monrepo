@@ -323,7 +323,8 @@ On oublie pas le process `init`, le POAT (Process Of All Time), qui est le premi
 ps aux | grep login 
 root 802 0.0 0.0 15372 7608 ? Ss 17:44 0:00 /usr/lib/systemd/systemd-logind
 ```
-Sans le `logind` quelq
+Sans le `logind` quelque part, bah on s'authentifie pas. Donc pas de session.
+
 ## Scripting
 On est sur Linux, on fait des scripts en Bash. Simple et carré. 
 Pourquoi Bash et pas SH ? Bah déjà parce que je connais bien Bash, et ensuite parce que c'est le langage interpréteur par défaut de la majorité des distributions Linux.
@@ -447,7 +448,7 @@ fi
 ```
 Voilà voilà.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTU1NzUxMzksODQwMTg4NTM1LDc4MT
+eyJoaXN0b3J5IjpbLTIxMjA0MzAyNTMsODQwMTg4NTM1LDc4MT
 gwOTc4NCwtODYyNjc0Nzc4LC0xMzY0OTQ4MzMyLC0xNjQyNzA0
 OCwtMTcyMjU0MjY4MywtMTY3NTY1NzkxMiwxNzg1MDI1NzgyLD
 EwMjc5OTc0OCwtMTEzNDc0MTY2NiwtMjA2ODI5MTQ1MSwtMzQw
