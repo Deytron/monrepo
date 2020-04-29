@@ -233,7 +233,8 @@ Ports en utilisation
 ### Users
 ### Processus
 ## Scripting
-
+On est sur Linux, on fait des scripts en bash. Simple et carré. Sur Window on utiliserait Powershell.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjQwMDMyNjRdfQ==
+eyJoaXN0b3J5IjpbLTExODA0NzgzNDQsLTIxMjQwMDMyNjRdfQ
+==
 -->
