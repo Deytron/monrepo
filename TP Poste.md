@@ -228,7 +228,19 @@ valid_lft forever preferred_lft forever
 - wlo1 : C'est ma carte wifi, *wlo* parce que **W**ire**L**ess.
 - vboxnet0 : Ma carte réseau privé hôte liée à VirtualBox.
 
-Ports en utilisation
+Pour voir les ports TCP et UDP en utilisation, on fait :
+```bash
+ss -tu  ✔   
+Netid State Recv-Q Send-Q Local Address:Port Peer Address:Port Process  
+udp ESTAB 0 0 192.168.1.87%wlo1:bootpc 192.168.1.254:bootps  
+udp ESTAB 0 0 192.168.1.87:39596 216.58.201.238:https  
+tcp ESTAB 0 0 192.168.1.87:40674 172.217.18.195:https  
+tcp ESTAB 0 0 192.168.1.87:41364 192.168.1.68:nvme-disc  
+tcp ESTAB 0 0 192.168.1.87:35626 140.82.118.5:https  
+tcp ESTAB 0 0 192.168.1.87:48920 74.125.133.188:hpvroom  
+tcp ESTAB 0 0 192.168.1.87:48208 192.168.1.61:nvme-disc  
+tcp ESTAB 0 0 192.168.1.87:54802 172.217.19.238:https
+```
 
 
 ### Users
@@ -356,7 +368,8 @@ fi
 ```
 Voilà voilà.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzU2NTc5MTIsMTc4NTAyNTc4MiwxMD
-I3OTk3NDgsLTExMzQ3NDE2NjYsLTIwNjgyOTE0NTEsLTM0MDk2
-OTQ2MCwtMTE4MDQ3ODM0NCwtMjEyNDAwMzI2NF19
+eyJoaXN0b3J5IjpbLTg5OTYyNTQxNywtMTY3NTY1NzkxMiwxNz
+g1MDI1NzgyLDEwMjc5OTc0OCwtMTEzNDc0MTY2NiwtMjA2ODI5
+MTQ1MSwtMzQwOTY5NDYwLC0xMTgwNDc4MzQ0LC0yMTI0MDAzMj
+Y0XX0=
 -->
