@@ -335,7 +335,7 @@ Le process X11/Xorg est un programme qui fournit un serveur X à Linux. Il perme
 ps aux | grep rtkit  ✔   
 rtkit 1429 0.0 0.0 152684 2872 ? SNsl 17:44 0:00 /usr/lib/rtkit-daemon
 ```
-Le daemon rtkit est... compliqué à expliquer. En gros, au lieu d'avoir une application qui part demander au kernel des ressources et qui choppe les droits root au passage, l'application va demander à rtkit plutôt qu'au kernel. Rtkit gè
+Le daemon rtkit est... compliqué à expliquer. En gros, au lieu d'avoir une application qui part demander au kernel des ressources et qui choppe les droits root au passage, l'application va demander à rtkit plutôt qu'au kernel. Rtkit gère les permissions pour demander des ressources au kernel, et donne les droits à une applica
 
 ## Scripting
 On est sur Linux, on fait des scripts en Bash. Simple et carré. 
@@ -460,7 +460,7 @@ fi
 ```
 Voilà voilà.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY3NTU4MzQwLDIwNzY5NTYwMzMsLTIxMj
+eyJoaXN0b3J5IjpbLTk4NzY1MzUwLDIwNzY5NTYwMzMsLTIxMj
 A0MzAyNTMsODQwMTg4NTM1LDc4MTgwOTc4NCwtODYyNjc0Nzc4
 LC0xMzY0OTQ4MzMyLC0xNjQyNzA0OCwtMTcyMjU0MjY4MywtMT
 Y3NTY1NzkxMiwxNzg1MDI1NzgyLDEwMjc5OTc0OCwtMTEzNDc0
