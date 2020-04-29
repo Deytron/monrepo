@@ -282,7 +282,6 @@ root nobody dbus bin daemon mail ftp http systemd-journal-remote systemd-network
 ump uuidd dnsmasq rpc avahi colord cups flatpak geoclue git mpd nm-openconnect nm-openvpn ntp polkitd rtkit sddm tss usbmux lem  
 algache nvidia-persistenced deluge gluster dhcpcd mysqlr
 ```
-
 ### Processus
 
 ## Scripting
@@ -408,9 +407,9 @@ fi
 ```
 Voilà voilà.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MjY3NDc3OCwtMTM2NDk0ODMzMiwtMT
-Y0MjcwNDgsLTE3MjI1NDI2ODMsLTE2NzU2NTc5MTIsMTc4NTAy
-NTc4MiwxMDI3OTk3NDgsLTExMzQ3NDE2NjYsLTIwNjgyOTE0NT
-EsLTM0MDk2OTQ2MCwtMTE4MDQ3ODM0NCwtMjEyNDAwMzI2NF19
-
+eyJoaXN0b3J5IjpbNzgxODA5Nzg0LC04NjI2NzQ3NzgsLTEzNj
+Q5NDgzMzIsLTE2NDI3MDQ4LC0xNzIyNTQyNjgzLC0xNjc1NjU3
+OTEyLDE3ODUwMjU3ODIsMTAyNzk5NzQ4LC0xMTM0NzQxNjY2LC
+0yMDY4MjkxNDUxLC0zNDA5Njk0NjAsLTExODA0NzgzNDQsLTIx
+MjQwMDMyNjRdfQ==
 -->
