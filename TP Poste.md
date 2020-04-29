@@ -335,8 +335,9 @@ echo  ''
 echo  "Vitesse de téléchargement : $(curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python - | tail -3 | awk 'NR==1{print $2,$3}')"
 echo  "Vitesse d'upload : $(curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python - | tail -1 | awk 'NR==1{print $2,$3}')"
 ```
+Après faut notre deuxième script pour verrouiller le PC après X secondes.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0OTMxODc4MSwtMjA2ODI5MTQ1MSwtMz
-QwOTY5NDYwLC0xMTgwNDc4MzQ0LC0yMTI0MDAzMjY0XX0=
+eyJoaXN0b3J5IjpbLTExMzQ3NDE2NjYsLTIwNjgyOTE0NTEsLT
+M0MDk2OTQ2MCwtMTE4MDQ3ODM0NCwtMjEyNDAwMzI2NF19
 -->
