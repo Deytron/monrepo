@@ -194,6 +194,7 @@ Périphérique  Début  Fin  Secteurs  Taille  Type
 /dev/nvme0n1p6 1525168128 1547696127 22528000 10,8G Partition d'échange Linux  
 /dev/nvme0n1p7 1547696128 1953525134 405829007 193,5G Système de fichiers Linux
 ```
+
 ### Network
 On repart sur du classique, pour voir nos cartes réseaux on fait `ip a`
 ```bash
@@ -221,9 +222,10 @@ valid_lft forever preferred_lft forever
 - vboxnet0 : Ma carte réseau privé hôte liée à VirtualBox.
 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNDkwMzM4NCw1MDQ4NzkyODIsLTcxMD
-kxMDQ4NSwtMTM1NDQ4NjI4NiwtOTM2MTkzMzgsMTMwMTM4Mzgw
-OSwtOTE1NDAyMzE5LC0xNjk2OTIxNTMzLDEyOTg3OTUxMTgsLT
-E3NjMwNDg1MzMsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbNjIyODM5NDkyLC00MDQ5MDMzODQsNTA0OD
+c5MjgyLC03MTA5MTA0ODUsLTEzNTQ0ODYyODYsLTkzNjE5MzM4
+LDEzMDEzODM4MDksLTkxNTQwMjMxOSwtMTY5NjkyMTUzMywxMj
+k4Nzk1MTE4LC0xNzYzMDQ4NTMzLC0yMDg4NzQ2NjEyXX0=
 -->
