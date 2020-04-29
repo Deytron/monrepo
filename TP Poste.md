@@ -319,7 +319,11 @@ lemalga+ 1233 0.0 0.0 2228 88 ? S 17:44 0:00 /usr/lib/kf5/start_kdeinit --kded +
 lemalga+ 1234 0.0 0.2 101656 21248 ? Ss 17:44 0:00 kdeinit5: Running...
 ```
 On oublie pas le process `init`, le POAT (Process Of All Time), qui est le premier truc qui s'enclenche au lancement de Linux et qui gère tous les autres process du système. Son PID sera toujours 1.
-
+```bash
+ps aux | grep login 
+root 802 0.0 0.0 15372 7608 ? Ss 17:44 0:00 /usr/lib/systemd/systemd-logind
+```
+Sans le `logind` quelq
 ## Scripting
 On est sur Linux, on fait des scripts en Bash. Simple et carré. 
 Pourquoi Bash et pas SH ? Bah déjà parce que je connais bien Bash, et ensuite parce que c'est le langage interpréteur par défaut de la majorité des distributions Linux.
@@ -443,9 +447,9 @@ fi
 ```
 Voilà voilà.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjgzODIwMTQxLDg0MDE4ODUzNSw3ODE4MD
-k3ODQsLTg2MjY3NDc3OCwtMTM2NDk0ODMzMiwtMTY0MjcwNDgs
-LTE3MjI1NDI2ODMsLTE2NzU2NTc5MTIsMTc4NTAyNTc4MiwxMD
-I3OTk3NDgsLTExMzQ3NDE2NjYsLTIwNjgyOTE0NTEsLTM0MDk2
-OTQ2MCwtMTE4MDQ3ODM0NCwtMjEyNDAwMzI2NF19
+eyJoaXN0b3J5IjpbLTE1OTU1NzUxMzksODQwMTg4NTM1LDc4MT
+gwOTc4NCwtODYyNjc0Nzc4LC0xMzY0OTQ4MzMyLC0xNjQyNzA0
+OCwtMTcyMjU0MjY4MywtMTY3NTY1NzkxMiwxNzg1MDI1NzgyLD
+EwMjc5OTc0OCwtMTEzNDc0MTY2NiwtMjA2ODI5MTQ1MSwtMzQw
+OTY5NDYwLC0xMTgwNDc4MzQ0LC0yMTI0MDAzMjY0XX0=
 -->
