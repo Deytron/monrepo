@@ -332,7 +332,10 @@ lemalga+ 1212 0.0 0.1 125832 12068 ? Sl 17:44 0:00 /usr/bin/startplasma-x11
 ```
 Le process X11/Xorg est un programme qui fournit un serveur X à Linux. Il permet de gérer tout ce qui est affiché à l'écran, il est utilisé notamment par les gestionnaires de fenêtres. Si le process meurt, c'est foutu écran noir, plus rien d'affiché.
 ```bash
-
+ps aux | grep rtkit  ✔   
+rtkit 1429 0.0 0.0 152684 2872 ? SNsl 17:44 0:00 /usr/lib/rtkit-daemon
+```
+Le daemon rtkit est... compliqué à expliquer. En gros, plutôt qu
 
 ## Scripting
 On est sur Linux, on fait des scripts en Bash. Simple et carré. 
@@ -457,10 +460,10 @@ fi
 ```
 Voilà voilà.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIxNjEzNzg3LDIwNzY5NTYwMzMsLTIxMj
-A0MzAyNTMsODQwMTg4NTM1LDc4MTgwOTc4NCwtODYyNjc0Nzc4
-LC0xMzY0OTQ4MzMyLC0xNjQyNzA0OCwtMTcyMjU0MjY4MywtMT
-Y3NTY1NzkxMiwxNzg1MDI1NzgyLDEwMjc5OTc0OCwtMTEzNDc0
-MTY2NiwtMjA2ODI5MTQ1MSwtMzQwOTY5NDYwLC0xMTgwNDc4Mz
-Q0LC0yMTI0MDAzMjY0XX0=
+eyJoaXN0b3J5IjpbLTY2MTQ0ODc1OSwyMDc2OTU2MDMzLC0yMT
+IwNDMwMjUzLDg0MDE4ODUzNSw3ODE4MDk3ODQsLTg2MjY3NDc3
+OCwtMTM2NDk0ODMzMiwtMTY0MjcwNDgsLTE3MjI1NDI2ODMsLT
+E2NzU2NTc5MTIsMTc4NTAyNTc4MiwxMDI3OTk3NDgsLTExMzQ3
+NDE2NjYsLTIwNjgyOTE0NTEsLTM0MDk2OTQ2MCwtMTE4MDQ3OD
+M0NCwtMjEyNDAwMzI2NF19
 -->
