@@ -282,6 +282,7 @@ root nobody dbus bin daemon mail ftp http systemd-journal-remote systemd-network
 ump uuidd dnsmasq rpc avahi colord cups flatpak geoclue git mpd nm-openconnect nm-openvpn ntp polkitd rtkit sddm tss usbmux lem  
 algache nvidia-persistenced deluge gluster dhcpcd mysqlr
 ```
+Normalement, le user qu ia tous les droits s'appelle `wheel` 
 
 ### Processus
 ## Scripting
@@ -407,8 +408,9 @@ fi
 ```
 Voilà voilà.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjQ5NDgzMzIsLTE2NDI3MDQ4LC0xNz
-IyNTQyNjgzLC0xNjc1NjU3OTEyLDE3ODUwMjU3ODIsMTAyNzk5
-NzQ4LC0xMTM0NzQxNjY2LC0yMDY4MjkxNDUxLC0zNDA5Njk0Nj
-AsLTExODA0NzgzNDQsLTIxMjQwMDMyNjRdfQ==
+eyJoaXN0b3J5IjpbLTE3Mzg1ODQ3MjIsLTEzNjQ5NDgzMzIsLT
+E2NDI3MDQ4LC0xNzIyNTQyNjgzLC0xNjc1NjU3OTEyLDE3ODUw
+MjU3ODIsMTAyNzk5NzQ4LC0xMTM0NzQxNjY2LC0yMDY4MjkxND
+UxLC0zNDA5Njk0NjAsLTExODA0NzgzNDQsLTIxMjQwMDMyNjRd
+fQ==
 -->
