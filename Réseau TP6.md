@@ -195,7 +195,11 @@ Périphérique  Début  Fin  Secteurs  Taille  Type
 /dev/nvme0n1p7 1547696128 1953525134 405829007 193,5G Système de fichiers Linux
 ```
 Sur mon système, y a plusieurs systèmes de fichiers.
-FAT32 : Système de fichier créé par Microsoft.
+
+**FAT32** : Système de fichier créé par Microsoft. a la particularité d'être très vieux et d'avoir une taille max par fichier de 4go et 2To max total.
+
+**LinuxSwap** : Paritition swap spéciale Linux, 
+
 ### Network
 On repart sur du classique, pour voir nos cartes réseaux on fait `ip a`
 ```bash
@@ -225,9 +229,9 @@ valid_lft forever preferred_lft forever
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4OTI1MTE3MSw2MjI4Mzk0OTIsLTQwND
-kwMzM4NCw1MDQ4NzkyODIsLTcxMDkxMDQ4NSwtMTM1NDQ4NjI4
-NiwtOTM2MTkzMzgsMTMwMTM4MzgwOSwtOTE1NDAyMzE5LC0xNj
-k2OTIxNTMzLDEyOTg3OTUxMTgsLTE3NjMwNDg1MzMsLTIwODg3
-NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTE1NjUxMjk2MzUsNjIyODM5NDkyLC00MD
+Q5MDMzODQsNTA0ODc5MjgyLC03MTA5MTA0ODUsLTEzNTQ0ODYy
+ODYsLTkzNjE5MzM4LDEzMDEzODM4MDksLTkxNTQwMjMxOSwtMT
+Y5NjkyMTUzMywxMjk4Nzk1MTE4LC0xNzYzMDQ4NTMzLC0yMDg4
+NzQ2NjEyXX0=
 -->
