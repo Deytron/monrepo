@@ -336,9 +336,25 @@ echo  "Vitesse de téléchargement : $(curl -s https://raw.githubusercontent.com
 echo  "Vitesse d'upload : $(curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python - | tail -1 | awk 'NR==1{print $2,$3}')"
 ```
 Après faut notre deuxième script pour verrouiller le PC après X secondes.
-Le script est très simple, quand on le lance il demande si on veut lock le PC ou l'éteindre, et si on veut l'éteindre, il demande en minutes dans combien de temps.
+Le script est très simple, quand on le lance il demande si on veut lock le PC ou l'éteindre, et si on veut l'éteindre, il demande en minutes dans combien de temps. 
+Voilà le script :
+```bash
+#!/bin/bash
+
+echo  "Tapez 1 pour lock l'écran, 2 pour éteindre le PC : "
+read choix$choix
+if [ $choix == 1 ]; then
+	xdotool key Super_L+l
+elif [ $choix == 2 ]; then
+	echo  "Entrez en minutes dans combien de temps éteindre le PC : "
+	read minutes$minutes
+	shutdown -h $minutes
+else
+	echo  "Ouais nan mais gros tu forces là"
+fi
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyNzk5NzQ4LC0xMTM0NzQxNjY2LC0yMD
-Y4MjkxNDUxLC0zNDA5Njk0NjAsLTExODA0NzgzNDQsLTIxMjQw
-MDMyNjRdfQ==
+eyJoaXN0b3J5IjpbMTYyMTc0MDYyLDEwMjc5OTc0OCwtMTEzND
+c0MTY2NiwtMjA2ODI5MTQ1MSwtMzQwOTY5NDYwLC0xMTgwNDc4
+MzQ0LC0yMTI0MDAzMjY0XX0=
 -->
