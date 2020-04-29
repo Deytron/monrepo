@@ -284,6 +284,28 @@ algache nvidia-persistenced deluge gluster dhcpcd mysqlr
 ```
 ### Processus
 Pour voir tous les processus, `powertop` est parfait, précis et intégré de base dans beaucoup de distrib Linux. Mais ça reste un outil tiers. La commande de base pour voir TOUS les processus, c'est `ps aux`.
+```bash
+ps aux
+USER PID %CPU %MEM VSZ RSS TTY STAT START TIME COMMAND  
+root 1 0.0 0.1 172364 10508 ? Ss 17:44 0:00 /sbin/init  
+root 2 0.0 0.0 0 0 ? S 17:44 0:00 [kthreadd]  
+root 3 0.0 0.0 0 0 ? I< 17:44 0:00 [rcu_gp]  
+root 4 0.0 0.0 0 0 ? I< 17:44 0:00 [rcu_par_gp]  
+root 6 0.0 0.0 0 0 ? I< 17:44 0:00 [kworker/0:0H-kblockd]  
+root 7 0.0 0.0 0 0 ? I 17:44 0:00 [kworker/u16:0-events_unbound]  
+root 8 0.0 0.0 0 0 ? I< 17:44 0:00 [mm_percpu_wq]  
+root 9 0.0 0.0 0 0 ? S 17:44 0:00 [ksoftirqd/0]  
+root 10 0.0 0.0 0 0 ? S 17:44 0:00 [rcuc/0]  
+root 11 0.0 0.0 0 0 ? I 17:44 0:01 [rcu_preempt]  
+root 12 0.0 0.0 0 0 ? S 17:44 0:00 [rcub/0]  
+root 13 0.0 0.0 0 0 ? S 17:44 0:00 [migration/0]  
+root 14 0.0 0.0 0 0 ? S 17:44 0:00 [idle_inject/0]  
+root 16 0.0 0.0 0 0 ? S 17:44 0:00 [cpuhp/0]
+```
+Et y a genre plein d'autres lignes, mais je vais pas tout montrer là.
+
+Je vais chopper des processus important et les expliquer :
+
 ## Scripting
 On est sur Linux, on fait des scripts en Bash. Simple et carré. 
 Pourquoi Bash et pas SH ? Bah déjà parce que je connais bien Bash, et ensuite parce que c'est le langage interpréteur par défaut de la majorité des distributions Linux.
@@ -407,9 +429,9 @@ fi
 ```
 Voilà voilà.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4NDA4MjUxMiw3ODE4MDk3ODQsLTg2Mj
-Y3NDc3OCwtMTM2NDk0ODMzMiwtMTY0MjcwNDgsLTE3MjI1NDI2
-ODMsLTE2NzU2NTc5MTIsMTc4NTAyNTc4MiwxMDI3OTk3NDgsLT
-ExMzQ3NDE2NjYsLTIwNjgyOTE0NTEsLTM0MDk2OTQ2MCwtMTE4
-MDQ3ODM0NCwtMjEyNDAwMzI2NF19
+eyJoaXN0b3J5IjpbLTE2MDk4MzI0MTcsNzgxODA5Nzg0LC04Nj
+I2NzQ3NzgsLTEzNjQ5NDgzMzIsLTE2NDI3MDQ4LC0xNzIyNTQy
+NjgzLC0xNjc1NjU3OTEyLDE3ODUwMjU3ODIsMTAyNzk5NzQ4LC
+0xMTM0NzQxNjY2LC0yMDY4MjkxNDUxLC0zNDA5Njk0NjAsLTEx
+ODA0NzgzNDQsLTIxMjQwMDMyNjRdfQ==
 -->
