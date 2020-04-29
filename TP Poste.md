@@ -198,7 +198,7 @@ Sur mon système, y a plusieurs systèmes de fichiers.
 
 **FAT32** : Système de fichier créé par Microsoft. a la particularité d'être très vieux et d'avoir une taille max par fichier de 4go et 2To max total.
 
-**LinuxSwap** : Partition swap spéciale Linux, sur Windows c'est remplacé par un fichier "pagefile.sys". Aussi appelée en français, fichier de pagination (haha). En gros le swap c'est quand y a plus assez de RAM, plutôt que de tenter de continuer à stocker des infos dans la RAM, les programmes vont stocker leurs infos dans la partition/le fichier de swap, ce qui veut dire que c'
+**LinuxSwap** : Partition swap spéciale Linux, sur Windows c'est remplacé par un fichier "pagefile.sys". Aussi appelée en français, fichier de pagination (haha). En gros le swap c'est quand y a plus assez de RAM, plutôt que de tenter de continuer à stocker des infos dans la RAM, les programmes vont stocker leurs infos dans la partition/le fichier de swap, ce qui veut dire que c'est le disque qui va être utilisé, ce qui est genre 100x plus lent que la RAM. Ca permet d'éviter les plantages, mais la fluidité du programme peut être impactée.
 
 **NTFS** : Système de fichier créé par Microsoft. Nouveau standard utilisé partout (mais a quelques petits soucis avec Linux), il peut avoir en pratique une taille max par fichier de 16To et une taille de volume max de 256To.
 
@@ -240,6 +240,6 @@ Sur Window on utiliserait Powershell. Oui les scripts Batch en .bat existent, ma
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDYwMDE4MDIyLC0zNDA5Njk0NjAsLTExOD
-A0NzgzNDQsLTIxMjQwMDMyNjRdfQ==
+eyJoaXN0b3J5IjpbLTIwNjgyOTE0NTEsLTM0MDk2OTQ2MCwtMT
+E4MDQ3ODM0NCwtMjEyNDAwMzI2NF19
 -->
