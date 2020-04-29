@@ -276,7 +276,12 @@ users
 lemalgache lemalgache lemalgache
 ```
 Après on a pas tous les users. Donc on peut directement aller chercher dans le fichier passwd.
-
+```bash
+echo $(cut -d: -f1 /etc/passwd)\r 
+root nobody dbus bin daemon mail ftp http systemd-journal-remote systemd-network systemd-resolve systemd-timesync systemd-cored  
+ump uuidd dnsmasq rpc avahi colord cups flatpak geoclue git mpd nm-openconnect nm-openvpn ntp polkitd rtkit sddm tss usbmux lem  
+algache nvidia-persistenced deluge gluster dhcpcd mysqlr
+```
 
 ### Processus
 ## Scripting
@@ -402,7 +407,7 @@ fi
 ```
 Voilà voilà.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzY5MzYzOTQsLTE2NDI3MDQ4LC0xNz
+eyJoaXN0b3J5IjpbLTEzNjQ5NDgzMzIsLTE2NDI3MDQ4LC0xNz
 IyNTQyNjgzLC0xNjc1NjU3OTEyLDE3ODUwMjU3ODIsMTAyNzk5
 NzQ4LC0xMTM0NzQxNjY2LC0yMDY4MjkxNDUxLC0zNDA5Njk0Nj
 AsLTExODA0NzgzNDQsLTIxMjQwMDMyNjRdfQ==
