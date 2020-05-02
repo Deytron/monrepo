@@ -490,13 +490,35 @@ android-udev 20200410-1
 apparmor 2.13.4-1
 ```
 Les paquets sont tous issus de ce qu'on appelle un repo. C'est de là qu'ils proviennent, et chaque distro Linux a certains repo et miroirs disponibles d'entrée de jeu.
-Avec pacman, pour voir les repos,
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ1NzQ2NDQzLC05NDAxNTMzMDMsMTg2MD
-Q0NTU2NCwyMDc2OTU2MDMzLC0yMTIwNDMwMjUzLDg0MDE4ODUz
-NSw3ODE4MDk3ODQsLTg2MjY3NDc3OCwtMTM2NDk0ODMzMiwtMT
-Y0MjcwNDgsLTE3MjI1NDI2ODMsLTE2NzU2NTc5MTIsMTc4NTAy
-NTc4MiwxMDI3OTk3NDgsLTExMzQ3NDE2NjYsLTIwNjgyOTE0NT
-EsLTM0MDk2OTQ2MCwtMTE4MDQ3ODM0NCwtMjEyNDAwMzI2NF19
+Avec pacman, les repos sont dans un fichier appelé `mirrorlist`
+```
+cat /etc/pacman.d/mirrorlist                                                                                  ✔ 
+##
+## Manjaro Linux custom mirrorlist
+## Generated on 2020-05-02 03:42
+##
+## Please use 'pacman-mirrors -id' To reset custom mirrorlist
+## Please use 'pacman-mirrors -c all' To reset custom mirrorlist
+## To remove custom config run  'pacman-mirrors -c all'
+##
 
+## Country : France
+Server = http://kibo.remi.lu/stable/$repo/$arch
+
+## Country : France
+Server = https://manjaro.mcofficer.me/stable/$repo/$arch
+
+## Country : France
+Server = https://manjaro.ynh.ovh/stable/$repo/$arch
+```
+## Partage de fichiers
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTY3MjE1ODI0NiwtOTQwMTUzMzAzLDE4Nj
+A0NDU1NjQsMjA3Njk1NjAzMywtMjEyMDQzMDI1Myw4NDAxODg1
+MzUsNzgxODA5Nzg0LC04NjI2NzQ3NzgsLTEzNjQ5NDgzMzIsLT
+E2NDI3MDQ4LC0xNzIyNTQyNjgzLC0xNjc1NjU3OTEyLDE3ODUw
+MjU3ODIsMTAyNzk5NzQ4LC0xMTM0NzQxNjY2LC0yMDY4MjkxND
+UxLC0zNDA5Njk0NjAsLTExODA0NzgzNDQsLTIxMjQwMDMyNjRd
+fQ==
 -->
