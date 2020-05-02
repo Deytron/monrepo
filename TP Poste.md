@@ -489,8 +489,9 @@ android-tools 29.0.6-1
 android-udev 20200410-1  
 apparmor 2.13.4-1
 ```
+Les paquets sont tous issus de ce qu'on appelle un repo. C'est de là qu'ils proviennent, et chaque distro Linux a certains repo et miroirs disponibles d'entrée de jeu.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5Njk0NzkzMSwtOTQwMTUzMzAzLDE4Nj
+eyJoaXN0b3J5IjpbMTUxMTQwNzA3OSwtOTQwMTUzMzAzLDE4Nj
 A0NDU1NjQsMjA3Njk1NjAzMywtMjEyMDQzMDI1Myw4NDAxODg1
 MzUsNzgxODA5Nzg0LC04NjI2NzQ3NzgsLTEzNjQ5NDgzMzIsLT
 E2NDI3MDQ4LC0xNzIyNTQyNjgzLC0xNjc1NjU3OTEyLDE3ODUw
