@@ -526,13 +526,13 @@ browseable = yes
 read only = no
 ```
 Moi j'ai ajouté un dossier dans mon doss personnel qui s'appelle `samba`, tout simple. Tout ça c'est si on veut ajouter un dossier spécifique au serveur samba.
-Maintenant faut qu'on s'ajoute un mot de passe samba pour pouvoir accéder au dossier. Pour ça, on fait `sudo smbpasswd -a utilisateur` et on se met un mot de passe. A partir de là, le serveur peut être accédé par n'importe qui entrant le nom d'utilisateur et le mot de passe. J'ai donc essayé d'accéder à mon serveur avec mon PC Windows sur le même réseau wifi, et en entrant \\192.168
+Maintenant faut qu'on s'ajoute un mot de passe samba pour pouvoir accéder au dossier. Pour ça, on fait `sudo smbpasswd -a utilisateur` et on se met un mot de passe. A partir de là, le serveur peut être accédé par n'importe qui entrant le nom d'utilisateur et le mot de passe. J'ai donc essayé d'accéder à mon serveur avec mon PC Windows sur le même réseau wifi, et en entrant `\\192.168.1.87` dans l'explorateure de fichiers, il m'a demandé des identifiants, et boum ça marche.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzY4NDI4ODQsLTE1MjA2NjYzNCwxNz
-Q0MjQyMjA2LC03MTM4NTM5ODAsLTk0MDE1MzMwMywxODYwNDQ1
-NTY0LDIwNzY5NTYwMzMsLTIxMjA0MzAyNTMsODQwMTg4NTM1LD
-c4MTgwOTc4NCwtODYyNjc0Nzc4LC0xMzY0OTQ4MzMyLC0xNjQy
-NzA0OCwtMTcyMjU0MjY4MywtMTY3NTY1NzkxMiwxNzg1MDI1Nz
-gyLDEwMjc5OTc0OCwtMTEzNDc0MTY2NiwtMjA2ODI5MTQ1MSwt
-MzQwOTY5NDYwXX0=
+eyJoaXN0b3J5IjpbODM3NTUzNzE5LC0xNTIwNjY2MzQsMTc0ND
+I0MjIwNiwtNzEzODUzOTgwLC05NDAxNTMzMDMsMTg2MDQ0NTU2
+NCwyMDc2OTU2MDMzLC0yMTIwNDMwMjUzLDg0MDE4ODUzNSw3OD
+E4MDk3ODQsLTg2MjY3NDc3OCwtMTM2NDk0ODMzMiwtMTY0Mjcw
+NDgsLTE3MjI1NDI2ODMsLTE2NzU2NTc5MTIsMTc4NTAyNTc4Mi
+wxMDI3OTk3NDgsLTExMzQ3NDE2NjYsLTIwNjgyOTE0NTEsLTM0
+MDk2OTQ2MF19
 -->
