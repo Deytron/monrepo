@@ -473,11 +473,13 @@ fi
 ```
 Voilà voilà.
 ## Gestion de softs
+Les gestionnaires de paquets, ou package manager dans la langue de Shakespeare, c'est cool, c'est automatique, ça fait gagner du temps. L'avantage d'un gestionnaire de paquet par rapport au téléchargement d'un programme sur Internet, c'est que tout se trouve au même endroit. Besoin de télécharger Chrome ? T'ouvres le package manager. Besoin de Steam ? Pareil. Pas besoin d'aller sur le site. (
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0MDE1MzMwMywxODYwNDQ1NTY0LDIwNz
-Y5NTYwMzMsLTIxMjA0MzAyNTMsODQwMTg4NTM1LDc4MTgwOTc4
-NCwtODYyNjc0Nzc4LC0xMzY0OTQ4MzMyLC0xNjQyNzA0OCwtMT
-cyMjU0MjY4MywtMTY3NTY1NzkxMiwxNzg1MDI1NzgyLDEwMjc5
-OTc0OCwtMTEzNDc0MTY2NiwtMjA2ODI5MTQ1MSwtMzQwOTY5ND
-YwLC0xMTgwNDc4MzQ0LC0yMTI0MDAzMjY0XX0=
+eyJoaXN0b3J5IjpbLTE1OTMwODk1ODUsLTk0MDE1MzMwMywxOD
+YwNDQ1NTY0LDIwNzY5NTYwMzMsLTIxMjA0MzAyNTMsODQwMTg4
+NTM1LDc4MTgwOTc4NCwtODYyNjc0Nzc4LC0xMzY0OTQ4MzMyLC
+0xNjQyNzA0OCwtMTcyMjU0MjY4MywtMTY3NTY1NzkxMiwxNzg1
+MDI1NzgyLDEwMjc5OTc0OCwtMTEzNDc0MTY2NiwtMjA2ODI5MT
+Q1MSwtMzQwOTY5NDYwLC0xMTgwNDc4MzQ0LC0yMTI0MDAzMjY0
+XX0=
 -->
