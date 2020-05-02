@@ -517,15 +517,21 @@ Bon on va pas se mentir, Microsoft fait bien son taf et le partage de fichiers e
 Avec Manjaro KDE, j'ai dû faire cette commande pour être sûr d'avoir tout ce qu'il faut :
 ``pamac install samba kdenetwork-filesharing manjaro-settings-samba``
 après j'ai dû redémarrer le PC pour enclencher tous les services.
-Une fois ceci fait, faut faire quelques étapes en plus. D'abord, faut aller éditer le fichier de config dans `/etc/samba/smb.conf` et ajouter des ligsuivant ce schéma :
+Une fois ceci fait, faut faire quelques étapes en plus. D'abord, faut aller éditer le fichier de config dans `/etc/samba/smb.conf` et ajouter des lignes suivant ce schéma :
 ```
 [NomRandom]
+comment = Entrer un commentaire
+path = chemin/du/dossier
+browseable = yes
+read only = no
+```
+Moi j'ai ajouté un dossier dans mon doss personnel qui s'appelle `samba`, tout simple.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyMjE4NTkwLDE3NDQyNDIyMDYsLTcxMz
-g1Mzk4MCwtOTQwMTUzMzAzLDE4NjA0NDU1NjQsMjA3Njk1NjAz
-MywtMjEyMDQzMDI1Myw4NDAxODg1MzUsNzgxODA5Nzg0LC04Nj
-I2NzQ3NzgsLTEzNjQ5NDgzMzIsLTE2NDI3MDQ4LC0xNzIyNTQy
-NjgzLC0xNjc1NjU3OTEyLDE3ODUwMjU3ODIsMTAyNzk5NzQ4LC
-0xMTM0NzQxNjY2LC0yMDY4MjkxNDUxLC0zNDA5Njk0NjAsLTEx
-ODA0NzgzNDRdfQ==
+eyJoaXN0b3J5IjpbMTUwNTc4Nzg1MCwxNzQ0MjQyMjA2LC03MT
+M4NTM5ODAsLTk0MDE1MzMwMywxODYwNDQ1NTY0LDIwNzY5NTYw
+MzMsLTIxMjA0MzAyNTMsODQwMTg4NTM1LDc4MTgwOTc4NCwtOD
+YyNjc0Nzc4LC0xMzY0OTQ4MzMyLC0xNjQyNzA0OCwtMTcyMjU0
+MjY4MywtMTY3NTY1NzkxMiwxNzg1MDI1NzgyLDEwMjc5OTc0OC
+wtMTEzNDc0MTY2NiwtMjA2ODI5MTQ1MSwtMzQwOTY5NDYwLC0x
+MTgwNDc4MzQ0XX0=
 -->
