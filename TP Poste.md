@@ -512,13 +512,14 @@ Server = https://manjaro.mcofficer.me/stable/$repo/$arch
 Server = https://manjaro.ynh.ovh/stable/$repo/$arch
 ```
 ## Partage de fichiers
-Bon on va pas se mentir, Microsoft fait bien son taf et le partage de fichiers est très bien intégré dans Windows 10. Il est pas mauvais pour autant sur Linux, mais il faut installer 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIwODUxOTg1LC05NDAxNTMzMDMsMTg2MD
-Q0NTU2NCwyMDc2OTU2MDMzLC0yMTIwNDMwMjUzLDg0MDE4ODUz
-NSw3ODE4MDk3ODQsLTg2MjY3NDc3OCwtMTM2NDk0ODMzMiwtMT
-Y0MjcwNDgsLTE3MjI1NDI2ODMsLTE2NzU2NTc5MTIsMTc4NTAy
-NTc4MiwxMDI3OTk3NDgsLTExMzQ3NDE2NjYsLTIwNjgyOTE0NT
-EsLTM0MDk2OTQ2MCwtMTE4MDQ3ODM0NCwtMjEyNDAwMzI2NF19
+Bon on va pas se mentir, Microsoft fait bien son taf et le partage de fichiers est très bien intégré dans Windows 10. Il est pas mauvais pour autant sur Linux, mais il faut installer Samba. Beaucoup de distro l'ont déjà de base.
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTcxMzg1Mzk4MCwtOTQwMTUzMzAzLDE4Nj
+A0NDU1NjQsMjA3Njk1NjAzMywtMjEyMDQzMDI1Myw4NDAxODg1
+MzUsNzgxODA5Nzg0LC04NjI2NzQ3NzgsLTEzNjQ5NDgzMzIsLT
+E2NDI3MDQ4LC0xNzIyNTQyNjgzLC0xNjc1NjU3OTEyLDE3ODUw
+MjU3ODIsMTAyNzk5NzQ4LC0xMTM0NzQxNjY2LC0yMDY4MjkxND
+UxLC0zNDA5Njk0NjAsLTExODA0NzgzNDQsLTIxMjQwMDMyNjRd
+fQ==
 -->
