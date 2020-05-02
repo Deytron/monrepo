@@ -513,15 +513,15 @@ Server = https://manjaro.ynh.ovh/stable/$repo/$arch
 ```
 ## Partage de fichiers
 Bon on va pas se mentir, Microsoft fait bien son taf et le partage de fichiers est très bien intégré dans Windows 10. Il est pas mauvais pour autant sur Linux, mais il faut installer Samba. Beaucoup de distro l'ont déjà de base.
-Avec Manjaro KDE, j'ai dû faire cette commande pour initialiser samba :
+Avec Manjaro KDE, j'ai dû faire cette commande pour être sûr d'avoir tout ce qu'il faut :
 ``pamac install samba kdenetwork-filesharing manjaro-settings-samba``
-après j'ai dû redémarré le PC pour enclencher tous les services.
+après j'ai dû redémarrer le PC pour enclencher tous les services.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NDI0MjIwNiwtNzEzODUzOTgwLC05ND
-AxNTMzMDMsMTg2MDQ0NTU2NCwyMDc2OTU2MDMzLC0yMTIwNDMw
-MjUzLDg0MDE4ODUzNSw3ODE4MDk3ODQsLTg2MjY3NDc3OCwtMT
-M2NDk0ODMzMiwtMTY0MjcwNDgsLTE3MjI1NDI2ODMsLTE2NzU2
-NTc5MTIsMTc4NTAyNTc4MiwxMDI3OTk3NDgsLTExMzQ3NDE2Nj
-YsLTIwNjgyOTE0NTEsLTM0MDk2OTQ2MCwtMTE4MDQ3ODM0NCwt
-MjEyNDAwMzI2NF19
+eyJoaXN0b3J5IjpbLTk5OTE3ODE5MiwxNzQ0MjQyMjA2LC03MT
+M4NTM5ODAsLTk0MDE1MzMwMywxODYwNDQ1NTY0LDIwNzY5NTYw
+MzMsLTIxMjA0MzAyNTMsODQwMTg4NTM1LDc4MTgwOTc4NCwtOD
+YyNjc0Nzc4LC0xMzY0OTQ4MzMyLC0xNjQyNzA0OCwtMTcyMjU0
+MjY4MywtMTY3NTY1NzkxMiwxNzg1MDI1NzgyLDEwMjc5OTc0OC
+wtMTEzNDc0MTY2NiwtMjA2ODI5MTQ1MSwtMzQwOTY5NDYwLC0x
+MTgwNDc4MzQ0XX0=
 -->
