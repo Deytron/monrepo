@@ -525,9 +525,9 @@ path = chemin/du/dossier
 browseable = yes
 read only = no
 ```
-Moi j'ai ajouté un dossier dans mon doss personnel qui s'appelle `samba`, tout simple.
+Moi j'ai ajouté un dossier dans mon doss personnel qui s'appelle `samba`, tout simple. Maintenant faut qu'on s'ajoute un mot de passe samba pour pouvoir accéder au dossier. Pour ça, on fait `sudo smbpasswd -a utilisateur` et on se met un mot de passe. A partir de là, 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNTc4Nzg1MCwxNzQ0MjQyMjA2LC03MT
+eyJoaXN0b3J5IjpbLTE1MjA2NjYzNCwxNzQ0MjQyMjA2LC03MT
 M4NTM5ODAsLTk0MDE1MzMwMywxODYwNDQ1NTY0LDIwNzY5NTYw
 MzMsLTIxMjA0MzAyNTMsODQwMTg4NTM1LDc4MTgwOTc4NCwtOD
 YyNjc0Nzc4LC0xMzY0OTQ4MzMyLC0xNjQyNzA0OCwtMTcyMjU0
