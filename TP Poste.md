@@ -477,13 +477,24 @@ Les gestionnaires de paquets, ou package manager dans la langue de Shakespeare, 
 
 Selon les paramètres utilisés avec le gestionnaire de paquet, on peut restreindre les paquets affichés et par exemple, ne vouloir télécharger que des paquets sûrs/vérifiés, ou venant d'un certain éditeur. Cela permet d'éviter de télécharger portant le même nom qu'un autre mais venant d'un hacker russe. 
 
-btw i use arch, donc mon gestionnaire de paquets s'appelle `pacman`. La version graphique s'appelle `pamac`.
+btw i use arch, donc mon gestionnaire de paquets s'appelle `pacman`. La version graphique s'appelle `pamac`. 
+Avec Pacman, pour voir les paquets installés on utilise la commande `pacman -Qe`
+```bash
+pacman -Qe
+acpi 1.7-2  
+acpid 2.0.32-1  
+alsa-firmware 1.2.1-2  
+alsa-utils 1.2.2-1  
+android-tools 29.0.6-1  
+android-udev 20200410-1  
+apparmor 2.13.4-1
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzczMDYwMzYsLTk0MDE1MzMwMywxOD
-YwNDQ1NTY0LDIwNzY5NTYwMzMsLTIxMjA0MzAyNTMsODQwMTg4
-NTM1LDc4MTgwOTc4NCwtODYyNjc0Nzc4LC0xMzY0OTQ4MzMyLC
-0xNjQyNzA0OCwtMTcyMjU0MjY4MywtMTY3NTY1NzkxMiwxNzg1
-MDI1NzgyLDEwMjc5OTc0OCwtMTEzNDc0MTY2NiwtMjA2ODI5MT
-Q1MSwtMzQwOTY5NDYwLC0xMTgwNDc4MzQ0LC0yMTI0MDAzMjY0
-XX0=
+eyJoaXN0b3J5IjpbMTQ5Njk0NzkzMSwtOTQwMTUzMzAzLDE4Nj
+A0NDU1NjQsMjA3Njk1NjAzMywtMjEyMDQzMDI1Myw4NDAxODg1
+MzUsNzgxODA5Nzg0LC04NjI2NzQ3NzgsLTEzNjQ5NDgzMzIsLT
+E2NDI3MDQ4LC0xNzIyNTQyNjgzLC0xNjc1NjU3OTEyLDE3ODUw
+MjU3ODIsMTAyNzk5NzQ4LC0xMTM0NzQxNjY2LC0yMDY4MjkxND
+UxLC0zNDA5Njk0NjAsLTExODA0NzgzNDQsLTIxMjQwMDMyNjRd
+fQ==
 -->
