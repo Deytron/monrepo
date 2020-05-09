@@ -544,16 +544,24 @@ Alors il se trouve que Kmail, et probablement d'autres clients de mail, propose 
 Bon, le SSH c'est pas nouveau, on s'en sert depuis le début de l'année pour nos VM et pour contrôler d'autres machines à distance, je vais pas refaire l'explication de ce que c'est, en tout cas c'est très utile.
 Pour se connecter en SSH sur une machine, y a deux manières : soit la machine serveur n'est pas complètement configurée, et on peut s'y connecter en entrant le mot de passe d'un utilisateur présent sur la machine, soit elle est configurée et on ne peut s'y connecter uniquement qu'avec une paire de clés valides.
 Là c'est moi qui me connecte à ma VM sous CentOS 7 :
-![](https://i.imgur.com/3QkHY2m.png)
+```
+ssh lemalgache@192.168.56.103
+The authenticity of host '192.168.56.103 (192.168.56.103)' can't be established.  
+ECDSA key fingerprint is SHA256:PgUjeuBcwPKPaIdLHwfNZFd8FD3juQpDkNrtceVeMd8.  
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes  
+Warning: Permanently added '192.168.56.103' (ECDSA) to the list of known hosts.  
+lemalgache@192.168.56.103's password:  
+Last login: Sat May 9 17:01:01 2020
+```
 Comme c'est la première fois que je me connecte à la machine, il me dit qu'il ne connaît pas l'identité de la machine en face. Logique.
 Maintenant, première étape pour sécuriser une connexion SSH, forcer l'utilisation de clé sur la machine distante. Pour se faire, on va d'abord envoyer la clé publique sur le serveur distant avec la commande `ssh-copy-id lemalgache@192.168.56.103`, et bam la clé est envoyée au serveur.
 ...Problème, il suffit d'utiliser un autre utilisateur sur le compte pour ne plus être dépendent de la clé SSH. On va donc forcer l'authentification par clé. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4NTUyMzQsNzM2ODkyMDY3LC0xMTI2Nj
-gyMzc2LC0xNzgzNjAwNCwxNDE3NTU4MTI5LDM0MDQ2NTY5Miwx
-MjY2Mzk5NDAsLTE1MjA2NjYzNCwxNzQ0MjQyMjA2LC03MTM4NT
-M5ODAsLTk0MDE1MzMwMywxODYwNDQ1NTY0LDIwNzY5NTYwMzMs
-LTIxMjA0MzAyNTMsODQwMTg4NTM1LDc4MTgwOTc4NCwtODYyNj
-c0Nzc4LC0xMzY0OTQ4MzMyLC0xNjQyNzA0OCwtMTcyMjU0MjY4
-M119
+eyJoaXN0b3J5IjpbNDI0NTA0NDU5LDczNjg5MjA2NywtMTEyNj
+Y4MjM3NiwtMTc4MzYwMDQsMTQxNzU1ODEyOSwzNDA0NjU2OTIs
+MTI2NjM5OTQwLC0xNTIwNjY2MzQsMTc0NDI0MjIwNiwtNzEzOD
+UzOTgwLC05NDAxNTMzMDMsMTg2MDQ0NTU2NCwyMDc2OTU2MDMz
+LC0yMTIwNDMwMjUzLDg0MDE4ODUzNSw3ODE4MDk3ODQsLTg2Mj
+Y3NDc3OCwtMTM2NDk0ODMzMiwtMTY0MjcwNDgsLTE3MjI1NDI2
+ODNdfQ==
 -->
