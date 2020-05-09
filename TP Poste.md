@@ -593,9 +593,9 @@ Je pars de mon PC windows pour me connecter à la VM, l'adresse IP a changé ent
 ![](https://i.imgur.com/eynXrEH.png)
 Bingo.
 Pour le port forwarding, on peut remercier Bouygues Telecom de nous mettre en Balanciaga avec une interface des plus Gucci. Nan sans dec y a zéro prise de têt, tout marche instantanément.
-On va sur 
+On va sur `mabbox.bytel.fr`, de là on clique sur "Services de la Bbox" et dans redirection de ports. Dans
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzQ1NTY3MjksLTgwNzYwNzk5OSw4ND
+eyJoaXN0b3J5IjpbLTE3MzUwMDk3MDgsLTgwNzYwNzk5OSw4ND
 cyMzI2ODQsLTEzNDM4NTM1OTUsLTE2Mzg1NjE3MTIsNDk2NzM2
 OTMwLDE2MDg4NDIyOCwtNzU0OTg0MDU1LDczNjg5MjA2NywtMT
 EyNjY4MjM3NiwtMTc4MzYwMDQsMTQxNzU1ODEyOSwzNDA0NjU2
