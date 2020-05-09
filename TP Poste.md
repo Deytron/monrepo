@@ -557,7 +557,8 @@ lemalgache@192.168.56.103's password:
 Last login: Sat May 9 17:01:01 2020
 ```
 Comme c'est la première fois que je me connecte à la machine, il me dit qu'il ne connaît pas l'identité de la machine en face. Logique.
-En fait, lors du setup d'une machine, une empreinte SSH est créée, elle est unique à la machine et sert à vérifier l'identité de la machine de destination.  Ceci permet 
+En fait, lors du setup d'une machine, une empreinte SSH est créée, elle est unique à la machine et sert à vérifier l'identité de la machine de destination.  Ceci permet d'éviter les attaques Man in the Middle, qui ont une empreinte SSH différente.
+
 Maintenant, première étape pour sécuriser une connexion SSH, forcer l'utilisation de clé sur la machine distante. Pour se faire, on va d'abord envoyer la clé publique sur le serveur distant avec la commande `ssh-copy-id lemalgache@192.168.56.103`, et bam la clé est envoyée au serveur.
 Attention, uniquement la clé publique est envoyée au serveur. La clé privée, comme son nom l'indique, reste sur le PC hôte et reste privée, la machine distante se servira de la clé publique pour vérifier la clé privée de la machine qui veut se connecter. C'est comme ça que fonctionne la PAIRE de clés.
 ...Problème, il suffit d'utiliser un autre utilisateur sur le compte pour ne plus être dépendent de la clé SSH. On va donc forcer l'authentification par clé et désactivant la connexion par mot de passe.
@@ -570,11 +571,11 @@ Boum, j'peux pas me connecter en root ou en tout autre utilisateur.
 
 On peut en profiter pour changer quelques autres lignes, comme `StrictModes yes`, `UsePrivilegeSeparation sandbox`, `PermitEmptyPasswords no`, et enfin, on devrait suivre le principe du moindre privilège en  créant des utilisateurs ayant plus ou moins de privilèges et commandes disponibles. J'ai la flemme de le faire là, mais je devrais.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTc5MzEzNjksMTYwODg0MjI4LC03NT
-Q5ODQwNTUsNzM2ODkyMDY3LC0xMTI2NjgyMzc2LC0xNzgzNjAw
-NCwxNDE3NTU4MTI5LDM0MDQ2NTY5MiwxMjY2Mzk5NDAsLTE1Mj
-A2NjYzNCwxNzQ0MjQyMjA2LC03MTM4NTM5ODAsLTk0MDE1MzMw
-MywxODYwNDQ1NTY0LDIwNzY5NTYwMzMsLTIxMjA0MzAyNTMsOD
-QwMTg4NTM1LDc4MTgwOTc4NCwtODYyNjc0Nzc4LC0xMzY0OTQ4
-MzMyXX0=
+eyJoaXN0b3J5IjpbLTIyNjY0NjYyNywxNjA4ODQyMjgsLTc1ND
+k4NDA1NSw3MzY4OTIwNjcsLTExMjY2ODIzNzYsLTE3ODM2MDA0
+LDE0MTc1NTgxMjksMzQwNDY1NjkyLDEyNjYzOTk0MCwtMTUyMD
+Y2NjM0LDE3NDQyNDIyMDYsLTcxMzg1Mzk4MCwtOTQwMTUzMzAz
+LDE4NjA0NDU1NjQsMjA3Njk1NjAzMywtMjEyMDQzMDI1Myw4ND
+AxODg1MzUsNzgxODA5Nzg0LC04NjI2NzQ3NzgsLTEzNjQ5NDgz
+MzJdfQ==
 -->
