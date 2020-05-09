@@ -590,12 +590,16 @@ Là on veut avoir accès à la VM avec deux personnes. Tranquille on est là.
 Faut qu'on dise à notre VM d'avoir une carte avec une IP en bridge. Ca s'appelle "Accès par pont" en français. Ici, notre OS hôte va fonctionner sur le même réseau que notre VM. L'intérêt final, c'est qu'après on peut donner une adresse IP fixe à notre interface dans la VM, et n'importe quel machine sur le réseau pourra rejoindre la VM. Plutôt cool.
 
 Je pars de mon PC windows pour me connecter à la VM, l'adresse IP a changé entre temps. 
+![](https://i.imgur.com/eynXrEH.png)
+Bingo.
+Pour le port forwarding, on peut remercier Bouygues Telecom de nous mettre en Balanciaga avec une interface des plus Gucci. Nan sans dec y a zéro prise de têt, tout marche instantanément.
+On va sur 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2OTAwODQ4OSwtODA3NjA3OTk5LDg0Nz
-IzMjY4NCwtMTM0Mzg1MzU5NSwtMTYzODU2MTcxMiw0OTY3MzY5
-MzAsMTYwODg0MjI4LC03NTQ5ODQwNTUsNzM2ODkyMDY3LC0xMT
-I2NjgyMzc2LC0xNzgzNjAwNCwxNDE3NTU4MTI5LDM0MDQ2NTY5
-MiwxMjY2Mzk5NDAsLTE1MjA2NjYzNCwxNzQ0MjQyMjA2LC03MT
-M4NTM5ODAsLTk0MDE1MzMwMywxODYwNDQ1NTY0LDIwNzY5NTYw
-MzNdfQ==
+eyJoaXN0b3J5IjpbLTE5MzQ1NTY3MjksLTgwNzYwNzk5OSw4ND
+cyMzI2ODQsLTEzNDM4NTM1OTUsLTE2Mzg1NjE3MTIsNDk2NzM2
+OTMwLDE2MDg4NDIyOCwtNzU0OTg0MDU1LDczNjg5MjA2NywtMT
+EyNjY4MjM3NiwtMTc4MzYwMDQsMTQxNzU1ODEyOSwzNDA0NjU2
+OTIsMTI2NjM5OTQwLC0xNTIwNjY2MzQsMTc0NDI0MjIwNiwtNz
+EzODUzOTgwLC05NDAxNTMzMDMsMTg2MDQ0NTU2NCwyMDc2OTU2
+MDMzXX0=
 -->
