@@ -544,6 +544,7 @@ Alors il se trouve que Kmail, et probablement d'autres clients de mail, propose 
 Bon, le SSH c'est pas nouveau, on s'en sert depuis le début de l'année pour nos VM et pour contrôler d'autres machines à distance, je vais pas refaire l'explication de ce que c'est, en tout cas c'est très utile.
 Pour se connecter en SSH sur une machine, y a deux manières : soit la machine serveur n'est pas complètement configurée, et on peut s'y connecter en entrant le mot de passe d'un utilisateur présent sur la machine, soit elle est configurée et on ne peut s'y connecter uniquement qu'avec une paire de clés valides.
 On peut générer une paire de clé avec `ssh-keygen <args>`. 
+Les clés peuvent être stockées où on veut, mais pourquoi les foutre autre part que dans le classique `/.ssh/`. Les fichiers de clé ont comme permission par défaut 600, et elles devraient restées avec les permissions par défaut, autrement elles sont ignorées lors d'une connection à une aut
 
 Là c'est moi qui me connecte à ma VM sous CentOS 7 :
 ```
@@ -568,11 +569,11 @@ Boum, j'peux pas me connecter en root ou en tout autre utilisateur.
 
 On peut en profiter pour changer quelques autres lignes, comme `StrictModes yes`, `UsePrivilegeSeparation sandbox`, `PermitEmptyPasswords no`, et enfin, on devrait suivre le principe du moindre privilège en  créant des utilisateurs ayant plus ou moins de privilèges et commandes disponibles. J'ai la flemme de le faire là, mais je devrais.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODkyNzczNiwxNjA4ODQyMjgsLTc1ND
-k4NDA1NSw3MzY4OTIwNjcsLTExMjY2ODIzNzYsLTE3ODM2MDA0
-LDE0MTc1NTgxMjksMzQwNDY1NjkyLDEyNjYzOTk0MCwtMTUyMD
-Y2NjM0LDE3NDQyNDIyMDYsLTcxMzg1Mzk4MCwtOTQwMTUzMzAz
-LDE4NjA0NDU1NjQsMjA3Njk1NjAzMywtMjEyMDQzMDI1Myw4ND
-AxODg1MzUsNzgxODA5Nzg0LC04NjI2NzQ3NzgsLTEzNjQ5NDgz
-MzJdfQ==
+eyJoaXN0b3J5IjpbLTE3ODcyMDc1NDgsMTYwODg0MjI4LC03NT
+Q5ODQwNTUsNzM2ODkyMDY3LC0xMTI2NjgyMzc2LC0xNzgzNjAw
+NCwxNDE3NTU4MTI5LDM0MDQ2NTY5MiwxMjY2Mzk5NDAsLTE1Mj
+A2NjYzNCwxNzQ0MjQyMjA2LC03MTM4NTM5ODAsLTk0MDE1MzMw
+MywxODYwNDQ1NTY0LDIwNzY5NTYwMzMsLTIxMjA0MzAyNTMsOD
+QwMTg4NTM1LDc4MTgwOTc4NCwtODYyNjc0Nzc4LC0xMzY0OTQ4
+MzMyXX0=
 -->
