@@ -546,13 +546,13 @@ Pour se connecter en SSH sur une machine, y a deux manières : soit la machine s
 Là c'est moi qui me connecte à ma VM sous CentOS 7 :
 ![](https://i.imgur.com/3QkHY2m.png)
 Comme c'est la première fois que je me connecte à la machine, il me dit qu'il ne connaît pas l'identité de la machine en face. Logique.
-Maintenant, première étape pour sécuriser une connexion SSH, forcer l'utilisation de clé sur la machine distante. Pour se faire,
+Maintenant, première étape pour sécuriser une connexion SSH, forcer l'utilisation de clé sur la machine distante. Pour se faire, on va d'abord envoyer la clé publique sur le serveur distant avec la commande `ssh-copy-id
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM2ODkyMDY3LC0xMTI2NjgyMzc2LC0xNz
-gzNjAwNCwxNDE3NTU4MTI5LDM0MDQ2NTY5MiwxMjY2Mzk5NDAs
-LTE1MjA2NjYzNCwxNzQ0MjQyMjA2LC03MTM4NTM5ODAsLTk0MD
-E1MzMwMywxODYwNDQ1NTY0LDIwNzY5NTYwMzMsLTIxMjA0MzAy
-NTMsODQwMTg4NTM1LDc4MTgwOTc4NCwtODYyNjc0Nzc4LC0xMz
-Y0OTQ4MzMyLC0xNjQyNzA0OCwtMTcyMjU0MjY4MywtMTY3NTY1
-NzkxMl19
+eyJoaXN0b3J5IjpbLTEzMjUyNDQsNzM2ODkyMDY3LC0xMTI2Nj
+gyMzc2LC0xNzgzNjAwNCwxNDE3NTU4MTI5LDM0MDQ2NTY5Miwx
+MjY2Mzk5NDAsLTE1MjA2NjYzNCwxNzQ0MjQyMjA2LC03MTM4NT
+M5ODAsLTk0MDE1MzMwMywxODYwNDQ1NTY0LDIwNzY5NTYwMzMs
+LTIxMjA0MzAyNTMsODQwMTg4NTM1LDc4MTgwOTc4NCwtODYyNj
+c0Nzc4LC0xMzY0OTQ4MzMyLC0xNjQyNzA0OCwtMTcyMjU0MjY4
+M119
 -->
