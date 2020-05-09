@@ -529,12 +529,14 @@ Moi j'ai ajouté un dossier dans mon doss personnel qui s'appelle `samba`, tout 
 Maintenant faut qu'on s'ajoute un mot de passe samba pour pouvoir accéder au dossier. Pour ça, on fait `sudo smbpasswd -a utilisateur` et on se met un mot de passe. A partir de là, le serveur peut être accédé par n'importe qui entrant le nom d'utilisateur et le mot de passe. J'ai donc essayé d'accéder à mon serveur avec mon PC Windows sur le même réseau wifi, et en entrant `\\192.168.1.87` dans l'explorateur de fichiers, il m'a demandé des identifiants, et boum ça marche.
 ![](https://i.imgur.com/M0ApwkC.png)
 
+## Chiffrement et confiance
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2NjM5OTQwLC0xNTIwNjY2MzQsMTc0ND
-I0MjIwNiwtNzEzODUzOTgwLC05NDAxNTMzMDMsMTg2MDQ0NTU2
-NCwyMDc2OTU2MDMzLC0yMTIwNDMwMjUzLDg0MDE4ODUzNSw3OD
-E4MDk3ODQsLTg2MjY3NDc3OCwtMTM2NDk0ODMzMiwtMTY0Mjcw
-NDgsLTE3MjI1NDI2ODMsLTE2NzU2NTc5MTIsMTc4NTAyNTc4Mi
-wxMDI3OTk3NDgsLTExMzQ3NDE2NjYsLTIwNjgyOTE0NTEsLTM0
-MDk2OTQ2MF19
+eyJoaXN0b3J5IjpbNjAwOTAwMzU0LDEyNjYzOTk0MCwtMTUyMD
+Y2NjM0LDE3NDQyNDIyMDYsLTcxMzg1Mzk4MCwtOTQwMTUzMzAz
+LDE4NjA0NDU1NjQsMjA3Njk1NjAzMywtMjEyMDQzMDI1Myw4ND
+AxODg1MzUsNzgxODA5Nzg0LC04NjI2NzQ3NzgsLTEzNjQ5NDgz
+MzIsLTE2NDI3MDQ4LC0xNzIyNTQyNjgzLC0xNjc1NjU3OTEyLD
+E3ODUwMjU3ODIsMTAyNzk5NzQ4LC0xMTM0NzQxNjY2LC0yMDY4
+MjkxNDUxXX0=
 -->
