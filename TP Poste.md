@@ -596,12 +596,14 @@ Pour le port forwarding, on peut remercier Bouygues Telecom de nous mettre en Ba
 On va sur `mabbox.bytel.fr`, de là on clique sur "Services de la Bbox" et dans redirection de ports. Dans la NAT, on clique sur "Ajouter une règle", et on remplit tout. 
 ![](https://i.imgur.com/0BkVFVw.png)
 Voilà, fini.
+
+Comme j'ai la flemme de demander à un de mes nombreux potes de se connecter à mon IP, je vais utiliser la 4G de mon portable pour simuler une connexion distante.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwNTI4NDE2LC04MDc2MDc5OTksODQ3Mj
-MyNjg0LC0xMzQzODUzNTk1LC0xNjM4NTYxNzEyLDQ5NjczNjkz
-MCwxNjA4ODQyMjgsLTc1NDk4NDA1NSw3MzY4OTIwNjcsLTExMj
-Y2ODIzNzYsLTE3ODM2MDA0LDE0MTc1NTgxMjksMzQwNDY1Njky
-LDEyNjYzOTk0MCwtMTUyMDY2NjM0LDE3NDQyNDIyMDYsLTcxMz
-g1Mzk4MCwtOTQwMTUzMzAzLDE4NjA0NDU1NjQsMjA3Njk1NjAz
-M119
+eyJoaXN0b3J5IjpbLTE5ODc4NzAzNzIsLTgwNzYwNzk5OSw4ND
+cyMzI2ODQsLTEzNDM4NTM1OTUsLTE2Mzg1NjE3MTIsNDk2NzM2
+OTMwLDE2MDg4NDIyOCwtNzU0OTg0MDU1LDczNjg5MjA2NywtMT
+EyNjY4MjM3NiwtMTc4MzYwMDQsMTQxNzU1ODEyOSwzNDA0NjU2
+OTIsMTI2NjM5OTQwLC0xNTIwNjY2MzQsMTc0NDI0MjIwNiwtNz
+EzODUzOTgwLC05NDAxNTMzMDMsMTg2MDQ0NTU2NCwyMDc2OTU2
+MDMzXX0=
 -->
