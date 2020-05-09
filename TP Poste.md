@@ -585,12 +585,15 @@ Voilà le schéma complètement volé. On veut se connecter à la machine Host B
 
 On peut se connecter via jump avec la commande `ssh -J Machine1 Machine2`. Il faut que le login sans mot de passe soit activé, autrement c'est mort.
 
+### Forwarding de ports at home
+Là on veut avoir accès à la VM avec deux personnes. Tranquille on est là.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ3MjMyNjg0LC0xMzQzODUzNTk1LC0xNj
-M4NTYxNzEyLDQ5NjczNjkzMCwxNjA4ODQyMjgsLTc1NDk4NDA1
-NSw3MzY4OTIwNjcsLTExMjY2ODIzNzYsLTE3ODM2MDA0LDE0MT
-c1NTgxMjksMzQwNDY1NjkyLDEyNjYzOTk0MCwtMTUyMDY2NjM0
-LDE3NDQyNDIyMDYsLTcxMzg1Mzk4MCwtOTQwMTUzMzAzLDE4Nj
-A0NDU1NjQsMjA3Njk1NjAzMywtMjEyMDQzMDI1Myw4NDAxODg1
-MzVdfQ==
+eyJoaXN0b3J5IjpbLTU3MTk3NzE0Myw4NDcyMzI2ODQsLTEzND
+M4NTM1OTUsLTE2Mzg1NjE3MTIsNDk2NzM2OTMwLDE2MDg4NDIy
+OCwtNzU0OTg0MDU1LDczNjg5MjA2NywtMTEyNjY4MjM3NiwtMT
+c4MzYwMDQsMTQxNzU1ODEyOSwzNDA0NjU2OTIsMTI2NjM5OTQw
+LC0xNTIwNjY2MzQsMTc0NDI0MjIwNiwtNzEzODUzOTgwLC05ND
+AxNTMzMDMsMTg2MDQ0NTU2NCwyMDc2OTU2MDMzLC0yMTIwNDMw
+MjUzXX0=
 -->
