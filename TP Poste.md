@@ -563,13 +563,13 @@ root@192.168.56.103: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).
 ```
 Boum, j'peux pas me connecter en root ou en tout autre utilisateur.
 
-On peut en profiter pour changer quelques autres lignes, comme `StrictModes yes`, `UsePrivilegeSeparation sandbox`, `PermitEmptyPasswords no`, et enfin, on devrait suivre le principe du moindre privilège en  créant des utilisateurs ayant
+On peut en profiter pour changer quelques autres lignes, comme `StrictModes yes`, `UsePrivilegeSeparation sandbox`, `PermitEmptyPasswords no`, et enfin, on devrait suivre le principe du moindre privilège en  créant des utilisateurs ayant plus ou moins de privilèges et commandes disponibles. J'ai la flemme de le faire là, mais je devrais.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTU1ODA2MTIsLTc1NDk4NDA1NSw3Mz
-Y4OTIwNjcsLTExMjY2ODIzNzYsLTE3ODM2MDA0LDE0MTc1NTgx
-MjksMzQwNDY1NjkyLDEyNjYzOTk0MCwtMTUyMDY2NjM0LDE3ND
-QyNDIyMDYsLTcxMzg1Mzk4MCwtOTQwMTUzMzAzLDE4NjA0NDU1
-NjQsMjA3Njk1NjAzMywtMjEyMDQzMDI1Myw4NDAxODg1MzUsNz
-gxODA5Nzg0LC04NjI2NzQ3NzgsLTEzNjQ5NDgzMzIsLTE2NDI3
-MDQ4XX0=
+eyJoaXN0b3J5IjpbMTYwODg0MjI4LC03NTQ5ODQwNTUsNzM2OD
+kyMDY3LC0xMTI2NjgyMzc2LC0xNzgzNjAwNCwxNDE3NTU4MTI5
+LDM0MDQ2NTY5MiwxMjY2Mzk5NDAsLTE1MjA2NjYzNCwxNzQ0Mj
+QyMjA2LC03MTM4NTM5ODAsLTk0MDE1MzMwMywxODYwNDQ1NTY0
+LDIwNzY5NTYwMzMsLTIxMjA0MzAyNTMsODQwMTg4NTM1LDc4MT
+gwOTc4NCwtODYyNjc0Nzc4LC0xMzY0OTQ4MzMyLC0xNjQyNzA0
+OF19
 -->
