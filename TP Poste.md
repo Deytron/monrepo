@@ -572,13 +572,13 @@ Boum, j'peux pas me connecter en root ou en tout autre utilisateur.
 On peut en profiter pour changer quelques autres lignes, comme `StrictModes yes`, `UsePrivilegeSeparation sandbox`, `PermitEmptyPasswords no`, et enfin, on devrait suivre le principe du moindre privilège en  créant des utilisateurs ayant plus ou moins de privilèges et commandes disponibles. J'ai la flemme de le faire là, mais je devrais.
 
 ### SSH Tunnels
-On va se connecter à la machine avec la commande `ssh -D 7777 192.168.56.103`.
+On va se connecter à la machine avec la commande `ssh -D 7777 192.168.56.103`. On va maintenant setup le proxy. Chrome utilise les paramètres proxy de la machine, donc il nous redirige aux options systèmes.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjU2MzU4NDksMTYwODg0MjI4LC03NT
-Q5ODQwNTUsNzM2ODkyMDY3LC0xMTI2NjgyMzc2LC0xNzgzNjAw
-NCwxNDE3NTU4MTI5LDM0MDQ2NTY5MiwxMjY2Mzk5NDAsLTE1Mj
-A2NjYzNCwxNzQ0MjQyMjA2LC03MTM4NTM5ODAsLTk0MDE1MzMw
-MywxODYwNDQ1NTY0LDIwNzY5NTYwMzMsLTIxMjA0MzAyNTMsOD
-QwMTg4NTM1LDc4MTgwOTc4NCwtODYyNjc0Nzc4LC0xMzY0OTQ4
-MzMyXX0=
+eyJoaXN0b3J5IjpbNDk2NzM2OTMwLDE2MDg4NDIyOCwtNzU0OT
+g0MDU1LDczNjg5MjA2NywtMTEyNjY4MjM3NiwtMTc4MzYwMDQs
+MTQxNzU1ODEyOSwzNDA0NjU2OTIsMTI2NjM5OTQwLC0xNTIwNj
+Y2MzQsMTc0NDI0MjIwNiwtNzEzODUzOTgwLC05NDAxNTMzMDMs
+MTg2MDQ0NTU2NCwyMDc2OTU2MDMzLC0yMTIwNDMwMjUzLDg0MD
+E4ODUzNSw3ODE4MDk3ODQsLTg2MjY3NDc3OCwtMTM2NDk0ODMz
+Ml19
 -->
