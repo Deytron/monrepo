@@ -534,13 +534,14 @@ On est tous au courant que de nos jours, on utilise la cryptographie par clé pu
 De ce fait, un certificat est un moyen utilisé pour **ditribuer** une clé publique, et les informations qui vont avec, par exemple qui a fait cette clé. Ces certificats peuvent être signés par une autorité certifié, qui a pour rôle de confirmer la véracité des informations contenues dans le certificat. 
 Un certificat contient impérativement une clé publique. Dans les métadonnées, nous pouvons avoir la date d'émission du certificat, sa validité, l'entreprise qui a demandé le certificat, l'entreprise qui a émit le certificat, et d'autres champs qui peuvent être remplis ou non.
 ![](https://i.imgur.com/EgZPm8E.png)
-
+### Chiffrement de mails
+N'utilisant absolument aucun client mail, j'ai décidé d'aller sur Google et de taper "linux best mail client 2020 of all time" et j'ai pris le premier venu. Donc j'ai pris Mailspring qui a l'air pas mal, et on va faire le taf avec.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQwNDY1NjkyLDEyNjYzOTk0MCwtMTUyMD
-Y2NjM0LDE3NDQyNDIyMDYsLTcxMzg1Mzk4MCwtOTQwMTUzMzAz
-LDE4NjA0NDU1NjQsMjA3Njk1NjAzMywtMjEyMDQzMDI1Myw4ND
-AxODg1MzUsNzgxODA5Nzg0LC04NjI2NzQ3NzgsLTEzNjQ5NDgz
-MzIsLTE2NDI3MDQ4LC0xNzIyNTQyNjgzLC0xNjc1NjU3OTEyLD
-E3ODUwMjU3ODIsMTAyNzk5NzQ4LC0xMTM0NzQxNjY2LC0yMDY4
-MjkxNDUxXX0=
+eyJoaXN0b3J5IjpbMTQxNzU1ODEyOSwzNDA0NjU2OTIsMTI2Nj
+M5OTQwLC0xNTIwNjY2MzQsMTc0NDI0MjIwNiwtNzEzODUzOTgw
+LC05NDAxNTMzMDMsMTg2MDQ0NTU2NCwyMDc2OTU2MDMzLC0yMT
+IwNDMwMjUzLDg0MDE4ODUzNSw3ODE4MDk3ODQsLTg2MjY3NDc3
+OCwtMTM2NDk0ODMzMiwtMTY0MjcwNDgsLTE3MjI1NDI2ODMsLT
+E2NzU2NTc5MTIsMTc4NTAyNTc4MiwxMDI3OTk3NDgsLTExMzQ3
+NDE2NjZdfQ==
 -->
