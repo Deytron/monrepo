@@ -557,12 +557,17 @@ Comme c'est la première fois que je me connecte à la machine, il me dit qu'il 
 Maintenant, première étape pour sécuriser une connexion SSH, forcer l'utilisation de clé sur la machine distante. Pour se faire, on va d'abord envoyer la clé publique sur le serveur distant avec la commande `ssh-copy-id lemalgache@192.168.56.103`, et bam la clé est envoyée au serveur.
 ...Problème, il suffit d'utiliser un autre utilisateur sur le compte pour ne plus être dépendent de la clé SSH. On va donc forcer l'authentification par clé et désactivant la connexion par mot de passe.
 Sur la machine distante, on édite en root le fichier `/etc/ssh/sshd_config` et on change les lignes `PasswordAuthentication` à `no` et `PermitRootLogin` à `no`. Mesures de sécurité basiques. On relance le service ssh avec `systemctl restart sshd`
+```
+ssh root@192.168.56.103
+root@192.168.56.103: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).
+```
+Boum, j'peux pas me connecter en root.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk4NDQ1MDM1LDczNjg5MjA2NywtMTEyNj
-Y4MjM3NiwtMTc4MzYwMDQsMTQxNzU1ODEyOSwzNDA0NjU2OTIs
-MTI2NjM5OTQwLC0xNTIwNjY2MzQsMTc0NDI0MjIwNiwtNzEzOD
-UzOTgwLC05NDAxNTMzMDMsMTg2MDQ0NTU2NCwyMDc2OTU2MDMz
-LC0yMTIwNDMwMjUzLDg0MDE4ODUzNSw3ODE4MDk3ODQsLTg2Mj
-Y3NDc3OCwtMTM2NDk0ODMzMiwtMTY0MjcwNDgsLTE3MjI1NDI2
-ODNdfQ==
+eyJoaXN0b3J5IjpbMTUzMzA0Nzk5Niw3MzY4OTIwNjcsLTExMj
+Y2ODIzNzYsLTE3ODM2MDA0LDE0MTc1NTgxMjksMzQwNDY1Njky
+LDEyNjYzOTk0MCwtMTUyMDY2NjM0LDE3NDQyNDIyMDYsLTcxMz
+g1Mzk4MCwtOTQwMTUzMzAzLDE4NjA0NDU1NjQsMjA3Njk1NjAz
+MywtMjEyMDQzMDI1Myw4NDAxODg1MzUsNzgxODA5Nzg0LC04Nj
+I2NzQ3NzgsLTEzNjQ5NDgzMzIsLTE2NDI3MDQ4LC0xNzIyNTQy
+NjgzXX0=
 -->
