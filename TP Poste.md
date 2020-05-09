@@ -562,9 +562,10 @@ ssh root@192.168.56.103
 root@192.168.56.103: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).
 ```
 Boum, j'peux pas me connecter en root ou en tout autre utilisateur.
-On peut en profiter pour changer quelques autres lignes, comme `StrictModes yes`, `UsePrivilegeSeparation sandbox`,
+
+On peut en profiter pour changer quelques autres lignes, comme `StrictModes yes`, `UsePrivilegeSeparation sandbox`, `PermitEmptyPasswords no`, et enfin, on devrait suivre le principe du moindre privilège en  créant des utilisateurs ayant
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTAwNDg4NDEsLTc1NDk4NDA1NSw3Mz
+eyJoaXN0b3J5IjpbLTE2NTU1ODA2MTIsLTc1NDk4NDA1NSw3Mz
 Y4OTIwNjcsLTExMjY2ODIzNzYsLTE3ODM2MDA0LDE0MTc1NTgx
 MjksMzQwNDY1NjkyLDEyNjYzOTk0MCwtMTUyMDY2NjM0LDE3ND
 QyNDIyMDYsLTcxMzg1Mzk4MCwtOTQwMTUzMzAzLDE4NjA0NDU1
