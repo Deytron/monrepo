@@ -535,13 +535,13 @@ De ce fait, un certificat est un moyen utilisé pour **ditribuer** une clé publ
 Un certificat contient impérativement une clé publique. Dans les métadonnées, nous pouvons avoir la date d'émission du certificat, sa validité, l'entreprise qui a demandé le certificat, l'entreprise qui a émit le certificat, et d'autres champs qui peuvent être remplis ou non.
 ![](https://i.imgur.com/EgZPm8E.png)
 ### Chiffrement de mails
-N'utilisant absolument aucun client mail, j'ai décidé d'aller sur Google et de taper "linux best mail client 2020 of all time" et j'ai pris le premier venu. Donc j'ai pris Mailspring qui a l'air pas mal, et on va faire le taf avec.
+N'utilisant absolument aucun client mail, j'ai décidé d'utiliser celui venant avec KDE, et de prendre le plugin de chiffrement de mail qui vient avec, et voilà.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNzU1ODEyOSwzNDA0NjU2OTIsMTI2Nj
-M5OTQwLC0xNTIwNjY2MzQsMTc0NDI0MjIwNiwtNzEzODUzOTgw
-LC05NDAxNTMzMDMsMTg2MDQ0NTU2NCwyMDc2OTU2MDMzLC0yMT
-IwNDMwMjUzLDg0MDE4ODUzNSw3ODE4MDk3ODQsLTg2MjY3NDc3
-OCwtMTM2NDk0ODMzMiwtMTY0MjcwNDgsLTE3MjI1NDI2ODMsLT
-E2NzU2NTc5MTIsMTc4NTAyNTc4MiwxMDI3OTk3NDgsLTExMzQ3
-NDE2NjZdfQ==
+eyJoaXN0b3J5IjpbLTE3ODM2MDA0LDE0MTc1NTgxMjksMzQwND
+Y1NjkyLDEyNjYzOTk0MCwtMTUyMDY2NjM0LDE3NDQyNDIyMDYs
+LTcxMzg1Mzk4MCwtOTQwMTUzMzAzLDE4NjA0NDU1NjQsMjA3Nj
+k1NjAzMywtMjEyMDQzMDI1Myw4NDAxODg1MzUsNzgxODA5Nzg0
+LC04NjI2NzQ3NzgsLTEzNjQ5NDgzMzIsLTE2NDI3MDQ4LC0xNz
+IyNTQyNjgzLC0xNjc1NjU3OTEyLDE3ODUwMjU3ODIsMTAyNzk5
+NzQ4XX0=
 -->
