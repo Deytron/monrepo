@@ -543,6 +543,8 @@ Alors il se trouve que Kmail, et probablement d'autres clients de mail, propose 
 ### Serveur
 Bon, le SSH c'est pas nouveau, on s'en sert depuis le début de l'année pour nos VM et pour contrôler d'autres machines à distance, je vais pas refaire l'explication de ce que c'est, en tout cas c'est très utile.
 Pour se connecter en SSH sur une machine, y a deux manières : soit la machine serveur n'est pas complètement configurée, et on peut s'y connecter en entrant le mot de passe d'un utilisateur présent sur la machine, soit elle est configurée et on ne peut s'y connecter uniquement qu'avec une paire de clés valides.
+On peut générer une paire de clé avec `ssh-keygen <args>`. 
+
 Là c'est moi qui me connecte à ma VM sous CentOS 7 :
 ```
 ssh lemalgache@192.168.56.103
@@ -555,6 +557,7 @@ Last login: Sat May 9 17:01:01 2020
 ```
 Comme c'est la première fois que je me connecte à la machine, il me dit qu'il ne connaît pas l'identité de la machine en face. Logique.
 Maintenant, première étape pour sécuriser une connexion SSH, forcer l'utilisation de clé sur la machine distante. Pour se faire, on va d'abord envoyer la clé publique sur le serveur distant avec la commande `ssh-copy-id lemalgache@192.168.56.103`, et bam la clé est envoyée au serveur.
+Attention, uniquement la clé publique est envoyée au serveur. La clé privée, comme son nom l'indique, reste sur le PC hôte et restr
 ...Problème, il suffit d'utiliser un autre utilisateur sur le compte pour ne plus être dépendent de la clé SSH. On va donc forcer l'authentification par clé et désactivant la connexion par mot de passe.
 Sur la machine distante, on édite en root le fichier `/etc/ssh/sshd_config` et on change les lignes `PasswordAuthentication` à `no` et `PermitRootLogin` à `no`. Mesures de sécurité basiques. On relance le service ssh avec `systemctl restart sshd`
 ```
@@ -565,11 +568,11 @@ Boum, j'peux pas me connecter en root ou en tout autre utilisateur.
 
 On peut en profiter pour changer quelques autres lignes, comme `StrictModes yes`, `UsePrivilegeSeparation sandbox`, `PermitEmptyPasswords no`, et enfin, on devrait suivre le principe du moindre privilège en  créant des utilisateurs ayant plus ou moins de privilèges et commandes disponibles. J'ai la flemme de le faire là, mais je devrais.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwODg0MjI4LC03NTQ5ODQwNTUsNzM2OD
-kyMDY3LC0xMTI2NjgyMzc2LC0xNzgzNjAwNCwxNDE3NTU4MTI5
-LDM0MDQ2NTY5MiwxMjY2Mzk5NDAsLTE1MjA2NjYzNCwxNzQ0Mj
-QyMjA2LC03MTM4NTM5ODAsLTk0MDE1MzMwMywxODYwNDQ1NTY0
-LDIwNzY5NTYwMzMsLTIxMjA0MzAyNTMsODQwMTg4NTM1LDc4MT
-gwOTc4NCwtODYyNjc0Nzc4LC0xMzY0OTQ4MzMyLC0xNjQyNzA0
-OF19
+eyJoaXN0b3J5IjpbLTI5MTgwMTU0MSwxNjA4ODQyMjgsLTc1ND
+k4NDA1NSw3MzY4OTIwNjcsLTExMjY2ODIzNzYsLTE3ODM2MDA0
+LDE0MTc1NTgxMjksMzQwNDY1NjkyLDEyNjYzOTk0MCwtMTUyMD
+Y2NjM0LDE3NDQyNDIyMDYsLTcxMzg1Mzk4MCwtOTQwMTUzMzAz
+LDE4NjA0NDU1NjQsMjA3Njk1NjAzMywtMjEyMDQzMDI1Myw4ND
+AxODg1MzUsNzgxODA5Nzg0LC04NjI2NzQ3NzgsLTEzNjQ5NDgz
+MzJdfQ==
 -->
