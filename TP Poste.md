@@ -557,7 +557,7 @@ Last login: Sat May 9 17:01:01 2020
 ```
 Comme c'est la première fois que je me connecte à la machine, il me dit qu'il ne connaît pas l'identité de la machine en face. Logique.
 Maintenant, première étape pour sécuriser une connexion SSH, forcer l'utilisation de clé sur la machine distante. Pour se faire, on va d'abord envoyer la clé publique sur le serveur distant avec la commande `ssh-copy-id lemalgache@192.168.56.103`, et bam la clé est envoyée au serveur.
-Attention, uniquement la clé publique est envoyée au serveur. La clé privée, comme son nom l'indique, reste sur le PC hôte et restr
+Attention, uniquement la clé publique est envoyée au serveur. La clé privée, comme son nom l'indique, reste sur le PC hôte et reste privée, la machine distante se servira de la clé publique pour vérifier la clé privée de la machine qui veut se connecter. C'est comme ça que fonctionne la PAIRE de clés.
 ...Problème, il suffit d'utiliser un autre utilisateur sur le compte pour ne plus être dépendent de la clé SSH. On va donc forcer l'authentification par clé et désactivant la connexion par mot de passe.
 Sur la machine distante, on édite en root le fichier `/etc/ssh/sshd_config` et on change les lignes `PasswordAuthentication` à `no` et `PermitRootLogin` à `no`. Mesures de sécurité basiques. On relance le service ssh avec `systemctl restart sshd`
 ```
@@ -568,7 +568,7 @@ Boum, j'peux pas me connecter en root ou en tout autre utilisateur.
 
 On peut en profiter pour changer quelques autres lignes, comme `StrictModes yes`, `UsePrivilegeSeparation sandbox`, `PermitEmptyPasswords no`, et enfin, on devrait suivre le principe du moindre privilège en  créant des utilisateurs ayant plus ou moins de privilèges et commandes disponibles. J'ai la flemme de le faire là, mais je devrais.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5MTgwMTU0MSwxNjA4ODQyMjgsLTc1ND
+eyJoaXN0b3J5IjpbLTE5ODkyNzczNiwxNjA4ODQyMjgsLTc1ND
 k4NDA1NSw3MzY4OTIwNjcsLTExMjY2ODIzNzYsLTE3ODM2MDA0
 LDE0MTc1NTgxMjksMzQwNDY1NjkyLDEyNjYzOTk0MCwtMTUyMD
 Y2NjM0LDE3NDQyNDIyMDYsLTcxMzg1Mzk4MCwtOTQwMTUzMzAz
