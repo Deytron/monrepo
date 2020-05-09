@@ -587,9 +587,9 @@ On peut se connecter via jump avec la commande `ssh -J Machine1 Machine2`. Il fa
 
 ### Forwarding de ports at home
 Là on veut avoir accès à la VM avec deux personnes. Tranquille on est là.
-Faut qu'on dise à notre VM d'avoir une carte avec une IP en bridge. Ca s'appelle "Accès par pont" en français. Ici, notre OS hôte va fonctionner sur le même réseau que notre VM. l'intérêt final, c'est qu'après on peut donner une adresse IP fixe à notre interface dans la VM, et n'importe quel By selecting **Bridged** Adapter, your guest operating system will work on the same network as does your host. You can then set your virtual machine up with a static **IP** address and the machines on your network will be able to reach the server. Simple. **VirtualBox** makes it pretty easy to deal with **networking** options.
+Faut qu'on dise à notre VM d'avoir une carte avec une IP en bridge. Ca s'appelle "Accès par pont" en français. Ici, notre OS hôte va fonctionner sur le même réseau que notre VM. L'intérêt final, c'est qu'après on peut donner une adresse IP fixe à notre interface dans la VM, et n'importe quel machine sur le réseau pourra rejoindre la VM. Plutôt cool.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MDQ2MzAyNiw4NDcyMzI2ODQsLTEzND
+eyJoaXN0b3J5IjpbLTgwNzYwNzk5OSw4NDcyMzI2ODQsLTEzND
 M4NTM1OTUsLTE2Mzg1NjE3MTIsNDk2NzM2OTMwLDE2MDg4NDIy
 OCwtNzU0OTg0MDU1LDczNjg5MjA2NywtMTEyNjY4MjM3NiwtMT
 c4MzYwMDQsMTQxNzU1ODEyOSwzNDA0NjU2OTIsMTI2NjM5OTQw
