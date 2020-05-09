@@ -573,13 +573,14 @@ On peut en profiter pour changer quelques autres lignes, comme `StrictModes yes`
 
 ### SSH Tunnels
 On va se connecter à la machine avec la commande `ssh -D 7777 192.168.56.103`. On va maintenant setup le proxy. Chrome utilise les paramètres proxy de la machine, donc il nous redirige aux options systèmes.
+### SSH Jump
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Mzg1NjE3MTIsNDk2NzM2OTMwLDE2MD
-g4NDIyOCwtNzU0OTg0MDU1LDczNjg5MjA2NywtMTEyNjY4MjM3
-NiwtMTc4MzYwMDQsMTQxNzU1ODEyOSwzNDA0NjU2OTIsMTI2Nj
-M5OTQwLC0xNTIwNjY2MzQsMTc0NDI0MjIwNiwtNzEzODUzOTgw
-LC05NDAxNTMzMDMsMTg2MDQ0NTU2NCwyMDc2OTU2MDMzLC0yMT
-IwNDMwMjUzLDg0MDE4ODUzNSw3ODE4MDk3ODQsLTg2MjY3NDc3
-OF19
+eyJoaXN0b3J5IjpbMTgzMTczMTkzMSwtMTYzODU2MTcxMiw0OT
+Y3MzY5MzAsMTYwODg0MjI4LC03NTQ5ODQwNTUsNzM2ODkyMDY3
+LC0xMTI2NjgyMzc2LC0xNzgzNjAwNCwxNDE3NTU4MTI5LDM0MD
+Q2NTY5MiwxMjY2Mzk5NDAsLTE1MjA2NjYzNCwxNzQ0MjQyMjA2
+LC03MTM4NTM5ODAsLTk0MDE1MzMwMywxODYwNDQ1NTY0LDIwNz
+Y5NTYwMzMsLTIxMjA0MzAyNTMsODQwMTg4NTM1LDc4MTgwOTc4
+NF19
 -->
