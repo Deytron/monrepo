@@ -541,9 +541,10 @@ Alors il se trouve que Kmail, et probablement d'autres clients de mail, propose 
 
 ## SSH
 ### Serveur
-Bon, le SSH c'est pas nouveau, on s'en sert depuis le début de l'année pour nos VM et pour contrôler d'autres machines 
+Bon, le SSH c'est pas nouveau, on s'en sert depuis le début de l'année pour nos VM et pour contrôler d'autres machines à distance, je vais pas refaire l'explication de ce que c'est, en tout cas c'est très utile.
+Pour se connecter en SSH sur une machine, y a deux manières : soit la machine serveur n'est pas complètement configurée, et on peut s'y connecter en entrant le mot de passe d'un utilisateur présent sur la machine, soit elle est configurée et on ne peut s'y connecter uniquement qu'avec une paire de clés valides.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3ODgyNDYxMCwtMTEyNjY4MjM3NiwtMT
+eyJoaXN0b3J5IjpbMTczNDc3NTA0MSwtMTEyNjY4MjM3NiwtMT
 c4MzYwMDQsMTQxNzU1ODEyOSwzNDA0NjU2OTIsMTI2NjM5OTQw
 LC0xNTIwNjY2MzQsMTc0NDI0MjIwNiwtNzEzODUzOTgwLC05ND
 AxNTMzMDMsMTg2MDQ0NTU2NCwyMDc2OTU2MDMzLC0yMTIwNDMw
