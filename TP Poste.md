@@ -562,12 +562,13 @@ ssh root@192.168.56.103
 root@192.168.56.103: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).
 ```
 Boum, j'peux pas me connecter en root ou en tout autre utilisateur.
+On peut en profiter pour changer quelques autres lignes, comme `StrictModes yes`, `UsePrivilegeSeparation sandbox`,
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1NDk4NDA1NSw3MzY4OTIwNjcsLTExMj
-Y2ODIzNzYsLTE3ODM2MDA0LDE0MTc1NTgxMjksMzQwNDY1Njky
-LDEyNjYzOTk0MCwtMTUyMDY2NjM0LDE3NDQyNDIyMDYsLTcxMz
-g1Mzk4MCwtOTQwMTUzMzAzLDE4NjA0NDU1NjQsMjA3Njk1NjAz
-MywtMjEyMDQzMDI1Myw4NDAxODg1MzUsNzgxODA5Nzg0LC04Nj
-I2NzQ3NzgsLTEzNjQ5NDgzMzIsLTE2NDI3MDQ4LC0xNzIyNTQy
-NjgzXX0=
+eyJoaXN0b3J5IjpbLTE5MTAwNDg4NDEsLTc1NDk4NDA1NSw3Mz
+Y4OTIwNjcsLTExMjY2ODIzNzYsLTE3ODM2MDA0LDE0MTc1NTgx
+MjksMzQwNDY1NjkyLDEyNjYzOTk0MCwtMTUyMDY2NjM0LDE3ND
+QyNDIyMDYsLTcxMzg1Mzk4MCwtOTQwMTUzMzAzLDE4NjA0NDU1
+NjQsMjA3Njk1NjAzMywtMjEyMDQzMDI1Myw4NDAxODg1MzUsNz
+gxODA5Nzg0LC04NjI2NzQ3NzgsLTEzNjQ5NDgzMzIsLTE2NDI3
+MDQ4XX0=
 -->
