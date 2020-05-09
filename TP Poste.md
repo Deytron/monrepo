@@ -532,14 +532,14 @@ Maintenant faut qu'on s'ajoute un mot de passe samba pour pouvoir accéder au do
 ## Chiffrement et confiance
 On est tous au courant que de nos jours, on utilise la cryptographie par clé publique, très répandu partout dans le monde. Ce système utilise une vérification avec une clé publique et une clé privée. Une fois la clé publique reçue, l'information ne peut être déchiffrée qu'avec la clé privée.
 De ce fait, un certificat est un moyen utilisé pour **ditribuer** une clé publique, et les informations qui vont avec, par exemple qui a fait cette clé. Ces certificats peuvent être signés par une autorité certifié, qui a pour rôle de confirmer la véracité des informations contenues dans le certificat. 
-Un certificat contient impérativement une clé publique. 
-
+Un certificat contient impérativement une clé publique. Dans les métadonnées, nous pouvons avoir la date d'émission du certificat, sa validité, l'entreprise qui a demandé le certificat, l'entreprise qui a émit le certificat, et d'autre
+![](https://i.imgur.com/EgZPm8E.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MDgwNDI2MywxMjY2Mzk5NDAsLTE1Mj
-A2NjYzNCwxNzQ0MjQyMjA2LC03MTM4NTM5ODAsLTk0MDE1MzMw
-MywxODYwNDQ1NTY0LDIwNzY5NTYwMzMsLTIxMjA0MzAyNTMsOD
-QwMTg4NTM1LDc4MTgwOTc4NCwtODYyNjc0Nzc4LC0xMzY0OTQ4
-MzMyLC0xNjQyNzA0OCwtMTcyMjU0MjY4MywtMTY3NTY1NzkxMi
-wxNzg1MDI1NzgyLDEwMjc5OTc0OCwtMTEzNDc0MTY2NiwtMjA2
-ODI5MTQ1MV19
+eyJoaXN0b3J5IjpbLTk4Njg2ODEzLDEyNjYzOTk0MCwtMTUyMD
+Y2NjM0LDE3NDQyNDIyMDYsLTcxMzg1Mzk4MCwtOTQwMTUzMzAz
+LDE4NjA0NDU1NjQsMjA3Njk1NjAzMywtMjEyMDQzMDI1Myw4ND
+AxODg1MzUsNzgxODA5Nzg0LC04NjI2NzQ3NzgsLTEzNjQ5NDgz
+MzIsLTE2NDI3MDQ4LC0xNzIyNTQyNjgzLC0xNjc1NjU3OTEyLD
+E3ODUwMjU3ODIsMTAyNzk5NzQ4LC0xMTM0NzQxNjY2LC0yMDY4
+MjkxNDUxXX0=
 -->
