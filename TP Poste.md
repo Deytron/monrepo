@@ -574,13 +574,15 @@ On peut en profiter pour changer quelques autres lignes, comme `StrictModes yes`
 ### SSH Tunnels
 On va se connecter à la machine avec la commande `ssh -D 7777 192.168.56.103`. On va maintenant setup le proxy. Chrome utilise les paramètres proxy de la machine, donc il nous redirige aux options systèmes.
 ### SSH Jump
+![SSH Jump Host](https://www.tecmint.com/wp-content/uploads/2018/11/SSH-Jump-Host.png)
+Voilà le schéma complètement volé. On veut se connecter à la machine Host B, mais on est obligé de passer par la machine Host A. C'est là que le SSH Jump entre en jeu.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzMTczMTkzMSwtMTYzODU2MTcxMiw0OT
-Y3MzY5MzAsMTYwODg0MjI4LC03NTQ5ODQwNTUsNzM2ODkyMDY3
-LC0xMTI2NjgyMzc2LC0xNzgzNjAwNCwxNDE3NTU4MTI5LDM0MD
-Q2NTY5MiwxMjY2Mzk5NDAsLTE1MjA2NjYzNCwxNzQ0MjQyMjA2
-LC03MTM4NTM5ODAsLTk0MDE1MzMwMywxODYwNDQ1NTY0LDIwNz
-Y5NTYwMzMsLTIxMjA0MzAyNTMsODQwMTg4NTM1LDc4MTgwOTc4
-NF19
+eyJoaXN0b3J5IjpbLTU4MDg4NzMxLC0xNjM4NTYxNzEyLDQ5Nj
+czNjkzMCwxNjA4ODQyMjgsLTc1NDk4NDA1NSw3MzY4OTIwNjcs
+LTExMjY2ODIzNzYsLTE3ODM2MDA0LDE0MTc1NTgxMjksMzQwND
+Y1NjkyLDEyNjYzOTk0MCwtMTUyMDY2NjM0LDE3NDQyNDIyMDYs
+LTcxMzg1Mzk4MCwtOTQwMTUzMzAzLDE4NjA0NDU1NjQsMjA3Nj
+k1NjAzMywtMjEyMDQzMDI1Myw4NDAxODg1MzUsNzgxODA5Nzg0
+XX0=
 -->
