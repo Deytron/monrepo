@@ -577,7 +577,7 @@ On va se connecter à la machine avec la commande `ssh -D 7777 192.168.56.103`. 
 Bon, faudra pardonner mon incompétence, mais les paramètres proxy sur mon linux sont horribles, et même en m'acharnant, ça ' pas l'air de marcher. `localhost` me donne ça :
 ![](https://i.imgur.com/2vrYM6t.png)
 
-Et me connecter à l'adresse de ma machine `192.168.56.103` fonctio
+Et me connecter à l'adresse de ma machine `192.168.56.103` fonctionne, mais ça pas l'air d'être l'objectif.
 
 ### SSH Jump
 ![SSH Jump Host](https://www.tecmint.com/wp-content/uploads/2018/11/SSH-Jump-Host.png)
@@ -586,11 +586,11 @@ Voilà le schéma complètement volé. On veut se connecter à la machine Host B
 On peut se connecter via jump avec la commande `ssh -J Machine1 Machine2`. Il faut que le login sans mot de passe soit activé, autrement c'est mort.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Mjk0MDk0NTEsLTEzNDM4NTM1OTUsLT
-E2Mzg1NjE3MTIsNDk2NzM2OTMwLDE2MDg4NDIyOCwtNzU0OTg0
-MDU1LDczNjg5MjA2NywtMTEyNjY4MjM3NiwtMTc4MzYwMDQsMT
-QxNzU1ODEyOSwzNDA0NjU2OTIsMTI2NjM5OTQwLC0xNTIwNjY2
-MzQsMTc0NDI0MjIwNiwtNzEzODUzOTgwLC05NDAxNTMzMDMsMT
-g2MDQ0NTU2NCwyMDc2OTU2MDMzLC0yMTIwNDMwMjUzLDg0MDE4
-ODUzNV19
+eyJoaXN0b3J5IjpbODQ3MjMyNjg0LC0xMzQzODUzNTk1LC0xNj
+M4NTYxNzEyLDQ5NjczNjkzMCwxNjA4ODQyMjgsLTc1NDk4NDA1
+NSw3MzY4OTIwNjcsLTExMjY2ODIzNzYsLTE3ODM2MDA0LDE0MT
+c1NTgxMjksMzQwNDY1NjkyLDEyNjYzOTk0MCwtMTUyMDY2NjM0
+LDE3NDQyNDIyMDYsLTcxMzg1Mzk4MCwtOTQwMTUzMzAzLDE4Nj
+A0NDU1NjQsMjA3Njk1NjAzMywtMjEyMDQzMDI1Myw4NDAxODg1
+MzVdfQ==
 -->
