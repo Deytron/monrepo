@@ -577,12 +577,14 @@ On va se connecter à la machine avec la commande `ssh -D 7777 192.168.56.103`. 
 ![SSH Jump Host](https://www.tecmint.com/wp-content/uploads/2018/11/SSH-Jump-Host.png)
 Voilà le schéma complètement volé. On veut se connecter à la machine Host B, mais on est obligé de passer par la machine Host A. C'est là que le SSH Jump entre en jeu.
 
+On peut se connecter via jump avec la commande `ssh -J Machine1 Machine2`. Il faut que le login sans mot de passe soit activé, autrement c'est mort.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4MDg4NzMxLC0xNjM4NTYxNzEyLDQ5Nj
-czNjkzMCwxNjA4ODQyMjgsLTc1NDk4NDA1NSw3MzY4OTIwNjcs
-LTExMjY2ODIzNzYsLTE3ODM2MDA0LDE0MTc1NTgxMjksMzQwND
-Y1NjkyLDEyNjYzOTk0MCwtMTUyMDY2NjM0LDE3NDQyNDIyMDYs
-LTcxMzg1Mzk4MCwtOTQwMTUzMzAzLDE4NjA0NDU1NjQsMjA3Nj
-k1NjAzMywtMjEyMDQzMDI1Myw4NDAxODg1MzUsNzgxODA5Nzg0
-XX0=
+eyJoaXN0b3J5IjpbLTEzNDM4NTM1OTUsLTE2Mzg1NjE3MTIsND
+k2NzM2OTMwLDE2MDg4NDIyOCwtNzU0OTg0MDU1LDczNjg5MjA2
+NywtMTEyNjY4MjM3NiwtMTc4MzYwMDQsMTQxNzU1ODEyOSwzND
+A0NjU2OTIsMTI2NjM5OTQwLC0xNTIwNjY2MzQsMTc0NDI0MjIw
+NiwtNzEzODUzOTgwLC05NDAxNTMzMDMsMTg2MDQ0NTU2NCwyMD
+c2OTU2MDMzLC0yMTIwNDMwMjUzLDg0MDE4ODUzNSw3ODE4MDk3
+ODRdfQ==
 -->
