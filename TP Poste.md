@@ -588,12 +588,14 @@ On peut se connecter via jump avec la commande `ssh -J Machine1 Machine2`. Il fa
 ### Forwarding de ports at home
 Là on veut avoir accès à la VM avec deux personnes. Tranquille on est là.
 Faut qu'on dise à notre VM d'avoir une carte avec une IP en bridge. Ca s'appelle "Accès par pont" en français. Ici, notre OS hôte va fonctionner sur le même réseau que notre VM. L'intérêt final, c'est qu'après on peut donner une adresse IP fixe à notre interface dans la VM, et n'importe quel machine sur le réseau pourra rejoindre la VM. Plutôt cool.
+
+Je pars de mon PC windows pour me connecter à la VM, l'adresse IP a changé entre temps. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNzYwNzk5OSw4NDcyMzI2ODQsLTEzND
-M4NTM1OTUsLTE2Mzg1NjE3MTIsNDk2NzM2OTMwLDE2MDg4NDIy
-OCwtNzU0OTg0MDU1LDczNjg5MjA2NywtMTEyNjY4MjM3NiwtMT
-c4MzYwMDQsMTQxNzU1ODEyOSwzNDA0NjU2OTIsMTI2NjM5OTQw
-LC0xNTIwNjY2MzQsMTc0NDI0MjIwNiwtNzEzODUzOTgwLC05ND
-AxNTMzMDMsMTg2MDQ0NTU2NCwyMDc2OTU2MDMzLC0yMTIwNDMw
-MjUzXX0=
+eyJoaXN0b3J5IjpbLTg2OTAwODQ4OSwtODA3NjA3OTk5LDg0Nz
+IzMjY4NCwtMTM0Mzg1MzU5NSwtMTYzODU2MTcxMiw0OTY3MzY5
+MzAsMTYwODg0MjI4LC03NTQ5ODQwNTUsNzM2ODkyMDY3LC0xMT
+I2NjgyMzc2LC0xNzgzNjAwNCwxNDE3NTU4MTI5LDM0MDQ2NTY5
+MiwxMjY2Mzk5NDAsLTE1MjA2NjYzNCwxNzQ0MjQyMjA2LC03MT
+M4NTM5ODAsLTk0MDE1MzMwMywxODYwNDQ1NTY0LDIwNzY5NTYw
+MzNdfQ==
 -->
