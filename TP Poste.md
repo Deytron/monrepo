@@ -530,13 +530,13 @@ Maintenant faut qu'on s'ajoute un mot de passe samba pour pouvoir accéder au do
 ![](https://i.imgur.com/M0ApwkC.png)
 
 ## Chiffrement et confiance
-
+On est tous au courant que de nos jours, on utilise la cryptographie par clé publique, très répandu partout dans le monde. Ce système utilise une vérification avec une clé publique et une clé privée. Une fois la clé publique reçue, l'information ne peut être déchiffrée qu'avec la clé privée
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjAwOTAwMzU0LDEyNjYzOTk0MCwtMTUyMD
-Y2NjM0LDE3NDQyNDIyMDYsLTcxMzg1Mzk4MCwtOTQwMTUzMzAz
-LDE4NjA0NDU1NjQsMjA3Njk1NjAzMywtMjEyMDQzMDI1Myw4ND
-AxODg1MzUsNzgxODA5Nzg0LC04NjI2NzQ3NzgsLTEzNjQ5NDgz
-MzIsLTE2NDI3MDQ4LC0xNzIyNTQyNjgzLC0xNjc1NjU3OTEyLD
-E3ODUwMjU3ODIsMTAyNzk5NzQ4LC0xMTM0NzQxNjY2LC0yMDY4
-MjkxNDUxXX0=
+eyJoaXN0b3J5IjpbLTEwMjgzNzE1MCwxMjY2Mzk5NDAsLTE1Mj
+A2NjYzNCwxNzQ0MjQyMjA2LC03MTM4NTM5ODAsLTk0MDE1MzMw
+MywxODYwNDQ1NTY0LDIwNzY5NTYwMzMsLTIxMjA0MzAyNTMsOD
+QwMTg4NTM1LDc4MTgwOTc4NCwtODYyNjc0Nzc4LC0xMzY0OTQ4
+MzMyLC0xNjQyNzA0OCwtMTcyMjU0MjY4MywtMTY3NTY1NzkxMi
+wxNzg1MDI1NzgyLDEwMjc5OTc0OCwtMTEzNDc0MTY2NiwtMjA2
+ODI5MTQ1MV19
 -->
