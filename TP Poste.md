@@ -561,9 +561,9 @@ Sur la machine distante, on édite en root le fichier `/etc/ssh/sshd_config` et 
 ssh root@192.168.56.103
 root@192.168.56.103: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).
 ```
-Boum, j'peux pas me connecter en root.
+Boum, j'peux pas me connecter en root ou en tout autre utilisateur.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzMzA0Nzk5Niw3MzY4OTIwNjcsLTExMj
+eyJoaXN0b3J5IjpbLTc1NDk4NDA1NSw3MzY4OTIwNjcsLTExMj
 Y2ODIzNzYsLTE3ODM2MDA0LDE0MTc1NTgxMjksMzQwNDY1Njky
 LDEyNjYzOTk0MCwtMTUyMDY2NjM0LDE3NDQyNDIyMDYsLTcxMz
 g1Mzk4MCwtOTQwMTUzMzAzLDE4NjA0NDU1NjQsMjA3Njk1NjAz
