@@ -536,12 +536,14 @@ Un certificat contient impérativement une clé publique. Dans les métadonnées
 ![](https://i.imgur.com/EgZPm8E.png)
 ### Chiffrement de mails
 N'utilisant absolument aucun client mail, j'ai décidé d'utiliser celui venant avec KDE, et de prendre le plugin de chiffrement de mail qui vient avec, et voilà.
+Alors il se trouve que Kmail, et probablement d'autres clients de mail, propose de chiffre les mails avec une clé dès la phase de setup. Très pratique, mais pas ultra intéressant.
+![](https://i.imgur.com/zSzTwLl.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODM2MDA0LDE0MTc1NTgxMjksMzQwND
-Y1NjkyLDEyNjYzOTk0MCwtMTUyMDY2NjM0LDE3NDQyNDIyMDYs
-LTcxMzg1Mzk4MCwtOTQwMTUzMzAzLDE4NjA0NDU1NjQsMjA3Nj
-k1NjAzMywtMjEyMDQzMDI1Myw4NDAxODg1MzUsNzgxODA5Nzg0
-LC04NjI2NzQ3NzgsLTEzNjQ5NDgzMzIsLTE2NDI3MDQ4LC0xNz
-IyNTQyNjgzLC0xNjc1NjU3OTEyLDE3ODUwMjU3ODIsMTAyNzk5
-NzQ4XX0=
+eyJoaXN0b3J5IjpbLTExMjY2ODIzNzYsLTE3ODM2MDA0LDE0MT
+c1NTgxMjksMzQwNDY1NjkyLDEyNjYzOTk0MCwtMTUyMDY2NjM0
+LDE3NDQyNDIyMDYsLTcxMzg1Mzk4MCwtOTQwMTUzMzAzLDE4Nj
+A0NDU1NjQsMjA3Njk1NjAzMywtMjEyMDQzMDI1Myw4NDAxODg1
+MzUsNzgxODA5Nzg0LC04NjI2NzQ3NzgsLTEzNjQ5NDgzMzIsLT
+E2NDI3MDQ4LC0xNzIyNTQyNjgzLC0xNjc1NjU3OTEyLDE3ODUw
+MjU3ODJdfQ==
 -->
