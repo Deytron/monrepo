@@ -570,8 +570,11 @@ root@192.168.56.103: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).
 Boum, j'peux pas me connecter en root ou en tout autre utilisateur.
 
 On peut en profiter pour changer quelques autres lignes, comme `StrictModes yes`, `UsePrivilegeSeparation sandbox`, `PermitEmptyPasswords no`, et enfin, on devrait suivre le principe du moindre privilège en  créant des utilisateurs ayant plus ou moins de privilèges et commandes disponibles. J'ai la flemme de le faire là, mais je devrais.
+
+### SSH Tunnels
+On va se connecter à la machine avec la commande `ssh -D 7777 192.168.56.103`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNjY0NjYyNywxNjA4ODQyMjgsLTc1ND
+eyJoaXN0b3J5IjpbLTcxOTU2MjI4OSwxNjA4ODQyMjgsLTc1ND
 k4NDA1NSw3MzY4OTIwNjcsLTExMjY2ODIzNzYsLTE3ODM2MDA0
 LDE0MTc1NTgxMjksMzQwNDY1NjkyLDEyNjYzOTk0MCwtMTUyMD
 Y2NjM0LDE3NDQyNDIyMDYsLTcxMzg1Mzk4MCwtOTQwMTUzMzAz
