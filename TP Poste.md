@@ -594,12 +594,14 @@ Je pars de mon PC windows pour me connecter à la VM, l'adresse IP a changé ent
 Bingo.
 Pour le port forwarding, on peut remercier Bouygues Telecom de nous mettre en Balanciaga avec une interface des plus Gucci. Nan sans dec y a zéro prise de têt, tout marche instantanément.
 On va sur `mabbox.bytel.fr`, de là on clique sur "Services de la Bbox" et dans redirection de ports. Dans la NAT, on clique sur "Ajouter une règle", et on remplit tout. 
+![](https://i.imgur.com/0BkVFVw.png)
+Voilà, fini.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2MTA3MzI5MSwtODA3NjA3OTk5LDg0Nz
-IzMjY4NCwtMTM0Mzg1MzU5NSwtMTYzODU2MTcxMiw0OTY3MzY5
-MzAsMTYwODg0MjI4LC03NTQ5ODQwNTUsNzM2ODkyMDY3LC0xMT
-I2NjgyMzc2LC0xNzgzNjAwNCwxNDE3NTU4MTI5LDM0MDQ2NTY5
-MiwxMjY2Mzk5NDAsLTE1MjA2NjYzNCwxNzQ0MjQyMjA2LC03MT
-M4NTM5ODAsLTk0MDE1MzMwMywxODYwNDQ1NTY0LDIwNzY5NTYw
-MzNdfQ==
+eyJoaXN0b3J5IjpbMTcwNTI4NDE2LC04MDc2MDc5OTksODQ3Mj
+MyNjg0LC0xMzQzODUzNTk1LC0xNjM4NTYxNzEyLDQ5NjczNjkz
+MCwxNjA4ODQyMjgsLTc1NDk4NDA1NSw3MzY4OTIwNjcsLTExMj
+Y2ODIzNzYsLTE3ODM2MDA0LDE0MTc1NTgxMjksMzQwNDY1Njky
+LDEyNjYzOTk0MCwtMTUyMDY2NjM0LDE3NDQyNDIyMDYsLTcxMz
+g1Mzk4MCwtOTQwMTUzMzAzLDE4NjA0NDU1NjQsMjA3Njk1NjAz
+M119
 -->
