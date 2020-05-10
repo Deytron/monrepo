@@ -597,13 +597,19 @@ On va sur `mabbox.bytel.fr`, de là on clique sur "Services de la Bbox" et dans 
 ![](https://i.imgur.com/0BkVFVw.png)
 Voilà, fini.
 
-Maintenant on va essayer de s'y connecter avec mon adresse publique. En faisant `ssh -D 7777 lemalgache
+Maintenant on va essayer de s'y connecter avec mon adresse publique. En faisant `ssh -D 7777 lemalgache@31.36.44.126`, on obtient ça :
+```
+ssh -D 7777 lemalgache@31.36.44.126 
+ssh: connect to host 31.36.44.126 port 22: Connection refused
+```
+bon
+Tous mes ports sont ouverts et le firewall est même désactivé.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NTAxODUzNiwtMTk4Nzg3MDM3MiwtOD
-A3NjA3OTk5LDg0NzIzMjY4NCwtMTM0Mzg1MzU5NSwtMTYzODU2
-MTcxMiw0OTY3MzY5MzAsMTYwODg0MjI4LC03NTQ5ODQwNTUsNz
-M2ODkyMDY3LC0xMTI2NjgyMzc2LC0xNzgzNjAwNCwxNDE3NTU4
-MTI5LDM0MDQ2NTY5MiwxMjY2Mzk5NDAsLTE1MjA2NjYzNCwxNz
-Q0MjQyMjA2LC03MTM4NTM5ODAsLTk0MDE1MzMwMywxODYwNDQ1
-NTY0XX0=
+eyJoaXN0b3J5IjpbODIwMzUwODMwLC0xOTg3ODcwMzcyLC04MD
+c2MDc5OTksODQ3MjMyNjg0LC0xMzQzODUzNTk1LC0xNjM4NTYx
+NzEyLDQ5NjczNjkzMCwxNjA4ODQyMjgsLTc1NDk4NDA1NSw3Mz
+Y4OTIwNjcsLTExMjY2ODIzNzYsLTE3ODM2MDA0LDE0MTc1NTgx
+MjksMzQwNDY1NjkyLDEyNjYzOTk0MCwtMTUyMDY2NjM0LDE3ND
+QyNDIyMDYsLTcxMzg1Mzk4MCwtOTQwMTUzMzAzLDE4NjA0NDU1
+NjRdfQ==
 -->
