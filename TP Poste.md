@@ -597,9 +597,9 @@ On va sur `mabbox.bytel.fr`, de là on clique sur "Services de la Bbox" et dans 
 ![](https://i.imgur.com/0BkVFVw.png)
 Voilà, fini.
 
-Maintenant on va essayer de s'y connecter avec mon adresse publique. En faisant 
+Maintenant on va essayer de s'y connecter avec mon adresse publique. En faisant `ssh -D 7777 lemalgache
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMTA5ODEzNCwtMTk4Nzg3MDM3MiwtOD
+eyJoaXN0b3J5IjpbMTM4NTAxODUzNiwtMTk4Nzg3MDM3MiwtOD
 A3NjA3OTk5LDg0NzIzMjY4NCwtMTM0Mzg1MzU5NSwtMTYzODU2
 MTcxMiw0OTY3MzY5MzAsMTYwODg0MjI4LC03NTQ5ODQwNTUsNz
 M2ODkyMDY3LC0xMTI2NjgyMzc2LC0xNzgzNjAwNCwxNDE3NTU4
