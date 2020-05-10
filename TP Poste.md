@@ -597,13 +597,13 @@ On va sur `mabbox.bytel.fr`, de là on clique sur "Services de la Bbox" et dans 
 ![](https://i.imgur.com/0BkVFVw.png)
 Voilà, fini.
 
-Comme j'ai la flemme de demander à un de mes nombreux potes de se connecter à mon IP, je vais utiliser la 4G de mon portable pour simuler une connexion distante.
+Maintenant on va essayer de s'y connecter avec mon adresse publique. En faisant 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODc4NzAzNzIsLTgwNzYwNzk5OSw4ND
-cyMzI2ODQsLTEzNDM4NTM1OTUsLTE2Mzg1NjE3MTIsNDk2NzM2
-OTMwLDE2MDg4NDIyOCwtNzU0OTg0MDU1LDczNjg5MjA2NywtMT
-EyNjY4MjM3NiwtMTc4MzYwMDQsMTQxNzU1ODEyOSwzNDA0NjU2
-OTIsMTI2NjM5OTQwLC0xNTIwNjY2MzQsMTc0NDI0MjIwNiwtNz
-EzODUzOTgwLC05NDAxNTMzMDMsMTg2MDQ0NTU2NCwyMDc2OTU2
-MDMzXX0=
+eyJoaXN0b3J5IjpbMTkzMTA5ODEzNCwtMTk4Nzg3MDM3MiwtOD
+A3NjA3OTk5LDg0NzIzMjY4NCwtMTM0Mzg1MzU5NSwtMTYzODU2
+MTcxMiw0OTY3MzY5MzAsMTYwODg0MjI4LC03NTQ5ODQwNTUsNz
+M2ODkyMDY3LC0xMTI2NjgyMzc2LC0xNzgzNjAwNCwxNDE3NTU4
+MTI5LDM0MDQ2NTY5MiwxMjY2Mzk5NDAsLTE1MjA2NjYzNCwxNz
+Q0MjQyMjA2LC03MTM4NTM5ODAsLTk0MDE1MzMwMywxODYwNDQ1
+NTY0XX0=
 -->
