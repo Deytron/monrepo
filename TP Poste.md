@@ -548,7 +548,7 @@ Aussi, le TLS fait usage des certificats. C'est le petit cadenas vert à gauche 
 
 On va faire un test et visionner un certificat :
 ![](https://i.imgur.com/EgZPm8E.png)
-
+On a comme informations le type de certificat, le nom de l'entreprise, la date d'émission du certificat, sa durée de validité, et, très important, son hash, qu'on va pouvoir utiliser pour valider le certificat.
 
 ## SSH
 ### Serveur
@@ -616,11 +616,11 @@ ssh: connect to host 31.36.44.126 port 22: Connection refused
 bon
 Tous mes ports sont ouverts et le firewall est même désactivé.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MTU2OTg2MSw4MjAzNTA4MzAsLTE5OD
-c4NzAzNzIsLTgwNzYwNzk5OSw4NDcyMzI2ODQsLTEzNDM4NTM1
-OTUsLTE2Mzg1NjE3MTIsNDk2NzM2OTMwLDE2MDg4NDIyOCwtNz
-U0OTg0MDU1LDczNjg5MjA2NywtMTEyNjY4MjM3NiwtMTc4MzYw
-MDQsMTQxNzU1ODEyOSwzNDA0NjU2OTIsMTI2NjM5OTQwLC0xNT
-IwNjY2MzQsMTc0NDI0MjIwNiwtNzEzODUzOTgwLC05NDAxNTMz
-MDNdfQ==
+eyJoaXN0b3J5IjpbLTE0MzcxNjEzLDgyMDM1MDgzMCwtMTk4Nz
+g3MDM3MiwtODA3NjA3OTk5LDg0NzIzMjY4NCwtMTM0Mzg1MzU5
+NSwtMTYzODU2MTcxMiw0OTY3MzY5MzAsMTYwODg0MjI4LC03NT
+Q5ODQwNTUsNzM2ODkyMDY3LC0xMTI2NjgyMzc2LC0xNzgzNjAw
+NCwxNDE3NTU4MTI5LDM0MDQ2NTY5MiwxMjY2Mzk5NDAsLTE1Mj
+A2NjYzNCwxNzQ0MjQyMjA2LC03MTM4NTM5ODAsLTk0MDE1MzMw
+M119
 -->
