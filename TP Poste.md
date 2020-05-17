@@ -553,6 +553,10 @@ On va faire un test et visionner un certificat :
 ![](https://i.imgur.com/EgZPm8E.png)
 On a comme informations le type de certificat, le nom de l'entreprise, la date d'émission du certificat, sa durée de validité, et, très important, son hash, qu'on va pouvoir utiliser pour valider le certificat.
 La manière la plus simple de valider un certificat elle est toute bête, on a juste à taper sur google "valider certificat https" et des sites se chargent de le faire à notre place. Cool, mais nul, nous on va se prendre un peu plus la tête.
+Vive Linux, on a direct tous les outils qu'il nous faut.
+
+ On va d'abord se créer un petit dossier pour télécharger et y mettre notre certificat venant de chez Microsoft.
+ ``mkdir c
 
 ## SSH
 ### Serveur
@@ -620,11 +624,11 @@ ssh: connect to host 31.36.44.126 port 22: Connection refused
 bon
 Tous mes ports sont ouverts et le firewall est même désactivé.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyMjg3NjIyMyw4MjAzNTA4MzAsLTE5OD
-c4NzAzNzIsLTgwNzYwNzk5OSw4NDcyMzI2ODQsLTEzNDM4NTM1
-OTUsLTE2Mzg1NjE3MTIsNDk2NzM2OTMwLDE2MDg4NDIyOCwtNz
-U0OTg0MDU1LDczNjg5MjA2NywtMTEyNjY4MjM3NiwtMTc4MzYw
-MDQsMTQxNzU1ODEyOSwzNDA0NjU2OTIsMTI2NjM5OTQwLC0xNT
-IwNjY2MzQsMTc0NDI0MjIwNiwtNzEzODUzOTgwLC05NDAxNTMz
-MDNdfQ==
+eyJoaXN0b3J5IjpbLTE4MjU3NDU4NzAsODIwMzUwODMwLC0xOT
+g3ODcwMzcyLC04MDc2MDc5OTksODQ3MjMyNjg0LC0xMzQzODUz
+NTk1LC0xNjM4NTYxNzEyLDQ5NjczNjkzMCwxNjA4ODQyMjgsLT
+c1NDk4NDA1NSw3MzY4OTIwNjcsLTExMjY2ODIzNzYsLTE3ODM2
+MDA0LDE0MTc1NTgxMjksMzQwNDY1NjkyLDEyNjYzOTk0MCwtMT
+UyMDY2NjM0LDE3NDQyNDIyMDYsLTcxMzg1Mzk4MCwtOTQwMTUz
+MzAzXX0=
 -->
