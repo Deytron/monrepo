@@ -558,6 +558,9 @@ Vive Linux, on a direct tous les outils qu'il nous faut.
  On va d'abord se créer un petit dossier pour télécharger et y mettre notre certificat venant de chez Microsoft.
  ``mkdir certificatavalider``
 ``cd certificatavalider``
+On va utiliser notre petit utilitaire OpenSSL pour télécharger le certificat du site :
+```
+
  
 
 ## SSH
@@ -626,7 +629,7 @@ ssh: connect to host 31.36.44.126 port 22: Connection refused
 bon
 Tous mes ports sont ouverts et le firewall est même désactivé.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MjQ1OTc0LDgyMDM1MDgzMCwtMTk4Nz
+eyJoaXN0b3J5IjpbMTc4OTcyOTI0LDgyMDM1MDgzMCwtMTk4Nz
 g3MDM3MiwtODA3NjA3OTk5LDg0NzIzMjY4NCwtMTM0Mzg1MzU5
 NSwtMTYzODU2MTcxMiw0OTY3MzY5MzAsMTYwODg0MjI4LC03NT
 Q5ODQwNTUsNzM2ODkyMDY3LC0xMTI2NjgyMzc2LC0xNzgzNjAw
