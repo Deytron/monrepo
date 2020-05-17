@@ -560,7 +560,10 @@ Vive Linux, on a direct tous les outils qu'il nous faut.
 ``cd certificatavalider``
 On va utiliser notre petit utilitaire OpenSSL pour télécharger le certificat du site :
 ```
+openssl s_client -connect microsoft.com:443 >> /home/lemalgache/certificatàvalider/microsoft.cert
+```
 
+Une fois le certificat en poche, il nous faut le certificat de l'émetteur, soit dans notre cas, 
  
 
 ## SSH
@@ -629,11 +632,11 @@ ssh: connect to host 31.36.44.126 port 22: Connection refused
 bon
 Tous mes ports sont ouverts et le firewall est même désactivé.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4OTcyOTI0LDgyMDM1MDgzMCwtMTk4Nz
-g3MDM3MiwtODA3NjA3OTk5LDg0NzIzMjY4NCwtMTM0Mzg1MzU5
-NSwtMTYzODU2MTcxMiw0OTY3MzY5MzAsMTYwODg0MjI4LC03NT
-Q5ODQwNTUsNzM2ODkyMDY3LC0xMTI2NjgyMzc2LC0xNzgzNjAw
-NCwxNDE3NTU4MTI5LDM0MDQ2NTY5MiwxMjY2Mzk5NDAsLTE1Mj
-A2NjYzNCwxNzQ0MjQyMjA2LC03MTM4NTM5ODAsLTk0MDE1MzMw
-M119
+eyJoaXN0b3J5IjpbMzMwMzYwOTIzLDE3ODk3MjkyNCw4MjAzNT
+A4MzAsLTE5ODc4NzAzNzIsLTgwNzYwNzk5OSw4NDcyMzI2ODQs
+LTEzNDM4NTM1OTUsLTE2Mzg1NjE3MTIsNDk2NzM2OTMwLDE2MD
+g4NDIyOCwtNzU0OTg0MDU1LDczNjg5MjA2NywtMTEyNjY4MjM3
+NiwtMTc4MzYwMDQsMTQxNzU1ODEyOSwzNDA0NjU2OTIsMTI2Nj
+M5OTQwLC0xNTIwNjY2MzQsMTc0NDI0MjIwNiwtNzEzODUzOTgw
+XX0=
 -->
