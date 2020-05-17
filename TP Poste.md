@@ -565,13 +565,17 @@ openssl s_client -connect microsoft.com:443 >> /home/lemalgache/certificatàvali
 
 Une fois le certificat en poche, il nous faut le certificat root de l'émetteur, soit dans notre cas, DigiCert. Sur leur site, le root certificate est disponible au téléchargement direct. Microsoft utilise le "Baltimore CyberTrust Root".
 
-On va pouvoir tester les certificats. A titre d'exemple, j'ai retiré du dossier le certificat microsoft et laissé uniquement le certificat root. Si j'utilise la commande
+On va pouvoir tester les certificats. A titre d'exemple, j'ai retiré du dossier le certificat Microsoft et laissé uniquement le certificat root. Si j'utilise la commande
 ```
 openssl s_client -CApath ~/certificatàvalider/ -connect microsoft.com:443
 ```
 on a un joli code d'erreur 20 :
-
- 
+```
+Verify return code: 20 (unable to get local issuer certificate)
+```
+ par contre si je remets le certificat Microsoft :
+ ```
+ Verify return code: 0 (ok)
 
 ## SSH
 ### Serveur
@@ -639,7 +643,7 @@ ssh: connect to host 31.36.44.126 port 22: Connection refused
 bon
 Tous mes ports sont ouverts et le firewall est même désactivé.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NDgyMzI3NiwxNzYzODc4MjI3LDE3OD
+eyJoaXN0b3J5IjpbMjA3OTY2ODM5OSwxNzYzODc4MjI3LDE3OD
 k3MjkyNCw4MjAzNTA4MzAsLTE5ODc4NzAzNzIsLTgwNzYwNzk5
 OSw4NDcyMzI2ODQsLTEzNDM4NTM1OTUsLTE2Mzg1NjE3MTIsND
 k2NzM2OTMwLDE2MDg4NDIyOCwtNzU0OTg0MDU1LDczNjg5MjA2
