@@ -556,7 +556,9 @@ La manière la plus simple de valider un certificat elle est toute bête, on a j
 Vive Linux, on a direct tous les outils qu'il nous faut.
 
  On va d'abord se créer un petit dossier pour télécharger et y mettre notre certificat venant de chez Microsoft.
- ``mkdir c
+ ``mkdir certificatavalider``
+``cd certificatavalider``
+ 
 
 ## SSH
 ### Serveur
@@ -624,11 +626,11 @@ ssh: connect to host 31.36.44.126 port 22: Connection refused
 bon
 Tous mes ports sont ouverts et le firewall est même désactivé.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjU3NDU4NzAsODIwMzUwODMwLC0xOT
-g3ODcwMzcyLC04MDc2MDc5OTksODQ3MjMyNjg0LC0xMzQzODUz
-NTk1LC0xNjM4NTYxNzEyLDQ5NjczNjkzMCwxNjA4ODQyMjgsLT
-c1NDk4NDA1NSw3MzY4OTIwNjcsLTExMjY2ODIzNzYsLTE3ODM2
-MDA0LDE0MTc1NTgxMjksMzQwNDY1NjkyLDEyNjYzOTk0MCwtMT
-UyMDY2NjM0LDE3NDQyNDIyMDYsLTcxMzg1Mzk4MCwtOTQwMTUz
-MzAzXX0=
+eyJoaXN0b3J5IjpbLTg2MjQ1OTc0LDgyMDM1MDgzMCwtMTk4Nz
+g3MDM3MiwtODA3NjA3OTk5LDg0NzIzMjY4NCwtMTM0Mzg1MzU5
+NSwtMTYzODU2MTcxMiw0OTY3MzY5MzAsMTYwODg0MjI4LC03NT
+Q5ODQwNTUsNzM2ODkyMDY3LC0xMTI2NjgyMzc2LC0xNzgzNjAw
+NCwxNDE3NTU4MTI5LDM0MDQ2NTY5MiwxMjY2Mzk5NDAsLTE1Mj
+A2NjYzNCwxNzQ0MjQyMjA2LC03MTM4NTM5ODAsLTk0MDE1MzMw
+M119
 -->
