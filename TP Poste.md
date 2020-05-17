@@ -533,7 +533,7 @@ Maintenant faut qu'on s'ajoute un mot de passe samba pour pouvoir accéder au do
 On est tous au courant que de nos jours, on utilise la cryptographie par clé publique, très répandu partout dans le monde. Ce système utilise une vérification avec une clé publique et une clé privée. Une fois la clé publique reçue, l'information ne peut être déchiffrée qu'avec la clé privée.
 De ce fait, un certificat est un moyen utilisé pour **ditribuer** une clé publique, et les informations qui vont avec, par exemple qui a fait cette clé. Ces certificats peuvent être signés par une autorité certifié, qui a pour rôle de confirmer la véracité des informations contenues dans le certificat. 
 Un certificat contient impérativement une clé publique. Dans les métadonnées, nous pouvons avoir la date d'émission du certificat, sa validité, l'entreprise qui a demandé le certificat, l'entreprise qui a émit le certificat, et d'autres champs qui peuvent être remplis ou non.
-![](https://i.imgur.com/EgZPm8E.png)
+
 ### Chiffrement de mails
 N'utilisant absolument aucun client mail, j'ai décidé d'utiliser celui venant avec KDE, et de prendre le plugin de chiffrement de mail qui vient avec, et voilà.
 Alors il se trouve que Kmail, et probablement d'autres clients de mail, propose de chiffre les mails avec une clé dès la phase de setup. Très pratique, mais pas ultra intéressant.
@@ -545,6 +545,11 @@ Le protocole TLS, ou "Transport Layer Security", est un protocole fait pour renf
 
 HTTPS est bien plus avantageux à utiliser que le simple protocole HTTP : il chiffre TOUTES les données transitant entre le client et le serveur. Ce que ça veut dire, c'est qu'une attaque man-in-the-middle avec un gars qui aurait une vue sur toutes les données qui passent deviendrait inefficace, car il ne pourrait pas utiliser les données qu'il aurait récupéré, tout est encrypté.
 Aussi, le TLS fait usage des certificats. C'est le petit cadenas vert à gauche de la barre de liens. Cela renforce ainsi la sécurité via l'usage de la CA.
+
+On va faire un test et visionner un certificat :
+![](https://i.imgur.com/EgZPm8E.png)
+
+
 ## SSH
 ### Serveur
 Bon, le SSH c'est pas nouveau, on s'en sert depuis le début de l'année pour nos VM et pour contrôler d'autres machines à distance, je vais pas refaire l'explication de ce que c'est, en tout cas c'est très utile.
@@ -611,7 +616,7 @@ ssh: connect to host 31.36.44.126 port 22: Connection refused
 bon
 Tous mes ports sont ouverts et le firewall est même désactivé.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzOTUyNDE5NCw4MjAzNTA4MzAsLTE5OD
+eyJoaXN0b3J5IjpbMTM5MTU2OTg2MSw4MjAzNTA4MzAsLTE5OD
 c4NzAzNzIsLTgwNzYwNzk5OSw4NDcyMzI2ODQsLTEzNDM4NTM1
 OTUsLTE2Mzg1NjE3MTIsNDk2NzM2OTMwLDE2MDg4NDIyOCwtNz
 U0OTg0MDU1LDczNjg5MjA2NywtMTEyNjY4MjM3NiwtMTc4MzYw
