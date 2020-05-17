@@ -544,6 +544,7 @@ Alors il se trouve que Kmail, et probablement d'autres clients de mail, propose 
 Le protocole TLS, ou "Transport Layer Security", est un protocole fait pour renforcer la sécurité des données passant sur internet. TL est utilisé principalement pour chiffrer les communications entre les applications web et serveurs, par exemple avec un navigateur web qui charge une page internet. C'est ce qu'utilise HTTPS : on nomme ainsi l'implémentation du protocole TLS par dessus le protocole HTTP, donc HTTP + TLS = HTTPS. Logique.
 Une jolie image qui vient de Cloudflare nous permet de voir les étapes de fonctionnement du TLS :
 ![](https://www.cloudflare.com/resources/images/slt3lc6tev37/3wZIhjRIjfVSmCbVqkBKzb/4a7aa34324108c725dc25fc9e7c4ea4a/tls-ssl-handshake.png)
+On remarque que le TLS utilise un handshake comme le ferait un DHCP.
 
 HTTPS est bien plus avantageux à utiliser que le simple protocole HTTP : il chiffre TOUTES les données transitant entre le client et le serveur. Ce que ça veut dire, c'est qu'une attaque man-in-the-middle avec un gars qui aurait une vue sur toutes les données qui passent deviendrait inefficace, car il ne pourrait pas utiliser les données qu'il aurait récupéré, tout est encrypté.
 Aussi, le TLS fait usage des certificats. C'est le petit cadenas vert à gauche de la barre de liens. Cela renforce ainsi la sécurité via l'usage de la CA.
@@ -619,7 +620,7 @@ ssh: connect to host 31.36.44.126 port 22: Connection refused
 bon
 Tous mes ports sont ouverts et le firewall est même désactivé.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1NDg0NDA3NSw4MjAzNTA4MzAsLTE5OD
+eyJoaXN0b3J5IjpbMTgyMjg3NjIyMyw4MjAzNTA4MzAsLTE5OD
 c4NzAzNzIsLTgwNzYwNzk5OSw4NDcyMzI2ODQsLTEzNDM4NTM1
 OTUsLTE2Mzg1NjE3MTIsNDk2NzM2OTMwLDE2MDg4NDIyOCwtNz
 U0OTg0MDU1LDczNjg5MjA2NywtMTEyNjY4MjM3NiwtMTc4MzYw
