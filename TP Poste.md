@@ -563,7 +563,7 @@ On va utiliser notre petit utilitaire OpenSSL pour télécharger le certificat d
 openssl s_client -connect microsoft.com:443 >> /home/lemalgache/certificatàvalider/microsoft.cert
 ```
 
-Une fois le certificat en poche, il nous faut le certificat root de l'émetteur, soit dans notre cas, DigiCert.
+Une fois le certificat en poche, il nous faut le certificat root de l'émetteur, soit dans notre cas, DigiCert. Sur leur site, le root certificate est disponible au téléchargement direct. 
  
 
 ## SSH
@@ -632,11 +632,11 @@ ssh: connect to host 31.36.44.126 port 22: Connection refused
 bon
 Tous mes ports sont ouverts et le firewall est même désactivé.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzU4MDI5OTYsMTc4OTcyOTI0LDgyMD
-M1MDgzMCwtMTk4Nzg3MDM3MiwtODA3NjA3OTk5LDg0NzIzMjY4
-NCwtMTM0Mzg1MzU5NSwtMTYzODU2MTcxMiw0OTY3MzY5MzAsMT
-YwODg0MjI4LC03NTQ5ODQwNTUsNzM2ODkyMDY3LC0xMTI2Njgy
-Mzc2LC0xNzgzNjAwNCwxNDE3NTU4MTI5LDM0MDQ2NTY5MiwxMj
-Y2Mzk5NDAsLTE1MjA2NjYzNCwxNzQ0MjQyMjA2LC03MTM4NTM5
-ODBdfQ==
+eyJoaXN0b3J5IjpbMTk0NDYxMjUxMSwxNzg5NzI5MjQsODIwMz
+UwODMwLC0xOTg3ODcwMzcyLC04MDc2MDc5OTksODQ3MjMyNjg0
+LC0xMzQzODUzNTk1LC0xNjM4NTYxNzEyLDQ5NjczNjkzMCwxNj
+A4ODQyMjgsLTc1NDk4NDA1NSw3MzY4OTIwNjcsLTExMjY2ODIz
+NzYsLTE3ODM2MDA0LDE0MTc1NTgxMjksMzQwNDY1NjkyLDEyNj
+YzOTk0MCwtMTUyMDY2NjM0LDE3NDQyNDIyMDYsLTcxMzg1Mzk4
+MF19
 -->
