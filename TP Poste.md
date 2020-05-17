@@ -539,6 +539,9 @@ N'utilisant absolument aucun client mail, j'ai décidé d'utiliser celui venant 
 Alors il se trouve que Kmail, et probablement d'autres clients de mail, propose de chiffre les mails avec une clé dès la phase de setup. Très pratique, mais pas ultra intéressant.
 ![](https://i.imgur.com/zSzTwLl.png)
 
+
+### TLS
+Le protocole TLS, ou "Transport Layer Security", est un protocole 
 ## SSH
 ### Serveur
 Bon, le SSH c'est pas nouveau, on s'en sert depuis le début de l'année pour nos VM et pour contrôler d'autres machines à distance, je vais pas refaire l'explication de ce que c'est, en tout cas c'est très utile.
@@ -605,11 +608,11 @@ ssh: connect to host 31.36.44.126 port 22: Connection refused
 bon
 Tous mes ports sont ouverts et le firewall est même désactivé.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODIwMzUwODMwLC0xOTg3ODcwMzcyLC04MD
-c2MDc5OTksODQ3MjMyNjg0LC0xMzQzODUzNTk1LC0xNjM4NTYx
-NzEyLDQ5NjczNjkzMCwxNjA4ODQyMjgsLTc1NDk4NDA1NSw3Mz
-Y4OTIwNjcsLTExMjY2ODIzNzYsLTE3ODM2MDA0LDE0MTc1NTgx
-MjksMzQwNDY1NjkyLDEyNjYzOTk0MCwtMTUyMDY2NjM0LDE3ND
-QyNDIyMDYsLTcxMzg1Mzk4MCwtOTQwMTUzMzAzLDE4NjA0NDU1
-NjRdfQ==
+eyJoaXN0b3J5IjpbMTIxMTk4OTczNSw4MjAzNTA4MzAsLTE5OD
+c4NzAzNzIsLTgwNzYwNzk5OSw4NDcyMzI2ODQsLTEzNDM4NTM1
+OTUsLTE2Mzg1NjE3MTIsNDk2NzM2OTMwLDE2MDg4NDIyOCwtNz
+U0OTg0MDU1LDczNjg5MjA2NywtMTEyNjY4MjM3NiwtMTc4MzYw
+MDQsMTQxNzU1ODEyOSwzNDA0NjU2OTIsMTI2NjM5OTQwLC0xNT
+IwNjY2MzQsMTc0NDI0MjIwNiwtNzEzODUzOTgwLC05NDAxNTMz
+MDNdfQ==
 -->
