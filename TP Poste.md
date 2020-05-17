@@ -544,7 +544,7 @@ Alors il se trouve que Kmail, et probablement d'autres clients de mail, propose 
 Le protocole TLS, ou "Transport Layer Security", est un protocole fait pour renforcer la sécurité des données passant sur internet. TL est utilisé principalement pour chiffrer les communications entre les applications web et serveurs, par exemple avec un navigateur web qui charge une page internet. C'est ce qu'utilise HTTPS : on nomme ainsi l'implémentation du protocole TLS par dessus le protocole HTTP, donc HTTP + TLS = HTTPS. Logique.
 
 HTTPS est bien plus avantageux à utiliser que le simple protocole HTTP : il chiffre TOUTES les données transitant entre le client et le serveur. Ce que ça veut dire, c'est qu'une attaque man-in-the-middle avec un gars qui aurait une vue sur toutes les données qui passent deviendrait inefficace, car il ne pourrait pas utiliser les données qu'il aurait récupéré, tout est encrypté.
-Aussi, le TLS fait usage des certificats, renforçant ainsi la sécurité via l'usage de la CA.
+Aussi, le TLS fait usage des certificats. C'est le petit cadenas vert à gauche de la barre de liens. Cela renforce ainsi la sécurité via l'usage de la CA.
 ## SSH
 ### Serveur
 Bon, le SSH c'est pas nouveau, on s'en sert depuis le début de l'année pour nos VM et pour contrôler d'autres machines à distance, je vais pas refaire l'explication de ce que c'est, en tout cas c'est très utile.
@@ -611,11 +611,11 @@ ssh: connect to host 31.36.44.126 port 22: Connection refused
 bon
 Tous mes ports sont ouverts et le firewall est même désactivé.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM5OTQ1MTU3LDgyMDM1MDgzMCwtMTk4Nz
-g3MDM3MiwtODA3NjA3OTk5LDg0NzIzMjY4NCwtMTM0Mzg1MzU5
-NSwtMTYzODU2MTcxMiw0OTY3MzY5MzAsMTYwODg0MjI4LC03NT
-Q5ODQwNTUsNzM2ODkyMDY3LC0xMTI2NjgyMzc2LC0xNzgzNjAw
-NCwxNDE3NTU4MTI5LDM0MDQ2NTY5MiwxMjY2Mzk5NDAsLTE1Mj
-A2NjYzNCwxNzQ0MjQyMjA2LC03MTM4NTM5ODAsLTk0MDE1MzMw
-M119
+eyJoaXN0b3J5IjpbLTgzOTUyNDE5NCw4MjAzNTA4MzAsLTE5OD
+c4NzAzNzIsLTgwNzYwNzk5OSw4NDcyMzI2ODQsLTEzNDM4NTM1
+OTUsLTE2Mzg1NjE3MTIsNDk2NzM2OTMwLDE2MDg4NDIyOCwtNz
+U0OTg0MDU1LDczNjg5MjA2NywtMTEyNjY4MjM3NiwtMTc4MzYw
+MDQsMTQxNzU1ODEyOSwzNDA0NjU2OTIsMTI2NjM5OTQwLC0xNT
+IwNjY2MzQsMTc0NDI0MjIwNiwtNzEzODUzOTgwLC05NDAxNTMz
+MDNdfQ==
 -->
