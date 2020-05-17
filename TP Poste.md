@@ -576,6 +576,7 @@ Verify return code: 20 (unable to get local issuer certificate)
  par contre si je remets le certificat Microsoft :
  ```
  Verify return code: 0 (ok)
+ ```
 
 ## SSH
 ### Serveur
@@ -643,11 +644,11 @@ ssh: connect to host 31.36.44.126 port 22: Connection refused
 bon
 Tous mes ports sont ouverts et le firewall est même désactivé.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3OTY2ODM5OSwxNzYzODc4MjI3LDE3OD
-k3MjkyNCw4MjAzNTA4MzAsLTE5ODc4NzAzNzIsLTgwNzYwNzk5
-OSw4NDcyMzI2ODQsLTEzNDM4NTM1OTUsLTE2Mzg1NjE3MTIsND
-k2NzM2OTMwLDE2MDg4NDIyOCwtNzU0OTg0MDU1LDczNjg5MjA2
-NywtMTEyNjY4MjM3NiwtMTc4MzYwMDQsMTQxNzU1ODEyOSwzND
-A0NjU2OTIsMTI2NjM5OTQwLC0xNTIwNjY2MzQsMTc0NDI0MjIw
-Nl19
+eyJoaXN0b3J5IjpbNDg0OTYzMTM3LDE3NjM4NzgyMjcsMTc4OT
+cyOTI0LDgyMDM1MDgzMCwtMTk4Nzg3MDM3MiwtODA3NjA3OTk5
+LDg0NzIzMjY4NCwtMTM0Mzg1MzU5NSwtMTYzODU2MTcxMiw0OT
+Y3MzY5MzAsMTYwODg0MjI4LC03NTQ5ODQwNTUsNzM2ODkyMDY3
+LC0xMTI2NjgyMzc2LC0xNzgzNjAwNCwxNDE3NTU4MTI5LDM0MD
+Q2NTY5MiwxMjY2Mzk5NDAsLTE1MjA2NjYzNCwxNzQ0MjQyMjA2
+XX0=
 -->
