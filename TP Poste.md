@@ -563,7 +563,7 @@ On va utiliser notre petit utilitaire OpenSSL pour télécharger le certificat d
 openssl s_client -connect microsoft.com:443 >> /home/lemalgache/certificatàvalider/microsoft.cert
 ```
 
-Une fois le certificat en poche, il nous faut le certificat root de l'émetteur, soit dans notre cas, DigiCert. Sur leur site, le root certificate est disponible au téléchargement direct. 
+Une fois le certificat en poche, il nous faut le certificat root de l'émetteur, soit dans notre cas, DigiCert. Sur leur site, le root certificate est disponible au téléchargement direct. Microsoft utilise le "Baltimore CyberTrust Root".
  
 
 ## SSH
@@ -632,7 +632,7 @@ ssh: connect to host 31.36.44.126 port 22: Connection refused
 bon
 Tous mes ports sont ouverts et le firewall est même désactivé.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NDYxMjUxMSwxNzg5NzI5MjQsODIwMz
+eyJoaXN0b3J5IjpbMTc2Mzg3ODIyNywxNzg5NzI5MjQsODIwMz
 UwODMwLC0xOTg3ODcwMzcyLC04MDc2MDc5OTksODQ3MjMyNjg0
 LC0xMzQzODUzNTk1LC0xNjM4NTYxNzEyLDQ5NjczNjkzMCwxNj
 A4ODQyMjgsLTc1NDk4NDA1NSw3MzY4OTIwNjcsLTExMjY2ODIz
