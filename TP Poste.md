@@ -541,7 +541,7 @@ Alors il se trouve que Kmail, et probablement d'autres clients de mail, propose 
 
 
 ### TLS
-Le protocole TLS, ou "Transport Layer Security", est un protocole fait pour renforcer la sécurité des données passant sur internet. TL est utilisé principalement pour chiffrer les communications entre les applications web et serveurs, par exemple avec un navigateur web qui charge une page internet. C'est ce qu'utilise HTTPS : on nomme ainsi l'implémentation du protocole TLS par dessus le protocole HTTP, donc HTTP + TLS = HTTPS. Logi
+Le protocole TLS, ou "Transport Layer Security", est un protocole fait pour renforcer la sécurité des données passant sur internet. TL est utilisé principalement pour chiffrer les communications entre les applications web et serveurs, par exemple avec un navigateur web qui charge une page internet. C'est ce qu'utilise HTTPS : on nomme ainsi l'implémentation du protocole TLS par dessus le protocole HTTP, donc HTTP + TLS = HTTPS. Logique.
 ## SSH
 ### Serveur
 Bon, le SSH c'est pas nouveau, on s'en sert depuis le début de l'année pour nos VM et pour contrôler d'autres machines à distance, je vais pas refaire l'explication de ce que c'est, en tout cas c'est très utile.
@@ -608,7 +608,7 @@ ssh: connect to host 31.36.44.126 port 22: Connection refused
 bon
 Tous mes ports sont ouverts et le firewall est même désactivé.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MDQ4MzYxMyw4MjAzNTA4MzAsLTE5OD
+eyJoaXN0b3J5IjpbMTE3MzM4NDA0Miw4MjAzNTA4MzAsLTE5OD
 c4NzAzNzIsLTgwNzYwNzk5OSw4NDcyMzI2ODQsLTEzNDM4NTM1
 OTUsLTE2Mzg1NjE3MTIsNDk2NzM2OTMwLDE2MDg4NDIyOCwtNz
 U0OTg0MDU1LDczNjg5MjA2NywtMTEyNjY4MjM3NiwtMTc4MzYw
