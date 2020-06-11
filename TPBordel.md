@@ -94,10 +94,10 @@ Après avoir fait la commande `dmesg`, j'ai fait un `grep device` pour voir la l
 [  989.052455] input: HDA NVidia HDMI/DP,pcm=8 as /devices/pci0000:00/0000:00:1c.4/0000:02:00.1/sound/card1/input30
 [  989.052530] input: HDA NVidia HDMI/DP,pcm=9 as /devices/pci0000:00/0000:00:1c.4/0000:02:00.1/sound/card1/input31
 ```
-L'ordre des périphériques remontés va comme suit : Périphériques PCI > USB > Entrées.
+L'ordre des périphériques remontés va comme suit : Périphériques PCI > USB > Entrées. Pour trouver la version du kernel, 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2Mjc0NTgxLC05NjYwNTM5MzYsNzc3MD
+eyJoaXN0b3J5IjpbNjUzMTY4MTYzLC05NjYwNTM5MzYsNzc3MD
 M4MjYyLDEyOTMyMjMxNiw0NDc4NTM4NTcsOTk0Nzk0OTA4LC0x
 MzE0MzQ0OTAxLDg5OTY0ODYwLC0zMzI0NTUzNjNdfQ==
 -->
