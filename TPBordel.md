@@ -113,14 +113,18 @@ L'ordre des périphériques remontés va comme suit : Périphériques PCI > USB 
 ```
 J'ai une distrib Manjaro, j'ai donc un kernel basé sur Linux 5.6.15.
 Y a genre beaucoup trop de lignes dans les logs de boot kernel, mais on peut en sortir quelques unes importantes : 
-`dmesg | grep Linux` nous indique la version du kernel utilisée
+- `dmesg | grep Linux` nous indique la version du kernel utilisée
+- ``
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.6-x86_64 root=UUID=ed06a4b7-c0f8-4c50-a084-799dbe8519d8 rw quiet apparmor=1 security=apparmor resume=UUID=8acf359b-47b5-4760-99ba-dd58f1b3356b udev.log_priority=3
+`` c'est la ligne 
+
 
 
 Le kernel continue à générer des logs en permanence. On peut utiliser la commande `dmesg --follow` pour avoir les updates en live. Et même, en faisant un `dmesg -T`, on peut avoir le timestamp, et on peut donc observer que les logs sont toujours alimentés.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MzI1NjU4OCwtMTgxNTgzNDI4NSwtMz
-Y2MDE2NDExLC01NzU3NzcwMjQsLTk2NjA1MzkzNiw3NzcwMzgy
-NjIsMTI5MzIyMzE2LDQ0Nzg1Mzg1Nyw5OTQ3OTQ5MDgsLTEzMT
-QzNDQ5MDEsODk5NjQ4NjAsLTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbNjkxMDkzMDE3LC0xODE1ODM0Mjg1LC0zNj
+YwMTY0MTEsLTU3NTc3NzAyNCwtOTY2MDUzOTM2LDc3NzAzODI2
+MiwxMjkzMjIzMTYsNDQ3ODUzODU3LDk5NDc5NDkwOCwtMTMxND
+M0NDkwMSw4OTk2NDg2MCwtMzMyNDU1MzYzXX0=
 -->
