@@ -116,17 +116,28 @@ Y a genre beaucoup trop de lignes dans les logs de boot kernel, mais on peut en 
 - `dmesg | grep Linux` nous indique la version du kernel utilisée
 - ``
 [    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.6-x86_64 root=UUID=ed06a4b7-c0f8-4c50-a084-799dbe8519d8 rw quiet apparmor=1 security=apparmor resume=UUID=8acf359b-47b5-4760-99ba-dd58f1b3356b udev.log_priority=3
-`` c'est la ligne qui montre les arguments utilisés au lancement de la machine. Utile si on paufine et qu'on essaie différentes commandes.
-- 
+`` c'est la ligne qui montre les arguments utilisés au lancement de la machine. Utile si on peaufine et qu'on essaie différentes commandes.
+- Ces lignes sont intéressantes :
+```
+[    0.102497] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[    0.102498] Spectre V2 : Mitigation: Full generic retpoline
+[    0.102498] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+[    0.102499] Spectre V2 : Enabling Restricted Speculation for firmware calls
+[    0.102500] Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+[    0.102501] Spectre V2 : User space: Mitigation: STIBP via seccomp and prctl
+[    0.102502] Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl and seccomp
+```
+Si je suis bien renseigné, elles montrent que les mitigations contre la faille Spectre sont en place.
+
 
 
 
 Le kernel continue à générer des logs en permanence. On peut utiliser la commande `dmesg --follow` pour avoir les updates en live. Et même, en faisant un `dmesg -T`, on peut avoir le timestamp, et on peut donc observer que les logs sont toujours alimentés.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwNjg0NDAxNSwtMTA0ODczNjA5MywtMT
-gxNTgzNDI4NSwtMzY2MDE2NDExLC01NzU3NzcwMjQsLTk2NjA1
-MzkzNiw3NzcwMzgyNjIsMTI5MzIyMzE2LDQ0Nzg1Mzg1Nyw5OT
-Q3OTQ5MDgsLTEzMTQzNDQ5MDEsODk5NjQ4NjAsLTMzMjQ1NTM2
-M119
+eyJoaXN0b3J5IjpbLTE3ODA4MTI5MDYsLTkwNjg0NDAxNSwtMT
+A0ODczNjA5MywtMTgxNTgzNDI4NSwtMzY2MDE2NDExLC01NzU3
+NzcwMjQsLTk2NjA1MzkzNiw3NzcwMzgyNjIsMTI5MzIyMzE2LD
+Q0Nzg1Mzg1Nyw5OTQ3OTQ5MDgsLTEzMTQzNDQ5MDEsODk5NjQ4
+NjAsLTMzMjQ1NTM2M119
 -->
