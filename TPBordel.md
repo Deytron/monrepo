@@ -127,17 +127,22 @@ Y a genre beaucoup trop de lignes dans les logs de boot kernel, mais on peut en 
 [    0.102501] Spectre V2 : User space: Mitigation: STIBP via seccomp and prctl
 [    0.102502] Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl and seccomp
 ```
-Si je suis bien renseigné, elles montrent que les mitigations contre la faille Spectre sont en place.
 
+Si je suis bien renseigné, elles montrent que les mitigations contre la faille Spectre sont en place.
+- ``
+[    0.000000] SMBIOS 3.2.1 present.
+[    0.000000] DMI: ASUSTeK COMPUTER INC. ZenBook UX450FDX_UX450FDX/UX450FDX, BIOS UX450FDX.307 07/05/2019
+``
+Ces lignes sont censées indiquer la
 
 
 
 Le kernel continue à générer des logs en permanence. On peut utiliser la commande `dmesg --follow` pour avoir les updates en live. Et même, en faisant un `dmesg -T`, on peut avoir le timestamp, et on peut donc observer que les logs sont toujours alimentés.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODA4MTI5MDYsLTkwNjg0NDAxNSwtMT
-A0ODczNjA5MywtMTgxNTgzNDI4NSwtMzY2MDE2NDExLC01NzU3
-NzcwMjQsLTk2NjA1MzkzNiw3NzcwMzgyNjIsMTI5MzIyMzE2LD
-Q0Nzg1Mzg1Nyw5OTQ3OTQ5MDgsLTEzMTQzNDQ5MDEsODk5NjQ4
-NjAsLTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbLTE5ODgwMzI5ODYsLTE3ODA4MTI5MDYsLT
+kwNjg0NDAxNSwtMTA0ODczNjA5MywtMTgxNTgzNDI4NSwtMzY2
+MDE2NDExLC01NzU3NzcwMjQsLTk2NjA1MzkzNiw3NzcwMzgyNj
+IsMTI5MzIyMzE2LDQ0Nzg1Mzg1Nyw5OTQ3OTQ5MDgsLTEzMTQz
+NDQ5MDEsODk5NjQ4NjAsLTMzMjQ1NTM2M119
 -->
