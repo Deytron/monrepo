@@ -94,10 +94,28 @@ Après avoir fait la commande `dmesg`, j'ai fait un `grep device` pour voir la l
 [  989.052455] input: HDA NVidia HDMI/DP,pcm=8 as /devices/pci0000:00/0000:00:1c.4/0000:02:00.1/sound/card1/input30
 [  989.052530] input: HDA NVidia HDMI/DP,pcm=9 as /devices/pci0000:00/0000:00:1c.4/0000:02:00.1/sound/card1/input31
 ```
-L'ordre des périphériques remontés va comme suit : Périphériques PCI > USB > Entrées. Pour trouver la version du kernel, 
+L'ordre des périphériques remontés va comme suit : Périphériques PCI > USB > Entrées. Pour trouver la version du kernel, on tape `dmesg 
+| grep Linux`, car un grep kernel ne trouve rien étonnamment.
+```
+❯ sudo dmesg | grep Linux
+[    0.000000] Linux version 5.6.15-1-MANJARO (builder@601a6c674820) (gcc version 10.1.0 (GCC)) #1 SMP PREEMPT Wed May 27 20:38:56 UTC 2020
+[    0.445324] ACPI: Added _OSI(Linux-Dell-Video)
+[    0.445324] ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+[    0.445325] ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
+[    0.558647] pps_core: LinuxPPS API ver. 1 registered
+[    1.191107] usb usb1: Manufacturer: Linux 5.6.15-1-MANJARO xhci-hcd
+[    1.192551] usb usb2: Manufacturer: Linux 5.6.15-1-MANJARO xhci-hcd
+[    2.055311] Linux agpgart interface v0.103
+[    2.685557] Intel(R) Wireless WiFi driver for Linux
+[    3.838296] mc: Linux media interface: v0.10
+[    3.895424] videodev: Linux video capture interface: v2.00
+
+```
+J'ai une distrib Manjaro, j'ai donc un kernel basé sur Linux 5.6.15.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjUzMTY4MTYzLC05NjYwNTM5MzYsNzc3MD
-M4MjYyLDEyOTMyMjMxNiw0NDc4NTM4NTcsOTk0Nzk0OTA4LC0x
-MzE0MzQ0OTAxLDg5OTY0ODYwLC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbLTU3NTc3NzAyNCwtOTY2MDUzOTM2LDc3Nz
+AzODI2MiwxMjkzMjIzMTYsNDQ3ODUzODU3LDk5NDc5NDkwOCwt
+MTMxNDM0NDkwMSw4OTk2NDg2MCwtMzMyNDU1MzYzXX0=
 -->
