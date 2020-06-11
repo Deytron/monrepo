@@ -177,10 +177,10 @@ tail: impossible d'ouvrir 'device' en lecture: Aucun fichier ou dossier de ce ty
 [  989.052455] input: HDA NVidia HDMI/DP,pcm=8 as /devices/pci0000:00/0000:00:1c.4/0000:02:00.1/sound/card1/input30
 [  989.052530] input: HDA NVidia HDMI/DP,pcm=9 as /devices/pci0000:00/0000:00:1c.4/0000:02:00.1/sound/card1/input31
 ```
-L'ordre 
+L'ordre des périphériques remontés va comme suit : 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODI1ODA2NzUsLTk2NjA1MzkzNiw3Nz
-cwMzgyNjIsMTI5MzIyMzE2LDQ0Nzg1Mzg1Nyw5OTQ3OTQ5MDgs
-LTEzMTQzNDQ5MDEsODk5NjQ4NjAsLTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbMTEzOTA4MDIyMywtOTY2MDUzOTM2LDc3Nz
+AzODI2MiwxMjkzMjIzMTYsNDQ3ODUzODU3LDk5NDc5NDkwOCwt
+MTMxNDM0NDkwMSw4OTk2NDg2MCwtMzMyNDU1MzYzXX0=
 -->
