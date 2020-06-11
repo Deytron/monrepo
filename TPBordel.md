@@ -116,15 +116,15 @@ Y a genre beaucoup trop de lignes dans les logs de boot kernel, mais on peut en 
 - `dmesg | grep Linux` nous indique la version du kernel utilisée
 - ``
 [    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.6-x86_64 root=UUID=ed06a4b7-c0f8-4c50-a084-799dbe8519d8 rw quiet apparmor=1 security=apparmor resume=UUID=8acf359b-47b5-4760-99ba-dd58f1b3356b udev.log_priority=3
-`` c'est la ligne 
+`` c'est la ligne qui montre les arguments utilisés au lancement de la machine. Utile si on essaie
 
 
 
 Le kernel continue à générer des logs en permanence. On peut utiliser la commande `dmesg --follow` pour avoir les updates en live. Et même, en faisant un `dmesg -T`, on peut avoir le timestamp, et on peut donc observer que les logs sont toujours alimentés.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjkxMDkzMDE3LC0xODE1ODM0Mjg1LC0zNj
-YwMTY0MTEsLTU3NTc3NzAyNCwtOTY2MDUzOTM2LDc3NzAzODI2
-MiwxMjkzMjIzMTYsNDQ3ODUzODU3LDk5NDc5NDkwOCwtMTMxND
-M0NDkwMSw4OTk2NDg2MCwtMzMyNDU1MzYzXX0=
+eyJoaXN0b3J5IjpbLTEwNDg3MzYwOTMsLTE4MTU4MzQyODUsLT
+M2NjAxNjQxMSwtNTc1Nzc3MDI0LC05NjYwNTM5MzYsNzc3MDM4
+MjYyLDEyOTMyMjMxNiw0NDc4NTM4NTcsOTk0Nzk0OTA4LC0xMz
+E0MzQ0OTAxLDg5OTY0ODYwLC0zMzI0NTUzNjNdfQ==
 -->
