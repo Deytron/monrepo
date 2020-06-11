@@ -114,11 +114,11 @@ L'ordre des périphériques remontés va comme suit : Périphériques PCI > USB 
 J'ai une distrib Manjaro, j'ai donc un kernel basé sur Linux 5.6.15.
 Y a genre beaucoup trop de lignes dans les logs de boot kernel, mais on peut en sortir quelques unes importantes : 
 
-Le kernel continue à générer des logs en permanence. On peut utiliser la commande `dmesg --follow` pour avoir les updates en live. Et même, en faisant un `dmesg 
+Le kernel continue à générer des logs en permanence. On peut utiliser la commande `dmesg --follow` pour avoir les updates en live. Et même, en faisant un `dmesg -T`, on peut avoir le timestamp, et on peut donc observer que les log
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0MDY4MTA3NCwtMTgxNTgzNDI4NSwtMz
-Y2MDE2NDExLC01NzU3NzcwMjQsLTk2NjA1MzkzNiw3NzcwMzgy
-NjIsMTI5MzIyMzE2LDQ0Nzg1Mzg1Nyw5OTQ3OTQ5MDgsLTEzMT
-QzNDQ5MDEsODk5NjQ4NjAsLTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbMTEwNzExMTQ5LC0xODE1ODM0Mjg1LC0zNj
+YwMTY0MTEsLTU3NTc3NzAyNCwtOTY2MDUzOTM2LDc3NzAzODI2
+MiwxMjkzMjIzMTYsNDQ3ODUzODU3LDk5NDc5NDkwOCwtMTMxND
+M0NDkwMSw4OTk2NDg2MCwtMzMyNDU1MzYzXX0=
 -->
