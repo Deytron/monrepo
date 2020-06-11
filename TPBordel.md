@@ -112,10 +112,9 @@ L'ordre des périphériques remontés va comme suit : Périphériques PCI > USB 
 
 ```
 J'ai une distrib Manjaro, j'ai donc un kernel basé sur Linux 5.6.15.
-Y a genre beaucoup trop de lignes dans les logs de boot kernel, mais on peut en sortir quelques unes importantes :
-
+Y a genre beaucoup trop de lignes dans les logs de boot kernel, mais on peut en sortir quelques unes importantes : 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4OTE5Mjk4OSwtNTc1Nzc3MDI0LC05Nj
+eyJoaXN0b3J5IjpbLTM2NjAxNjQxMSwtNTc1Nzc3MDI0LC05Nj
 YwNTM5MzYsNzc3MDM4MjYyLDEyOTMyMjMxNiw0NDc4NTM4NTcs
 OTk0Nzk0OTA4LC0xMzE0MzQ0OTAxLDg5OTY0ODYwLC0zMzI0NT
 UzNjNdfQ==
