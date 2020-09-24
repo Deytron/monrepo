@@ -114,5 +114,67 @@ user1 ALL=(ALL) ALL
 
 On va faire un p'ti `yum install nginx` sur le poste 1.
 
-Ensuite on va créer deux serveurs NGINX, pour ça on fait deux dossiers dans la partition `srv`, à savoir site1 et site2, et dans ces dossiers ont fait un fichier index.html.
+Ensuite on va créer deux serveurs NGINX, pour ça on fait deux dossiers dans la partition `srv`, à savoir site1 et site2, et dans ces dossiers ont fait un fichier index.html. On le repli avec des trucs bidons juste pour voir si tout marche bien. Simple et efficace.
+
+On attribue la propriété de ces dossier à l'utilisateur user1 et au groupe nginx avec `chown user1:nginx /srv/siteX`, c'est ce qui est demandé. A partir de là, il va falloir faire un peu de config pour lancer le serveur NGINX. On en a deux à faire tourner. Il y a déjà un fichier de config présent et structuré dans `/etc/nginx/nginx.conf`. On va le modifier pour le faire diriger sur /srv pour qu'il trouve les fichiers à aller chercher. Voici notre premier serveur : 
+```
+    server {
+        listen       80 default_server;
+        listen       [::]:80 default_server;
+        server_name  node1.tp1.b2;
+#        root         /srv/data1;
+
+        # Load configuration files for the default server block.
+        include /etc/nginx/default.d/*.conf;
+
+        location /data1 {
+                alias /srv/data1;
+        }
+
+        error_page 404 /404.html;
+            location = /40x.html {
+        }
+
+        error_page 500 502 503 504 /50x.html;
+            location = /50x.html {
+        }
+    }
+```
+On lui a donné un servername pour pouvoir aller le chercher, puis on a inclus dans la location ce qu'on devra préciser comme chemin pour trouver le serveur en question, enfin dans "alias" on a précisé le chemin absolu de l'emplacement des fichiers du serveur, à savoir /srv/data1 (site1 si on veut).
+
+Pour tester si ça marche, on lance NGINX avec `sudo nginx` et on vient curl notre site : 
+```
+[user1@node1 ~]$ curl node1.tp1.b2/data1 -L
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Wsh c'est le premier site</h1>
+
+<p>Tranquille ou quoi</p>
+
+</body>
+</html>
+```
+
+On peut même essayer avec le pc node2 : 
+```
+[lemalgache@node2 ~]$ curl https://node1.tp1.b2/data2 --insecure -L
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Wsh c'est le deuxieme site</h1>
+
+<p>Tranquille ou quoi</p>
+
+</body>
+</html>
+```
+
+(Oui j'ai triché un peu sur les arguments mais c'est pour montrer que ça marche)
+
+
+
+
 
