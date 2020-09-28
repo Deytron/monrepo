@@ -174,7 +174,28 @@ On peut même essayer avec le pc node2 :
 
 (Oui j'ai triché un peu sur les arguments mais c'est pour montrer que ça marche)
 
+## II. Script de sauvegarde
 
+Maintenant faut faire un script pour sauvegarder notre beau serveur. Voilà mon script, il est pas optimisé du tout mais il a le mérite de marcher : 
+```bash
+# Script pour le TP backup de site1 et site2
 
-
+if [ -z $1 ]
+then
+        echo "Précise un site fdp"
+        exit 7
+elif [ $1 != "site1" -a $1 != "site2" ]
+then
+        echo "ERREUR : Indique site1 ou site2 zebi"
+        exit 7
+elif [ "$1" == "site1" ] 
+then
+        tar -czf site1_$(date +"%Y%m%d_%H%M%S").tar.gz /srv/data1
+        mv /home/backup/*.gz /home/backup/site1
+elif [ "$1" == "site2" ]
+then
+        tar -czf site2_$(date +"%Y%m%d_%H%M%S").tar.gz /srv/data2
+        mv /home/backup/*.gz /home/backup/site2
+fi
+```
 
