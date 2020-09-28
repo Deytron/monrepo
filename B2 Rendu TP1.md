@@ -178,6 +178,7 @@ On peut même essayer avec le pc node2 :
 
 Maintenant faut faire un script pour sauvegarder notre beau serveur. Voilà mon script, il est pas optimisé du tout mais il a le mérite de marcher : 
 ```bash
+#!/bin/bash
 # Script pour le TP backup de site1 et site2
 
 if [ -z $1 ]
