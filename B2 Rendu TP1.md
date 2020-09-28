@@ -191,11 +191,23 @@ then
 elif [ "$1" == "site1" ] 
 then
         tar -czf site1_$(date +"%Y%m%d_%H%M%S").tar.gz /srv/data1
+        if [[ $(ls -1 /home/backup/site1 | wc -l) == 8 ]]
+        then
+        rm "$(ls -t | tail -1)"
+        echo "Supprimé le fichier le plus ancien, trop de sauvegardes" 
+        fi
         mv /home/backup/*.gz /home/backup/site1
 elif [ "$1" == "site2" ]
 then
         tar -czf site2_$(date +"%Y%m%d_%H%M%S").tar.gz /srv/data2
+        if [[ $(ls -1 /home/backup/site2 | wc -l) == 8 ]]
+        then
+        rm "$(ls -t | tail -1)"
+        echo "Supprimé le fichier le plus ancien, trop de sauvegardes"
+        fi
         mv /home/backup/*.gz /home/backup/site2
 fi
 ```
+
+
 
