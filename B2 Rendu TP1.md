@@ -226,6 +226,21 @@ Maintenant on va éditer notre fichier de cron pour lui dire quoi faire et quand
 ```
 Donc on va lui demander d'éxecuter notre fichier de script toutes les heures, de cette manière : 
 ```bash
+#Commande de backup du site 1
+00 */1 * * * /home/backup/tp1_backup.sh site1
+
+#Commande de backup du site 2
+00 */1 * * * /home/backup/tp1_backup.sh site2
+
+```
+et boum.
+
+## III. Monitoring, alerting
+
+Pour installer netdata, qui est un outil de monitoring simple à installer, on lane la commande : 
+```bash
+bash <(curl -Ss https://my-netdata.io/kickstart.sh)
+```
 
 
 
