@@ -210,5 +210,23 @@ then
 fi
 ```
 
+Maintenant il faut l'enclencher le script, sinon ça sert à rien. Crontab va nous aider à faire ça, c'est un utilitaire de planificartion de tâche, surtout utilisé pour les backups réguliers.
+
+On va mettre notre utilisateur backup dans le groupe cron pour l'autoriser à faire des backups. Pour se faire, on crée un fichier avec `vim /etc/cron.allow` où on y inscrit tout simplement `backup`. 
+Maintenant on va éditer notre fichier de cron pour lui dire quoi faire et quand. Y a une syntaxe un peu particulière, représentée comme suit : 
+```bash
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  *  user command to be executed
+```
+Donc on va lui demander d'éxecuter notre fichier de script toutes les heures, de cette manière : 
+```bash
+
+
 
 
