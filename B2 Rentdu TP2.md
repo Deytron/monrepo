@@ -51,4 +51,6 @@ sda 8:0 0 40G 0 disk
 └─sda1 8:1 0 40G 0 part /  
 sdb 8:16 0 5G 0 disk
 </code></pre>
+<h2 id="ii.-re-package">II. Re-package</h2>
+<p>Il est temps de se faire notre propre iso. On va faire l’iso à partir d’une box lancée existante. On prépare d’abord la VM avec un <code>sudo yum update</code>, <code>sudo yum install vim epel-release nginx</code>, un <code>setenforce 0</code> et une édition du fichier selinux/config pour être sûr de ne pas avoir selinux d’activé, une config de firewalld avec <code>sudo systemctl enable firewalld</code> puis <code>sudo systemctl start firewalld</code>, enfin <code>sudo firewall-cmd --set-default-zone=block</code> pour tout bloquer sauf le port 22 avec <code>sudo firewall-cmd --permanent --add-port=22/TCP</code>.</p>
 
