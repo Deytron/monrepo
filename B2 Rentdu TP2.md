@@ -60,4 +60,5 @@ C’est parti, on package le tout :</p>
 <span class="token operator">==</span><span class="token operator">&gt;</span> default: Exporting VM<span class="token punctuation">..</span>.  
 <span class="token operator">==</span><span class="token operator">&gt;</span> default: Compressing package to: /home/lemalgache/vagrant/centos7-custom.box
 </code></pre>
+<h2 id="iii.-multi-node-deployment">III. Multi-node deployment</h2>
 
