@@ -116,4 +116,5 @@ end
 end
 </code></pre>
 <p>Et le bail marche tranquille.</p>
+<h2 id="iv.-automation-here-we-slowly-come">IV. Automation here we (slowly) come</h2>
 
