@@ -61,4 +61,59 @@ C’est parti, on package le tout :</p>
 <span class="token operator">==</span><span class="token operator">&gt;</span> default: Compressing package to: /home/lemalgache/vagrant/centos7-custom.box
 </code></pre>
 <h2 id="iii.-multi-node-deployment">III. Multi-node deployment</h2>
+<p>On part sur un déploiement tu deux VM, très très simple, une des deux VM a 1Go de RAM, notre fichier de config ressemble à ça :</p>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token comment"># file_to_disk = '/home/lemalgache/vagrant/VagrantDisk.vdi'  </span>
+  
+Vagrant.configure<span class="token punctuation">(</span><span class="token string">"2"</span><span class="token punctuation">)</span> <span class="token keyword">do</span> <span class="token operator">|</span>config<span class="token operator">|</span>  
+config.vm.box <span class="token operator">=</span> <span class="token string">"CentOS_custom"</span>  
+  
+<span class="token comment">## Les 3 lignes suivantes permettent d'éviter certains bugs et/ou d'accélérer le déploiement. Gardez-les tout le temps sauf contre-in  </span>
+dications.  
+<span class="token comment"># Ajoutez cette ligne afin d'accélérer le démarrage de la VM (si une erreur 'vbguest' est levée, voir la note un peu plus bas)  </span>
+config.vbguest.auto_update <span class="token operator">=</span> <span class="token boolean">false</span>  
+  
+<span class="token comment"># Désactive les updates auto qui peuvent ralentir le lancement de la machine  </span>
+config.vm.box_check_update <span class="token operator">=</span> <span class="token boolean">false</span>  
+  
+<span class="token comment"># La ligne suivante permet de désactiver le montage d'un dossier partagé (ne marche pas tout le temps directement suivant vos OS, ver  </span>
+sions d'OS, etc.<span class="token punctuation">)</span>  
+config.vm.synced_folder <span class="token string">"."</span>, <span class="token string">"/vagrant"</span>, disabled: <span class="token boolean">true</span>  
+  
+<span class="token comment"># Config de la VM 1  </span>
+config.vm.define <span class="token string">"node1"</span> <span class="token keyword">do</span> <span class="token operator">|</span>node1<span class="token operator">|</span>  
+node1.vm.network <span class="token string">"private_network"</span>, ip: <span class="token string">"192.168.56.11"</span>  
+node1.vm.hostname <span class="token operator">=</span> <span class="token string">"node1.tp2.b2"</span>  
+config.vm.provider <span class="token string">"virtualbox"</span> <span class="token keyword">do</span> <span class="token operator">|</span>vb<span class="token operator">|</span>  
+vb.customize <span class="token punctuation">[</span><span class="token string">"modifyvm"</span>, :id, <span class="token string">"--memory"</span>, <span class="token string">"1024"</span><span class="token punctuation">]</span>  
+end  
+end  
+  
+<span class="token comment"># Config une première VM "node2"  </span>
+config.vm.define <span class="token string">"node2"</span> <span class="token keyword">do</span> <span class="token operator">|</span>node2<span class="token operator">|</span>  
+node2.vm.network <span class="token string">"private_network"</span>, ip: <span class="token string">"192.168.56.12"</span>  
+node2.vm.hostname <span class="token operator">=</span> <span class="token string">"node2.tp2.b2"</span>  
+config.vm.provider <span class="token string">"virtualbox"</span> <span class="token keyword">do</span> <span class="token operator">|</span>vb<span class="token operator">|</span>  
+vb.customize <span class="token punctuation">[</span><span class="token string">"modifyvm"</span>, :id, <span class="token string">"--memory"</span>, <span class="token string">"512"</span><span class="token punctuation">]</span>  
+end  
+end  
+  
+  
+<span class="token comment"># Config réseau host only  </span>
+<span class="token comment"># config.vm.network "private_network", ip: "192.168.2.11",  </span>
+<span class="token comment"># virtualbox__intnet: true  </span>
+  
+<span class="token comment"># Config du hostname  </span>
+  
+<span class="token comment"># Setup VirtualBox Provider  </span>
+<span class="token comment"># config.vm.provider "virtualbox" do |vb|  </span>
+<span class="token comment"># vb.customize ["modifyvm", :id, "--memory", "1024"]  </span>
+<span class="token comment"># vb.customize ['createhd', '--filename', file_to_disk, '--size', 5 * 1024]  </span>
+<span class="token comment"># vb.customize ['storageattach', :id, '--storagectl', 'IDE', '--port', 1, '--device', 0, '--type', 'hdd', '--medium', file_to_disk]  </span>
+  
+<span class="token comment"># Lancement d'un script au démarrage  </span>
+<span class="token comment"># config.vm.provision "shell",  </span>
+<span class="token comment"># path: "/home/lemalgache/vagrant/script.sh"  </span>
+end
+</code></pre>
+<p>Et le bail marche tranquille.</p>
 
