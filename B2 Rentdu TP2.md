@@ -117,4 +117,20 @@ end
 </code></pre>
 <p>Et le bail marche tranquille.</p>
 <h2 id="iv.-automation-here-we-slowly-come">IV. Automation here we (slowly) come</h2>
+<p>Bon, va falloir automatiser totu ça avec des scripts de commandes. J’ai décidé de faire un script commun aux deux machines, et un script unique à chaque. Dans le script commun appelé “<a href="http://script2.sh">script2.sh</a>” :</p>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token keyword">echo</span> <span class="token string">"192.168.56.11 node1.tp2.b2 node1"</span> <span class="token operator">&gt;&gt;</span> /etc/hosts  
+<span class="token keyword">echo</span> <span class="token string">"192.168.56.12 node2.tp2.b2 node2"</span> <span class="token operator">&gt;&gt;</span> /etc/hosts  
+<span class="token function">useradd</span> user1  
+<span class="token keyword">echo</span> <span class="token string">"user1 ALL=(ALL) NOPASSWD:ALL"</span> <span class="token operator">&gt;&gt;</span> /etc/sudoers  
+firewall-cmd --set-default-zone<span class="token operator">=</span>block  
+firewall-cmd --add-port<span class="token operator">=</span>22/tcp  
+firewall-cmd --permanent --zone<span class="token operator">=</span>trusted --add-source<span class="token operator">=</span>192.168.56.11  
+firewall-cmd --permanent --zone<span class="token operator">=</span>trusted --add-source<span class="token operator">=</span>192.168.56.12  
+firewall-cmd --reload  
+setenforce 0  
+<span class="token function">sed</span> -i <span class="token string">'s/SELINUX=enforcing/SELINUX=disabled/g'</span> /etc/selinux/config
+</code></pre>
+<p>Au moins on est sûr qu’il y a pas de problème. Sur le <a href="http://scriptnode1.sh">scriptnode1.sh</a> :</p>
+<pre class=" language-bash"><code class="prism  language-bash">
+</code></pre>
 
