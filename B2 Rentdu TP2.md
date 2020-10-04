@@ -117,7 +117,7 @@ end
 </code></pre>
 <p>Et le bail marche tranquille.</p>
 <h2 id="iv.-automation-here-we-slowly-come">IV. Automation here we (slowly) come</h2>
-<p>Bon, va falloir automatiser totu ça avec des scripts de commandes. J’ai décidé de faire un script commun aux deux machines, et un script unique à chaque. Dans le script commun appelé “<a href="http://script2.sh">script2.sh</a>” :</p>
+<p>Bon, va falloir automatiser totu ça avec des scripts de commandes. J’ai décidé de faire un script commun aux deux machines, et un script unique pour le serveur web. Dans le script commun appelé “<a href="http://script2.sh">script2.sh</a>” :</p>
 <pre class=" language-bash"><code class="prism  language-bash"><span class="token keyword">echo</span> <span class="token string">"192.168.56.11 node1.tp2.b2 node1"</span> <span class="token operator">&gt;&gt;</span> /etc/hosts  
 <span class="token keyword">echo</span> <span class="token string">"192.168.56.12 node2.tp2.b2 node2"</span> <span class="token operator">&gt;&gt;</span> /etc/hosts  
 <span class="token function">useradd</span> user1  
@@ -131,6 +131,68 @@ setenforce 0
 <span class="token function">sed</span> -i <span class="token string">'s/SELINUX=enforcing/SELINUX=disabled/g'</span> /etc/selinux/config
 </code></pre>
 <p>Au moins on est sûr qu’il y a pas de problème. Sur le <a href="http://scriptnode1.sh">scriptnode1.sh</a> :</p>
-<pre class=" language-bash"><code class="prism  language-bash">
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">cat</span> scriptnode1.sh ✔ at 20:58:40   
+<span class="token function">sudo</span> yum <span class="token function">install</span> -y epel-release  
+<span class="token function">sudo</span> yum <span class="token function">install</span> -y nginx  
+<span class="token function">mkdir</span> /srv/site1  
+<span class="token function">mkdir</span> /srv/site2  
+<span class="token function">touch</span> /srv/site1/index.html  
+<span class="token function">touch</span> /srv/site2/index.html  
+<span class="token keyword">echo</span> <span class="token string">"wsh le site 1"</span> <span class="token operator">&gt;</span> /srv/site1/index.html  
+<span class="token keyword">echo</span> <span class="token string">"wsh le site 2"</span> <span class="token operator">&gt;</span> /srv/site2/index.html  
+nginx
+</code></pre>
+<p>Enfin, le Vagrantfile :</p>
+<pre class=" language-bash"><code class="prism  language-bash">Vagrant.configure<span class="token punctuation">(</span><span class="token string">"2"</span><span class="token punctuation">)</span> <span class="token keyword">do</span> <span class="token operator">|</span>config<span class="token operator">|</span>  
+config.vm.box <span class="token operator">=</span> <span class="token string">"CentOS_custom"</span>  
+  
+<span class="token comment">## Les 3 lignes suivantes permettent d'éviter certains bugs et/ou d'accélérer le déploiement. Gardez-les tout le temps sauf contre-indications.  </span>
+<span class="token comment"># Ajoutez cette ligne afin d'accélérer le démarrage de la VM (si une erreur 'vbguest' est levée, voir la note un peu plus bas)  </span>
+config.vbguest.auto_update <span class="token operator">=</span> <span class="token boolean">false</span>  
+  
+<span class="token comment"># Désactive les updates auto qui peuvent ralentir le lancement de la machine  </span>
+config.vm.box_check_update <span class="token operator">=</span> <span class="token boolean">false</span>  
+  
+<span class="token comment"># La ligne suivante permet de désactiver le montage d'un dossier partagé (ne marche pas tout le temps directement suivant vos OS, versions d'OS, etc.)  </span>
+config.vm.synced_folder <span class="token string">"."</span>, <span class="token string">"/vagrant"</span>, disabled: <span class="token boolean">true</span>  
+  
+<span class="token comment"># Config de la VM 1  </span>
+config.vm.define <span class="token string">"node1"</span> <span class="token keyword">do</span> <span class="token operator">|</span>node1<span class="token operator">|</span>  
+node1.vm.network <span class="token string">"private_network"</span>, ip: <span class="token string">"192.168.56.11"</span>  
+node1.vm.hostname <span class="token operator">=</span> <span class="token string">"node1.tp2.b2"</span>  
+config.vm.provider <span class="token string">"virtualbox"</span> <span class="token keyword">do</span> <span class="token operator">|</span>vb<span class="token operator">|</span>  
+vb.customize <span class="token punctuation">[</span><span class="token string">"modifyvm"</span>, :id, <span class="token string">"--memory"</span>, <span class="token string">"1024"</span><span class="token punctuation">]</span>  
+end  
+config.vm.provision <span class="token string">"shell"</span>,  
+path: <span class="token string">"/home/lemalgache/vagrant/script2.sh"</span>,  
+path: <span class="token string">"/home/lemalgache/vagrant/scriptnode1.sh"</span>  
+end  
+config.vm.provision <span class="token string">"file"</span>,  
+source: <span class="token string">"/home/lemalgache/vagrant/nginx.conf"</span>,  
+destination: <span class="token string">"/etc/nginx/nginx.conf"</span>  
+  
+<span class="token comment"># Config de la VM 2  </span>
+config.vm.define <span class="token string">"node2"</span> <span class="token keyword">do</span> <span class="token operator">|</span>node2<span class="token operator">|</span>  
+node2.vm.network <span class="token string">"private_network"</span>, ip: <span class="token string">"192.168.56.12"</span>  
+node2.vm.hostname <span class="token operator">=</span> <span class="token string">"node2.tp2.b2"</span>  
+config.vm.provider <span class="token string">"virtualbox"</span> <span class="token keyword">do</span> <span class="token operator">|</span>vb<span class="token operator">|</span>  
+vb.customize <span class="token punctuation">[</span><span class="token string">"modifyvm"</span>, :id, <span class="token string">"--memory"</span>, <span class="token string">"512"</span><span class="token punctuation">]</span>  
+end  
+config.vm.provision <span class="token string">"shell"</span>,  
+path: <span class="token string">"/home/lemalgache/vagrant/script2.sh"</span>  
+end  
+  
+<span class="token comment"># Config réseau host only  </span>
+<span class="token comment"># config.vm.network "private_network", ip: "192.168.2.11",  </span>
+<span class="token comment"># virtualbox__intnet: true  </span>
+  
+<span class="token comment"># Config du hostname  </span>
+  
+<span class="token comment"># Setup VirtualBox Provider  </span>
+<span class="token comment"># config.vm.provider "virtualbox" do |vb|  </span>
+<span class="token comment"># vb.customize ["modifyvm", :id, "--memory", "1024"]  </span>
+<span class="token comment"># vb.customize ['createhd', '--filename', file_to_disk, '--size', 5 * 1024]  </span>
+<span class="token comment"># vb.customize ['storageattach', :id, '--storagectl', 'IDE', '--port', 1, '--device', 0, '--type', 'hdd', '--medium', file_to_disk]  </span>
+end
 </code></pre>
 
