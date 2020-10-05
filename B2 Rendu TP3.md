@@ -176,4 +176,46 @@ SUB <span class="token operator">=</span> The low-level unit activation state, v
   
 16 loaded <span class="token function">units</span> listed.
 </code></pre>
+<p>Enfin, pour voir les services qui se lancent au boot, donc “enabled”, on utilise <code>systemctl list-unit-files | grep enabled</code>. Enabled n’est pas un state, c’est juste une marque qui indique si le service démarre au boot.</p>
+<pre class=" language-bash"><code class="prism  language-bash">auditd.service enabled  
+autovt@.service enabled  
+chronyd.service enabled  
+crond.service enabled  
+dbus-org.fedoraproject.FirewallD1.service enabled  
+dbus-org.freedesktop.nm-dispatcher.service enabled  
+firewalld.service enabled  
+getty@.service enabled  
+irqbalance.service enabled  
+NetworkManager-dispatcher.service enabled  
+NetworkManager-wait-online.service enabled  
+NetworkManager.service enabled  
+postfix.service enabled  
+qemu-guest-agent.service enabled  
+rhel-autorelabel-mark.service enabled  
+rhel-autorelabel.service enabled  
+rhel-configure.service enabled  
+rhel-dmesg.service enabled  
+rhel-domainname.service enabled  
+rhel-import-state.service enabled  
+rhel-loadmodules.service enabled  
+rhel-readonly.service enabled  
+rpcbind.service enabled  
+rsyslog.service enabled  
+sshd.service enabled  
+systemd-readahead-collect.service enabled  
+systemd-readahead-drop.service enabled  
+systemd-readahead-replay.service enabled  
+tuned.service enabled  
+vgauthd.service enabled  
+vmtoolsd-init.service enabled  
+vmtoolsd.service enabled  
+rpcbind.socket enabled  
+default.target enabled  
+multi-user.target enabled  
+nfs-client.target enabled  
+remote-fs.target enabled  
+runlevel2.target enabled  
+runlevel3.target enabled  
+runlevel4.target enabled
+</code></pre>
 
