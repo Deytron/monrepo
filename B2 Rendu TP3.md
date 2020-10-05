@@ -343,4 +343,8 @@ WantedBy<span class="token operator">=</span>multi-user.target
 </code></pre>
 <p>Boum.</p>
 <h3 id="création-dun-service">3. Création d’un service</h3>
+<p>On est parti pour créer nous-même notre service, pas très compliqué on s’y attaque. Dédicace à i3 qui m’a bien fait taffer le truc étant donné que le machin vient sans rien comme service mais c’est rien c’est la rue.</p>
+<p>On trace vers <code>/etc/systemd/system</code>, j’ai nommé mon fichier <code>serveurtp.service</code>, et voici le contenu :</p>
+<pre class=" language-bash"><code class="prism  language-bash">
+</code></pre>
 
