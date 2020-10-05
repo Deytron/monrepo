@@ -124,5 +124,56 @@ SUB <span class="token operator">=</span> The low-level unit activation state, v
 108 loaded <span class="token function">units</span> listed.  
 To show all installed unit files use <span class="token string">'systemctl list-unit-files'</span><span class="token keyword">.</span>
 </code></pre>
-<p>Oui ça fait beaucoup.</p>
+<p>Oui ça fait beaucoup.<br>
+Pour voir les services actifs uniquement, c’est <code>systemctl list-units --type=service --state=running</code>. Y en a 17 en cours sur ma machine.</p>
+<pre class=" language-bash"><code class="prism  language-bash">UNIT LOAD ACTIVE SUB DESCRIPTION  
+auditd.service loaded active running Security Auditing Service  
+chronyd.service loaded active running NTP client/server  
+crond.service loaded active running Command Scheduler  
+dbus.service loaded active running D-Bus System Message Bus  
+firewalld.service loaded active running firewalld - dynamic firewall daemon  
+getty@tty1.service loaded active running Getty on tty1  
+gssproxy.service loaded active running GSSAPI Proxy Daemon  
+NetworkManager.service loaded active running Network Manager  
+polkit.service loaded active running Authorization Manager  
+postfix.service loaded active running Postfix Mail Transport Agent  
+rpcbind.service loaded active running RPC bind <span class="token function">service</span>  
+rsyslog.service loaded active running System Logging Service  
+sshd.service loaded active running OpenSSH server daemon  
+systemd-journald.service loaded active running Journal Service  
+systemd-logind.service loaded active running Login Service  
+systemd-udevd.service loaded active running udev Kernel Device Manager  
+tuned.service loaded active running Dynamic System Tuning Daemon  
+  
+LOAD <span class="token operator">=</span> Reflects whether the unit definition was properly loaded.  
+ACTIVE <span class="token operator">=</span> The high-level unit activation state, i.e. generalization of SUB.  
+SUB <span class="token operator">=</span> The low-level unit activation state, values depend on unit type.  
+  
+17 loaded <span class="token function">units</span> listed.
+</code></pre>
+<p>En reprenant la dernière commande, on peut voir ceux qui ont foiré ou qui ne sont plus en cours, avec plusieurs arguments, <code>systemctl list-units --type=service --state=failed,exited</code>. Bon moi j’en ai aucune qui a fail et j’allais pas m’embêter à mal configurer un service pour avoir un état failed donc tant pis, y a que les exited :</p>
+<pre class=" language-bash"><code class="prism  language-bash">UNIT LOAD ACTIVE SUB DESCRIPTION  
+kmod-static-nodes.service loaded active exited Create list of required static device nodes <span class="token keyword">for</span> the current kernel  
+network.service loaded active exited LSB: Bring up/down networking  
+NetworkManager-wait-online.service loaded active exited Network Manager Wait Online  
+rhel-dmesg.service loaded active exited Dump <span class="token function">dmesg</span> to /var/log/dmesg  
+rhel-domainname.service loaded active exited Read and <span class="token keyword">set</span> NIS domainname from /etc/sysconfig/network  
+rhel-readonly.service loaded active exited Configure read-only root support  
+systemd-journal-flush.service loaded active exited Flush Journal to Persistent Storage  
+systemd-random-seed.service loaded active exited Load/Save Random Seed  
+systemd-remount-fs.service loaded active exited Remount Root and Kernel File Systems  
+systemd-sysctl.service loaded active exited Apply Kernel Variables  
+systemd-tmpfiles-setup-dev.service loaded active exited Create Static Device Nodes <span class="token keyword">in</span> /dev  
+systemd-tmpfiles-setup.service loaded active exited Create Volatile Files and Directories  
+systemd-udev-trigger.service loaded active exited udev Coldplug all Devices  
+systemd-update-utmp.service loaded active exited Update UTMP about System Boot/Shutdown  
+systemd-user-sessions.service loaded active exited Permit User Sessions  
+systemd-vconsole-setup.service loaded active exited Setup Virtual Console  
+  
+LOAD <span class="token operator">=</span> Reflects whether the unit definition was properly loaded.  
+ACTIVE <span class="token operator">=</span> The high-level unit activation state, i.e. generalization of SUB.  
+SUB <span class="token operator">=</span> The low-level unit activation state, values depend on unit type.  
+  
+16 loaded <span class="token function">units</span> listed.
+</code></pre>
 
