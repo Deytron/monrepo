@@ -218,4 +218,5 @@ runlevel2.target enabled
 runlevel3.target enabled  
 runlevel4.target enabled
 </code></pre>
+<h3 id="analyse-dun-service">2. Analyse d’un service</h3>
 
