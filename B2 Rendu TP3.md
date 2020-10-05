@@ -257,7 +257,7 @@ PrivateTmp<span class="token operator">=</span>true
 <span class="token punctuation">[</span>Install<span class="token punctuation">]</span>  
 WantedBy<span class="token operator">=</span>multi-user.target
 </code></pre>
-<p>Pour lister tous les services qui contiennent la ligne <code>WantedBy=multi-user.target</code>, on va pas chercher très loin, on va grep tous les fichiers de services (y en a genre 300 sur ma distrib) et cherche le pattern correspondant, donc <code>grep -rnw /lib/systemd/system/* -e WantedBy=multi-user.target</code></p>
+<p>Pour lister tous les services qui contiennent la ligne <code>WantedBy=multi-user.target</code>, on va pas chercher très loin, on va grep tous les fichiers de services (y en a genre 300 sur ma distrib) et cherche le pattern correspondant, donc <code>grep -rnw /lib/systemd/system/* -e WantedBy=multi-user.target</code>. On le fait à tous les emplacements où il y a les services systemd, à savoir <code>/lib/systemd/system</code> pour les services système, <code>/etc/systemd/system</code> pour les services créés par un admink</p>
 <pre class=" language-bash"><code class="prism  language-bash">/lib/systemd/system/acpid.service:9:WantedBy<span class="token operator">=</span>multi-user.target  
 /lib/systemd/system/apparmor.service:26:WantedBy<span class="token operator">=</span>multi-user.target  
 /lib/systemd/system/auditd.service:32:WantedBy<span class="token operator">=</span>multi-user.target  
@@ -341,7 +341,10 @@ WantedBy<span class="token operator">=</span>multi-user.target
 /lib/systemd/system/wpa_supplicant.service:14:WantedBy<span class="token operator">=</span>multi-user.target  
 /lib/systemd/system/xow.service:14:WantedBy<span class="token operator">=</span>multi-user.target
 </code></pre>
-<p>Boum.</p>
+<p><code>grep -rnw /etc/systemd/system* -e WantedBy=multi-user.target</code> :</p>
+<pre class=" language-bash"><code class="prism  language-bash">/etc/systemd/system/serveurtp.service:14:WantedBy<span class="token operator">=</span>multi-user.target
+</code></pre>
+<p>Bah du coup là y a qu’un seul fichier c’est le service que j’ai créé.</p>
 <h3 id="création-dun-service">3. Création d’un service</h3>
 <p>On est parti pour créer nous-même notre service, pas très compliqué on s’y attaque. Dédicace à i3 qui m’a bien fait taffer le truc étant donné que le machin vient sans rien comme service mais c’est rien c’est la rue.</p>
 <p>On trace vers <code>/etc/systemd/system</code>, j’ai nommé mon fichier <code>serveurtp.service</code>, et voici le contenu :</p>
