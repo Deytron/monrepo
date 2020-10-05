@@ -257,94 +257,94 @@ PrivateTmp<span class="token operator">=</span>true
 <span class="token punctuation">[</span>Install<span class="token punctuation">]</span>  
 WantedBy<span class="token operator">=</span>multi-user.target
 </code></pre>
-<p>Pour lister tous les services qui contiennent la ligne <code>WantedBy=multi-user.target</code>, on va pas chercher très loin, on va grep tous les fichiers de services (y en a genre 300 sur ma distrib) et cherche le pattern correspondant, donc <code>grep -rnw /lib/systemd/system/* -e WantedBy=multi-user.target</code>. On le fait à tous les emplacements où il y a les services systemd, à savoir <code>/lib/systemd/system</code> pour les services système, <code>/etc/systemd/system</code> pour les services créés par un admink</p>
-<pre class=" language-bash"><code class="prism  language-bash">/lib/systemd/system/acpid.service:9:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/apparmor.service:26:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/auditd.service:32:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/avahi-daemon.service:30:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/avahi-dnsconfd.service:28:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/cpupower.service:11:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/cronie.service:11:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/deluged.service:18:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/deluge-web.service:16:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/dhclient@.service:13:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/dhcpcd.service:13:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/dhcpcd@.service:15:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/dnsmasq.service:19:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/fancontrol.service:12:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/ftpd.service:12:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/gns3-server@.service:11:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/gpm.service:12:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/gssproxy.service:16:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/healthd.service:9:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/httpd.service:15:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/ip6tables.service:15:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/iptables.service:14:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/irexec.service:26:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/krb5-kadmind.service:8:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/krb5-kdc.service:9:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/krb5-kpropd.service:8:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/lircd.service:26:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/lircd-setup.service:10:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/lircd-uinput.service:24:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/lircmd.service:24:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/lm_sensors.service:13:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/machines.target:16:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/mariadb.service:28:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/mariadb@.service:162:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/ModemManager.service:21:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/mysqld.service:28:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/mysql.service:28:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/ndctl-monitor.service:9:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/NetworkManager.service:23:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/nfs-client.target:15:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/nfs-server.service:33:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/ninfod.service:26:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/nmb.service:18:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/nscd.service:19:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/ntpdate.service:12:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/ntpd.service:13:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/nvidia-persistenced.service:37:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/openvpn-client@.service:23:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/openvpn-server@.service:25:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/ostree-finalize-staged.path:28:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/pacman-init.service:15:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/pkgfile-update.timer:10:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/ppp@.service:9:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/rarpd@.service:29:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/rdisc.service:27:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/remote-cryptsetup.target:18:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/remote-fs.target:18:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/rfkill-block@.service:10:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/rfkill-unblock@.service:10:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/rpcbind.service:19:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/rsyncd.service:31:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/rtkit-daemon.service:30:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/samba.service:18:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/sensord.service:12:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/smartd.service:12:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/smb.service:19:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/snapd.apparmor.service:22:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/snapd.recovery-chooser-trigger.service:16:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/snapd.seeded.service:12:WantedBy<span class="token operator">=</span>multi-user.target cloud-final.service  
-/lib/systemd/system/snapd.service:23:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/sshd.service:14:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/sudo_logsrvd.service:13:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/systemd-homed.service:38:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/systemd-journal-upload.service:42:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/systemd-networkd.service:52:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/systemd-resolved.service:54:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/tlp.service:19:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/vboxweb.service:11:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/vpnc@.service:12:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/winbind.service:17:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/wpa_supplicant.service:14:WantedBy<span class="token operator">=</span>multi-user.target  
-/lib/systemd/system/xow.service:14:WantedBy<span class="token operator">=</span>multi-user.target
+<p>Pour lister tous les services qui contiennent la ligne <code>WantedBy=multi-user.target</code>, on va pas chercher très loin, on va grep tous les fichiers de services (y en a genre 300 sur ma distrib) et cherche le pattern correspondant, donc <code>grep -r "WantedBy=multi-user.target" /run/systemd/transient/* /etc/systemd/system/* /run/systemd/generator/* /usr /lib/systemd/system/*</code>. On le fait à tous les emplacements où il y a les services systemd, pour les trouver on a <code>man systemd.service</code>.</p>
+<pre class=" language-bash"><code class="prism  language-bash">/etc/systemd/system/dbus-org.freedesktop.Avahi.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/etc/systemd/system/dbus-org.freedesktop.ModemManager1.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/etc/systemd/system/serveurtp.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/acpid.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/apparmor.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/auditd.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/avahi-daemon.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/avahi-dnsconfd.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/cpupower.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/cronie.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/deluged.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/deluge-web.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/dhclient@.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/dhcpcd.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/dhcpcd@.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/dnsmasq.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/fancontrol.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/ftpd.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/gns3-server@.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/gpm.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/gssproxy.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/healthd.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/httpd.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/ip6tables.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/iptables.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/irexec.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/krb5-kadmind.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/krb5-kdc.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/krb5-kpropd.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/lircd.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/lircd-setup.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/lircd-uinput.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/lircmd.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/lm_sensors.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/machines.target:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/mariadb.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/mariadb@.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/ModemManager.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/mysqld.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/mysql.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/ndctl-monitor.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/NetworkManager.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/nfs-client.target:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/nfs-server.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/ninfod.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/nmb.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/nscd.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/ntpdate.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/ntpd.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/nvidia-persistenced.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/openvpn-client@.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/openvpn-server@.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/ostree-finalize-staged.path:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/pacman-init.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/pkgfile-update.timer:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/ppp@.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/rarpd@.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/rdisc.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/remote-cryptsetup.target:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/remote-fs.target:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/rfkill-block@.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/rfkill-unblock@.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/rpcbind.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/rsyncd.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/rtkit-daemon.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/samba.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/sensord.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/smartd.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/smb.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/snapd.apparmor.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/snapd.recovery-chooser-trigger.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/snapd.seeded.service:WantedBy<span class="token operator">=</span>multi-user.target cloud-final.service  
+/usr/lib/systemd/system/snapd.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/sshd.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/sudo_logsrvd.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/systemd-homed.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/systemd-journal-upload.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/systemd-networkd.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/systemd-resolved.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/tlp.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/vboxweb.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/vpnc@.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/winbind.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/wpa_supplicant.service:WantedBy<span class="token operator">=</span>multi-user.target  
+/usr/lib/systemd/system/xow.service:WantedBy<span class="token operator">=</span>multi-user.target
 </code></pre>
-<p><code>grep -rnw /etc/systemd/system* -e WantedBy=multi-user.target</code> :</p>
-<pre class=" language-bash"><code class="prism  language-bash">/etc/systemd/system/serveurtp.service:14:WantedBy<span class="token operator">=</span>multi-user.target
-</code></pre>
-<p>Bah du coup là y a qu’un seul fichier c’est le service que j’ai créé.</p>
+<p>Boum.</p>
 <h3 id="création-dun-service">3. Création d’un service</h3>
 <p>On est parti pour créer nous-même notre service, pas très compliqué on s’y attaque. Dédicace à i3 qui m’a bien fait taffer le truc étant donné que le machin vient sans rien comme service mais c’est rien c’est la rue.</p>
 <p>On trace vers <code>/etc/systemd/system</code>, j’ai nommé mon fichier <code>serveurtp.service</code>, et voici le contenu :</p>
