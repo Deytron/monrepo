@@ -219,4 +219,38 @@ runlevel3.target enabled
 runlevel4.target enabled
 </code></pre>
 <h3 id="analyse-dun-service">2. Analyse d’un service</h3>
+<p>On va afficher le contenu de l’unité sytemd nginx. Pour ça, on fait un petit <code>systemctl cat nginx</code><br>
+J’explique les lignes nécessaires juste en dessous en commentaire.</p>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token comment"># /usr/lib/systemd/system/nginx.service  </span>
+<span class="token punctuation">[</span>Unit<span class="token punctuation">]</span>  
+Description<span class="token operator">=</span>The nginx HTTP and reverse proxy server  
+After<span class="token operator">=</span>network.target remote-fs.target nss-lookup.target  
+  
+<span class="token punctuation">[</span>Service<span class="token punctuation">]</span>  
+Type<span class="token operator">=</span>forking 
+<span class="token comment">### Précise le type de démarrage pour cette unité de service. Choix possibles : simple, exec, forking, oneshot, dbus, notify ou idle. Ici, "forking" lance le processus avec le protocole UNIX traditionnel</span>
+ 
+PIDFile<span class="token operator">=</span>/run/nginx.pid  
+<span class="token comment">### Précise l'emplacement du fichier PID, généralement sous /run. Usage recommandé si le type est défini comme "forking"</span>
+
+<span class="token comment"># Nginx will fail to start if /run/nginx.pid already exists but has the wrong  </span>
+<span class="token comment"># SELinux context. This might happen when running `nginx -t` from the cmdline.  </span>
+<span class="token comment"># https://bugzilla.redhat.com/show_bug.cgi?id=1268621 </span>
+ 
+ExecStartPre<span class="token operator">=</span>/usr/bin/rm -f /run/nginx.pid  
+ExecStartPre<span class="token operator">=</span>/usr/sbin/nginx -t  
+<span class="token comment">### Les deux ExecStartPre sont des commandes en plus qui sont lancées juste avant la commande ExecStart. ExecStartPost fait la même chose mais après ExecStart.</span>
+
+ExecStart<span class="token operator">=</span>/usr/sbin/nginx  
+<span class="token comment">### Le fichier exécutable à lancer est précisé là</span>
+
+ExecReload<span class="token operator">=</span>/bin/kill -s HUP <span class="token variable">$MAINPID</span>  
+KillSignal<span class="token operator">=</span>SIGQUIT  
+TimeoutStopSec<span class="token operator">=</span>5  
+KillMode<span class="token operator">=</span>process  
+PrivateTmp<span class="token operator">=</span>true  
+  
+<span class="token punctuation">[</span>Install<span class="token punctuation">]</span>  
+WantedBy<span class="token operator">=</span>multi-user.target
+</code></pre>
 
