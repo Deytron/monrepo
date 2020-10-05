@@ -224,7 +224,10 @@ J’explique les lignes nécessaires juste en dessous en commentaire.</p>
 <pre class=" language-bash"><code class="prism  language-bash"><span class="token comment"># /usr/lib/systemd/system/nginx.service  </span>
 <span class="token punctuation">[</span>Unit<span class="token punctuation">]</span>  
 Description<span class="token operator">=</span>The nginx HTTP and reverse proxy server  
-After<span class="token operator">=</span>network.target remote-fs.target nss-lookup.target  
+<span class="token comment">### Moi je pense la question elle est vite répondue. C'est juste une description de l'unité de service. En plus celle-la elle sert à rien</span>
+
+After<span class="token operator">=</span>network.target remote-fs.target nss-lookup.target
+<span class="token comment">### Précise que l'unité de service ne peut se lancer QU'APRES les autres unités de service précisées  </span>
   
 <span class="token punctuation">[</span>Service<span class="token punctuation">]</span>  
 Type<span class="token operator">=</span>forking 
@@ -245,6 +248,7 @@ ExecStart<span class="token operator">=</span>/usr/sbin/nginx
 <span class="token comment">### Le fichier exécutable à lancer est précisé là</span>
 
 ExecReload<span class="token operator">=</span>/bin/kill -s HUP <span class="token variable">$MAINPID</span>  
+<span class="token comment">### Optionnel. Précise la commande à utiliser pour enclencher un redémarrage du service, généralement un signal. $MAINPID est une variable environnement spéciale liée au démon du processus.</span>
 KillSignal<span class="token operator">=</span>SIGQUIT  
 TimeoutStopSec<span class="token operator">=</span>5  
 KillMode<span class="token operator">=</span>process  
