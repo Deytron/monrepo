@@ -297,7 +297,19 @@ WantedBy<span class="token operator">=</span>multi-user.target
 <h3 id="création-dun-service">3. Création d’un service</h3>
 <p>On est parti pour créer nous-même notre service, pas très compliqué on s’y attaque. Dédicace à i3 qui m’a bien fait taffer le truc étant donné que le machin vient sans rien comme service mais c’est rien c’est la rue.</p>
 <p>On trace vers <code>/etc/systemd/system</code>, j’ai nommé mon fichier <code>serveurtp.service</code>, et voici le contenu :</p>
-<pre class=" language-bash"><code class="prism  language-bash">
-
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token punctuation">[</span>Unit<span class="token punctuation">]</span>  
+Description<span class="token operator">=</span>Le serveur pour le TP t'as capté  
+  
+<span class="token punctuation">[</span>Service<span class="token punctuation">]</span>  
+Type<span class="token operator">=</span>simple  
+User<span class="token operator">=</span>nginx  
+Environment<span class="token operator">=</span><span class="token string">"PORT=80"</span>  
+ExecStartPre<span class="token operator">=</span>+/usr/bin/firewalld --add-port<span class="token operator">=</span><span class="token variable">${PORT}</span>/tcp  
+ExecStart<span class="token operator">=</span>/usr/bin/python3 -m http.server <span class="token variable">${PORT}</span>  
+ExecReload<span class="token operator">=</span>/bin/kill -HUP <span class="token variable">$MAINPID</span>  
+ExecStop<span class="token operator">=</span>+/usr/bin/firewalld --remove-port<span class="token operator">=</span><span class="token variable">${PORT}</span>/tcp  
+  
+<span class="token punctuation">[</span>Install<span class="token punctuation">]</span>  
+WantedBy<span class="token operator">=</span>multi-user.target
 </code></pre>
 
