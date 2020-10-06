@@ -315,6 +315,22 @@ WantedBy<span class="token operator">=</span>multi-user.target
 </code></pre>
 <h4 id="b.-sauvegarde">B. Sauvegarde</h4>
 <p>J’ai récupéré le script de sauvegarde basique que j’avais fait au TP1 et je l’ai mis dans mon dossier /home. Je viens créer une unité de service que je vais nommer <code>systembackup.service</code>.   En voilà le contenu :</p>
-<pre class=" language-bash"><code class="prism  language-bash">
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token punctuation">[</span>Unit<span class="token punctuation">]</span>  
+Description<span class="token operator">=</span>Unité de <span class="token function">service</span> qui va lancer un script de sauvegarde  
+  
+<span class="token punctuation">[</span>Service<span class="token punctuation">]</span>  
+Environment<span class="token operator">=</span><span class="token string">"SCRIPTPRE=/home/vagrant/tp1_pre.sh"</span>  
+Environment<span class="token operator">=</span><span class="token string">"SCRIPT=/home/vagrant/tp1_backup.sh"</span>  
+Environment<span class="token operator">=</span><span class="token string">"SCRIPTPOST=/home/vagrant/tp1_post.sh"</span>  
+Type<span class="token operator">=</span>simple  
+User<span class="token operator">=</span>user1  
+PIDFile<span class="token operator">=</span>/run/tp1_backup  
+ExecStartPre<span class="token operator">=</span><span class="token variable">${SCRIPTPRE}</span>  
+ExecStart<span class="token operator">=</span><span class="token variable">${SCRIPT}</span>  
+ExecStartPost<span class="token operator">=</span><span class="token variable">${SCRIPTPOST}</span>  
+  
+<span class="token punctuation">[</span>Install<span class="token punctuation">]</span>  
+WantedBy<span class="token operator">=</span>multi-user.target
 </code></pre>
+<p>Le service va venir chercher 3 scripts, un avant le script de backup, le script de backup, et un juste après pour la rotation.</p>
 
