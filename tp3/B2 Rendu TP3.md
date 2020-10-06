@@ -163,7 +163,7 @@ systemd-journal-flush.service loaded active exited Flush Journal to Persistent S
 systemd-random-seed.service loaded active exited Load/Save Random Seed  
 systemd-remount-fs.service loaded active exited Remount Root and Kernel File Systems  
 systemd-sysctl.service loaded active exited Apply Kernel Variables  
-systemd-tmpfiles-setup-dev.service loaded active exited Create Static Device Nodes <span class="token keyword">in</span> /dev  
+systemd-tmpfiles-setup-delinux systemd user <span class="token function">service</span> permissionsv.service loaded active exited Create Static Device Nodes <span class="token keyword">in</span> /dev  
 systemd-tmpfiles-setup.service loaded active exited Create Volatile Files and Directories  
 systemd-udev-trigger.service loaded active exited udev Coldplug all Devices  
 systemd-update-utmp.service loaded active exited Update UTMP about System Boot/Shutdown  
@@ -295,6 +295,7 @@ WantedBy<span class="token operator">=</span>multi-user.target
 </code></pre>
 <p>Boum.</p>
 <h3 id="création-dun-service">3. Création d’un service</h3>
+<h4 id="a.-serveur-web">A. Serveur web</h4>
 <p>On est parti pour créer nous-même notre service, pas très compliqué on s’y attaque. Dédicace à i3 qui m’a bien fait taffer le truc étant donné que le machin vient sans rien comme service mais c’est rien c’est la rue.</p>
 <p>On trace vers <code>/etc/systemd/system</code>, j’ai nommé mon fichier <code>serveurtp.service</code>, et voici le contenu :</p>
 <pre class=" language-bash"><code class="prism  language-bash"><span class="token punctuation">[</span>Unit<span class="token punctuation">]</span>  
@@ -311,5 +312,9 @@ ExecStop<span class="token operator">=</span>+/usr/bin/firewalld --remove-port<s
   
 <span class="token punctuation">[</span>Install<span class="token punctuation">]</span>  
 WantedBy<span class="token operator">=</span>multi-user.target
+</code></pre>
+<h4 id="b.-sauvegarde">B. Sauvegarde</h4>
+<p>J’ai récupéré le script de sauvegarde basique que j’avais fait au TP1 et je l’ai mis dans mon dossier /home. Je viens créer une unité de service que je vais nommer <code>systembackup.service</code>.   En voilà le contenu :</p>
+<pre class=" language-bash"><code class="prism  language-bash">
 </code></pre>
 
