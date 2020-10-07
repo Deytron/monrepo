@@ -384,4 +384,6 @@ OnCalendar<span class="token operator">=</span>0/1:00:00
 <span class="token punctuation">[</span>Install<span class="token punctuation">]</span>  
 WantedBy<span class="token operator">=</span>timers.target
 </code></pre>
+<h2 id="ii.-autres-features">II. Autres features</h2>
+<p>On est des boomers, faut qu’on passe à CentOS 8. Go le télécharger.</p>
 
