@@ -369,5 +369,6 @@ ExecStartPost<span class="token operator">=</span>/usr/bin/sh <span class="token
 <span class="token punctuation">[</span>Install<span class="token punctuation">]</span>  
 WantedBy<span class="token operator">=</span>multi-user.target
 </code></pre>
-<p>Le service va venir chercher 3 scripts, un avant le script de backup, le script de backup, et un juste après pour la rotation.</p>
+<p>Le service va venir chercher 3 scripts, un avant le script de backup, le script de backup, et un juste après pour la rotation. Les scripts sont dans le dossier de mon git.</p>
+<p>On va faire un timer maintenant.</p>
 
