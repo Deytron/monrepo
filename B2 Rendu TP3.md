@@ -357,15 +357,14 @@ WantedBy<span class="token operator">=</span>multi-user.target
 Description<span class="token operator">=</span>Unité de <span class="token function">service</span> qui va lancer un script de sauvegarde  
   
 <span class="token punctuation">[</span>Service<span class="token punctuation">]</span>  
-Environment<span class="token operator">=</span><span class="token string">"SCRIPTPRE=/home/vagrant/tp1_pre.sh"</span>  
-Environment<span class="token operator">=</span><span class="token string">"SCRIPT=/home/vagrant/tp1_backup.sh"</span>  
-Environment<span class="token operator">=</span><span class="token string">"SCRIPTPOST=/home/vagrant/tp1_post.sh"</span>  
-Type<span class="token operator">=</span>simple  
+Environment<span class="token operator">=</span><span class="token string">"SCRIPTPRE=/home/user1/tp1_pre.sh"</span>  
+Environment<span class="token operator">=</span><span class="token string">"SCRIPT=/home/user1/tp1_backup.sh"</span>  
+Environment<span class="token operator">=</span><span class="token string">"SCRIPTPOST=/home/user1/tp1_post.sh"</span>  
 User<span class="token operator">=</span>user1  
-PIDFile<span class="token operator">=</span>/run/tp1_backup  
-ExecStartPre<span class="token operator">=</span><span class="token variable">${SCRIPTPRE}</span>  
-ExecStart<span class="token operator">=</span><span class="token variable">${SCRIPT}</span>  
-ExecStartPost<span class="token operator">=</span><span class="token variable">${SCRIPTPOST}</span>  
+PIDFile<span class="token operator">=</span>/var/run/tp1_backup/pid  
+ExecStartPre<span class="token operator">=</span>/usr/bin/sh <span class="token variable">${SCRIPTPRE}</span>  
+ExecStart<span class="token operator">=</span>/usr/bin/sh <span class="token variable">${SCRIPT}</span>  
+ExecStartPost<span class="token operator">=</span>/usr/bin/sh <span class="token variable">${SCRIPTPOST}</span>  
   
 <span class="token punctuation">[</span>Install<span class="token punctuation">]</span>  
 WantedBy<span class="token operator">=</span>multi-user.target
