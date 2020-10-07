@@ -386,4 +386,35 @@ WantedBy<span class="token operator">=</span>timers.target
 </code></pre>
 <h2 id="ii.-autres-features">II. Autres features</h2>
 <p>On est des boomers, faut qu’on passe à CentOS 8. Go le télécharger. Pour ça, simple, on fait un vagrantfile avec la box <code>centos/8</code>.</p>
+<h3 id="gestion-de-boot">1. Gestion de boot</h3>
+<p>Avec la commande <code>systemd-analyze plot &gt; plot.svg</code>, j’ai analysé le temps de boot et tout foutu dans un fichier svg.<br>
+Au passage, j’ai pas pu envoyer le fichier à analyser sur mon host via scp, je sais pas pourquoi et à vrai dire j’ai pas cherché à résoudre le problème, du coup j’ai été malin et j’ai utilisé cette commande : <code>vagrant ssh -c "sudo cat /home/vagrant/plot.svg" &gt; plot.svg</code> qui a copié tout le contenu dans un autre fichier plot.svg, et c’est parfait.</p>
+<p>Le fichier est observable dans le dossier du TP. Les 3 trucs qui prennent le plus de temps à démarrer dans le systemd sont tuned.service, sshd-keygen@rsa.service et sssd.service.</p>
+<h3 id="gestion-de-lheure">2. Gestion de l’heure</h3>
+<p>la commande <code>timedatectl</code> nous donne ça :</p>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token punctuation">[</span>vagrant@node1 ~<span class="token punctuation">]</span>$ timedatectl  
+Local time: Wed 2020-10-07 20:53:09 UTC  
+Universal time: Wed 2020-10-07 20:53:09 UTC  
+RTC time: Wed 2020-10-07 20:53:07  
+Time zone: UTC <span class="token punctuation">(</span>UTC, +0000<span class="token punctuation">)</span>  
+System clock synchronized: <span class="token function">yes</span>  
+NTP service: active  
+RTC <span class="token keyword">in</span> local TZ: no
+</code></pre>
+<p>On tape dans le fuseau UTC +0, soit le fuseau horaire du royaume-uni. Et nous sommes bien synchronisés à un serveur NTP.<br>
+Pour changer de fuseau horaire, on peut au préalable voir sur quel fuseau on veut se caler avec <code>timedatectl list-timezones</code>, puis après avec <code>sudo timedatectl set-timezone</code>, on peut se mettre une zone, par exemple, <code>sudo timedatectl set-timezone America/New_York</code>, ce qui donne après :</p>
+<pre class=" language-bash"><code class="prism  language-bash">Local time: Wed 2020-10-07 16:58:19 EDT  
+Universal time: Wed 2020-10-07 20:58:19 UTC  
+RTC time: Wed 2020-10-07 20:58:17  
+Time zone: America/New_York <span class="token punctuation">(</span>EDT, -0400<span class="token punctuation">)</span>  
+System clock synchronized: <span class="token function">yes</span>  
+NTP service: active  
+RTC <span class="token keyword">in</span> local TZ: no
+</code></pre>
+<p>Yes.</p>
+<h3 id="gestion-des-noms-et-de-la-résolution-de-noms">3. Gestion des noms et de la résolution de noms</h3>
+<p>La commande <code>hostname</code> donne le nom de la machine actuel :</p>
+<pre class=" language-bash"><code class="prism  language-bash">node1.tp2.b2
+</code></pre>
+<p>On peut le changer de manière temporaire avec <code>sudo hostname autrehostname.host</code> par exemple, ou de manière définitive en éditant le fichier Vagrantfile (dans notre cas), ou en éditant le fichier <code>/etc/hosts</code> et en remplaçant toute mention du hostname actuel par un autre.</p>
 
