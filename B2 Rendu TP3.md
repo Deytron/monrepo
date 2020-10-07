@@ -314,7 +314,7 @@ TimeoutSec<span class="token operator">=</span>1800
 <span class="token punctuation">[</span>Install<span class="token punctuation">]</span>  
 WantedBy<span class="token operator">=</span>multi-user.target
 </code></pre>
-<p>A savoir qu’il faut impérativement ajouter user1 aux sudoers et lancer les commandes en tant que sudo (/usr/bin/sudo) sinon ça ne marche pas. Voilà le curl :</p>
+<p>A savoir qu’il faut impérativement ajouter user1 aux sudoers et lancer les commandes en tant que sudo (/usr/bin/sudo) sinon ça ne marche pas. Sur  Voilà le curl :</p>
 <pre class=" language-html"><code class="prism  language-html"><span class="token doctype">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;</span>  
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>  
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>  
