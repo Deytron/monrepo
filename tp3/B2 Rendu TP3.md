@@ -370,5 +370,18 @@ ExecStartPost<span class="token operator">=</span>/usr/bin/sh <span class="token
 WantedBy<span class="token operator">=</span>multi-user.target
 </code></pre>
 <p>Le service va venir chercher 3 scripts, un avant le script de backup, le script de backup, et un juste après pour la rotation. Les scripts sont dans le dossier de mon git.</p>
-<p>On va faire un timer maintenant.</p>
+<p>On va faire un timer maintenant. Le fichier va donc s’appeler <code>systembackup.timer</code> et contiendra juste quelques lignes :</p>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token comment"># Timer pour le backup  </span>
+  
+<span class="token punctuation">[</span>Unit<span class="token punctuation">]</span>  
+Description<span class="token operator">=</span>Le timer pour la sauvegarde t'as capté  
+Requires<span class="token operator">=</span>systembackup.service  
+  
+<span class="token punctuation">[</span>Timer<span class="token punctuation">]</span>  
+Unit<span class="token operator">=</span>systembackup.service  
+OnCalendar<span class="token operator">=</span>0/1:00:00  
+  
+<span class="token punctuation">[</span>Install<span class="token punctuation">]</span>  
+WantedBy<span class="token operator">=</span>timers.target
+</code></pre>
 
