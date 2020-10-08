@@ -1,7 +1,7 @@
 # file_to_disk = '/home/lemalgache/vagrant/VagrantDisk.vdi'
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "CentOS_custom"
+  config.vm.box = "centos/8"
 
   ## Les 3 lignes suivantes permettent d'éviter certains bugs et/ou d'accélérer le déploiement. Gardez-les tout le temps sauf contre-indications.
   # Ajoutez cette ligne afin d'accélérer le démarrage de la VM (si une erreur 'vbguest' est levée, voir la note un peu plus bas)
@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
   config.vm.box_check_update = false
  
   # La ligne suivante permet de désactiver le montage d'un dossier partagé (ne marche pas tout le temps directement suivant vos OS, versions d'OS, etc.)
-  config.vm.synced_folder ".", "/vagrant", disabled: true
+  config.vm.synced_folder "/home/lemalgache/vagrant", "/home/vagrant", disabled: true
 
    # Config de la VM 1
   config.vm.define "node1" do |node1|
