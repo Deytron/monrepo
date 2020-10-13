@@ -1,7 +1,5 @@
-# file_to_disk = '/home/lemalgache/vagrant/VagrantDisk.vdi'
-
 Vagrant.configure("2") do |config|
-  config.vm.box = "centos7-tp4V2"
+  config.vm.box = "centos7-tp4.box"
 
   ## Les 3 lignes suivantes permettent d'éviter certains bugs et/ou d'accélérer le déploiement. Gardez-les tout le temps sauf contre-indications.
   # Ajoutez cette ligne afin d'accélérer le démarrage de la VM (si une erreur 'vbguest' est levée, voir la note un peu plus bas)
@@ -11,24 +9,21 @@ Vagrant.configure("2") do |config|
   config.vm.box_check_update = false
  
   # La ligne suivante permet de désactiver le montage d'un dossier partagé (ne marche pas tout le temps directement suivant vos OS, versions d'OS, etc.)
-  # config.vm.synced_folder "/home/lemalgache/vagrant", "/home/vagrant", disabled: true
+  config.vm.synced_folder ".", "/vagrant", disabled: true
 
-   # Config de la VM 1
-  config.vm.define "node1" do |node1|
-    node1.vm.network "private_network", ip: "192.168.56.11"
-    node1.vm.hostname = "node1.tp2.b2"
+   # Config de la VM gitea
+  config.vm.define "node1gitea" do |node1gitea|
+    node1gitea.vm.network "private_network", ip: "192.168.56.11"
+    node1gitea.vm.hostname = "node1.tp4.gitea"
     config.vm.provider "virtualbox" do |vb|
       vb.customize ["modifyvm", :id, "--memory", "1024"]
     end
-    # config.vm.provision "shell",
-    #  path: "/home/lemalgache/vagrant/script2.sh",
-    # path: "/home/lemalgache/vagrant/scriptnode1.sh"
-    # end
-    # config.vm.provision "file", 
-    #  source: "/home/lemalgache/vagrant/nginx.conf", 
-    #  destination: "/etc/nginx/nginx.conf"
+    config.vm.provision "shell",
+      path: "/home/lemalgache/monrepo/tp4/scripts/node1.gitea.sh"
+    end
   end
-  # Config de la VM 2
+
+# Config de la VM 2
 #  config.vm.define "node2" do |node2|
 #    node2.vm.network "private_network", ip: "192.168.56.12"
 #    node2.vm.hostname = "node2.tp2.b2"
@@ -39,15 +34,4 @@ Vagrant.configure("2") do |config|
 #      path: "/home/lemalgache/vagrant/script2.sh"
 #    end
 
-  # Config réseau host only
-  # config.vm.network "private_network", ip: "192.168.2.11",
-  #  virtualbox__intnet: true
 
-  # Config du hostname
-
-  # Setup VirtualBox Provider
-  # config.vm.provider "virtualbox" do |vb|
-  #  vb.customize ["modifyvm", :id, "--memory", "1024"]
-  #  vb.customize ['createhd', '--filename', file_to_disk, '--size', 5 * 1024]
-  #  vb.customize ['storageattach', :id, '--storagectl', 'IDE', '--port', 1, '--device', 0, '--type', 'hdd', '--medium', file_to_disk]
-end
