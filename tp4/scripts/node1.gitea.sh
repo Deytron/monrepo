@@ -12,7 +12,7 @@ sudo systemctl enable mariadb
 sudo systemctl start mariadb
 sudo wget https://github.com/go-gitea/gitea/releases/download/v1.12.5/gitea-1.12.5-linux-amd64 -O /usr/local/bin/gitea
 sudo chmod +x /usr/local/bin/gitea
-sudo wget https://github.com/Deytron/monrepo/blob/master/tp4/files/gitea.service -O /etc/systemd/system/gitea.service
+sudo wget https://raw.githubusercontent.com/Deytron/monrepo/master/tp4/files/gitea.service -O /etc/systemd/system/gitea.service
 sudo systemctl enable gitea
 sudo systemctl start gitea
 
