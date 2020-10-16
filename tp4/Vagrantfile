@@ -17,7 +17,7 @@ Vagrant.configure("2") do |config|
     node1gitea.vm.provider "virtualbox" do |vb|
       vb.customize ["modifyvm", :id, "--memory", "1024"]
     end
-    config.vm.provision "shell",
+    node1gitea.vm.provision "shell",
       path: "/home/lemalgache/monrepo/tp4/scripts/node1.gitea.sh"
   end
 
@@ -28,7 +28,7 @@ Vagrant.configure("2") do |config|
     node2bdd.vm.provider "virtualbox" do |vb|
       vb.customize ["modifyvm", :id, "--memory", "1024"]
     end
-    config.vm.provision "shell",
+    node2bdd.vm.provision "shell",
       path: "/home/lemalgache/monrepo/tp4/scripts/node2.bdd.sh"
   end
 
@@ -36,11 +36,22 @@ Vagrant.configure("2") do |config|
   config.vm.define "node3nginx" do |node3nginx|
     node3nginx.vm.network "private_network", ip: "192.168.56.13"
     node3nginx.vm.hostname = "node3.tp4.nginx"
-    config.vm.provider "virtualbox" do |vb|
+    node3nginx.vm.provider "virtualbox" do |vb|
       vb.customize ["modifyvm", :id, "--memory", "1024"]
     end
     node3nginx.vm.provision "shell",
       path: "/home/lemalgache/monrepo/tp4/scripts/node3.nginx.sh"
+  end
+  
+# Config de la VM NFS
+  config.vm.define "node4nfs" do |node4nfs|
+    node4nfs.vm.network "private_network", ip: "192.168.56.14"
+    node4nfs.vm.hostname = "node4.tp4.nfs"
+    node4nfs.vm.provider "virtualbox" do |vb|
+      vb.customize ["modifyvm", :id, "--memory", "1024"]
+    end
+    node4nfs.vm.provision "shell",
+      path: "/home/lemalgache/monrepo/tp4/scripts/node4.nfs.sh"
   end
 
 end

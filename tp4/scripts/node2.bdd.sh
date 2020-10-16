@@ -2,13 +2,12 @@ sudo yum update -y
 sudo yum install wget git nano mariadb-server -y
 sudo systemctl enable mariadb
 sudo systemctl start mariadb
-mysql -u root
 # PARTIE MYSQL
-SET old_passwords=0;
+mysql -u root -e "SET old_passwords=0;
 CREATE USER 'gitea'@'192.168.56.11' IDENTIFIED BY '';
-CREATE DATABASE giteadb CHARACTER SET 'utf8mb4' COLLATE 'utf8_unicode_ci';
+CREATE DATABASE giteadb CHARACTER SET 'utf8' COLLATE 'utf8_unicode_ci';
 GRANT ALL PRIVILEGES ON *.* TO 'gitea'@'192.168.56.11' WITH GRANT OPTION;
-FLUSH PRIVILEGES;
+FLUSH PRIVILEGES;"
 
 # HOSTS
 sudo echo "192.168.56.11  node1.tp4.gitea node1gitea" >> /etc/hosts
