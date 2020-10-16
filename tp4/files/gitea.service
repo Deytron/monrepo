@@ -1,7 +1,5 @@
 [Unit]
 Description=Gitea
-After=syslog.target
-After=network.target
 After=mariadb.service
 
 [Service]

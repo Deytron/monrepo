@@ -12,16 +12,3 @@ Je me suis pas embêté, j'ai repackage une box CentOS7 avec une update, nano, v
 | node1.tp4.bdd   | 192.168.56.12 | Base de données |
 | node1.tp4.nginx | 192.168.56.13 | NGINX           |
 | node1.tp4.nfs   | 192.168.56.14 | Serveur NFS     |
-
-### 1. Gitea
-
-Une fois la VM avec le script lancée, on utilise la commande mysql_secure_installation pour mettre un mot de passe sur la BDD.
-On crée ensuite la BDD avec les commandes suivantes :
-
-```bash
-create database gitea;
-grant all on gitea.* to gitea@localhost identified by 'root';
-flush privileges;
-quit
-```
-
