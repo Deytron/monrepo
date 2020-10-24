@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
   config.vm.box_check_update = false
  
   # La ligne suivante permet de désactiver le montage d'un dossier partagé (ne marche pas tout le temps directement suivant vos OS, versions d'OS, etc.)
-  config.vm.synced_folder "/home/lemalgache/vagrant", "/home/vagrant", disabled: true
+  # config.vm.synced_folder "/home/lemalgache/vagrant", "/home/vagrant", disabled: true
 
    # Config de la VM 1
   config.vm.define "node1" do |node1|

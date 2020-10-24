@@ -1,5 +1,5 @@
 sudo yum update -y
-sudo yum install wget git nano epel-release mariadb-server -y
+sudo yum install wget git nano epel-release mariadb-server nfs-utils -y
 sudo yum install nginx -y
 sudo useradd git
 sudo mkdir -p /etc/gitea /var/lib/gitea/{custom,data,indexers,public,log}
@@ -15,6 +15,10 @@ sudo chmod +x /usr/local/bin/gitea
 sudo wget https://raw.githubusercontent.com/Deytron/monrepo/master/tp4/files/gitea.service -O /etc/systemd/system/gitea.service
 sudo systemctl enable gitea
 sudo systemctl start gitea
+
+#NFS
+mkdir /mnt/nfsfileshare
+mount 192.168.56.14:/nfsfileshare /mnt/nfsfileshare
 
 # HOSTS
 sudo echo "192.168.56.12  node2.tp4.bdd node2bdd" >> /etc/hosts
